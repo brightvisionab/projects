@@ -1,0 +1,23 @@
+Sub Campaign Configuration Settings Help
+
+ACCOUNT STATUS
+not_qualified_default="true" -> sets an item you want to be default when pressing "Not Qualified" button on Bright Sales.
+send_email="true" -> sets an item to trigger the send mail form to show when selected on Bright Sales.
+
+ACCOUNT LEAD STATUS
+not_qualified_default="true" -> sets an item you want to be default when pressing "Not Qualified" button on Bright Sales.
+
+CONTACT STATUS
+none
+
+GENERAL SETTINGS
+
+    <send_mail_settings>
+      <mail_subject>Reports</mail_subject>
+      <mail_body>Hi {send_to},{break}{break}Attached is the report.{break}{break}Thanks!</mail_body>
+    </send_mail_settings>
+
+    mail_subject -> default send mail subject
+    mail_body -> default send mail message text
+    {send_to} ->place holder for the customer name
+    {break} -> placeholder to create new line
