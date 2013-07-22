@@ -1,0 +1,84 @@
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\BrightVision.DQControl.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\BrightVision.DQControl.pdb
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\BrightVision.Common.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\BrightVision.Model.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\DevExpress.XtraBars.v12.2.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\Newtonsoft.Json.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\VoIPSDK.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\ActiveUp.Net.Common.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\GMap.NET.WindowsForms.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\GMap.NET.Core.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\LinqToExcel.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\System.Reactive.Linq.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\System.Reactive.Interfaces.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\ActiveUp.Net.Smtp.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\Mvp.Xml.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\ActiveUp.Net.Dns.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\Remotion.Data.Linq.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\System.Reactive.Core.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\BrightVision.Common.pdb
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\BrightVision.Model.pdb
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\DevExpress.XtraBars.v12.2.xml
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\GMap.NET.WindowsForms.xml
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\GMap.NET.Core.xml
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\System.Reactive.Linq.xml
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\System.Reactive.Interfaces.xml
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\System.Reactive.Core.xml
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\de\DevExpress.XtraBars.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\es\DevExpress.XtraBars.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\ja\DevExpress.XtraBars.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.DQControl\bin\Release\ru\DevExpress.XtraBars.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.DQControl\obj\Release\BrightVision.DQControl.csprojResolveAssemblyReference.cache
+D:\BrightVision\Project\BrightVision.DQControl\obj\Release\BrightVision.DQControl.Properties.Resources.resources
+D:\BrightVision\Project\BrightVision.DQControl\obj\Release\BrightVision.DQControl.UI.AddAttendies.resources
+D:\BrightVision\Project\BrightVision.DQControl\obj\Release\BrightVision.DQControl.UI.Footer.resources
+D:\BrightVision\Project\BrightVision.DQControl\obj\Release\BrightVision.DQControl.UI.ScheduleDetails.resources
+D:\BrightVision\Project\BrightVision.DQControl\obj\Release\BrightVision.DQControl.UI.testinglayout.resources
+D:\BrightVision\Project\BrightVision.DQControl\obj\Release\BrightVision.DQControl.csproj.GenerateResource.Cache
+D:\BrightVision\Project\BrightVision.DQControl\obj\Release\BrightVision.DQControl.dll.licenses
+D:\BrightVision\Project\BrightVision.DQControl\obj\Release\BrightVision.DQControl.dll
+D:\BrightVision\Project\BrightVision.DQControl\obj\Release\BrightVision.DQControl.pdb
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\BrightVision.DQControl.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\BrightVision.DQControl.pdb
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\BrightVision.Common.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\BrightVision.Model.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\DevExpress.XtraBars.v12.2.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\Newtonsoft.Json.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\VoIPSDK.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\ActiveUp.Net.Common.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\GMap.NET.WindowsForms.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\GMap.NET.Core.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\LinqToExcel.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\System.Reactive.Linq.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\System.Reactive.Interfaces.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\BrightVision.Windows.Azure.Storage.Blob.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\ActiveUp.Net.Smtp.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\Mvp.Xml.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\ActiveUp.Net.Dns.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\Remotion.Data.Linq.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\System.Reactive.Core.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\Microsoft.WindowsAzure.Storage.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\BrightVision.Common.pdb
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\BrightVision.Model.pdb
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\DevExpress.XtraBars.v12.2.xml
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\GMap.NET.WindowsForms.xml
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\GMap.NET.Core.xml
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\System.Reactive.Linq.xml
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\System.Reactive.Interfaces.xml
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\BrightVision.Windows.Azure.Storage.Blob.pdb
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\System.Reactive.Core.xml
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\de\DevExpress.XtraBars.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\es\DevExpress.XtraBars.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\ja\DevExpress.XtraBars.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\ru\DevExpress.XtraBars.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\obj\Release\BrightVision.DQControl.csprojResolveAssemblyReference.cache
+D:\Brightvision Projects\CRM\BrightVision.DQControl\obj\Release\BrightVision.DQControl.Properties.Resources.resources
+D:\Brightvision Projects\CRM\BrightVision.DQControl\obj\Release\BrightVision.DQControl.UI.AddAttendies.resources
+D:\Brightvision Projects\CRM\BrightVision.DQControl\obj\Release\BrightVision.DQControl.UI.Footer.resources
+D:\Brightvision Projects\CRM\BrightVision.DQControl\obj\Release\BrightVision.DQControl.UI.ScheduleDetails.resources
+D:\Brightvision Projects\CRM\BrightVision.DQControl\obj\Release\BrightVision.DQControl.UI.testinglayout.resources
+D:\Brightvision Projects\CRM\BrightVision.DQControl\obj\Release\BrightVision.DQControl.csproj.GenerateResource.Cache
+D:\Brightvision Projects\CRM\BrightVision.DQControl\obj\Release\BrightVision.DQControl.dll.licenses
+D:\Brightvision Projects\CRM\BrightVision.DQControl\obj\Release\BrightVision.DQControl.dll
+D:\Brightvision Projects\CRM\BrightVision.DQControl\obj\Release\BrightVision.DQControl.pdb
+D:\Brightvision Projects\CRM\BrightVision.DQControl\bin\Release\Mindscape.Raygun4Net.dll

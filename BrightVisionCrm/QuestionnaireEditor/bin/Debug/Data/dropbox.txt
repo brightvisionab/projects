@@ -1,0 +1,104 @@
+﻿{
+  "GlobalValue" : null,
+  "Type" : "Dropbox",
+  "Form" : {
+    "Settings" : {
+      "Label" : "5c",
+      "QuestionText" : "BANT Feedback",
+	  "QuestionHelp" : "This question is about bla bla dropbox",
+      "Priority" : "Prio1",
+      "PlotDoneStatus" : "Done",
+      "DataBindings" : {
+        "account_id" : "",
+		"answer_id" : "",
+		"contact_id" : "",
+		"dialog_id" : "",
+		"campaign_id" : "",
+        "question_id" : ""
+      },
+	  "CustomerOwnership" : true,
+      "BVOwnership" : true,
+      "BackgroundColor" : "",
+      "AnswerOptions" : [        
+        {
+          "DropBoxValues" : [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Other"
+          ],
+          "TextPrefix" : "Bant A",
+		  "DefaultSelectionValue" : "3",
+          "SelectionValue" : "3",
+		  "DefaultSelectionValueIfOther" : "",
+          "SelectionValueIfOther" : "10 points",
+          "DropboxMaxWidth" : "120"
+        },
+        {
+          "DropBoxValues" : [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Other"
+          ],
+          "TextPrefix" : "Bant B",
+          "DefaultSelectionValue" : "3",
+          "SelectionValue" : "3",
+		  "DefaultSelectionValueIfOther" : "",
+          "SelectionValueIfOther" : "10 points",
+          "DropboxMaxWidth" : "120"
+        },
+        {
+          "DropBoxValues" : [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Other"
+          ],
+          "TextPrefix" : "Bant C",
+          "DefaultSelectionValue" : "3",
+          "SelectionValue" : "3",
+		  "DefaultSelectionValueIfOther" : "",
+          "SelectionValueIfOther" : "10 points",
+        },
+        {
+          "DropBoxValues" : [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Other"
+          ],
+          "TextPrefix" : "Bant D",
+          "DefaultSelectionValue" : "3",
+          "SelectionValue" : "3",
+		  "DefaultSelectionValueIfOther" : "",
+          "SelectionValueIfOther" : "10 points",
+        },
+        {
+          "DropBoxValues" : [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Other"
+          ],
+          "TextPrefix" : "Bant E",
+          "DefaultSelectionValue" : "3",
+          "SelectionValue" : "3",
+		  "DefaultSelectionValueIfOther" : "",
+          "SelectionValueIfOther" : "10 points",
+        }
+      ]
+    }
+  }  
+}
+

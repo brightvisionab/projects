@@ -1,0 +1,43 @@
+﻿{
+	"GlobalValue" : null,
+	"Type" : "SmartText",
+	"Form" : {
+		"Settings" : {
+			"Label" : "[Sample label]",
+			"QuestionText" : "[Sample question text]",
+			"QuestionHelp" : "[Sample question help]",
+			"Priority" : "Required",
+			"PlotDoneStatus" : "Done",
+			"CustomerOwnership" : true,
+			"BVOwnership" : false,
+			"DataBindings" : {
+				"account_level": false,
+				"language_code": "",
+				"account_id" : "",
+				"answer_id" : "",
+				"contact_id" : "",
+				"dialog_id" : "",
+				"campaign_id" : "",
+				"question_id" : "",
+				"questions_text_language_id" : "",
+				"questionlayout_id" : "",
+				"questionlayout_language_id" : ""
+			},
+			"BackgroundColor" : "",
+			"AnswerOptions" : [{
+					"TextPrefix" : "",
+					"DefaultInputValue" : "",
+					"InputValue" : "",
+					"Required" : false,
+					"HeaderCommentText": "Comment",
+					"HeaderCreationDateText": "Date",
+					"HeaderUserText": "User",
+					"HeaderCustomerContactText": "Contact",
+					"OrderBy":"Creation Date",
+					"OrderDirection": "Descending" 
+				}
+			]
+		}
+	}
+}
+ 

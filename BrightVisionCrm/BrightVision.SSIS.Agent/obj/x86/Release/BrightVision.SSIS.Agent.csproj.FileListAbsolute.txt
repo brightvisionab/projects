@@ -1,0 +1,16 @@
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Release\BrightVision.SSIS.Agent.exe.config
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Release\BrightVision.SSIS.Agent.exe
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Release\BrightVision.SSIS.Agent.pdb
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Release\BrightVision.RemotableObject.dll
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Release\BrightVision.Storage.dll
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Release\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Release\Microsoft.WindowsAzure.StorageClient.dll
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Release\nspring.dll
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Release\BrightVision.RemotableObject.pdb
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Release\BrightVision.Storage.pdb
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Release\BrightVision.SSIS.Agent.ProjectInstaller.resources
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Release\BrightVision.SSIS.Agent.exe
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Release\BrightVision.SSIS.Agent.pdb

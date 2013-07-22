@@ -1,0 +1,56 @@
+D:\Michael\C#\AzureMessageQueue_WinFormsDemo\HollywoodHackers.Storage\bin\Debug\BrightVision.Storage.dll
+D:\Michael\C#\AzureMessageQueue_WinFormsDemo\HollywoodHackers.Storage\bin\Debug\BrightVision.Storage.pdb
+D:\Michael\C#\AzureMessageQueue_WinFormsDemo\HollywoodHackers.Storage\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Michael\C#\AzureMessageQueue_WinFormsDemo\HollywoodHackers.Storage\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+D:\Michael\C#\AzureMessageQueue_WinFormsDemo\HollywoodHackers.Storage\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Michael\C#\AzureMessageQueue_WinFormsDemo\HollywoodHackers.Storage\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+D:\Michael\C#\AzureMessageQueue_WinFormsDemo\HollywoodHackers.Storage\obj\Debug\ResolveAssemblyReference.cache
+D:\Michael\C#\AzureMessageQueue_WinFormsDemo\HollywoodHackers.Storage\obj\Debug\BrightVision.Storage.dll
+D:\Michael\C#\AzureMessageQueue_WinFormsDemo\HollywoodHackers.Storage\obj\Debug\BrightVision.Storage.pdb
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.Storage\bin\Debug\BrightVision.Storage.dll
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.Storage\bin\Debug\BrightVision.Storage.pdb
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.Storage\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.Storage\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.Storage\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.Storage\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.Storage\obj\Debug\ResolveAssemblyReference.cache
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.Storage\obj\Debug\BrightVision.Storage.dll
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.Storage\obj\Debug\BrightVision.Storage.pdb
+D:\Brightvision Projects\REVISED\BrightVision.Storage\bin\Debug\BrightVision.Storage.dll
+D:\Brightvision Projects\REVISED\BrightVision.Storage\bin\Debug\BrightVision.Storage.pdb
+D:\Brightvision Projects\REVISED\BrightVision.Storage\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Brightvision Projects\REVISED\BrightVision.Storage\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+D:\Brightvision Projects\REVISED\BrightVision.Storage\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Brightvision Projects\REVISED\BrightVision.Storage\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+D:\Brightvision Projects\REVISED\BrightVision.Storage\obj\Debug\ResolveAssemblyReference.cache
+D:\Brightvision Projects\REVISED\BrightVision.Storage\obj\Debug\BrightVision.Storage.dll
+D:\Brightvision Projects\REVISED\BrightVision.Storage\obj\Debug\BrightVision.Storage.pdb
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\BrightVision.Storage.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\BrightVision.Storage.pdb
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\BrightVision.Common.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\VoIPSDK.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\ActiveUp.Net.Common.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\BrightVision.Model.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\GMap.NET.WindowsForms.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\GMap.NET.Core.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\Newtonsoft.Json.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\LinqToExcel.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\System.Reactive.Linq.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\System.Reactive.Interfaces.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\ActiveUp.Net.Smtp.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\Mvp.Xml.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\ActiveUp.Net.Dns.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\Remotion.Data.Linq.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\System.Reactive.Core.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\BrightVision.Common.pdb
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\BrightVision.Model.pdb
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\System.Reactive.Linq.xml
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\System.Reactive.Interfaces.xml
+D:\Brightvision Projects\CRM\BrightVision.Storage\bin\Debug\System.Reactive.Core.xml
+D:\Brightvision Projects\CRM\BrightVision.Storage\obj\Debug\BrightVision.Storage.csprojResolveAssemblyReference.cache
+D:\Brightvision Projects\CRM\BrightVision.Storage\obj\Debug\BrightVision.Storage.dll
+D:\Brightvision Projects\CRM\BrightVision.Storage\obj\Debug\BrightVision.Storage.pdb

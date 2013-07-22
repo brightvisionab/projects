@@ -1,0 +1,2711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BrightPlatformModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="BrightPlatformModelStoreContainer">
+    <EntitySet Name="account_contacts" EntityType="BrightPlatformModel.Store.account_contacts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="accounts" EntityType="BrightPlatformModel.Store.accounts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="accounts_geo_data" EntityType="BrightPlatformModel.Store.accounts_geo_data" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="activity_codes" EntityType="BrightPlatformModel.Store.activity_codes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="additional_data_report_templates" EntityType="BrightPlatformModel.Store.additional_data_report_templates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="answers" EntityType="BrightPlatformModel.Store.answers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="app_version" EntityType="BrightPlatformModel.Store.app_version" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="audio_settings" EntityType="BrightPlatformModel.Store.audio_settings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="campaigns" EntityType="BrightPlatformModel.Store.campaigns" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="change_password_logs" EntityType="BrightPlatformModel.Store.change_password_logs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="contact_role_tags" EntityType="BrightPlatformModel.Store.contact_role_tags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="contacts" EntityType="BrightPlatformModel.Store.contacts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="contacts_geo_data" EntityType="BrightPlatformModel.Store.contacts_geo_data" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="countries" EntityType="BrightPlatformModel.Store.countries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="customers" EntityType="BrightPlatformModel.Store.customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="dialog" EntityType="BrightPlatformModel.Store.dialog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="event_followup_log" EntityType="BrightPlatformModel.Store.event_followup_log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="event_log" EntityType="BrightPlatformModel.Store.event_log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="export_view_report_templates" EntityType="BrightPlatformModel.Store.export_view_report_templates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="final_lists" EntityType="BrightPlatformModel.Store.final_lists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="imported_file_details" EntityType="BrightPlatformModel.Store.imported_file_details" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="imported_file_headers" EntityType="BrightPlatformModel.Store.imported_file_headers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="imported_files" EntityType="BrightPlatformModel.Store.imported_files" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="language" EntityType="BrightPlatformModel.Store.language" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="lists" EntityType="BrightPlatformModel.Store.lists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="merge_lists" EntityType="BrightPlatformModel.Store.merge_lists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="message_log" EntityType="BrightPlatformModel.Store.message_log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="message_type" EntityType="BrightPlatformModel.Store.message_type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="process" EntityType="BrightPlatformModel.Store.process" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="profiled_data_column_maps" EntityType="BrightPlatformModel.Store.profiled_data_column_maps" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questionlayout" EntityType="BrightPlatformModel.Store.questionlayout" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questionlayout_language" EntityType="BrightPlatformModel.Store.questionlayout_language" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questions" EntityType="BrightPlatformModel.Store.questions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questions_questiontags" EntityType="BrightPlatformModel.Store.questions_questiontags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questions_text_language" EntityType="BrightPlatformModel.Store.questions_text_language" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questiontags" EntityType="BrightPlatformModel.Store.questiontags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="roles" EntityType="BrightPlatformModel.Store.roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="roles_users" EntityType="BrightPlatformModel.Store.roles_users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="schedules" EntityType="BrightPlatformModel.Store.schedules" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="serverside_report_requests" EntityType="BrightPlatformModel.Store.serverside_report_requests" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="serverside_service_requests" EntityType="BrightPlatformModel.Store.serverside_service_requests" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sip_accounts" EntityType="BrightPlatformModel.Store.sip_accounts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sub_answers" EntityType="BrightPlatformModel.Store.sub_answers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sub_campaign_account_appointments" EntityType="BrightPlatformModel.Store.sub_campaign_account_appointments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sub_campaign_account_lists" EntityType="BrightPlatformModel.Store.sub_campaign_account_lists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sub_campaign_account_remarks" EntityType="BrightPlatformModel.Store.sub_campaign_account_remarks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sub_campaign_configuration_templates" EntityType="BrightPlatformModel.Store.sub_campaign_configuration_templates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sub_campaign_contact_appointments" EntityType="BrightPlatformModel.Store.sub_campaign_contact_appointments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sub_campaign_contact_lists" EntityType="BrightPlatformModel.Store.sub_campaign_contact_lists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sub_campaign_emails" EntityType="BrightPlatformModel.Store.sub_campaign_emails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sub_campaign_user_roles" EntityType="BrightPlatformModel.Store.sub_campaign_user_roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sub_campaign_user_sales_scripts" EntityType="BrightPlatformModel.Store.sub_campaign_user_sales_scripts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="subcampaign_users" EntityType="BrightPlatformModel.Store.subcampaign_users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="subcampaigns" EntityType="BrightPlatformModel.Store.subcampaigns" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="subprocess" EntityType="BrightPlatformModel.Store.subprocess" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="titles" EntityType="BrightPlatformModel.Store.titles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="user_customers" EntityType="BrightPlatformModel.Store.user_customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="users" EntityType="BrightPlatformModel.Store.users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="users_comments" EntityType="BrightPlatformModel.Store.users_comments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="view_configuration" EntityType="BrightPlatformModel.Store.view_configuration" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="view_configuration_template" EntityType="BrightPlatformModel.Store.view_configuration_template" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vw_call_logs" EntityType="BrightPlatformModel.Store.vw_call_logs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vw_campaign_list_companies" EntityType="BrightPlatformModel.Store.vw_campaign_list_companies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vw_campaign_list_companies_and_contacts" EntityType="BrightPlatformModel.Store.vw_campaign_list_companies_and_contacts" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_account_contacts_accounts" Association="BrightPlatformModel.Store.FK_account_contacts_accounts">
+      <End Role="accounts" EntitySet="accounts" />
+      <End Role="account_contacts" EntitySet="account_contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_account_contacts_contacts" Association="BrightPlatformModel.Store.FK_account_contacts_contacts">
+      <End Role="contacts" EntitySet="contacts" />
+      <End Role="account_contacts" EntitySet="account_contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_accounts_geo_data_accounts" Association="BrightPlatformModel.Store.FK_accounts_geo_data_accounts">
+      <End Role="accounts" EntitySet="accounts" />
+      <End Role="accounts_geo_data" EntitySet="accounts_geo_data" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_accounts" Association="BrightPlatformModel.Store.FK_answers_accounts">
+      <End Role="accounts" EntitySet="accounts" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_campaigns" Association="BrightPlatformModel.Store.FK_answers_campaigns">
+      <End Role="campaigns" EntitySet="campaigns" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_contacts" Association="BrightPlatformModel.Store.FK_answers_contacts">
+      <End Role="contacts" EntitySet="contacts" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_dialog" Association="BrightPlatformModel.Store.FK_answers_dialog">
+      <End Role="dialog" EntitySet="dialog" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_questionlayout" Association="BrightPlatformModel.Store.FK_answers_questionlayout">
+      <End Role="questionlayout" EntitySet="questionlayout" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_schedules" Association="BrightPlatformModel.Store.FK_answers_schedules">
+      <End Role="schedules" EntitySet="schedules" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_audio_settings_audio_settings" Association="BrightPlatformModel.Store.FK_audio_settings_audio_settings">
+      <End Role="users" EntitySet="users" />
+      <End Role="audio_settings" EntitySet="audio_settings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_campaigns_customers" Association="BrightPlatformModel.Store.FK_campaigns_customers">
+      <End Role="customers" EntitySet="customers" />
+      <End Role="campaigns" EntitySet="campaigns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_company_event_followup_log_accounts" Association="BrightPlatformModel.Store.FK_company_event_followup_log_accounts">
+      <End Role="accounts" EntitySet="accounts" />
+      <End Role="event_followup_log" EntitySet="event_followup_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_company_event_followup_log_subcampaigns" Association="BrightPlatformModel.Store.FK_company_event_followup_log_subcampaigns">
+      <End Role="subcampaigns" EntitySet="subcampaigns" />
+      <End Role="event_followup_log" EntitySet="event_followup_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_contacts_geo_data_contacts" Association="BrightPlatformModel.Store.FK_contacts_geo_data_contacts">
+      <End Role="contacts" EntitySet="contacts" />
+      <End Role="contacts_geo_data" EntitySet="contacts_geo_data" />
+    </AssociationSet>
+    <AssociationSet Name="FK_contacts_titles" Association="BrightPlatformModel.Store.FK_contacts_titles">
+      <End Role="titles" EntitySet="titles" />
+      <End Role="contacts" EntitySet="contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dialog_customers" Association="BrightPlatformModel.Store.FK_dialog_customers">
+      <End Role="customers" EntitySet="customers" />
+      <End Role="dialog" EntitySet="dialog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dialog_subcampaigns" Association="BrightPlatformModel.Store.FK_dialog_subcampaigns">
+      <End Role="subcampaigns" EntitySet="subcampaigns" />
+      <End Role="dialog" EntitySet="dialog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_event_log_accounts" Association="BrightPlatformModel.Store.FK_event_log_accounts">
+      <End Role="accounts" EntitySet="accounts" />
+      <End Role="event_log" EntitySet="event_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_event_log_contacts" Association="BrightPlatformModel.Store.FK_event_log_contacts">
+      <End Role="contacts" EntitySet="contacts" />
+      <End Role="event_log" EntitySet="event_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_event_log_subcampaigns" Association="BrightPlatformModel.Store.FK_event_log_subcampaigns">
+      <End Role="subcampaigns" EntitySet="subcampaigns" />
+      <End Role="event_log" EntitySet="event_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_event_log_users" Association="BrightPlatformModel.Store.FK_event_log_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="event_log" EntitySet="event_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_export_view_report_templates_additional_data_report_templates" Association="BrightPlatformModel.Store.FK_export_view_report_templates_additional_data_report_templates">
+      <End Role="additional_data_report_templates" EntitySet="additional_data_report_templates" />
+      <End Role="export_view_report_templates" EntitySet="export_view_report_templates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_export_view_report_templates_subcampaigns" Association="BrightPlatformModel.Store.FK_export_view_report_templates_subcampaigns">
+      <End Role="subcampaigns" EntitySet="subcampaigns" />
+      <End Role="export_view_report_templates" EntitySet="export_view_report_templates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_export_view_report_templates_view_configuration" Association="BrightPlatformModel.Store.FK_export_view_report_templates_view_configuration">
+      <End Role="view_configuration" EntitySet="view_configuration" />
+      <End Role="export_view_report_templates" EntitySet="export_view_report_templates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_imported_file_details_imported_file_headers" Association="BrightPlatformModel.Store.FK_imported_file_details_imported_file_headers">
+      <End Role="imported_file_headers" EntitySet="imported_file_headers" />
+      <End Role="imported_file_details" EntitySet="imported_file_details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_imported_file_headers_imported_files" Association="BrightPlatformModel.Store.FK_imported_file_headers_imported_files">
+      <End Role="imported_files" EntitySet="imported_files" />
+      <End Role="imported_file_headers" EntitySet="imported_file_headers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_imported_files_countries" Association="BrightPlatformModel.Store.FK_imported_files_countries">
+      <End Role="countries" EntitySet="countries" />
+      <End Role="imported_files" EntitySet="imported_files" />
+    </AssociationSet>
+    <AssociationSet Name="FK_imported_files_customers" Association="BrightPlatformModel.Store.FK_imported_files_customers">
+      <End Role="customers" EntitySet="customers" />
+      <End Role="imported_files" EntitySet="imported_files" />
+    </AssociationSet>
+    <AssociationSet Name="FK_merge_lists_campaigns" Association="BrightPlatformModel.Store.FK_merge_lists_campaigns">
+      <End Role="campaigns" EntitySet="campaigns" />
+      <End Role="merge_lists" EntitySet="merge_lists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_merge_lists_customers" Association="BrightPlatformModel.Store.FK_merge_lists_customers">
+      <End Role="customers" EntitySet="customers" />
+      <End Role="merge_lists" EntitySet="merge_lists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_message_log_company_id" Association="BrightPlatformModel.Store.FK_message_log_company_id">
+      <End Role="accounts" EntitySet="accounts" />
+      <End Role="message_log" EntitySet="message_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_message_log_message_type" Association="BrightPlatformModel.Store.FK_message_log_message_type">
+      <End Role="message_type" EntitySet="message_type" />
+      <End Role="message_log" EntitySet="message_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_message_log_sub_campaign_id" Association="BrightPlatformModel.Store.FK_message_log_sub_campaign_id">
+      <End Role="subcampaigns" EntitySet="subcampaigns" />
+      <End Role="message_log" EntitySet="message_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_message_log_user_id" Association="BrightPlatformModel.Store.FK_message_log_user_id">
+      <End Role="users" EntitySet="users" />
+      <End Role="message_log" EntitySet="message_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questionlayout_language_language" Association="BrightPlatformModel.Store.FK_questionlayout_language_language">
+      <End Role="language" EntitySet="language" />
+      <End Role="questionlayout_language" EntitySet="questionlayout_language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questionlayout_language_questionlayout" Association="BrightPlatformModel.Store.FK_questionlayout_language_questionlayout">
+      <End Role="questionlayout" EntitySet="questionlayout" />
+      <End Role="questionlayout_language" EntitySet="questionlayout_language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questionlayout_questions" Association="BrightPlatformModel.Store.FK_questionlayout_questions">
+      <End Role="questions" EntitySet="questions" />
+      <End Role="questionlayout" EntitySet="questionlayout" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questions_questiontags_questions" Association="BrightPlatformModel.Store.FK_questions_questiontags_questions">
+      <End Role="questions" EntitySet="questions" />
+      <End Role="questions_questiontags" EntitySet="questions_questiontags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questions_questiontags_questiontags" Association="BrightPlatformModel.Store.FK_questions_questiontags_questiontags">
+      <End Role="questiontags" EntitySet="questiontags" />
+      <End Role="questions_questiontags" EntitySet="questions_questiontags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questions_text_language_language" Association="BrightPlatformModel.Store.FK_questions_text_language_language">
+      <End Role="language" EntitySet="language" />
+      <End Role="questions_text_language" EntitySet="questions_text_language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questions_text_language_questions" Association="BrightPlatformModel.Store.FK_questions_text_language_questions">
+      <End Role="questions" EntitySet="questions" />
+      <End Role="questions_text_language" EntitySet="questions_text_language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_roles_users_roles" Association="BrightPlatformModel.Store.FK_roles_users_roles">
+      <End Role="roles" EntitySet="roles" />
+      <End Role="roles_users" EntitySet="roles_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_roles_users_users" Association="BrightPlatformModel.Store.FK_roles_users_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="roles_users" EntitySet="roles_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_schedules_subcampaign_users" Association="BrightPlatformModel.Store.FK_schedules_subcampaign_users">
+      <End Role="subcampaign_users" EntitySet="subcampaign_users" />
+      <End Role="schedules" EntitySet="schedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sub_answers_answers" Association="BrightPlatformModel.Store.FK_sub_answers_answers">
+      <End Role="answers" EntitySet="answers" />
+      <End Role="sub_answers" EntitySet="sub_answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sub_campaign_account_lists_accounts" Association="BrightPlatformModel.Store.FK_sub_campaign_account_lists_accounts">
+      <End Role="accounts" EntitySet="accounts" />
+      <End Role="sub_campaign_account_lists" EntitySet="sub_campaign_account_lists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sub_campaign_account_lists_final_lists" Association="BrightPlatformModel.Store.FK_sub_campaign_account_lists_final_lists">
+      <End Role="final_lists" EntitySet="final_lists" />
+      <End Role="sub_campaign_account_lists" EntitySet="sub_campaign_account_lists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sub_campaign_contact_lists_contacts" Association="BrightPlatformModel.Store.FK_sub_campaign_contact_lists_contacts">
+      <End Role="contacts" EntitySet="contacts" />
+      <End Role="sub_campaign_contact_lists" EntitySet="sub_campaign_contact_lists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sub_campaign_contact_lists_final_lists" Association="BrightPlatformModel.Store.FK_sub_campaign_contact_lists_final_lists">
+      <End Role="final_lists" EntitySet="final_lists" />
+      <End Role="sub_campaign_contact_lists" EntitySet="sub_campaign_contact_lists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sub_campaign_user_roles_subcampaign_users" Association="BrightPlatformModel.Store.FK_sub_campaign_user_roles_subcampaign_users">
+      <End Role="subcampaign_users" EntitySet="subcampaign_users" />
+      <End Role="sub_campaign_user_roles" EntitySet="sub_campaign_user_roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_subcampaigns_subprocess" Association="BrightPlatformModel.Store.FK_subcampaigns_subprocess">
+      <End Role="subprocess" EntitySet="subprocess" />
+      <End Role="subcampaigns" EntitySet="subcampaigns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_user_customers" Association="BrightPlatformModel.Store.FK_user_customers">
+      <End Role="users" EntitySet="users" />
+      <End Role="user_customers" EntitySet="user_customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_user_customers_customers" Association="BrightPlatformModel.Store.FK_user_customers_customers">
+      <End Role="customers" EntitySet="customers" />
+      <End Role="user_customers" EntitySet="user_customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_users" Association="BrightPlatformModel.Store.FK_users_users">
+      <End Role="sip_accounts" EntitySet="sip_accounts" />
+      <End Role="users" EntitySet="users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_view_configuration_subcampaigns" Association="BrightPlatformModel.Store.FK_view_configuration_subcampaigns">
+      <End Role="subcampaigns" EntitySet="subcampaigns" />
+      <End Role="view_configuration" EntitySet="view_configuration" />
+    </AssociationSet>
+    <AssociationSet Name="FK_view_configuration_users" Association="BrightPlatformModel.Store.FK_view_configuration_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="view_configuration" EntitySet="view_configuration" />
+    </AssociationSet>
+    <AssociationSet Name="FK_view_configuration_users1" Association="BrightPlatformModel.Store.FK_view_configuration_users1">
+      <End Role="users" EntitySet="users" />
+      <End Role="view_configuration" EntitySet="view_configuration" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="account_contacts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="account_id" Type="int" Nullable="false" />
+    <Property Name="contact_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="accounts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="company_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="org_no" Type="nvarchar" MaxLength="255" />
+    <Property Name="box_address" Type="nvarchar" MaxLength="255" />
+    <Property Name="street_address" Type="nvarchar" MaxLength="255" />
+    <Property Name="zipcode" Type="nvarchar" MaxLength="255" />
+    <Property Name="country" Type="nvarchar" MaxLength="255" />
+    <Property Name="county" Type="nvarchar" MaxLength="255" />
+    <Property Name="municipality" Type="nvarchar" MaxLength="255" />
+    <Property Name="city" Type="nvarchar" MaxLength="255" />
+    <Property Name="telephone" Type="nvarchar" MaxLength="255" />
+    <Property Name="telefax" Type="nvarchar" MaxLength="255" />
+    <Property Name="www" Type="nvarchar" MaxLength="255" />
+    <Property Name="parent_company" Type="nvarchar" MaxLength="255" />
+    <Property Name="year_established" Type="nvarchar" MaxLength="255" />
+    <Property Name="activity_code" Type="nvarchar" MaxLength="255" />
+    <Property Name="activity_code_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="currency" Type="nvarchar" MaxLength="255" />
+    <Property Name="fiscal" Type="nvarchar" MaxLength="255" />
+    <Property Name="turnover" Type="money" />
+    <Property Name="export" Type="money" />
+    <Property Name="result" Type="money" />
+    <Property Name="sales_abroad" Type="money" />
+    <Property Name="employees_total" Type="int" />
+    <Property Name="employees_abroad" Type="int" />
+    <Property Name="fiscal_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="turnover_2" Type="money" />
+    <Property Name="export_2" Type="money" />
+    <Property Name="result_2" Type="money" />
+    <Property Name="sales_abroad_2" Type="money" />
+    <Property Name="employees_total_2" Type="int" />
+    <Property Name="employees_abroad_2" Type="int" />
+    <Property Name="fiscal_3" Type="nvarchar" MaxLength="255" />
+    <Property Name="turnover_3" Type="money" />
+    <Property Name="export_3" Type="money" />
+    <Property Name="result_3" Type="money" />
+    <Property Name="sales_abroad_3" Type="money" />
+    <Property Name="employees_total_3" Type="int" />
+    <Property Name="employees_abroad_3" Type="int" />
+    <Property Name="created_date" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="modified_date" Type="datetime" />
+    <Property Name="category" Type="nvarchar" MaxLength="255" />
+    <Property Name="validated" Type="bit" Nullable="false" />
+    <Property Name="bv_source" Type="nvarchar" MaxLength="255" />
+    <Property Name="regions" Type="nvarchar" MaxLength="255" />
+    <Property Name="active" Type="bit" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar(max)" />
+    <Property Name="imported" Type="bit" Nullable="false" />
+    <Property Name="de_activate_reason" Type="nvarchar" MaxLength="255" />
+    <Property Name="de_activate_date" Type="datetime" />
+    <Property Name="de_activate_by" Type="int" />
+    <Property Name="source_cred" Type="tinyint" />
+    <Property Name="profile_data" Type="xml" />
+    <Property Name="last_modified_machine" Type="nvarchar" MaxLength="100" />
+    <Property Name="last_modified_source" Type="nvarchar" MaxLength="50" />
+    <Property Name="policy_direct_call" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6005: The data type 'geography' is not supported for the target .NET Framework version. The column 'geographical_data' in the table 'BrightPlatform_NextVersion.dbo.accounts_geo_data' was excluded from the model. To use the data type 'geography', target the .NET Framework 4.5 or higher.
+      -->
+  <EntityType Name="accounts_geo_data">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="account_id" Type="int" />
+    <Property Name="status" Type="nvarchar" MaxLength="50" />
+    <Property Name="created_on" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="modified_on" Type="datetime" />
+    <Property Name="modified_by" Type="int" />
+  </EntityType>
+  <EntityType Name="activity_codes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="nvarchar" MaxLength="255" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="language_id" Type="int" />
+  </EntityType>
+  <EntityType Name="additional_data_report_templates">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="template_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="is_default" Type="bit" Nullable="false" />
+    <Property Name="data_config" Type="ntext" />
+    <Property Name="layout_config" Type="ntext" />
+    <Property Name="created_on" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="modified_on" Type="datetime" />
+    <Property Name="modified_by" Type="int" />
+  </EntityType>
+  <EntityType Name="answers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="questionlayout_id" Type="int" Nullable="false" />
+    <Property Name="campaigns_id" Type="int" Nullable="false" />
+    <Property Name="accounts_id" Type="int" Nullable="false" />
+    <Property Name="contact_id" Type="int" />
+    <Property Name="dialog_id" Type="int" Nullable="false" />
+    <Property Name="schedule_id" Type="int" />
+    <Property Name="created_by" Type="int" Nullable="false" />
+    <Property Name="created_timestamp" Type="smalldatetime" Nullable="false" />
+    <Property Name="OwnershipBrightvision" Type="bit" Nullable="false" />
+    <Property Name="OwnershipAccount" Type="bit" Nullable="false" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="modified_on" Type="datetime" />
+    <Property Name="MGC" Type="bit" />
+    <Property Name="account_level" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="app_version">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="config" Type="xml" Nullable="false" />
+    <Property Name="datecreated" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="audio_settings">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="mode" Type="int" Nullable="false" />
+    <Property Name="speaker_volume" Type="float" Nullable="false" />
+    <Property Name="speaker_auto_adjust" Type="bit" Nullable="false" />
+    <Property Name="mic_volume" Type="float" Nullable="false" />
+    <Property Name="mic_auto_adjust" Type="bit" Nullable="false" />
+    <Property Name="mic_device_id" Type="int" />
+    <Property Name="mic_device_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="speaker_device_id" Type="int" />
+    <Property Name="speaker_device_name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="campaigns">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="project_id" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="customer_nr" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="campaign_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="leader_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="user_defined4" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_defined5" Type="nvarchar" MaxLength="50" />
+    <Property Name="show_user_defined5" Type="smallint" />
+    <Property Name="disabled" Type="smallint" />
+    <Property Name="manager_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="no_report" Type="smallint" />
+    <Property Name="no_invoice" Type="smallint" />
+    <Property Name="cust_ref_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="bill_att_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="ship_att_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="invoice_note" Type="nvarchar" MaxLength="255" />
+    <Property Name="group_type" Type="smallint" />
+    <Property Name="project_note" Type="ntext" />
+    <Property Name="parent_project" Type="nvarchar" MaxLength="20" />
+    <Property Name="description" Type="ntext" />
+    <Property Name="status" Type="nvarchar" MaxLength="15" />
+    <Property Name="priority" Type="tinyint" />
+    <Property Name="created_date" Type="datetime" />
+    <Property Name="modified_date" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="assigned_to" Type="int" />
+    <Property Name="owned_by" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="change_password_logs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="new_password" Type="nvarchar" MaxLength="100" />
+    <Property Name="old_password" Type="nvarchar" MaxLength="100" />
+    <Property Name="machine_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="machine_ip" Type="nvarchar" MaxLength="50" />
+    <Property Name="updated_by" Type="int" />
+    <Property Name="updated_on" Type="datetime" />
+  </EntityType>
+  <EntityType Name="contact_role_tags">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="date_created" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="contacts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ref_company_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="first_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="middle_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="last_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="direct_phone" Type="nvarchar" MaxLength="255" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="255" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" />
+    <Property Name="title" Type="nvarchar" MaxLength="255" />
+    <Property Name="title_id" Type="int" />
+    <Property Name="role_tag_ids" Type="varchar(max)" />
+    <Property Name="address_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="address_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="city" Type="nvarchar" MaxLength="50" />
+    <Property Name="zipcode" Type="nvarchar" MaxLength="50" />
+    <Property Name="country" Type="nvarchar" MaxLength="50" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="created_date" Type="datetime" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="modified_date" Type="datetime" />
+    <Property Name="active" Type="bit" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar(max)" />
+    <Property Name="validated" Type="smallint" Nullable="false" />
+    <Property Name="imported" Type="bit" Nullable="false" />
+    <Property Name="role" Type="nvarchar" MaxLength="255" />
+    <Property Name="profile_data" Type="xml" />
+    <Property Name="profile_title" Type="nvarchar" MaxLength="255" />
+    <Property Name="email_verified" Type="bit" />
+    <Property Name="email_verify_attempt_1" Type="tinyint" />
+    <Property Name="email_verify_attempt_2" Type="tinyint" />
+    <Property Name="email_verify_attempt_3" Type="tinyint" />
+    <Property Name="email_last_verified_on" Type="datetime" />
+    <Property Name="email_last_verified_by" Type="int" />
+    <Property Name="last_dialog_date" Type="datetime" />
+    <Property Name="last_dialog_by" Type="int" />
+    <Property Name="last_modified_machine" Type="nvarchar" MaxLength="100" />
+    <Property Name="last_modified_source" Type="nvarchar" MaxLength="50" />
+    <Property Name="absence_start" Type="datetime" />
+    <Property Name="absence_end" Type="datetime" />
+    <Property Name="last_modified_sub_campaign_id" Type="int" />
+    <Property Name="last_modified_account_id" Type="int" />
+    <Property Name="linkedin_url" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6005: The data type 'geography' is not supported for the target .NET Framework version. The column 'geographical_data' in the table 'BrightPlatform_NextVersion.dbo.contacts_geo_data' was excluded from the model. To use the data type 'geography', target the .NET Framework 4.5 or higher.
+      -->
+  <EntityType Name="contacts_geo_data">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="contact_id" Type="int" />
+    <Property Name="status" Type="nvarchar" MaxLength="50" />
+    <Property Name="created_on" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="modified_on" Type="datetime" />
+    <Property Name="modified_by" Type="int" />
+  </EntityType>
+  <EntityType Name="countries">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="code" Type="nvarchar" Nullable="false" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="customers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="customer_nr" Type="nvarchar" MaxLength="50" />
+    <Property Name="customer_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="org_no" Type="nvarchar" MaxLength="20" />
+    <Property Name="cust_ref" Type="nvarchar" MaxLength="50" />
+    <Property Name="cust_dep" Type="nvarchar" MaxLength="50" />
+    <Property Name="our_ref" Type="nvarchar" MaxLength="50" />
+    <Property Name="phone_no1" Type="nvarchar" MaxLength="30" />
+    <Property Name="phone_no2" Type="nvarchar" MaxLength="30" />
+    <Property Name="fax_no" Type="nvarchar" MaxLength="30" />
+    <Property Name="mobile_no" Type="nvarchar" MaxLength="30" />
+    <Property Name="ship_terms_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ship_terms" Type="nvarchar" MaxLength="50" />
+    <Property Name="ship_type_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ship_type" Type="nvarchar" MaxLength="50" />
+    <Property Name="bill_terms_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="bill_terms" Type="nvarchar" MaxLength="50" />
+    <Property Name="common_terms_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="common_terms" Type="ntext" />
+    <Property Name="bill_address1" Type="nvarchar" MaxLength="50" />
+    <Property Name="bill_address2" Type="nvarchar" MaxLength="50" />
+    <Property Name="bill_address3" Type="nvarchar" MaxLength="50" />
+    <Property Name="bill_address4" Type="nvarchar" MaxLength="50" />
+    <Property Name="bill_address5" Type="nvarchar" MaxLength="50" />
+    <Property Name="ship_address1" Type="nvarchar" MaxLength="50" />
+    <Property Name="ship_address2" Type="nvarchar" MaxLength="50" />
+    <Property Name="ship_address3" Type="nvarchar" MaxLength="50" />
+    <Property Name="ship_address4" Type="nvarchar" MaxLength="50" />
+    <Property Name="ship_address5" Type="nvarchar" MaxLength="50" />
+    <Property Name="bill_att" Type="nvarchar" MaxLength="50" />
+    <Property Name="ship_att" Type="nvarchar" MaxLength="50" />
+    <Property Name="agreement_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="our_ref_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="disabled" Type="nvarchar" MaxLength="50" />
+    <Property Name="country_code" Type="nvarchar" MaxLength="3" />
+    <Property Name="country_code2" Type="nvarchar" MaxLength="2" />
+    <Property Name="currency_code" Type="nvarchar" MaxLength="3" />
+    <Property Name="language_code" Type="nvarchar" MaxLength="2" />
+    <Property Name="cost_center" Type="nvarchar" MaxLength="20" />
+    <Property Name="vat_no" Type="nvarchar" MaxLength="20" />
+    <Property Name="owner" Type="nvarchar" MaxLength="60" />
+    <Property Name="description" Type="ntext" />
+    <Property Name="reference_no" Type="nvarchar" MaxLength="30" />
+    <Property Name="created_date" Type="datetime" />
+    <Property Name="modified_date" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="modified_by" Type="int" />
+  </EntityType>
+  <EntityType Name="dialog">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="subcampaign_id" Type="int" Nullable="false" />
+    <Property Name="customers_id" Type="int" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="dialog_text_json" Type="nvarchar(max)" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="created_date" Type="datetime" />
+    <Property Name="is_active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="event_followup_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="subcampaign_id" Type="int" />
+    <Property Name="account_id" Type="int" />
+    <Property Name="contact_id" Type="int" />
+    <Property Name="title" Type="nvarchar" MaxLength="255" />
+    <Property Name="event_type" Type="nvarchar" MaxLength="50" />
+    <Property Name="short_message" Type="nvarchar" MaxLength="1000" />
+    <Property Name="event_status" Type="nvarchar" MaxLength="255" />
+    <Property Name="date_created" Type="datetime" />
+    <Property Name="start_time" Type="time" />
+    <Property Name="end_time" Type="time" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="assigned_user" Type="int" />
+    <Property Name="date_of_transaction" Type="date" />
+    <Property Name="done" Type="bit" Nullable="false" />
+    <Property Name="contact_name" Type="nvarchar" MaxLength="60" />
+    <Property Name="contact_no" Type="nvarchar" MaxLength="30" />
+    <Property Name="total_tries" Type="tinyint" Nullable="false" />
+    <Property Name="audio_id" Type="uniqueidentifier" />
+    <Property Name="main_uploaded" Type="bit" />
+    <Property Name="mic_uploaded" Type="bit" />
+    <Property Name="receiver_uploaded" Type="bit" />
+    <Property Name="is_saved" Type="bit" />
+    <Property Name="nurture_event_followup_log_id" Type="int" />
+    <Property Name="source_sub_campaign_id" Type="int" />
+    <Property Name="call_method" Type="nvarchar" MaxLength="50" />
+    <Property Name="azure_blob_audio_id" Type="nvarchar" MaxLength="100" />
+    <Property Name="is_azure_blob" Type="bit" />
+  </EntityType>
+  <EntityType Name="event_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="event_id" Type="int" Nullable="false" />
+    <Property Name="subcampaign_id" Type="int" />
+    <Property Name="account_id" Type="int" />
+    <Property Name="contact_id" Type="int" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="computer_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="db_datetime" Type="datetime" Nullable="false" />
+    <Property Name="local_datetime" Type="datetime" Nullable="false" />
+    <Property Name="param1" Type="nvarchar" MaxLength="255" />
+    <Property Name="param2" Type="nvarchar(max)" />
+    <Property Name="param3" Type="nvarchar(max)" />
+    <Property Name="param4" Type="nvarchar" MaxLength="255" />
+    <Property Name="param5" Type="nvarchar" MaxLength="255" />
+    <Property Name="param6" Type="nvarchar" MaxLength="255" />
+    <Property Name="is_processed" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="export_view_report_templates">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="sub_campaign_id" Type="int" />
+    <Property Name="view_config_id" Type="int" />
+    <Property Name="additional_data_report_template_id" Type="bigint" />
+    <Property Name="layout_config" Type="ntext" />
+    <Property Name="created_on" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="modified_on" Type="datetime" />
+    <Property Name="modified_by" Type="int" />
+  </EntityType>
+  <EntityType Name="final_lists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="list_name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="campaign_id" Type="int" Nullable="false" />
+    <Property Name="sub_campaign_id" Type="int" Nullable="false" />
+    <Property Name="created_by" Type="int" Nullable="false" />
+    <Property Name="created_on" Type="datetime" Nullable="false" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="modified_on" Type="datetime" />
+  </EntityType>
+  <EntityType Name="imported_file_details">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="imported_file_header_id" Type="int" Nullable="false" />
+    <Property Name="row_order" Type="int" Nullable="false" />
+    <Property Name="column_value" Type="nvarchar(max)" />
+    <Property Name="created_date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="imported_file_headers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="imported_file_id" Type="int" Nullable="false" />
+    <Property Name="column_order" Type="int" Nullable="false" />
+    <Property Name="column_name" Type="nvarchar(max)" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="imported_files">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="list_name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="customer_id" Type="int" />
+    <Property Name="created_date" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="active" Type="bit" />
+    <Property Name="profiled" Type="bit" />
+    <Property Name="matched_by_account" Type="bit" />
+    <Property Name="campaign_id" Type="int" Nullable="false" />
+    <Property Name="country" Type="nvarchar" MaxLength="30" />
+    <Property Name="matched_by_contact" Type="bit" />
+    <Property Name="improved_master_data" Type="bit" />
+    <Property Name="country_id" Type="int" />
+    <Property Name="source_file_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="modified_on" Type="datetime" />
+    <Property Name="modified_by" Type="int" />
+  </EntityType>
+  <EntityType Name="language">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="code" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="lists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="list_name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="created_by" Type="int" Nullable="false" />
+    <Property Name="created_on" Type="datetime" Nullable="false" />
+    <Property Name="matched" Type="bit" />
+    <Property Name="import_file_id" Type="int" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="modified_on" Type="datetime" />
+  </EntityType>
+  <EntityType Name="merge_lists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="campaign_id" Type="int" Nullable="false" />
+    <Property Name="list_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_by" Type="int" Nullable="false" />
+    <Property Name="created_on" Type="datetime" Nullable="false" />
+    <Property Name="block_listed" Type="bit" Nullable="false" />
+    <Property Name="matched" Type="bit" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="modified_on" Type="datetime" />
+  </EntityType>
+  <EntityType Name="message_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="message_thred_id" Type="varchar" MaxLength="50" />
+    <Property Name="message_type" Type="int" />
+    <Property Name="sub_campaign_id" Type="int" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="XML" Type="xml" />
+    <Property Name="created_date" Type="datetime" />
+    <Property Name="sent_date" Type="datetime" />
+    <Property Name="process1" Type="nvarchar" MaxLength="50" />
+    <Property Name="process2" Type="nvarchar" MaxLength="50" />
+    <Property Name="process3" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="message_type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="255" />
+    <Property Name="description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="process">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="profiled_data_column_maps">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="import_file_id" Type="int" Nullable="false" />
+    <Property Name="company_name" Type="int" Nullable="false" />
+    <Property Name="company_org_no" Type="int" Nullable="false" />
+    <Property Name="company_box_address" Type="int" Nullable="false" />
+    <Property Name="company_street_address" Type="int" Nullable="false" />
+    <Property Name="company_zip_code" Type="int" Nullable="false" />
+    <Property Name="company_city" Type="int" Nullable="false" />
+    <Property Name="company_country" Type="int" Nullable="false" />
+    <Property Name="company_telephone" Type="int" Nullable="false" />
+    <Property Name="company_telefax" Type="int" Nullable="false" />
+    <Property Name="company_site" Type="int" Nullable="false" />
+    <Property Name="company_year_established" Type="int" Nullable="false" />
+    <Property Name="company_parent_company" Type="int" Nullable="false" />
+    <Property Name="company_activity_code" Type="int" Nullable="false" />
+    <Property Name="company_activity_code_2" Type="int" Nullable="false" />
+    <Property Name="company_currency" Type="int" Nullable="false" />
+    <Property Name="company_turnover" Type="int" Nullable="false" />
+    <Property Name="company_result" Type="int" Nullable="false" />
+    <Property Name="company_employees_abroad" Type="int" Nullable="false" />
+    <Property Name="company_employees_total" Type="int" Nullable="false" />
+    <Property Name="contact_first_name" Type="int" Nullable="false" />
+    <Property Name="contact_middle_name" Type="int" Nullable="false" />
+    <Property Name="contact_last_name" Type="int" Nullable="false" />
+    <Property Name="contact_direct_phone" Type="int" Nullable="false" />
+    <Property Name="contact_mobile" Type="int" Nullable="false" />
+    <Property Name="contact_email" Type="int" Nullable="false" />
+    <Property Name="contact_title" Type="int" Nullable="false" />
+    <Property Name="contact_address_1" Type="int" Nullable="false" />
+    <Property Name="contact_address_2" Type="int" Nullable="false" />
+    <Property Name="contact_city" Type="int" Nullable="false" />
+    <Property Name="contact_zip_code" Type="int" Nullable="false" />
+    <Property Name="contact_country" Type="int" Nullable="false" />
+    <Property Name="bv_account_id" Type="int" Nullable="false" />
+    <Property Name="bv_contact_id" Type="int" Nullable="false" />
+    <Property Name="account_priority" Type="int" Nullable="false" />
+    <Property Name="contact_priority" Type="int" Nullable="false" />
+    <Property Name="customer_list_comment" Type="int" Nullable="false" />
+    <Property Name="customer_field_1" Type="int" Nullable="false" />
+    <Property Name="customer_field_2" Type="int" Nullable="false" />
+    <Property Name="customer_field_3" Type="int" Nullable="false" />
+    <Property Name="customer_field_4" Type="int" Nullable="false" />
+    <Property Name="customer_field_5" Type="int" Nullable="false" />
+    <Property Name="customer_field_6" Type="int" Nullable="false" />
+    <Property Name="customer_field_7" Type="int" Nullable="false" />
+    <Property Name="customer_field_8" Type="int" Nullable="false" />
+    <Property Name="customer_field_9" Type="int" Nullable="false" />
+    <Property Name="customer_field_10" Type="int" Nullable="false" />
+    <Property Name="assigned_to" Type="int" Nullable="false" />
+    <Property Name="collected_data_field_1" Type="int" Nullable="false" />
+    <Property Name="collected_data_field_2" Type="int" Nullable="false" />
+    <Property Name="collected_data_field_3" Type="int" Nullable="false" />
+    <Property Name="collected_data_field_4" Type="int" Nullable="false" />
+    <Property Name="collected_data_field_5" Type="int" Nullable="false" />
+    <Property Name="collected_data_field_6" Type="int" Nullable="false" />
+    <Property Name="collected_data_field_7" Type="int" Nullable="false" />
+    <Property Name="collected_data_field_8" Type="int" Nullable="false" />
+    <Property Name="collected_data_field_9" Type="int" Nullable="false" />
+    <Property Name="collected_data_field_10" Type="int" Nullable="false" />
+    <Property Name="collected_data_date" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="questionlayout">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="questions_id" Type="int" Nullable="false" />
+    <Property Name="modified_by" Type="int" Nullable="false" />
+    <Property Name="created_by" Type="int" Nullable="false" />
+    <Property Name="modified_date" Type="date" Nullable="false" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="default_setting" Type="bit" Nullable="false" />
+    <Property Name="content_json" Type="nvarchar(max)" />
+    <Property Name="general_value" Type="tinyint" />
+    <Property Name="account_level" Type="bit" Nullable="false" />
+    <Property Name="type" Type="int" />
+  </EntityType>
+  <EntityType Name="questionlayout_language">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="questionlayout_id" Type="int" Nullable="false" />
+    <Property Name="language_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="questions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="created_by_user_id" Type="int" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="modified_date" Type="date" Nullable="false" />
+    <Property Name="general_value" Type="tinyint" />
+    <Property Name="is_collected_data" Type="bit" />
+  </EntityType>
+  <EntityType Name="questions_questiontags">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="questions_id" Type="int" Nullable="false" />
+    <Property Name="questiontags_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="questions_text_language">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="questions_id" Type="int" Nullable="false" />
+    <Property Name="language_id" Type="int" />
+    <Property Name="question_text" Type="nvarchar(max)" />
+    <Property Name="question_help_text" Type="nvarchar" MaxLength="1000" />
+    <Property Name="question_description" Type="nvarchar" MaxLength="1000" />
+    <Property Name="MGC" Type="bit" Nullable="false" />
+    <Property Name="is_collected_data" Type="bit" />
+  </EntityType>
+  <EntityType Name="questiontags">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="roles">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="role_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="role_type" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="roles_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="role_id" Type="int" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="schedules">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="resource_id" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="subject" Type="nvarchar" MaxLength="255" />
+    <Property Name="address" Type="nvarchar" MaxLength="255" />
+    <Property Name="zipcode" Type="nvarchar" MaxLength="50" />
+    <Property Name="city" Type="nvarchar" MaxLength="100" />
+    <Property Name="schedule_type" Type="tinyint" />
+    <Property Name="description" Type="ntext" />
+    <Property Name="label" Type="int" />
+    <Property Name="start_time" Type="datetime" />
+    <Property Name="end_time" Type="datetime" />
+    <Property Name="all_day" Type="bit" Nullable="false" />
+    <Property Name="event_type" Type="int" />
+    <Property Name="recurrence_info" Type="ntext" />
+    <Property Name="reminder_info" Type="ntext" />
+  </EntityType>
+  <EntityType Name="serverside_report_requests">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="calling_environment" Type="smallint" />
+    <Property Name="display_mode" Type="smallint" />
+    <Property Name="campaign_info" Type="nvarchar" MaxLength="255" />
+    <Property Name="sub_campaign_data" Type="nvarchar(max)" />
+    <Property Name="sub_campaign_ids" Type="nvarchar" MaxLength="255" />
+    <Property Name="view_config_id" Type="int" />
+    <Property Name="account_id" Type="int" />
+    <Property Name="processed" Type="bit" Nullable="false" />
+    <Property Name="active_filter_string" Type="nvarchar(max)" />
+    <Property Name="sort_info" Type="xml" />
+    <Property Name="columns_info" Type="xml" />
+    <Property Name="send_email_info" Type="xml" />
+    <Property Name="send_sms_info" Type="xml" />
+    <Property Name="requested_by" Type="int" />
+    <Property Name="requested_on" Type="datetime" />
+  </EntityType>
+  <EntityType Name="serverside_service_requests">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="audio_file_name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="sip_accounts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="sip_url" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="display_name" Type="nvarchar" MaxLength="250" />
+    <Property Name="username" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="password" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="operator" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="comment" Type="text" />
+  </EntityType>
+  <EntityType Name="sub_answers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="answers_id" Type="int" Nullable="false" />
+    <Property Name="sub_answer_index" Type="smallint" Nullable="false" />
+    <Property Name="answer_text" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sub_campaign_account_appointments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="account_id" Type="int" Nullable="false" />
+    <Property Name="final_list_id" Type="int" Nullable="false" />
+    <Property Name="status" Type="nvarchar" MaxLength="100" />
+    <Property Name="last_user" Type="int" Nullable="false" />
+    <Property Name="last_contact" Type="datetime" Nullable="false" />
+    <Property Name="last_updated" Type="datetime" />
+    <Property Name="lead_status" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="sub_campaign_account_lists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="final_list_id" Type="int" Nullable="false" />
+    <Property Name="account_id" Type="int" Nullable="false" />
+    <Property Name="created_by" Type="int" Nullable="false" />
+    <Property Name="created_on" Type="datetime" Nullable="false" />
+    <Property Name="active" Type="bit" Nullable="false" />
+    <Property Name="modified" Type="bit" Nullable="false" />
+    <Property Name="priority" Type="nvarchar(max)" />
+    <Property Name="locked" Type="bit" Nullable="false" />
+    <Property Name="locked_by" Type="int" />
+    <Property Name="locked_timestamp" Type="datetime" />
+    <Property Name="assigned_to" Type="nvarchar" MaxLength="255" />
+    <Property Name="list_source" Type="nvarchar(max)" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="modified_on" Type="datetime" />
+  </EntityType>
+  <EntityType Name="sub_campaign_account_remarks">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="sub_campaign_id" Type="bigint" Nullable="false" />
+    <Property Name="account_id" Type="bigint" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="sub_campaign_configuration_templates">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="template" Type="xml" />
+    <Property Name="type" Type="nvarchar" MaxLength="100" />
+    <Property Name="is_default" Type="bit" Nullable="false" />
+    <Property Name="created_on" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="modified_on" Type="datetime" />
+    <Property Name="modified_by" Type="int" />
+  </EntityType>
+  <EntityType Name="sub_campaign_contact_appointments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="contact_id" Type="int" Nullable="false" />
+    <Property Name="final_list_id" Type="int" Nullable="false" />
+    <Property Name="status" Type="nvarchar" MaxLength="100" />
+    <Property Name="no_of_call" Type="tinyint" Nullable="false" />
+    <Property Name="last_user" Type="int" />
+    <Property Name="last_contact" Type="datetime" />
+    <Property Name="last_updated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="sub_campaign_contact_lists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="final_list_id" Type="int" Nullable="false" />
+    <Property Name="contact_id" Type="int" Nullable="false" />
+    <Property Name="created_by" Type="int" Nullable="false" />
+    <Property Name="created_on" Type="datetime" Nullable="false" />
+    <Property Name="active" Type="bit" Nullable="false" />
+    <Property Name="modified" Type="bit" Nullable="false" />
+    <Property Name="priority" Type="nvarchar" MaxLength="255" />
+    <Property Name="in_list" Type="bit" Nullable="false" />
+    <Property Name="status" Type="nvarchar" MaxLength="25" />
+    <Property Name="list_source" Type="nvarchar" MaxLength="500" />
+    <Property Name="modified_on" Type="datetime" />
+    <Property Name="modified_by" Type="int" />
+  </EntityType>
+  <EntityType Name="sub_campaign_emails">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="sub_campaign_id" Type="int" />
+    <Property Name="account_id" Type="int" />
+    <Property Name="mail_thread_id" Type="uniqueidentifier" />
+    <Property Name="mail_type" Type="smallint" />
+    <Property Name="mail_content" Type="xml" />
+    <Property Name="sent_on" Type="datetime" />
+    <Property Name="sent_by" Type="int" />
+    <Property Name="created_on" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+  </EntityType>
+  <EntityType Name="sub_campaign_user_roles">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="sub_campaign_user_id" Type="int" Nullable="false" />
+    <Property Name="sub_campaign_role_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sub_campaign_user_sales_scripts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="final_list_id" Type="bigint" Nullable="false" />
+    <Property Name="data_content" Type="varbinary(max)" />
+    <Property Name="user_id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="subcampaign_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="subcampaign_id" Type="int" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="internal_user" Type="bit" Nullable="false" />
+    <Property Name="description" Type="ntext" />
+  </EntityType>
+  <EntityType Name="subcampaigns">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="subprocess_id" Type="int" />
+    <Property Name="list_id" Type="int" />
+    <Property Name="start_date" Type="date" />
+    <Property Name="end_date" Type="date" />
+    <Property Name="campaign_manager_user_id" Type="int" />
+    <Property Name="status" Type="nvarchar" MaxLength="15" />
+    <Property Name="priority" Type="smallint" />
+    <Property Name="description" Type="ntext" />
+    <Property Name="list_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="campaign_id" Type="int" />
+    <Property Name="xml_config_data" Type="xml" />
+    <Property Name="xml_nurture_setting" Type="xml" />
+  </EntityType>
+  <EntityType Name="subprocess">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="titles">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="language_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="255" />
+    <Property Name="ssyk" Type="int" />
+    <Property Name="date_created" Type="smalldatetime" />
+    <Property Name="occurences" Type="int" />
+  </EntityType>
+  <EntityType Name="user_customers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="fullname" Type="nvarchar" MaxLength="50" />
+    <Property Name="country_code" Type="nvarchar" MaxLength="3" />
+    <Property Name="department" Type="nvarchar" MaxLength="20" />
+    <Property Name="cost_center" Type="nvarchar" MaxLength="20" />
+    <Property Name="cost_hour" Type="numeric" Precision="16" Scale="4" />
+    <Property Name="calendar" Type="nvarchar" MaxLength="20" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" />
+    <Property Name="create_project" Type="smallint" />
+    <Property Name="schedule" Type="nvarchar" MaxLength="20" />
+    <Property Name="schedule_start" Type="datetime" />
+    <Property Name="start_date" Type="datetime" />
+    <Property Name="end_date" Type="datetime" />
+    <Property Name="employee_no" Type="nvarchar" MaxLength="20" />
+    <Property Name="employment_type_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="employment_date" Type="datetime" />
+    <Property Name="disabled" Type="smallint" />
+    <Property Name="have_flex" Type="smallint" />
+    <Property Name="have_ot" Type="smallint" />
+    <Property Name="have_tt" Type="smallint" />
+    <Property Name="personal_id" Type="nvarchar" MaxLength="40" />
+    <Property Name="admin" Type="smallint" />
+    <Property Name="project_leader" Type="smallint" />
+    <Property Name="project_manager" Type="smallint" />
+    <Property Name="user_login" Type="nvarchar" MaxLength="255" />
+    <Property Name="works_part_time" Type="smallint" />
+    <Property Name="week_work_time_hh" Type="numeric" Precision="12" Scale="4" />
+    <Property Name="week_work_time_mm" Type="smallint" />
+    <Property Name="salary_hour" Type="numeric" Precision="16" Scale="4" />
+    <Property Name="agreement_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="base_workload" Type="numeric" Precision="12" Scale="4" />
+    <Property Name="phone1" Type="nvarchar" MaxLength="30" />
+    <Property Name="phone2" Type="nvarchar" MaxLength="30" />
+    <Property Name="fax_no" Type="nvarchar" MaxLength="30" />
+    <Property Name="mobile_no" Type="nvarchar" MaxLength="30" />
+    <Property Name="birth_date" Type="datetime" />
+    <Property Name="p_no" Type="nvarchar" MaxLength="30" />
+    <Property Name="user_address1" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_address2" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_address3" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_address4" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_address5" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_att" Type="nvarchar" MaxLength="50" />
+    <Property Name="attest_level" Type="smallint" />
+    <Property Name="primary_group" Type="nvarchar" MaxLength="20" />
+    <Property Name="created_date" Type="datetime" />
+    <Property Name="modified_date" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+    <Property Name="internal_user" Type="bit" />
+    <Property Name="reports_to" Type="int" />
+    <Property Name="title" Type="nvarchar" MaxLength="50" />
+    <Property Name="site" Type="nvarchar" MaxLength="50" />
+    <Property Name="sip_id" Type="int" />
+  </EntityType>
+  <EntityType Name="users_comments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="comments" Type="ntext" Nullable="false" />
+  </EntityType>
+  <EntityType Name="view_configuration">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="subcampaign_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="xml_config" Type="xml" />
+    <Property Name="date_created" Type="datetime" />
+    <Property Name="date_modified" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="MGC" Type="bit" Nullable="false" />
+    <Property Name="report_layout_config" Type="ntext" />
+    <Property Name="report_data_config" Type="ntext" />
+  </EntityType>
+  <EntityType Name="view_configuration_template">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="xml_config" Type="xml" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="created_date" Type="datetime" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="modified_date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="vw_call_logs">
+    <Key>
+      <PropertyRef Name="uid" />
+    </Key>
+    <Property Name="uid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="id" Type="int" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="date_of_transaction" Type="nvarchar" MaxLength="50" />
+    <Property Name="assigned_user" Type="nvarchar" MaxLength="255" />
+    <Property Name="audio_file" Type="uniqueidentifier" />
+    <Property Name="call_length" Type="time" />
+    <Property Name="event_status" Type="nvarchar" MaxLength="50" />
+    <Property Name="short_message" Type="nvarchar(max)" />
+    <Property Name="customer_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="campaign_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="sub_campaign_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="company_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="contact_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="contact_title" Type="nvarchar" MaxLength="255" />
+    <Property Name="contact_no" Type="nvarchar" MaxLength="255" />
+    <Property Name="main_uploaded" Type="bit" />
+    <Property Name="date_of_transaction_datetime" Type="datetime" />
+    <Property Name="azure_blob_audio_id" Type="nvarchar" MaxLength="100" />
+    <Property Name="is_azure_blob" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_campaign_list_companies">
+    <Key>
+      <PropertyRef Name="uid" />
+    </Key>
+    <Property Name="uid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="id" Type="bigint" />
+    <Property Name="Company_Prio" Type="nvarchar(max)" />
+    <Property Name="Company_Assigned_To" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Last_Contact" Type="datetime" />
+    <Property Name="Company_Last_User" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Status" Type="nvarchar" MaxLength="255" />
+    <Property Name="Lead_Status" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Telephone" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Employees_Total_1" Type="int" />
+    <Property Name="Company_Employees_Total_2" Type="int" />
+    <Property Name="Company_Employees_Total_3" Type="int" />
+    <Property Name="Company_Site" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Org_No" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Box_Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Street_Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Zipcode" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Municipality" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_City" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Country" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Telefax" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Year_Established" Type="nvarchar" MaxLength="255" />
+    <Property Name="Parent_Company" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Activity_Code" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Activity_Code_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Activity_Code_Description" Type="nvarchar(max)" />
+    <Property Name="Company_Activity_Code_2_Description" Type="nvarchar(max)" />
+    <Property Name="Company_Currency" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Fiscal_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Fiscal_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Fiscal_3" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Turnover_1" Type="money" />
+    <Property Name="Company_Turnover_2" Type="money" />
+    <Property Name="Company_Turnover_3" Type="money" />
+    <Property Name="Company_Export_1" Type="money" />
+    <Property Name="Company_Export_2" Type="money" />
+    <Property Name="Company_Export_3" Type="money" />
+    <Property Name="Company_Result_1" Type="money" />
+    <Property Name="Company_Result_2" Type="money" />
+    <Property Name="Company_Result_3" Type="money" />
+    <Property Name="Company_Sales_Aborad_1" Type="money" />
+    <Property Name="Company_Sales_Aborad_2" Type="money" />
+    <Property Name="Company_Sales_Aborad_3" Type="money" />
+    <Property Name="Company_Created" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Modified" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Validated" Type="nvarchar" MaxLength="3" />
+    <Property Name="Company_County" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_BV_Source" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Regions" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_List_Source" Type="nvarchar(max)" />
+    <Property Name="Locked_By_User" Type="nvarchar" MaxLength="255" />
+    <Property Name="contact_status" Type="nvarchar" MaxLength="255" />
+    <Property Name="account_id" Type="int" />
+    <Property Name="locked" Type="bit" />
+    <Property Name="locked_by" Type="int" />
+    <Property Name="locked_timestamp" Type="datetime" />
+    <Property Name="final_list_id" Type="int" />
+    <Property Name="account_latitude" Type="float" />
+    <Property Name="account_longitude" Type="float" />
+    <Property Name="contact_id" Type="int" />
+    <Property Name="account_address" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="vw_campaign_list_companies_and_contacts">
+    <Key>
+      <PropertyRef Name="uid" />
+    </Key>
+    <Property Name="uid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="id" Type="int" />
+    <Property Name="Company_Prio" Type="nvarchar(max)" />
+    <Property Name="Contact_Prio" Type="nvarchar(max)" />
+    <Property Name="Company_Assigned_To" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Last_Contact" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Last_User" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Status" Type="nvarchar" MaxLength="255" />
+    <Property Name="Lead_Status" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_In_List" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_Firstname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_Middlename" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_Lastname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_Title" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_Direct_Phone" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_Mobile" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Telephone" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Employees_Total_1" Type="int" />
+    <Property Name="Company_Employees_Total_2" Type="int" />
+    <Property Name="Company_Employees_Total_3" Type="int" />
+    <Property Name="Company_Site" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_Address_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_Address_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_City" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_Zipcode" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_Country" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contact_Created" Type="nvarchar" MaxLength="50" />
+    <Property Name="Contact_Modified" Type="nvarchar" MaxLength="50" />
+    <Property Name="Company_Org_No" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Box_Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Street_Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Zipcode" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Municipality" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_City" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Country" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Telefax" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Year_Established" Type="nvarchar" MaxLength="255" />
+    <Property Name="Parent_Company" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Activity_Code" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Activity_Code_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Activity_Code_Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Activity_Code_2_Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Currency" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Fiscal_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Fiscal_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Fiscal_3" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Turnover_1" Type="money" />
+    <Property Name="Company_Turnover_2" Type="money" />
+    <Property Name="Company_Turnover_3" Type="money" />
+    <Property Name="Company_Export_1" Type="money" />
+    <Property Name="Company_Export_2" Type="money" />
+    <Property Name="Company_Export_3" Type="money" />
+    <Property Name="Company_Result_1" Type="money" />
+    <Property Name="Company_Result_2" Type="money" />
+    <Property Name="Company_Result_3" Type="money" />
+    <Property Name="Company_Sales_Aborad_1" Type="money" />
+    <Property Name="Company_Sales_Aborad_2" Type="money" />
+    <Property Name="Company_Sales_Aborad_3" Type="money" />
+    <Property Name="Company_Created" Type="nvarchar" MaxLength="50" />
+    <Property Name="Company_Modified" Type="nvarchar" MaxLength="50" />
+    <Property Name="Company_Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Validated" Type="nvarchar" MaxLength="3" />
+    <Property Name="Company_County" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Bv_Source" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_Regions" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company_List_Source" Type="nvarchar(max)" />
+    <Property Name="Locked_By_User" Type="nvarchar" MaxLength="255" />
+    <Property Name="contact_status" Type="nvarchar" MaxLength="255" />
+    <Property Name="account_id" Type="int" />
+    <Property Name="locked" Type="bit" />
+    <Property Name="locked_by" Type="int" />
+    <Property Name="locked_timestamp" Type="datetime" />
+    <Property Name="final_list_id" Type="int" />
+    <Property Name="account_latitude" Type="float" />
+    <Property Name="account_longitude" Type="float" />
+    <Property Name="contact_id" Type="int" />
+    <Property Name="contact_latitude" Type="float" />
+    <Property Name="contact_longitude" Type="float" />
+    <Property Name="contact_address" Type="nvarchar(max)" />
+    <Property Name="account_address" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_account_contacts_accounts">
+    <End Role="accounts" Type="BrightPlatformModel.Store.accounts" Multiplicity="1" />
+    <End Role="account_contacts" Type="BrightPlatformModel.Store.account_contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="account_contacts">
+        <PropertyRef Name="account_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_account_contacts_contacts">
+    <End Role="contacts" Type="BrightPlatformModel.Store.contacts" Multiplicity="1" />
+    <End Role="account_contacts" Type="BrightPlatformModel.Store.account_contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="contacts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="account_contacts">
+        <PropertyRef Name="contact_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_accounts_geo_data_accounts">
+    <End Role="accounts" Type="BrightPlatformModel.Store.accounts" Multiplicity="0..1" />
+    <End Role="accounts_geo_data" Type="BrightPlatformModel.Store.accounts_geo_data" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="accounts_geo_data">
+        <PropertyRef Name="account_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_accounts">
+    <End Role="accounts" Type="BrightPlatformModel.Store.accounts" Multiplicity="1" />
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="accounts_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_campaigns">
+    <End Role="campaigns" Type="BrightPlatformModel.Store.campaigns" Multiplicity="1" />
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="campaigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="campaigns_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_contacts">
+    <End Role="contacts" Type="BrightPlatformModel.Store.contacts" Multiplicity="0..1" />
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="contacts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="contact_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_dialog">
+    <End Role="dialog" Type="BrightPlatformModel.Store.dialog" Multiplicity="1" />
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dialog">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="dialog_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_questionlayout">
+    <End Role="questionlayout" Type="BrightPlatformModel.Store.questionlayout" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questionlayout">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="questionlayout_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_schedules">
+    <End Role="schedules" Type="BrightPlatformModel.Store.schedules" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="schedules">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="schedule_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_audio_settings_audio_settings">
+    <End Role="users" Type="BrightPlatformModel.Store.users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="audio_settings" Type="BrightPlatformModel.Store.audio_settings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="audio_settings">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_campaigns_customers">
+    <End Role="customers" Type="BrightPlatformModel.Store.customers" Multiplicity="1" />
+    <End Role="campaigns" Type="BrightPlatformModel.Store.campaigns" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="campaigns">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_company_event_followup_log_accounts">
+    <End Role="accounts" Type="BrightPlatformModel.Store.accounts" Multiplicity="0..1" />
+    <End Role="event_followup_log" Type="BrightPlatformModel.Store.event_followup_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="event_followup_log">
+        <PropertyRef Name="account_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_company_event_followup_log_subcampaigns">
+    <End Role="subcampaigns" Type="BrightPlatformModel.Store.subcampaigns" Multiplicity="0..1" />
+    <End Role="event_followup_log" Type="BrightPlatformModel.Store.event_followup_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subcampaigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="event_followup_log">
+        <PropertyRef Name="subcampaign_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_contacts_geo_data_contacts">
+    <End Role="contacts" Type="BrightPlatformModel.Store.contacts" Multiplicity="0..1" />
+    <End Role="contacts_geo_data" Type="BrightPlatformModel.Store.contacts_geo_data" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="contacts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="contacts_geo_data">
+        <PropertyRef Name="contact_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_contacts_titles">
+    <End Role="titles" Type="BrightPlatformModel.Store.titles" Multiplicity="0..1" />
+    <End Role="contacts" Type="BrightPlatformModel.Store.contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="titles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="contacts">
+        <PropertyRef Name="title_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dialog_customers">
+    <End Role="customers" Type="BrightPlatformModel.Store.customers" Multiplicity="0..1" />
+    <End Role="dialog" Type="BrightPlatformModel.Store.dialog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="dialog">
+        <PropertyRef Name="customers_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dialog_subcampaigns">
+    <End Role="subcampaigns" Type="BrightPlatformModel.Store.subcampaigns" Multiplicity="1" />
+    <End Role="dialog" Type="BrightPlatformModel.Store.dialog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subcampaigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="dialog">
+        <PropertyRef Name="subcampaign_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_event_log_accounts">
+    <End Role="accounts" Type="BrightPlatformModel.Store.accounts" Multiplicity="0..1" />
+    <End Role="event_log" Type="BrightPlatformModel.Store.event_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="event_log">
+        <PropertyRef Name="account_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_event_log_contacts">
+    <End Role="contacts" Type="BrightPlatformModel.Store.contacts" Multiplicity="0..1" />
+    <End Role="event_log" Type="BrightPlatformModel.Store.event_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="contacts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="event_log">
+        <PropertyRef Name="contact_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_event_log_subcampaigns">
+    <End Role="subcampaigns" Type="BrightPlatformModel.Store.subcampaigns" Multiplicity="0..1" />
+    <End Role="event_log" Type="BrightPlatformModel.Store.event_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subcampaigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="event_log">
+        <PropertyRef Name="subcampaign_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_event_log_users">
+    <End Role="users" Type="BrightPlatformModel.Store.users" Multiplicity="0..1" />
+    <End Role="event_log" Type="BrightPlatformModel.Store.event_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="event_log">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_export_view_report_templates_additional_data_report_templates">
+    <End Role="additional_data_report_templates" Type="BrightPlatformModel.Store.additional_data_report_templates" Multiplicity="0..1" />
+    <End Role="export_view_report_templates" Type="BrightPlatformModel.Store.export_view_report_templates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="additional_data_report_templates">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="export_view_report_templates">
+        <PropertyRef Name="additional_data_report_template_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_export_view_report_templates_subcampaigns">
+    <End Role="subcampaigns" Type="BrightPlatformModel.Store.subcampaigns" Multiplicity="0..1" />
+    <End Role="export_view_report_templates" Type="BrightPlatformModel.Store.export_view_report_templates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subcampaigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="export_view_report_templates">
+        <PropertyRef Name="sub_campaign_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_export_view_report_templates_view_configuration">
+    <End Role="view_configuration" Type="BrightPlatformModel.Store.view_configuration" Multiplicity="0..1" />
+    <End Role="export_view_report_templates" Type="BrightPlatformModel.Store.export_view_report_templates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="view_configuration">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="export_view_report_templates">
+        <PropertyRef Name="view_config_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_imported_file_details_imported_file_headers">
+    <End Role="imported_file_headers" Type="BrightPlatformModel.Store.imported_file_headers" Multiplicity="1" />
+    <End Role="imported_file_details" Type="BrightPlatformModel.Store.imported_file_details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="imported_file_headers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="imported_file_details">
+        <PropertyRef Name="imported_file_header_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_imported_file_headers_imported_files">
+    <End Role="imported_files" Type="BrightPlatformModel.Store.imported_files" Multiplicity="1" />
+    <End Role="imported_file_headers" Type="BrightPlatformModel.Store.imported_file_headers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="imported_files">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="imported_file_headers">
+        <PropertyRef Name="imported_file_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_imported_files_countries">
+    <End Role="countries" Type="BrightPlatformModel.Store.countries" Multiplicity="0..1" />
+    <End Role="imported_files" Type="BrightPlatformModel.Store.imported_files" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="countries">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="imported_files">
+        <PropertyRef Name="country_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_imported_files_customers">
+    <End Role="customers" Type="BrightPlatformModel.Store.customers" Multiplicity="0..1" />
+    <End Role="imported_files" Type="BrightPlatformModel.Store.imported_files" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="imported_files">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_merge_lists_campaigns">
+    <End Role="campaigns" Type="BrightPlatformModel.Store.campaigns" Multiplicity="1" />
+    <End Role="merge_lists" Type="BrightPlatformModel.Store.merge_lists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="campaigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="merge_lists">
+        <PropertyRef Name="campaign_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_merge_lists_customers">
+    <End Role="customers" Type="BrightPlatformModel.Store.customers" Multiplicity="1" />
+    <End Role="merge_lists" Type="BrightPlatformModel.Store.merge_lists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="merge_lists">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_message_log_company_id">
+    <End Role="accounts" Type="BrightPlatformModel.Store.accounts" Multiplicity="0..1" />
+    <End Role="message_log" Type="BrightPlatformModel.Store.message_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="message_log">
+        <PropertyRef Name="company_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_message_log_message_type">
+    <End Role="message_type" Type="BrightPlatformModel.Store.message_type" Multiplicity="0..1" />
+    <End Role="message_log" Type="BrightPlatformModel.Store.message_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="message_type">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="message_log">
+        <PropertyRef Name="message_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_message_log_sub_campaign_id">
+    <End Role="subcampaigns" Type="BrightPlatformModel.Store.subcampaigns" Multiplicity="0..1" />
+    <End Role="message_log" Type="BrightPlatformModel.Store.message_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subcampaigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="message_log">
+        <PropertyRef Name="sub_campaign_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_message_log_user_id">
+    <End Role="users" Type="BrightPlatformModel.Store.users" Multiplicity="0..1" />
+    <End Role="message_log" Type="BrightPlatformModel.Store.message_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="message_log">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questionlayout_language_language">
+    <End Role="language" Type="BrightPlatformModel.Store.language" Multiplicity="1" />
+    <End Role="questionlayout_language" Type="BrightPlatformModel.Store.questionlayout_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="language">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questionlayout_language">
+        <PropertyRef Name="language_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questionlayout_language_questionlayout">
+    <End Role="questionlayout" Type="BrightPlatformModel.Store.questionlayout" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="questionlayout_language" Type="BrightPlatformModel.Store.questionlayout_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questionlayout">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questionlayout_language">
+        <PropertyRef Name="questionlayout_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questionlayout_questions">
+    <End Role="questions" Type="BrightPlatformModel.Store.questions" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="questionlayout" Type="BrightPlatformModel.Store.questionlayout" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questions">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questionlayout">
+        <PropertyRef Name="questions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questions_questiontags_questions">
+    <End Role="questions" Type="BrightPlatformModel.Store.questions" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="questions_questiontags" Type="BrightPlatformModel.Store.questions_questiontags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questions">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questions_questiontags">
+        <PropertyRef Name="questions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questions_questiontags_questiontags">
+    <End Role="questiontags" Type="BrightPlatformModel.Store.questiontags" Multiplicity="1" />
+    <End Role="questions_questiontags" Type="BrightPlatformModel.Store.questions_questiontags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questiontags">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questions_questiontags">
+        <PropertyRef Name="questiontags_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questions_text_language_language">
+    <End Role="language" Type="BrightPlatformModel.Store.language" Multiplicity="0..1" />
+    <End Role="questions_text_language" Type="BrightPlatformModel.Store.questions_text_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="language">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questions_text_language">
+        <PropertyRef Name="language_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questions_text_language_questions">
+    <End Role="questions" Type="BrightPlatformModel.Store.questions" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="questions_text_language" Type="BrightPlatformModel.Store.questions_text_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questions">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questions_text_language">
+        <PropertyRef Name="questions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_roles_users_roles">
+    <End Role="roles" Type="BrightPlatformModel.Store.roles" Multiplicity="1" />
+    <End Role="roles_users" Type="BrightPlatformModel.Store.roles_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="roles_users">
+        <PropertyRef Name="role_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_roles_users_users">
+    <End Role="users" Type="BrightPlatformModel.Store.users" Multiplicity="1" />
+    <End Role="roles_users" Type="BrightPlatformModel.Store.roles_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="roles_users">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_schedules_subcampaign_users">
+    <End Role="subcampaign_users" Type="BrightPlatformModel.Store.subcampaign_users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="schedules" Type="BrightPlatformModel.Store.schedules" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subcampaign_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="schedules">
+        <PropertyRef Name="resource_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sub_answers_answers">
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="sub_answers" Type="BrightPlatformModel.Store.sub_answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="answers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sub_answers">
+        <PropertyRef Name="answers_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sub_campaign_account_lists_accounts">
+    <End Role="accounts" Type="BrightPlatformModel.Store.accounts" Multiplicity="1" />
+    <End Role="sub_campaign_account_lists" Type="BrightPlatformModel.Store.sub_campaign_account_lists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sub_campaign_account_lists">
+        <PropertyRef Name="account_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sub_campaign_account_lists_final_lists">
+    <End Role="final_lists" Type="BrightPlatformModel.Store.final_lists" Multiplicity="1" />
+    <End Role="sub_campaign_account_lists" Type="BrightPlatformModel.Store.sub_campaign_account_lists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="final_lists">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sub_campaign_account_lists">
+        <PropertyRef Name="final_list_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sub_campaign_contact_lists_contacts">
+    <End Role="contacts" Type="BrightPlatformModel.Store.contacts" Multiplicity="1" />
+    <End Role="sub_campaign_contact_lists" Type="BrightPlatformModel.Store.sub_campaign_contact_lists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="contacts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sub_campaign_contact_lists">
+        <PropertyRef Name="contact_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sub_campaign_contact_lists_final_lists">
+    <End Role="final_lists" Type="BrightPlatformModel.Store.final_lists" Multiplicity="1" />
+    <End Role="sub_campaign_contact_lists" Type="BrightPlatformModel.Store.sub_campaign_contact_lists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="final_lists">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sub_campaign_contact_lists">
+        <PropertyRef Name="final_list_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sub_campaign_user_roles_subcampaign_users">
+    <End Role="subcampaign_users" Type="BrightPlatformModel.Store.subcampaign_users" Multiplicity="1" />
+    <End Role="sub_campaign_user_roles" Type="BrightPlatformModel.Store.sub_campaign_user_roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subcampaign_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sub_campaign_user_roles">
+        <PropertyRef Name="sub_campaign_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_subcampaigns_subprocess">
+    <End Role="subprocess" Type="BrightPlatformModel.Store.subprocess" Multiplicity="0..1" />
+    <End Role="subcampaigns" Type="BrightPlatformModel.Store.subcampaigns" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subprocess">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="subcampaigns">
+        <PropertyRef Name="subprocess_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_user_customers">
+    <End Role="users" Type="BrightPlatformModel.Store.users" Multiplicity="1" />
+    <End Role="user_customers" Type="BrightPlatformModel.Store.user_customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_customers">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_user_customers_customers">
+    <End Role="customers" Type="BrightPlatformModel.Store.customers" Multiplicity="1" />
+    <End Role="user_customers" Type="BrightPlatformModel.Store.user_customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_customers">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_users">
+    <End Role="sip_accounts" Type="BrightPlatformModel.Store.sip_accounts" Multiplicity="0..1" />
+    <End Role="users" Type="BrightPlatformModel.Store.users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sip_accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users">
+        <PropertyRef Name="sip_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_view_configuration_subcampaigns">
+    <End Role="subcampaigns" Type="BrightPlatformModel.Store.subcampaigns" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="view_configuration" Type="BrightPlatformModel.Store.view_configuration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subcampaigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="view_configuration">
+        <PropertyRef Name="subcampaign_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_view_configuration_users">
+    <End Role="users" Type="BrightPlatformModel.Store.users" Multiplicity="0..1" />
+    <End Role="view_configuration" Type="BrightPlatformModel.Store.view_configuration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="view_configuration">
+        <PropertyRef Name="created_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_view_configuration_users1">
+    <End Role="users" Type="BrightPlatformModel.Store.users" Multiplicity="0..1" />
+    <End Role="view_configuration" Type="BrightPlatformModel.Store.view_configuration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="view_configuration">
+        <PropertyRef Name="modified_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="bvCancelFuzzyMatch" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvCheckExistingAccounts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_fuzzy_lookup_account_ids" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="bvCheckProcessedFuzzyLookupAccounts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvClearFuzzyLookupAccountMatches_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+    <Parameter Name="p_fuzzy_lookup_account_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+    <Parameter Name="p_prepare_fuzzy_matching" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="bvClearFuzzyLookupContactMatches_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+    <Parameter Name="p_fuzzy_lookup_contact_ids" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="bvClearUserRequests_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvCreateFuzzyData_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvCreateFuzzyLookupAccountsCallList_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+    <Parameter Name="p_call_list_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_customer_id" Type="int" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+    <Parameter Name="p_create_contact_matching_list" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="bvCreateImportFileCollectedData_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+    <Parameter Name="p_customer_owned_data" Type="bit" Mode="In" />
+    <Parameter Name="p_bv_owned_data" Type="bit" Mode="In" />
+    <Parameter Name="p_customer_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvDeActivateSubCampaignAccounts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_account_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvDeleteAnswers_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="campaign_id" Type="int" Mode="In" />
+    <Parameter Name="account_id" Type="int" Mode="In" />
+    <Parameter Name="contact_id" Type="int" Mode="In" />
+    <Parameter Name="dialog_id" Type="int" Mode="In" />
+    <Parameter Name="account_level" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="bvDeleteImportFile_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_imported_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvDeleteProfiledData_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_imported_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvDeleteQuestion_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="question_ids" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="bvDeleteSubCampaignUser_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_sub_campaign_user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetAccountBulkInsertStructure_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvGetAccountColumnNames_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvGetAdditionalDataReportTemplates_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvGetAnswerForm_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="question_id" Type="int" Mode="In" />
+    <Parameter Name="answerform_ids" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="bvGetBookingSchedules_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="schedule_type" Type="tinyint" Mode="In" />
+    <Parameter Name="subcampaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetCallLists_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_customer_id" Type="int" Mode="In" />
+    <Parameter Name="p_campaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetCallLogs_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+    <Parameter Name="p_top_rows" Type="int" Mode="In" />
+    <Parameter Name="p_show_only_user" Type="bit" Mode="In" />
+    <Parameter Name="p_sub_campaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetCampaignFollowUps_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_campaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetCampaignListCompanies_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetCampaignListCompaniesAndContacts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetCampaignSelections_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvGetCollectedData_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_account_id" Type="int" Mode="In" />
+    <Parameter Name="p_contact_id" Type="int" Mode="In" />
+    <Parameter Name="p_customer_id" Type="int" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+    <Parameter Name="p_customer_data" Type="bit" Mode="In" />
+    <Parameter Name="p_brightvision_data" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="bvGetCompanies_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_company_keyword" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_limit_no" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetCompanyCount_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_fetch_limit" Type="int" Mode="In" />
+    <Parameter Name="p_filter_criteria" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="bvGetCompanyGeoDataCount_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_fetch_limit" Type="int" Mode="In" />
+    <Parameter Name="p_filter_criteria" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="bvGetCompanyLists_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_fetch_limit" Type="int" Mode="In" />
+    <Parameter Name="p_filter_criteria" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_page_no" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetContactByID_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="has_label" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="bvGetContactColumnNames_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvGetContactGeoDataCount_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_fetch_limit" Type="int" Mode="In" />
+    <Parameter Name="p_filter_criteria" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="bvGetContacts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_account_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetCustomerCampaign_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetCustomerCampaignSubcampaign_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user_id" Type="int" Mode="In" />
+    <Parameter Name="sub_campaign_role_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetDialogAnswers_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="questionlayout_ids" Type="varchar" Mode="In" />
+    <Parameter Name="campaign_id" Type="int" Mode="In" />
+    <Parameter Name="account_id" Type="int" Mode="In" />
+    <Parameter Name="contact_id" Type="int" Mode="In" />
+    <Parameter Name="dialog_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetDialogs_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvGetFinalCallListAccounts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_sub_campaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetFinalCallListContacts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_sub_campaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetFuzzyAccounts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user_id" Type="int" Mode="In" />
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetFuzzyConfidenceAccounts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetFuzzyConfidenceContacts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetFuzzyLookupAccountMatchStatistics_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetFuzzyLookupAccounts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetFuzzyLookupContacts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetFuzzyLookupContactStatistics_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetFuzzySimilarityAccounts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetFuzzySimilarityContacts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetGeographicalDataCompany_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_fetch_limit" Type="int" Mode="In" />
+    <Parameter Name="p_filter_criteria" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_page_no" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetGeographicalDataContact_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_fetch_limit" Type="int" Mode="In" />
+    <Parameter Name="p_filter_criteria" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_page_no" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetGeographicalDataOnly_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_table_source" Type="int" Mode="In" />
+    <Parameter Name="p_table_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetGeoLocationCompanies_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetGeoLocationContacts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+    <Parameter Name="p_account_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetImportedMatchedData_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="account_id" Type="int" Mode="In" />
+    <Parameter Name="campaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetImportFileRowItems_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_imported_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetImportLists_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_limit" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetLanguages_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvGetMessageLogs_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_top_rows" Type="int" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+    <Parameter Name="p_show_only_user" Type="bit" Mode="In" />
+    <Parameter Name="p_sub_campaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetMyFollowups_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="current_user_id" Type="int" Mode="In" />
+    <Parameter Name="p_sub_campaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_IsCallLogCaller" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="bvGetQuestions_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="language_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetQuestionsTags_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="question_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetResources_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="subcampaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetScheduleDetail_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="schedule_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetSubCampaignAccountAndContacts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_merge_list_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_merge_list_block_list_ids" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="bvGetSubCampaignConfigTemplates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvGetSubCampaignCustomerUsers_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetSubCampaignEmailContacts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_account_id" Type="int" Mode="In" />
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetSubCampaignEmailRecipients_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_sub_campaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetSubCampaignInternalUsers_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetSubCampaignNurtureList_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_customer_id" Type="int" Mode="In" />
+    <Parameter Name="p_campaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_sub_campaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetSubCampaignSchedules_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="subcampaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetSubCampaignUserRoles_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_sub_campaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetSubCampaignUsers_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_campaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetTitles_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvGetUnstructuredTitles_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvGetViewCallLog_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="numberPerPage" Type="int" Mode="In" />
+    <Parameter Name="pageIndex" Type="int" Mode="In" />
+    <Parameter Name="userid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetViewConfigurationTemplates_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvGetVwCampaignListCompanies_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetVwCampaignListCompaniesAndContacts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvGetVwCampaignListCompaniesStatuses_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvLogSaveEventLog_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="event_id" Type="int" Mode="In" />
+    <Parameter Name="subcampaign_id" Type="int" Mode="In" />
+    <Parameter Name="account_id" Type="int" Mode="In" />
+    <Parameter Name="contact_id" Type="int" Mode="In" />
+    <Parameter Name="user_id" Type="int" Mode="In" />
+    <Parameter Name="computer_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="local_datetime" Type="datetime" Mode="In" />
+    <Parameter Name="param1" Type="nvarchar" Mode="In" />
+    <Parameter Name="param2" Type="nvarchar" Mode="In" />
+    <Parameter Name="param3" Type="nvarchar" Mode="In" />
+    <Parameter Name="param4" Type="nvarchar" Mode="In" />
+    <Parameter Name="param5" Type="nvarchar" Mode="In" />
+    <Parameter Name="param6" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="bvPopulateCampaignListCompanies_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvPopulateCampaignListCompaniesAndContacts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvReleaseCampaignLocks_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+    <Parameter Name="p_account_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvReleaseUserLock_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="locked_by" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvSaveFuzzyLookupAccountsToMasterTable_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_customer_id" Type="int" Mode="In" />
+    <Parameter Name="p_list_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="user_id" Type="int" Mode="In" />
+    <Parameter Name="import_file_id" Type="int" Mode="In" />
+    <Parameter Name="p_fuzzy_lookup_account_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_last_modified_machine" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_last_modified_source" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="bvSaveFuzzyLookupContactsToMasterTable_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_fuzzy_lookup_contact_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+    <Parameter Name="last_modified_machine" Type="nvarchar" Mode="In" />
+    <Parameter Name="last_modified_source" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="bvSaveGeographicalData_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_table_source" Type="int" Mode="In" />
+    <Parameter Name="p_table_id" Type="int" Mode="In" />
+    <Parameter Name="p_latitude" Type="decimal" Mode="In" />
+    <Parameter Name="p_longitude" Type="decimal" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvSaveSubCampaignAccountList_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_merge_list_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_merge_list_block_list_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+    <Parameter Name="p_created_by" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvSaveSubCampaignContactList_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_merge_list_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_merge_list_block_list_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+    <Parameter Name="p_created_by" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvScGetCollectedData_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="subcampaign_id" Type="int" Mode="In" />
+    <Parameter Name="account_id" Type="int" Mode="In" />
+    <Parameter Name="contact_id" Type="int" Mode="In" />
+    <Parameter Name="customer_id" Type="int" Mode="In" />
+    <Parameter Name="bvowned" Type="bit" Mode="In" />
+    <Parameter Name="customerowned" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="bvScGetEventAndFollowUpLogs_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_account_id" Type="int" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvScGetStandardQuestions_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_account_id" Type="int" Mode="In" />
+    <Parameter Name="p_contact_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvScGetSubCampaignCompaniesAndContactsList_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvScGetSubCampaignCompanyList_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvScGetSubCampaignCompanyListGeoMapViewer_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvScGetSubCampaignContactList_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_account_id" Type="int" Mode="In" />
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvScGetSubCampaignList_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+    <Parameter Name="p_statuses" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="bvScSaveContactRemarks_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_contact_id" Type="int" Mode="In" />
+    <Parameter Name="p_remarks" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateContact_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="first_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="middle_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="last_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="direct_phone" Type="nvarchar" Mode="In" />
+    <Parameter Name="mobile" Type="nvarchar" Mode="In" />
+    <Parameter Name="title_id" Type="int" Mode="In" />
+    <Parameter Name="title" Type="nvarchar" Mode="In" />
+    <Parameter Name="role_tags" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="address_1" Type="nvarchar" Mode="In" />
+    <Parameter Name="address_2" Type="nvarchar" Mode="In" />
+    <Parameter Name="city" Type="nvarchar" Mode="In" />
+    <Parameter Name="zipcode" Type="nvarchar" Mode="In" />
+    <Parameter Name="country" Type="nvarchar" Mode="In" />
+    <Parameter Name="remarks" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="modified_by" Type="int" Mode="In" />
+    <Parameter Name="email" Type="nvarchar" Mode="In" />
+    <Parameter Name="linkedin_url" Type="nvarchar" Mode="In" />
+    <Parameter Name="validated" Type="smallint" Mode="In" />
+    <Parameter Name="active" Type="bit" Mode="In" />
+    <Parameter Name="account_id" Type="int" Mode="In" />
+    <Parameter Name="final_list_id" Type="int" Mode="In" />
+    <Parameter Name="last_modified_machine" Type="nvarchar" Mode="In" />
+    <Parameter Name="last_modified_source" Type="nvarchar" Mode="In" />
+    <Parameter Name="absence_start" Type="datetime" Mode="In" />
+    <Parameter Name="absence_end" Type="datetime" Mode="In" />
+    <Parameter Name="last_modified_sub_campaign_id" Type="int" Mode="In" />
+    <Parameter Name="last_modified_account_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateContactDialogDate_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="contact_id" Type="int" Mode="In" />
+    <Parameter Name="last_dialog_by" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateContactTitleId_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="title_id" Type="int" Mode="In" />
+    <Parameter Name="title" Type="nvarchar" Mode="In" />
+    <Parameter Name="last_modified_machine" Type="nvarchar" Mode="In" />
+    <Parameter Name="last_modified_source" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateContactTitles_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvUpdateDialog_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dialog_ids" Type="varchar(max)" Mode="In" />
+    <Parameter Name="is_active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateFuzzyLookupAccountMatchesByExactCompanyName_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+    <Parameter Name="p_fuzzy_lookup_account_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+    <Parameter Name="p_match_by_flag" Type="smallint" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateFuzzyLookupAccountMatchesByExactCompanyNameAndCity_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+    <Parameter Name="p_fuzzy_lookup_account_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+    <Parameter Name="p_match_by_flag" Type="smallint" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateFuzzyLookupAccountMatchesByExactOrganizationNo_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+    <Parameter Name="p_fuzzy_lookup_account_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+    <Parameter Name="p_match_by_flag" Type="smallint" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateFuzzyLookupAccountMatchesByFuzzyCompanyName_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+    <Parameter Name="p_fuzzy_lookup_account_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_user_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateFuzzyLookupContactMatchesByExactContactName_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+    <Parameter Name="p_fuzzy_lookup_contact_ids" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateFuzzyLookupContactMatchesByExactEmail_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+    <Parameter Name="p_fuzzy_lookup_contact_ids" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateFuzzyLookupIncludeInsert_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user_id" Type="int" Mode="In" />
+    <Parameter Name="table_match" Type="bit" Mode="In" />
+    <Parameter Name="ids" Type="varchar" Mode="In" />
+    <Parameter Name="state" Type="bit" Mode="In" />
+    <Parameter Name="import_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateFuzzyMatchCompanyReferences_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_imported_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateMergeList_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_merge_list_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_blocked_merge_list_ids" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateMyFollowUps_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ids" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="bvUpdateTitleOccurences" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="bvUpdateUserLock_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="final_list_id" Type="int" Mode="In" />
+    <Parameter Name="account_id" Type="int" Mode="In" />
+    <Parameter Name="locked" Type="bit" Mode="In" />
+    <Parameter Name="locked_by" Type="int" Mode="In" />
+  </Function>
+  <Function Name="bvValidateFuzzyAccounts_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_validated_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_invalidated_ids" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="p_import_file_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_GetCompaniesAndContactsDemo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_subcampaign_id" Type="int" Mode="In" />
+    <Parameter Name="p_final_list_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_GetCompaniesDemo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

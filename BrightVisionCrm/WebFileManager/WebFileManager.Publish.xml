@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Dropbox\BrightPlatform\Releases\Production\WebFileManager" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/ITHit.WebDAV.Server.dll" publishTime="07/18/2012 15:51:16" />
+    <file relUrl="bin/WebFileManager.pdb" publishTime="09/26/2012 15:20:39" />
+    <file relUrl="OpenWebDAVFolder.wsf" publishTime="09/26/2012 15:17:50" />
+    <file relUrl="bin/WebFileManager.dll" publishTime="09/26/2012 15:20:39" />
+    <file relUrl="bin/ITHit.WebDAV.Server.pdb" publishTime="07/18/2012 15:51:16" />
+    <file relUrl="MyCustomHandlerPage.aspx" publishTime="09/26/2012 15:17:50" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,82 @@
+﻿{
+	"GlobalValue" : null,
+	"Type" : "MultipleChoice",
+	"Form" : {
+		"Settings" : {
+			"Label" : "[Sample label]",
+			"QuestionText" : "[Sample question text]",
+			"QuestionHelp" : "[Sample question help]",
+			"Priority" : "Prio2",
+			"PlotDoneStatus" : "Done",
+			"DataBindings" : {
+				"account_level": false,
+				"language_code": "",
+				"account_id" : "",
+				"answer_id" : "",
+				"contact_id" : "",
+				"dialog_id" : "",
+				"campaign_id" : "",
+				"question_id" : "",
+				"questions_text_language_id" : "",
+				"questionlayout_id" : "",
+				"questionlayout_language_id" : ""
+			},
+			"CustomerOwnership" : true,
+			"BVOwnership" : false,
+			"BackgroundColor" : "",
+			"AnswerOptions" : [{
+					"MultipleChoiceColumns" : 3,
+					"MultipleChoiceValues" : [{
+							"TextPrefix" : "not selected",
+							"Checked" : false
+						}, {
+							"TextPrefix" : "selected",
+							"Checked" : true
+						}, {
+							"TextPrefix" : "row one",
+							"Checked" : true
+						}, {
+							"TextPrefix" : "not selected",
+							"Checked" : false
+						}, {
+							"TextPrefix" : "selected",
+							"Checked" : true
+						}, {
+							"TextPrefix" : "row two",
+							"Checked" : true
+						}, {
+							"TextPrefix" : "not selected",
+							"Checked" : false
+						}, {
+							"TextPrefix" : "selected",
+							"Checked" : true
+						}, {
+							"TextPrefix" : "row three",
+							"Checked" : true
+						}
+					],
+					"MultipleChoiceRequired" : false,
+					"OtherChoices" : [{
+							"TextPrefix" : "Other Choice",
+							"DefaultInputValue" : "",
+							"InputValue" : "",
+							"Required" : false,
+							"TextboxMaxWidth" : 100,
+							"TextboxMaxHeight" : 50,
+							"Enabled" : true
+						}, {
+							"TextPrefix" : "Comment",
+							"DefaultInputValue" : "",
+							"InputValue" : "",
+							"Required" : false,
+							"TextboxMaxWidth" : 100,
+							"TextboxMaxHeight" : 50,
+							"Enabled" : true
+						}
+					]
+				}
+			]
+		}
+	}
+}
+ 

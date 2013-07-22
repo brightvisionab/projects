@@ -1,0 +1,230 @@
+
+Opening file: C:\Users\mynd\Desktop\tmp_130218_Advania_SAP_HANA_2.xlsx
+Reading and getting file contents ...
+Done ...
+Getting total number of records on file ...
+Records found: 193
+Done ...
+Opening and beginning the import transaction ...
+Done ...
+Inserting import file information. Please kindly wait ...
+Done ...
+Queueing import file headers. Please kindly wait ...
+Queueing column header: ORGNR
+Queueing column header: FÖRETAGSNAMN
+Queueing column header: Förnamn
+Queueing column header: Efternamn
+Queueing column header: Titel
+Queueing column header: Tel
+Queueing column header: E-mail
+Queueing column header: contact prio
+Queueing column header: account prio
+Queueing column header: collected data
+Queueing column header: F11
+Queueing column header: F12
+Queueing column header: F13
+Queueing column header: F14
+Queueing column header: F15
+Queueing column header: vxl
+
+Batch inserting import file column headers. Please kindly wait ...
+Done ...
+Queueing import file records. Please kindly wait ...
+Queueing record 1 of 193
+Queueing record 2 of 193
+Queueing record 3 of 193
+Queueing record 4 of 193
+Queueing record 5 of 193
+Queueing record 6 of 193
+Queueing record 7 of 193
+Queueing record 8 of 193
+Queueing record 9 of 193
+Queueing record 10 of 193
+Queueing record 11 of 193
+Queueing record 12 of 193
+Queueing record 13 of 193
+Queueing record 14 of 193
+Queueing record 15 of 193
+Queueing record 16 of 193
+Queueing record 17 of 193
+Queueing record 18 of 193
+Queueing record 19 of 193
+Queueing record 20 of 193
+Queueing record 21 of 193
+Queueing record 22 of 193
+Queueing record 23 of 193
+Queueing record 24 of 193
+Queueing record 25 of 193
+Queueing record 26 of 193
+Queueing record 27 of 193
+Queueing record 28 of 193
+Queueing record 29 of 193
+Queueing record 30 of 193
+Queueing record 31 of 193
+Queueing record 32 of 193
+Queueing record 33 of 193
+Queueing record 34 of 193
+Queueing record 35 of 193
+Queueing record 36 of 193
+Queueing record 37 of 193
+Queueing record 38 of 193
+Queueing record 39 of 193
+Queueing record 40 of 193
+Queueing record 41 of 193
+Queueing record 42 of 193
+Queueing record 43 of 193
+Queueing record 44 of 193
+Queueing record 45 of 193
+Queueing record 46 of 193
+Queueing record 47 of 193
+Queueing record 48 of 193
+Queueing record 49 of 193
+Queueing record 50 of 193
+Queueing record 51 of 193
+Queueing record 52 of 193
+Queueing record 53 of 193
+Queueing record 54 of 193
+Queueing record 55 of 193
+Queueing record 56 of 193
+Queueing record 57 of 193
+Queueing record 58 of 193
+Queueing record 59 of 193
+Queueing record 60 of 193
+Queueing record 61 of 193
+Queueing record 62 of 193
+Queueing record 63 of 193
+Queueing record 64 of 193
+Queueing record 65 of 193
+Queueing record 66 of 193
+Queueing record 67 of 193
+Queueing record 68 of 193
+Queueing record 69 of 193
+Queueing record 70 of 193
+Queueing record 71 of 193
+Queueing record 72 of 193
+Queueing record 73 of 193
+Queueing record 74 of 193
+Queueing record 75 of 193
+Queueing record 76 of 193
+Queueing record 77 of 193
+Queueing record 78 of 193
+Queueing record 79 of 193
+Queueing record 80 of 193
+Queueing record 81 of 193
+Queueing record 82 of 193
+Queueing record 83 of 193
+Queueing record 84 of 193
+Queueing record 85 of 193
+Queueing record 86 of 193
+Queueing record 87 of 193
+Queueing record 88 of 193
+Queueing record 89 of 193
+Queueing record 90 of 193
+Queueing record 91 of 193
+Queueing record 92 of 193
+Queueing record 93 of 193
+Queueing record 94 of 193
+Queueing record 95 of 193
+Queueing record 96 of 193
+Queueing record 97 of 193
+Queueing record 98 of 193
+Queueing record 99 of 193
+Queueing record 100 of 193
+Queueing record 101 of 193
+Queueing record 102 of 193
+Queueing record 103 of 193
+Queueing record 104 of 193
+Queueing record 105 of 193
+Queueing record 106 of 193
+Queueing record 107 of 193
+Queueing record 108 of 193
+Queueing record 109 of 193
+Queueing record 110 of 193
+Queueing record 111 of 193
+Queueing record 112 of 193
+Queueing record 113 of 193
+Queueing record 114 of 193
+Queueing record 115 of 193
+Queueing record 116 of 193
+Queueing record 117 of 193
+Queueing record 118 of 193
+Queueing record 119 of 193
+Queueing record 120 of 193
+Queueing record 121 of 193
+Queueing record 122 of 193
+Queueing record 123 of 193
+Queueing record 124 of 193
+Queueing record 125 of 193
+Queueing record 126 of 193
+Queueing record 127 of 193
+Queueing record 128 of 193
+Queueing record 129 of 193
+Queueing record 130 of 193
+Queueing record 131 of 193
+Queueing record 132 of 193
+Queueing record 133 of 193
+Queueing record 134 of 193
+Queueing record 135 of 193
+Queueing record 136 of 193
+Queueing record 137 of 193
+Queueing record 138 of 193
+Queueing record 139 of 193
+Queueing record 140 of 193
+Queueing record 141 of 193
+Queueing record 142 of 193
+Queueing record 143 of 193
+Queueing record 144 of 193
+Queueing record 145 of 193
+Queueing record 146 of 193
+Queueing record 147 of 193
+Queueing record 148 of 193
+Queueing record 149 of 193
+Queueing record 150 of 193
+Queueing record 151 of 193
+Queueing record 152 of 193
+Queueing record 153 of 193
+Queueing record 154 of 193
+Queueing record 155 of 193
+Queueing record 156 of 193
+Queueing record 157 of 193
+Queueing record 158 of 193
+Queueing record 159 of 193
+Queueing record 160 of 193
+Queueing record 161 of 193
+Queueing record 162 of 193
+Queueing record 163 of 193
+Queueing record 164 of 193
+Queueing record 165 of 193
+Queueing record 166 of 193
+Queueing record 167 of 193
+Queueing record 168 of 193
+Queueing record 169 of 193
+Queueing record 170 of 193
+Queueing record 171 of 193
+Queueing record 172 of 193
+Queueing record 173 of 193
+Queueing record 174 of 193
+Queueing record 175 of 193
+Queueing record 176 of 193
+Queueing record 177 of 193
+Queueing record 178 of 193
+Queueing record 179 of 193
+Queueing record 180 of 193
+Queueing record 181 of 193
+Queueing record 182 of 193
+Queueing record 183 of 193
+Queueing record 184 of 193
+Queueing record 185 of 193
+Queueing record 186 of 193
+Queueing record 187 of 193
+Queueing record 188 of 193
+Queueing record 189 of 193
+Queueing record 190 of 193
+Queueing record 191 of 193
+Queueing record 192 of 193
+Queueing record 193 of 193
+Batch inserting import file row items. Please kindly wait ...
+Done ...
+Committing transaction ...
+Done ...
+Disposing transaction object and closing connection ...

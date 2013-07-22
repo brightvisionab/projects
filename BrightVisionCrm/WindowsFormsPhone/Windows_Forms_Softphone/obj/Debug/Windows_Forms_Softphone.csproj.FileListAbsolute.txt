@@ -1,0 +1,13 @@
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\bin\Debug\Windows_Forms_Softphone.exe
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\bin\Debug\Windows_Forms_Softphone.pdb
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\bin\Debug\VoIPSDK.dll
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\bin\Debug\VoIPSDK.pdb
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\bin\Debug\VoIPSDK.xml
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\obj\Debug\Windows_Forms_Softphone.PhoneMain.resources
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\obj\Debug\Windows_Forms_Softphone.Properties.Resources.resources
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\obj\Debug\Windows_Forms_Softphone.Windows.AboutBox.resources
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\obj\Debug\ResGen.read.1.tlog
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\obj\Debug\ResGen.write.1.tlog
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\obj\Debug\Windows_Forms_Softphone.exe
+C:\Users\Ulysses\Downloads\10_Windows_Forms_Softphone (2)\Desktop\10_Windows_Forms_Softphone\Windows_Forms_Softphone\obj\Debug\Windows_Forms_Softphone.pdb

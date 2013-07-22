@@ -1,0 +1,39 @@
+﻿{
+	"GlobalValue" : null,
+	"Type" : "Textbox",
+	"Form" : {
+		"Settings" : {
+			"Label" : "[Sample label]",
+			"QuestionText" : "[Sample question text]",
+			"QuestionHelp" : "[Sample question help]",
+			"Priority" : "Required",
+			"PlotDoneStatus" : "Done",
+			"CustomerOwnership" : true,
+			"BVOwnership" : false,
+			"DataBindings" : {
+				"account_level": false,
+				"language_code": "",
+				"account_id" : "",
+				"answer_id" : "",
+				"contact_id" : "",
+				"dialog_id" : "",
+				"campaign_id" : "",
+				"question_id" : "",
+				"questions_text_language_id" : "",
+				"questionlayout_id" : "",
+				"questionlayout_language_id" : ""
+			},
+			"BackgroundColor" : "",
+			"AnswerOptions" : [{
+					"TextPrefix" : "",
+					"DefaultInputValue" : "",
+					"InputValue" : "",
+					"Required" : false,
+					"TextboxMaxWidth" : "120",
+					"TextboxMaxHeight" : "50"
+				}
+			]
+		}
+	}
+}
+ 

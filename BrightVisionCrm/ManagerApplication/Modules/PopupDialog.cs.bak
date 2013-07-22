@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+using BrightVision.Common.Utilities;
+
+namespace ManagerApplication.Modules
+{
+    public partial class PopupDialog : Form
+    {
+        #region Public Members
+        public bool IsLogin = false;
+        #endregion
+
+        #region Constructors
+        public PopupDialog()
+        {
+            InitializeComponent();
+            this.KeyPreview = true;
+        }
+        #endregion
+
+        #region Form Control Events
+        private void PopupDialog_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (IsLogin)
+            {
+                DialogResult objResult = new DialogResult();
+                objResult = MessageBox.Show("Are you sure to terminate the manager application?", "Manager Application", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (objResult == DialogResult.Yes)
+                {
+                    IsLogin = false;
+                    Application.Exit();
+                }
+                else
+                    e.Cancel = true;
+            }
+        }
+        #endregion
+
+        #region Keyboard Shortcuts
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData) {
+            if (FormUtility.ShortCutKeysHandled(keyData))
+                return true;
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+        #endregion
+    }
+}

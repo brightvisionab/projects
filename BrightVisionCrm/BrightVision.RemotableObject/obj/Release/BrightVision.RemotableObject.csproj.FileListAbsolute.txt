@@ -1,0 +1,4 @@
+D:\Brightvision Projects\CRM\BrightVision.RemotableObject\bin\Release\BrightVision.RemotableObject.dll
+D:\Brightvision Projects\CRM\BrightVision.RemotableObject\bin\Release\BrightVision.RemotableObject.pdb
+D:\Brightvision Projects\CRM\BrightVision.RemotableObject\obj\Release\BrightVision.RemotableObject.dll
+D:\Brightvision Projects\CRM\BrightVision.RemotableObject\obj\Release\BrightVision.RemotableObject.pdb

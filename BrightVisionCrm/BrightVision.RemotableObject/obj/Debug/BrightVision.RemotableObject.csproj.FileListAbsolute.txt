@@ -1,0 +1,10 @@
+E:\BrightVision\Project\BrightVisionProject\BrightVision.RemotableObject\obj\Debug\ResolveAssemblyReference.cache
+E:\BrightVision\Project\BrightVisionProject\BrightVision.RemotableObject\bin\Debug\BrightVision.RemotableObject.dll
+E:\BrightVision\Project\BrightVisionProject\BrightVision.RemotableObject\bin\Debug\BrightVision.RemotableObject.pdb
+E:\BrightVision\Project\BrightVisionProject\BrightVision.RemotableObject\obj\Debug\BrightVision.RemotableObject.dll
+E:\BrightVision\Project\BrightVisionProject\BrightVision.RemotableObject\obj\Debug\BrightVision.RemotableObject.pdb
+D:\Brightvision Projects\REVISED\BrightVision.RemotableObject\bin\Debug\BrightVision.RemotableObject.dll
+D:\Brightvision Projects\REVISED\BrightVision.RemotableObject\bin\Debug\BrightVision.RemotableObject.pdb
+D:\Brightvision Projects\REVISED\BrightVision.RemotableObject\obj\Debug\ResolveAssemblyReference.cache
+D:\Brightvision Projects\REVISED\BrightVision.RemotableObject\obj\Debug\BrightVision.RemotableObject.dll
+D:\Brightvision Projects\REVISED\BrightVision.RemotableObject\obj\Debug\BrightVision.RemotableObject.pdb

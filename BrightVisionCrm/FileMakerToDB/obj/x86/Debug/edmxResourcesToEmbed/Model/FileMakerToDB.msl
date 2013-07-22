@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FileMakerMigratedModelStoreContainer" CdmEntityContainer="FileMakerMigratedEntities">
+    <EntitySetMapping Name="DataImports">
+      <EntityTypeMapping TypeName="FileMakerMigratedModel.DataImport">
+        <MappingFragment StoreEntitySet="DataImports">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="path_name" ColumnName="path_name" />
+          <ScalarProperty Name="row" ColumnName="row" />
+          <ScalarProperty Name="column_name" ColumnName="column_name" />
+          <ScalarProperty Name="data_context" ColumnName="data_context" />
+          <ScalarProperty Name="original_column" ColumnName="original_column" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

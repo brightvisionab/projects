@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BrightPlatformModelStoreContainer" CdmEntityContainer="BrightPlatformEntities">
+    <EntitySetMapping Name="accounts">
+      <EntityTypeMapping TypeName="BrightPlatformModel.account">
+        <MappingFragment StoreEntitySet="accounts">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_date" ColumnName="created_date" />
+          <ScalarProperty Name="gross_premiums" ColumnName="gross_premiums" />
+          <ScalarProperty Name="net_interest_incom" ColumnName="net_interest_incom" />
+          <ScalarProperty Name="employees_total" ColumnName="employees_total" />
+          <ScalarProperty Name="employees_abroad" ColumnName="employees_abroad" />
+          <ScalarProperty Name="sales_abroad" ColumnName="sales_abroad" />
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="exports" ColumnName="exports" />
+          <ScalarProperty Name="revenues" ColumnName="revenues" />
+          <ScalarProperty Name="consolidated_figures" ColumnName="consolidated_figures" />
+          <ScalarProperty Name="fiscal" ColumnName="fiscal" />
+          <ScalarProperty Name="currency" ColumnName="currency" />
+          <ScalarProperty Name="activity_code2_description" ColumnName="activity_code2_description" />
+          <ScalarProperty Name="activity_code_description" ColumnName="activity_code_description" />
+          <ScalarProperty Name="activity_code_2" ColumnName="activity_code_2" />
+          <ScalarProperty Name="activity_code" ColumnName="activity_code" />
+          <ScalarProperty Name="parent_company" ColumnName="parent_company" />
+          <ScalarProperty Name="year_established" ColumnName="year_established" />
+          <ScalarProperty Name="www" ColumnName="www" />
+          <ScalarProperty Name="telefax" ColumnName="telefax" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="zipcode" ColumnName="zipcode" />
+          <ScalarProperty Name="street_adress" ColumnName="street_adress" />
+          <ScalarProperty Name="box_address" ColumnName="box_address" />
+          <ScalarProperty Name="org_no" ColumnName="org_no" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="answers">
+      <EntityTypeMapping TypeName="BrightPlatformModel.answer">
+        <MappingFragment StoreEntitySet="answers">
+          <ScalarProperty Name="OwnershipAccount" ColumnName="OwnershipAccount" />
+          <ScalarProperty Name="OwnershipBrightvision" ColumnName="OwnershipBrightvision" />
+          <ScalarProperty Name="created_timestamp" ColumnName="created_timestamp" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="dialog_id" ColumnName="dialog_id" />
+          <ScalarProperty Name="contact_id" ColumnName="contact_id" />
+          <ScalarProperty Name="accounts_id" ColumnName="accounts_id" />
+          <ScalarProperty Name="campaigns_id" ColumnName="campaigns_id" />
+          <ScalarProperty Name="questions_id" ColumnName="questions_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="campaigns">
+      <EntityTypeMapping TypeName="BrightPlatformModel.campaign">
+        <MappingFragment StoreEntitySet="campaigns">
+          <ScalarProperty Name="assigned_user_id" ColumnName="assigned_user_id" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="customers_id" ColumnName="customers_id" />
+          <ScalarProperty Name="created_date" ColumnName="created_date" />
+          <ScalarProperty Name="campaign_name" ColumnName="campaign_name" />
+          <ScalarProperty Name="accounts_id" ColumnName="accounts_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="BrightPlatformModel.Contact">
+        <MappingFragment StoreEntitySet="Contacts">
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="created_date" ColumnName="created_date" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="direct_phone" ColumnName="direct_phone" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="middle_name" ColumnName="middle_name" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="account_id" ColumnName="account_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customers">
+      <EntityTypeMapping TypeName="BrightPlatformModel.customer">
+        <MappingFragment StoreEntitySet="customers">
+          <ScalarProperty Name="created_date" ColumnName="created_date" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customers_users">
+      <EntityTypeMapping TypeName="BrightPlatformModel.customers_users">
+        <MappingFragment StoreEntitySet="customers_users">
+          <ScalarProperty Name="users_id" ColumnName="users_id" />
+          <ScalarProperty Name="customers_id" ColumnName="customers_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dialogs">
+      <EntityTypeMapping TypeName="BrightPlatformModel.dialog">
+        <MappingFragment StoreEntitySet="dialog">
+          <ScalarProperty Name="created_date" ColumnName="created_date" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="dialog_text_json" ColumnName="dialog_text_json" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="customers_id" ColumnName="customers_id" />
+          <ScalarProperty Name="campaigns_id" ColumnName="campaigns_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="languages">
+      <EntityTypeMapping TypeName="BrightPlatformModel.language">
+        <MappingFragment StoreEntitySet="language">
+          <ScalarProperty Name="language1" ColumnName="language" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="processes">
+      <EntityTypeMapping TypeName="BrightPlatformModel.process">
+        <MappingFragment StoreEntitySet="process">
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="questionlayouts">
+      <EntityTypeMapping TypeName="BrightPlatformModel.questionlayout">
+        <MappingFragment StoreEntitySet="questionlayout">
+          <ScalarProperty Name="content_json" ColumnName="content_json" />
+          <ScalarProperty Name="default_setting" ColumnName="default_setting" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="modified_date" ColumnName="modified_date" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+          <ScalarProperty Name="questions_id" ColumnName="questions_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="questionlayout_language">
+      <EntityTypeMapping TypeName="BrightPlatformModel.questionlayout_language">
+        <MappingFragment StoreEntitySet="questionlayout_language">
+          <ScalarProperty Name="language_id" ColumnName="language_id" />
+          <ScalarProperty Name="questionlayout_id" ColumnName="questionlayout_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="questions">
+      <EntityTypeMapping TypeName="BrightPlatformModel.question">
+        <MappingFragment StoreEntitySet="questions">
+          <ScalarProperty Name="modified_date" ColumnName="modified_date" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+          <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="questions_questiontags">
+      <EntityTypeMapping TypeName="BrightPlatformModel.questions_questiontags">
+        <MappingFragment StoreEntitySet="questions_questiontags">
+          <ScalarProperty Name="questiontags_id" ColumnName="questiontags_id" />
+          <ScalarProperty Name="questions_id" ColumnName="questions_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="questions_text_language">
+      <EntityTypeMapping TypeName="BrightPlatformModel.questions_text_language">
+        <MappingFragment StoreEntitySet="questions_text_language">
+          <ScalarProperty Name="question_text" ColumnName="question_text" />
+          <ScalarProperty Name="language_id" ColumnName="language_id" />
+          <ScalarProperty Name="questions_id" ColumnName="questions_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="questiontags">
+      <EntityTypeMapping TypeName="BrightPlatformModel.questiontag">
+        <MappingFragment StoreEntitySet="questiontags">
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roles">
+      <EntityTypeMapping TypeName="BrightPlatformModel.role">
+        <MappingFragment StoreEntitySet="roles">
+          <ScalarProperty Name="role_name" ColumnName="role_name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roles_users">
+      <EntityTypeMapping TypeName="BrightPlatformModel.roles_users">
+        <MappingFragment StoreEntitySet="roles_users">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sub_answers">
+      <EntityTypeMapping TypeName="BrightPlatformModel.sub_answers">
+        <MappingFragment StoreEntitySet="sub_answers">
+          <ScalarProperty Name="answer_text" ColumnName="answer_text" />
+          <ScalarProperty Name="sub_answer_index" ColumnName="sub_answer_index" />
+          <ScalarProperty Name="answers_id" ColumnName="answers_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="subcampaigns">
+      <EntityTypeMapping TypeName="BrightPlatformModel.subcampaign">
+        <MappingFragment StoreEntitySet="subcampaigns">
+          <ScalarProperty Name="campaign_manager_user_id" ColumnName="campaign_manager_user_id" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="list_id" ColumnName="list_id" />
+          <ScalarProperty Name="dialog_id" ColumnName="dialog_id" />
+          <ScalarProperty Name="subprocess_id" ColumnName="subprocess_id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="subprocesses">
+      <EntityTypeMapping TypeName="BrightPlatformModel.subprocess">
+        <MappingFragment StoreEntitySet="subprocess">
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="BrightPlatformModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="BrightPlatformModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="direct_phone" ColumnName="direct_phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="reports_to_id" ColumnName="reports_to_id" />
+          <ScalarProperty Name="created_date" ColumnName="created_date" />
+          <ScalarProperty Name="modified_user_id" ColumnName="modified_user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

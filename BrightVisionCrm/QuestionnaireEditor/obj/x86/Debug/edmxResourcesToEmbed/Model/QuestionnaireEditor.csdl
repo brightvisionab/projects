@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BrightPlatformModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="BrightPlatformEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="accounts" EntityType="BrightPlatformModel.account" />
+    <EntitySet Name="answers" EntityType="BrightPlatformModel.answer" />
+    <EntitySet Name="campaigns" EntityType="BrightPlatformModel.campaign" />
+    <EntitySet Name="Contacts" EntityType="BrightPlatformModel.Contact" />
+    <EntitySet Name="customers" EntityType="BrightPlatformModel.customer" />
+    <EntitySet Name="customers_users" EntityType="BrightPlatformModel.customers_users" />
+    <EntitySet Name="dialogs" EntityType="BrightPlatformModel.dialog" />
+    <EntitySet Name="languages" EntityType="BrightPlatformModel.language" />
+    <EntitySet Name="processes" EntityType="BrightPlatformModel.process" />
+    <EntitySet Name="questionlayouts" EntityType="BrightPlatformModel.questionlayout" />
+    <EntitySet Name="questionlayout_language" EntityType="BrightPlatformModel.questionlayout_language" />
+    <EntitySet Name="questions" EntityType="BrightPlatformModel.question" />
+    <EntitySet Name="questions_questiontags" EntityType="BrightPlatformModel.questions_questiontags" />
+    <EntitySet Name="questions_text_language" EntityType="BrightPlatformModel.questions_text_language" />
+    <EntitySet Name="questiontags" EntityType="BrightPlatformModel.questiontag" />
+    <EntitySet Name="roles" EntityType="BrightPlatformModel.role" />
+    <EntitySet Name="roles_users" EntityType="BrightPlatformModel.roles_users" />
+    <EntitySet Name="sub_answers" EntityType="BrightPlatformModel.sub_answers" />
+    <EntitySet Name="subcampaigns" EntityType="BrightPlatformModel.subcampaign" />
+    <EntitySet Name="subprocesses" EntityType="BrightPlatformModel.subprocess" />
+    <EntitySet Name="sysdiagrams" EntityType="BrightPlatformModel.sysdiagram" />
+    <EntitySet Name="users" EntityType="BrightPlatformModel.user" />
+    <AssociationSet Name="FK_answers_accounts" Association="BrightPlatformModel.FK_answers_accounts">
+      <End Role="account" EntitySet="accounts" />
+      <End Role="answer" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_campaigns_accounts1" Association="BrightPlatformModel.FK_campaigns_accounts1">
+      <End Role="account" EntitySet="accounts" />
+      <End Role="campaign" EntitySet="campaigns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_Accounts" Association="BrightPlatformModel.FK_Contacts_Accounts">
+      <End Role="account" EntitySet="accounts" />
+      <End Role="Contact" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_campaigns1" Association="BrightPlatformModel.FK_answers_campaigns1">
+      <End Role="campaign" EntitySet="campaigns" />
+      <End Role="answer" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_Contacts" Association="BrightPlatformModel.FK_answers_Contacts">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="answer" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_dialog" Association="BrightPlatformModel.FK_answers_dialog">
+      <End Role="dialog" EntitySet="dialogs" />
+      <End Role="answer" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_questions" Association="BrightPlatformModel.FK_answers_questions">
+      <End Role="question" EntitySet="questions" />
+      <End Role="answer" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sub_answers_answers" Association="BrightPlatformModel.FK_sub_answers_answers">
+      <End Role="answer" EntitySet="answers" />
+      <End Role="sub_answers" EntitySet="sub_answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Campaigns_Customer" Association="BrightPlatformModel.FK_Campaigns_Customer">
+      <End Role="customer" EntitySet="customers" />
+      <End Role="campaign" EntitySet="campaigns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dialog_campaigns" Association="BrightPlatformModel.FK_dialog_campaigns">
+      <End Role="campaign" EntitySet="campaigns" />
+      <End Role="dialog" EntitySet="dialogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customers_users_customers" Association="BrightPlatformModel.FK_customers_users_customers">
+      <End Role="customer" EntitySet="customers" />
+      <End Role="customers_users" EntitySet="customers_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dialog_customers" Association="BrightPlatformModel.FK_dialog_customers">
+      <End Role="customer" EntitySet="customers" />
+      <End Role="dialog" EntitySet="dialogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customers_users_users" Association="BrightPlatformModel.FK_customers_users_users">
+      <End Role="user" EntitySet="users" />
+      <End Role="customers_users" EntitySet="customers_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questionlayout_language_language" Association="BrightPlatformModel.FK_questionlayout_language_language">
+      <End Role="language" EntitySet="languages" />
+      <End Role="questionlayout_language" EntitySet="questionlayout_language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questions_text_language_language" Association="BrightPlatformModel.FK_questions_text_language_language">
+      <End Role="language" EntitySet="languages" />
+      <End Role="questions_text_language" EntitySet="questions_text_language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questionlayout_language_questionlayout" Association="BrightPlatformModel.FK_questionlayout_language_questionlayout">
+      <End Role="questionlayout" EntitySet="questionlayouts" />
+      <End Role="questionlayout_language" EntitySet="questionlayout_language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questionlayout_questions" Association="BrightPlatformModel.FK_questionlayout_questions">
+      <End Role="question" EntitySet="questions" />
+      <End Role="questionlayout" EntitySet="questionlayouts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questions_questiontags_questions" Association="BrightPlatformModel.FK_questions_questiontags_questions">
+      <End Role="question" EntitySet="questions" />
+      <End Role="questions_questiontags" EntitySet="questions_questiontags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questions_text_language_questions" Association="BrightPlatformModel.FK_questions_text_language_questions">
+      <End Role="question" EntitySet="questions" />
+      <End Role="questions_text_language" EntitySet="questions_text_language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questions_questiontags_questiontags" Association="BrightPlatformModel.FK_questions_questiontags_questiontags">
+      <End Role="questiontag" EntitySet="questiontags" />
+      <End Role="questions_questiontags" EntitySet="questions_questiontags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_roles_users_roles" Association="BrightPlatformModel.FK_roles_users_roles">
+      <End Role="role" EntitySet="roles" />
+      <End Role="roles_users" EntitySet="roles_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_roles_users_users" Association="BrightPlatformModel.FK_roles_users_users">
+      <End Role="user" EntitySet="users" />
+      <End Role="roles_users" EntitySet="roles_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_subcampaigns_subprocess" Association="BrightPlatformModel.FK_subcampaigns_subprocess">
+      <End Role="subprocess" EntitySet="subprocesses" />
+      <End Role="subcampaign" EntitySet="subcampaigns" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="account">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="company_name" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="org_no" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="box_address" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="street_adress" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="zipcode" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="city" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="country" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="telephone" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="telefax" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="www" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="year_established" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="parent_company" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="activity_code" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="activity_code_2" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="activity_code_description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="activity_code2_description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="currency" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="fiscal" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="consolidated_figures" />
+    <Property Type="Int32" Name="revenues" />
+    <Property Type="Int32" Name="exports" />
+    <Property Type="Int32" Name="result" />
+    <Property Type="Int32" Name="sales_abroad" />
+    <Property Type="Int32" Name="employees_abroad" />
+    <Property Type="Int32" Name="employees_total" />
+    <Property Type="Int32" Name="net_interest_incom" />
+    <Property Type="Int32" Name="gross_premiums" />
+    <Property Type="DateTime" Name="created_date" Nullable="false" />
+    <Property Type="String" Name="created_by" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="answers" Relationship="BrightPlatformModel.FK_answers_accounts" FromRole="account" ToRole="answer" />
+    <NavigationProperty Name="campaigns" Relationship="BrightPlatformModel.FK_campaigns_accounts1" FromRole="account" ToRole="campaign" />
+    <NavigationProperty Name="Contacts" Relationship="BrightPlatformModel.FK_Contacts_Accounts" FromRole="account" ToRole="Contact" />
+  </EntityType>
+  <EntityType Name="answer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="questions_id" Nullable="false" />
+    <Property Type="Int32" Name="campaigns_id" Nullable="false" />
+    <Property Type="Int32" Name="accounts_id" Nullable="false" />
+    <Property Type="Int32" Name="contact_id" Nullable="false" />
+    <Property Type="Int32" Name="dialog_id" Nullable="false" />
+    <Property Type="Int32" Name="created_by" Nullable="false" />
+    <Property Type="DateTime" Name="created_timestamp" Nullable="false" />
+    <Property Type="Boolean" Name="OwnershipBrightvision" Nullable="false" />
+    <Property Type="Boolean" Name="OwnershipAccount" Nullable="false" />
+    <NavigationProperty Name="account" Relationship="BrightPlatformModel.FK_answers_accounts" FromRole="answer" ToRole="account" />
+    <NavigationProperty Name="campaign" Relationship="BrightPlatformModel.FK_answers_campaigns1" FromRole="answer" ToRole="campaign" />
+    <NavigationProperty Name="Contact" Relationship="BrightPlatformModel.FK_answers_Contacts" FromRole="answer" ToRole="Contact" />
+    <NavigationProperty Name="dialog" Relationship="BrightPlatformModel.FK_answers_dialog" FromRole="answer" ToRole="dialog" />
+    <NavigationProperty Name="question" Relationship="BrightPlatformModel.FK_answers_questions" FromRole="answer" ToRole="question" />
+    <NavigationProperty Name="sub_answers" Relationship="BrightPlatformModel.FK_sub_answers_answers" FromRole="answer" ToRole="sub_answers" />
+  </EntityType>
+  <EntityType Name="campaign">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="accounts_id" />
+    <Property Type="String" Name="campaign_name" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="created_date" Nullable="false" />
+    <Property Type="Int32" Name="customers_id" />
+    <Property Type="String" Name="created_by" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="assigned_user_id" />
+    <NavigationProperty Name="account" Relationship="BrightPlatformModel.FK_campaigns_accounts1" FromRole="campaign" ToRole="account" />
+    <NavigationProperty Name="answers" Relationship="BrightPlatformModel.FK_answers_campaigns1" FromRole="campaign" ToRole="answer" />
+    <NavigationProperty Name="customer" Relationship="BrightPlatformModel.FK_Campaigns_Customer" FromRole="campaign" ToRole="customer" />
+    <NavigationProperty Name="dialogs" Relationship="BrightPlatformModel.FK_dialog_campaigns" FromRole="campaign" ToRole="dialog" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="account_id" Nullable="false" />
+    <Property Type="String" Name="first_name" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="middle_name" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="last_name" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="direct_phone" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="mobile" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="email" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="created_date" Nullable="false" />
+    <Property Type="String" Name="title" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="company_name" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="account" Relationship="BrightPlatformModel.FK_Contacts_Accounts" FromRole="Contact" ToRole="account" />
+    <NavigationProperty Name="answers" Relationship="BrightPlatformModel.FK_answers_Contacts" FromRole="Contact" ToRole="answer" />
+  </EntityType>
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="customer_name" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="created_date" Nullable="false" />
+    <NavigationProperty Name="campaigns" Relationship="BrightPlatformModel.FK_Campaigns_Customer" FromRole="customer" ToRole="campaign" />
+    <NavigationProperty Name="customers_users" Relationship="BrightPlatformModel.FK_customers_users_customers" FromRole="customer" ToRole="customers_users" />
+    <NavigationProperty Name="dialogs" Relationship="BrightPlatformModel.FK_dialog_customers" FromRole="customer" ToRole="dialog" />
+  </EntityType>
+  <EntityType Name="customers_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="customers_id" Nullable="false" />
+    <Property Type="Int32" Name="users_id" Nullable="false" />
+    <NavigationProperty Name="customer" Relationship="BrightPlatformModel.FK_customers_users_customers" FromRole="customers_users" ToRole="customer" />
+    <NavigationProperty Name="user" Relationship="BrightPlatformModel.FK_customers_users_users" FromRole="customers_users" ToRole="user" />
+  </EntityType>
+  <EntityType Name="dialog">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="campaigns_id" Nullable="false" />
+    <Property Type="Int32" Name="customers_id" />
+    <Property Type="String" Name="name" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="dialog_text_json" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="created_by" />
+    <Property Type="DateTime" Name="created_date" />
+    <NavigationProperty Name="answers" Relationship="BrightPlatformModel.FK_answers_dialog" FromRole="dialog" ToRole="answer" />
+    <NavigationProperty Name="campaign" Relationship="BrightPlatformModel.FK_dialog_campaigns" FromRole="dialog" ToRole="campaign" />
+    <NavigationProperty Name="customer" Relationship="BrightPlatformModel.FK_dialog_customers" FromRole="dialog" ToRole="customer" />
+  </EntityType>
+  <EntityType Name="language">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="language1" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="questionlayout_language" Relationship="BrightPlatformModel.FK_questionlayout_language_language" FromRole="language" ToRole="questionlayout_language" />
+    <NavigationProperty Name="questions_text_language" Relationship="BrightPlatformModel.FK_questions_text_language_language" FromRole="language" ToRole="questions_text_language" />
+  </EntityType>
+  <EntityType Name="process">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="title" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="questionlayout">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="questions_id" />
+    <Property Type="Int32" Name="modified_by" Nullable="false" />
+    <Property Type="Int32" Name="created_by" Nullable="false" />
+    <Property Type="DateTime" Name="modified_date" Nullable="false" />
+    <Property Type="String" Name="title" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Type="Boolean" Name="default_setting" Nullable="false" />
+    <Property Type="String" Name="content_json" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="questionlayout_language" Relationship="BrightPlatformModel.FK_questionlayout_language_questionlayout" FromRole="questionlayout" ToRole="questionlayout_language" />
+    <NavigationProperty Name="question" Relationship="BrightPlatformModel.FK_questionlayout_questions" FromRole="questionlayout" ToRole="question" />
+  </EntityType>
+  <EntityType Name="questionlayout_language">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="questionlayout_id" Nullable="false" />
+    <Property Type="Int32" Name="language_id" Nullable="false" />
+    <NavigationProperty Name="language" Relationship="BrightPlatformModel.FK_questionlayout_language_language" FromRole="questionlayout_language" ToRole="language" />
+    <NavigationProperty Name="questionlayout" Relationship="BrightPlatformModel.FK_questionlayout_language_questionlayout" FromRole="questionlayout_language" ToRole="questionlayout" />
+  </EntityType>
+  <EntityType Name="question">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="created_by_user_id" />
+    <Property Type="Int32" Name="modified_by" />
+    <Property Type="DateTime" Name="modified_date" Nullable="false" />
+    <NavigationProperty Name="answers" Relationship="BrightPlatformModel.FK_answers_questions" FromRole="question" ToRole="answer" />
+    <NavigationProperty Name="questionlayouts" Relationship="BrightPlatformModel.FK_questionlayout_questions" FromRole="question" ToRole="questionlayout" />
+    <NavigationProperty Name="questions_questiontags" Relationship="BrightPlatformModel.FK_questions_questiontags_questions" FromRole="question" ToRole="questions_questiontags" />
+    <NavigationProperty Name="questions_text_language" Relationship="BrightPlatformModel.FK_questions_text_language_questions" FromRole="question" ToRole="questions_text_language" />
+  </EntityType>
+  <EntityType Name="questions_questiontags">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="questions_id" Nullable="false" />
+    <Property Type="Int32" Name="questiontags_id" Nullable="false" />
+    <NavigationProperty Name="question" Relationship="BrightPlatformModel.FK_questions_questiontags_questions" FromRole="questions_questiontags" ToRole="question" />
+    <NavigationProperty Name="questiontag" Relationship="BrightPlatformModel.FK_questions_questiontags_questiontags" FromRole="questions_questiontags" ToRole="questiontag" />
+  </EntityType>
+  <EntityType Name="questions_text_language">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="questions_id" />
+    <Property Type="Int32" Name="language_id" />
+    <Property Type="String" Name="question_text" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="language" Relationship="BrightPlatformModel.FK_questions_text_language_language" FromRole="questions_text_language" ToRole="language" />
+    <NavigationProperty Name="question" Relationship="BrightPlatformModel.FK_questions_text_language_questions" FromRole="questions_text_language" ToRole="question" />
+  </EntityType>
+  <EntityType Name="questiontag">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="title" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="questions_questiontags" Relationship="BrightPlatformModel.FK_questions_questiontags_questiontags" FromRole="questiontag" ToRole="questions_questiontags" />
+  </EntityType>
+  <EntityType Name="role">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="role_name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="roles_users" Relationship="BrightPlatformModel.FK_roles_users_roles" FromRole="role" ToRole="roles_users" />
+  </EntityType>
+  <EntityType Name="roles_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="role_id" Nullable="false" />
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <NavigationProperty Name="role" Relationship="BrightPlatformModel.FK_roles_users_roles" FromRole="roles_users" ToRole="role" />
+    <NavigationProperty Name="user" Relationship="BrightPlatformModel.FK_roles_users_users" FromRole="roles_users" ToRole="user" />
+  </EntityType>
+  <EntityType Name="sub_answers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="answers_id" Nullable="false" />
+    <Property Type="Int16" Name="sub_answer_index" Nullable="false" />
+    <Property Type="String" Name="answer_text" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="answer" Relationship="BrightPlatformModel.FK_sub_answers_answers" FromRole="sub_answers" ToRole="answer" />
+  </EntityType>
+  <EntityType Name="subcampaign">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="title" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="subprocess_id" />
+    <Property Type="Int32" Name="dialog_id" />
+    <Property Type="Int32" Name="list_id" />
+    <Property Type="DateTime" Name="start_date" />
+    <Property Type="DateTime" Name="end_date" />
+    <Property Type="Int32" Name="campaign_manager_user_id" />
+    <NavigationProperty Name="subprocess" Relationship="BrightPlatformModel.FK_subcampaigns_subprocess" FromRole="subcampaign" ToRole="subprocess" />
+  </EntityType>
+  <EntityType Name="subprocess">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="title" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="subcampaigns" Relationship="BrightPlatformModel.FK_subcampaigns_subprocess" FromRole="subprocess" ToRole="subcampaign" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="modified_user_id" />
+    <Property Type="DateTime" Name="created_date" />
+    <Property Type="Int32" Name="reports_to_id" />
+    <Property Type="Byte" Name="active" Nullable="false" />
+    <Property Type="String" Name="first_name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="last_name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="email" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="direct_phone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="mobile" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="title" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="customers_users" Relationship="BrightPlatformModel.FK_customers_users_users" FromRole="user" ToRole="customers_users" />
+    <NavigationProperty Name="roles_users" Relationship="BrightPlatformModel.FK_roles_users_users" FromRole="user" ToRole="roles_users" />
+  </EntityType>
+  <Association Name="FK_answers_accounts">
+    <End Type="BrightPlatformModel.account" Role="account" Multiplicity="1" />
+    <End Type="BrightPlatformModel.answer" Role="answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answer">
+        <PropertyRef Name="accounts_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_campaigns_accounts1">
+    <End Type="BrightPlatformModel.account" Role="account" Multiplicity="0..1" />
+    <End Type="BrightPlatformModel.campaign" Role="campaign" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="campaign">
+        <PropertyRef Name="accounts_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_Accounts">
+    <End Type="BrightPlatformModel.account" Role="account" Multiplicity="1" />
+    <End Type="BrightPlatformModel.Contact" Role="Contact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Contact">
+        <PropertyRef Name="account_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_campaigns1">
+    <End Type="BrightPlatformModel.campaign" Role="campaign" Multiplicity="1" />
+    <End Type="BrightPlatformModel.answer" Role="answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="campaign">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answer">
+        <PropertyRef Name="campaigns_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_Contacts">
+    <End Type="BrightPlatformModel.Contact" Role="Contact" Multiplicity="1" />
+    <End Type="BrightPlatformModel.answer" Role="answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answer">
+        <PropertyRef Name="contact_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_dialog">
+    <End Type="BrightPlatformModel.dialog" Role="dialog" Multiplicity="1" />
+    <End Type="BrightPlatformModel.answer" Role="answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dialog">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answer">
+        <PropertyRef Name="dialog_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_questions">
+    <End Type="BrightPlatformModel.question" Role="question" Multiplicity="1" />
+    <End Type="BrightPlatformModel.answer" Role="answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="question">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answer">
+        <PropertyRef Name="questions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sub_answers_answers">
+    <End Type="BrightPlatformModel.answer" Role="answer" Multiplicity="1" />
+    <End Type="BrightPlatformModel.sub_answers" Role="sub_answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="answer">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sub_answers">
+        <PropertyRef Name="answers_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Campaigns_Customer">
+    <End Type="BrightPlatformModel.customer" Role="customer" Multiplicity="0..1" />
+    <End Type="BrightPlatformModel.campaign" Role="campaign" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="campaign">
+        <PropertyRef Name="customers_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dialog_campaigns">
+    <End Type="BrightPlatformModel.campaign" Role="campaign" Multiplicity="1" />
+    <End Type="BrightPlatformModel.dialog" Role="dialog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="campaign">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="dialog">
+        <PropertyRef Name="campaigns_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customers_users_customers">
+    <End Type="BrightPlatformModel.customer" Role="customer" Multiplicity="1" />
+    <End Type="BrightPlatformModel.customers_users" Role="customers_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="customers_users">
+        <PropertyRef Name="customers_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dialog_customers">
+    <End Type="BrightPlatformModel.customer" Role="customer" Multiplicity="0..1" />
+    <End Type="BrightPlatformModel.dialog" Role="dialog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="dialog">
+        <PropertyRef Name="customers_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customers_users_users">
+    <End Type="BrightPlatformModel.user" Role="user" Multiplicity="1" />
+    <End Type="BrightPlatformModel.customers_users" Role="customers_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="customers_users">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questionlayout_language_language">
+    <End Type="BrightPlatformModel.language" Role="language" Multiplicity="1" />
+    <End Type="BrightPlatformModel.questionlayout_language" Role="questionlayout_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="language">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questionlayout_language">
+        <PropertyRef Name="language_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questions_text_language_language">
+    <End Type="BrightPlatformModel.language" Role="language" Multiplicity="0..1" />
+    <End Type="BrightPlatformModel.questions_text_language" Role="questions_text_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="language">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questions_text_language">
+        <PropertyRef Name="language_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questionlayout_language_questionlayout">
+    <End Type="BrightPlatformModel.questionlayout" Role="questionlayout" Multiplicity="1" />
+    <End Type="BrightPlatformModel.questionlayout_language" Role="questionlayout_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questionlayout">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questionlayout_language">
+        <PropertyRef Name="questionlayout_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questionlayout_questions">
+    <End Type="BrightPlatformModel.question" Role="question" Multiplicity="0..1" />
+    <End Type="BrightPlatformModel.questionlayout" Role="questionlayout" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="question">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questionlayout">
+        <PropertyRef Name="questions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questions_questiontags_questions">
+    <End Type="BrightPlatformModel.question" Role="question" Multiplicity="1" />
+    <End Type="BrightPlatformModel.questions_questiontags" Role="questions_questiontags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="question">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questions_questiontags">
+        <PropertyRef Name="questions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questions_text_language_questions">
+    <End Type="BrightPlatformModel.question" Role="question" Multiplicity="0..1" />
+    <End Type="BrightPlatformModel.questions_text_language" Role="questions_text_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="question">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questions_text_language">
+        <PropertyRef Name="questions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questions_questiontags_questiontags">
+    <End Type="BrightPlatformModel.questiontag" Role="questiontag" Multiplicity="1" />
+    <End Type="BrightPlatformModel.questions_questiontags" Role="questions_questiontags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questiontag">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questions_questiontags">
+        <PropertyRef Name="questiontags_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_roles_users_roles">
+    <End Type="BrightPlatformModel.role" Role="role" Multiplicity="1" />
+    <End Type="BrightPlatformModel.roles_users" Role="roles_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="role">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="roles_users">
+        <PropertyRef Name="role_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_roles_users_users">
+    <End Type="BrightPlatformModel.user" Role="user" Multiplicity="1" />
+    <End Type="BrightPlatformModel.roles_users" Role="roles_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="roles_users">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_subcampaigns_subprocess">
+    <End Type="BrightPlatformModel.subprocess" Role="subprocess" Multiplicity="0..1" />
+    <End Type="BrightPlatformModel.subcampaign" Role="subcampaign" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subprocess">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="subcampaign">
+        <PropertyRef Name="subprocess_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

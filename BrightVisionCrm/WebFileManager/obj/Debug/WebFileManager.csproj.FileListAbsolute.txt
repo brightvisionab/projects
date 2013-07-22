@@ -1,0 +1,7 @@
+D:\Brightvision Projects\REVISED\WebFileManager\bin\WebFileManager.dll
+D:\Brightvision Projects\REVISED\WebFileManager\bin\WebFileManager.pdb
+D:\Brightvision Projects\REVISED\WebFileManager\bin\ITHit.WebDAV.Server.dll
+D:\Brightvision Projects\REVISED\WebFileManager\bin\ITHit.WebDAV.Server.pdb
+D:\Brightvision Projects\REVISED\WebFileManager\obj\Debug\ResolveAssemblyReference.cache
+D:\Brightvision Projects\REVISED\WebFileManager\obj\Debug\WebFileManager.dll
+D:\Brightvision Projects\REVISED\WebFileManager\obj\Debug\WebFileManager.pdb

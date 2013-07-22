@@ -1,0 +1,32 @@
+----------------- Started: 5/15/2013 4:57:54 PM -----------------
+PROPFIND http://192.168.1.245:8090/salesaudio/ HTTP/1.1
+User-Agent: IT Hit WebDAV Client .Net v1.2.0.304
+Depth: 0
+Content-Type: text/xml; charset=utf-8
+SendChunked = False
+AllowWriteStreamBuffering = True
+
+----------------- Started: 5/15/2013 5:21:19 PM -----------------
+PROPFIND http://192.168.1.245:8090/salesaudio/ HTTP/1.1
+User-Agent: IT Hit WebDAV Client .Net v1.2.0.304
+Depth: 0
+Content-Type: text/xml; charset=utf-8
+SendChunked = False
+AllowWriteStreamBuffering = True
+
+----------------- Started: 5/15/2013 5:45:28 PM -----------------
+PROPFIND http://192.168.1.245:8090/salesaudio/ HTTP/1.1
+User-Agent: IT Hit WebDAV Client .Net v1.2.0.304
+Depth: 0
+Content-Type: text/xml; charset=utf-8
+SendChunked = False
+AllowWriteStreamBuffering = True
+
+----------------- Started: 5/15/2013 5:48:03 PM -----------------
+PROPFIND http://192.168.1.245:8090/salesaudio/ HTTP/1.1
+User-Agent: IT Hit WebDAV Client .Net v1.2.0.304
+Depth: 0
+Content-Type: text/xml; charset=utf-8
+SendChunked = False
+AllowWriteStreamBuffering = True
+

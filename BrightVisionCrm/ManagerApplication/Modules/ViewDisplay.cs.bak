@@ -1,0 +1,1314 @@
+﻿using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Text;
+using System.Xml.Linq;
+using System.Xml.XPath;
+using System.Windows.Forms;
+
+using DevExpress.XtraEditors;
+using DevExpress.XtraGrid;
+using DevExpress.XtraGrid.Columns;
+using DevExpress.XtraEditors.Controls;
+using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Views.Base;
+using DevExpress.XtraLayout;
+using DevExpress.XtraTab;
+using DevExpress.XtraEditors.Repository;
+
+using BrightVision.Model;
+using BrightVision.DQControl.Business;
+using BrightVision.Common.Business;
+using BrightVision.Common.Utilities;
+using BrightVision.Reporting.UI;
+
+using ManagerApplication.Business;
+using BrightVision.Reporting;
+using BrightVision.Reporting.Template;
+
+namespace ManagerApplication.Modules {
+    public partial class ViewDisplay : XtraUserControl {
+
+        #region Member Variables
+        private BrightPlatformEntities BPContext = null;
+        private List<SubcampaignData> listSubcampaignData = null;
+        private BackgroundWorker worker = null;
+        #endregion
+
+        #region Constructor
+        public ViewDisplay() {
+            this.Visible = false;
+            InitializeComponent();
+            this.layoutControl1.AllowCustomizationMenu = false;
+            DevExpress.Utils.ImageCollection stateImages = new DevExpress.Utils.ImageCollection();
+            stateImages.ImageSize = new System.Drawing.Size(16, 16);
+            stateImages.AddImage(Properties.Resources.loader);
+            tcgView.Images = stateImages;
+
+            worker = new BackgroundWorker();
+            worker.WorkerSupportsCancellation = true;
+            worker.DoWork += new DoWorkEventHandler(worker_DoWork);
+            BPContext = new BrightPlatformEntities(UserSession.EntityConnection);            
+            ccbeSubcampaign.Properties.ReadOnly = true;
+            BindCustomerCampaignLookup();
+            this.Visible = true;
+            
+        }      
+        #endregion
+        
+        #region Private Methods
+        private void BindCustomerCampaignLookup() {
+            WaitDialog.Show(ParentForm, "Loading components...");
+            ClearAllTabs();
+            //List<CTCustomerCampaign> listCCS = BPContext.FIGetCustomerCampaign(UserSession.CurrentUser.UserId, null).ToList();
+            List<CTCustomerCampaign> listCCS = BPContext.FIGetCustomerCampaign(UserSession.CurrentUser.UserId).ToList();
+            if (listCCS != null && listCCS.Count > 0) {                
+                lookUpEditCustomerCampaign.Properties.Columns.Clear();
+                lookUpEditCustomerCampaign.Properties.DataSource = listCCS;
+                lookUpEditCustomerCampaign.Properties.DisplayMember = "title";
+                lookUpEditCustomerCampaign.Properties.ValueMember = "campaign_id";
+                lookUpEditCustomerCampaign.Properties.Columns.Add(new LookUpColumnInfo("title"));
+                lookUpEditCustomerCampaign.Properties.ShowHeader = false;
+                if(listCCS.Count >= 20) 
+                    lookUpEditCustomerCampaign.Properties.DropDownRows = 30;
+                lookUpEditCustomerCampaign.Properties.PopupWidth = 600;                
+                ccbeSubcampaign.Properties.DataSource = null;
+                ccbeSubcampaign.Properties.PopupControl = null;
+                ccbeSubcampaign.SetEditValue(null);
+                ccbeSubcampaign.RefreshEditValue();
+            }
+           WaitDialog.Close();
+        }
+        private void BindSubcampaignLookup() {
+            WaitDialog.Show(ParentForm, "Loading components...");
+            ClearAllTabs();
+            var editVal = lookUpEditCustomerCampaign.EditValue;
+            if(editVal != null) {
+                int campaign_id = (int) editVal;
+                bool isActive = checkEditActive.Checked;
+                bool isArchived = checkEditArchived.Checked;
+                bool isOnHold = checkEditOnHold.Checked;
+                List<string> statuses = new List<string>();                                
+                
+                if(isArchived) 
+                    statuses.Add("Archived");
+                if(isActive)
+                    statuses.Add("Active");
+                if(isOnHold)
+                    statuses.Add("On Hold");
+                
+                if(campaign_id > 0) {
+                    listSubcampaignData = BPContext.subcampaigns
+                        .Where(x => x.campaign_id == campaign_id && statuses.Contains(x.status))
+                        .Select(x => new SubcampaignData { id = x.id, title= x.title }).ToList();
+                    if (listSubcampaignData != null && listSubcampaignData.Count > 0) {
+                        ccbeSubcampaign.Properties.DataSource = listSubcampaignData;
+                        ccbeSubcampaign.Properties.DisplayMember = "title";
+                        ccbeSubcampaign.Properties.ValueMember = "id";
+                        ccbeSubcampaign.Properties.ReadOnly = false;                        
+                    } else {
+                        ccbeSubcampaign.Properties.DataSource = null;
+                        ccbeSubcampaign.Properties.ReadOnly = true;                       
+                    }
+                    ccbeSubcampaign.Properties.PopupControl = null;
+                    ccbeSubcampaign.SetEditValue(null);
+                    ccbeSubcampaign.RefreshEditValue();
+                }
+                btnLoad.Enabled = false;
+            }
+           WaitDialog.Close();
+        }
+        private List<ViewCofigData> GetViewConfigInfo(int[] subcampaign_ids) {
+            var context = new BrightPlatformEntities(UserSession.EntityConnection);
+            if (subcampaign_ids.Length <= 0) return null;
+            var listViewConfig = context.view_configuration
+                .Where(x => subcampaign_ids.Contains(x.subcampaign_id) && x.MGC == false)
+                .Select(x=> new ViewCofigData { id = x.id, name = x.name }).ToList();
+            return listViewConfig;
+        }
+        private view_configuration GetViewConfiguration(int view_id) {
+            var context = new BrightPlatformEntities(UserSession.EntityConnection);
+            var listViewConfig = context.view_configuration.Where(x => x.id == view_id).FirstOrDefault();
+            return listViewConfig;
+        }
+        public string[] ExtSplit(string text, string delimiter) {
+            return text.Split(new string[] { delimiter }, StringSplitOptions.None);
+        }
+        private DataTable GetTableFromXML(string xmlConfig, IDataReader xmlData, ref string configWithData) 
+        {
+            if (string.IsNullOrEmpty(xmlConfig)) 
+                return null;
+
+            try {
+                string  dialogData = string.Empty, 
+                        scheduleData = string.Empty, 
+                        accountData = string.Empty, 
+                        contactData = string.Empty, 
+                        relationData = string.Empty;
+
+                //object dataRecord = null;
+                if (xmlData != null) {
+                    //read dialog data
+                    while (xmlData.Read()) {
+                        //dataRecord = xmlData["dialogdata"];
+                        //if(!dataRecord.Equals(System.DBNull.Value))
+                        string _data = xmlData["dialogdata"].ToString();
+                        if (!string.IsNullOrEmpty(_data))
+                            dialogData = _data;
+                            //dialogData = (string)xmlData["dialogdata"];
+                    }
+                    if (xmlData.NextResult()) {
+                        while (xmlData.Read()) {
+                            //dataRecord = xmlData["scheduledata"];
+                            //if (!dataRecord.Equals(System.DBNull.Value))
+                            //    scheduleData = (string)xmlData["scheduledata"];
+                            string _data = xmlData["scheduledata"].ToString();
+                            if (!string.IsNullOrEmpty(_data))
+                                scheduleData = _data;
+                        }
+                    }
+                    if (xmlData.NextResult()) {
+                        while (xmlData.Read()) {
+                            //dataRecord = xmlData["relationdata"];
+                            //if (!dataRecord.Equals(System.DBNull.Value))
+                            string _data = xmlData["relationdata"].ToString();
+                            if (!string.IsNullOrEmpty(_data))
+                                relationData = _data;
+                                //relationData = (string)xmlData["relationdata"];
+                        }
+                    }
+                    if (xmlData.NextResult()) {
+                        while (xmlData.Read()) {
+                            //dataRecord = xmlData["accountdata"];
+                            //if (!dataRecord.Equals(System.DBNull.Value))
+                            //    accountData = (string)xmlData["accountdata"];
+                            string _data = xmlData["accountdata"].ToString();
+                            if (!string.IsNullOrEmpty(_data))
+                                accountData = _data;
+                        }
+                    }
+                    if (xmlData.NextResult()) {
+                        while (xmlData.Read()) {
+                            //dataRecord = xmlData["contactdata"];
+                            //if (!dataRecord.Equals(System.DBNull.Value))
+                            //    contactData = (string)xmlData["contactdata"];
+                            string _data = xmlData["contactdata"].ToString();
+                            if (!string.IsNullOrEmpty(_data))
+                                contactData = _data;
+                        }
+                    }
+                }
+
+                var xelem = XElement.Parse(xmlConfig);
+                if(!string.IsNullOrEmpty(dialogData))
+                    xelem.Add(XElement.Parse(dialogData));
+                if (!string.IsNullOrEmpty(scheduleData))
+                    xelem.Add(XElement.Parse(scheduleData));
+                if (!string.IsNullOrEmpty(relationData))
+                    xelem.Add(XElement.Parse(relationData));
+                if(!string.IsNullOrEmpty(accountData))
+                    xelem.Add(XElement.Parse(accountData));
+                if(!string.IsNullOrEmpty(contactData))
+                    xelem.Add(XElement.Parse(contactData));
+                var xmlSource = xelem.ToString();
+                configWithData = xmlSource;
+                var xsltExt = new XsltExtension();
+                var xsltExtParam = new XsltExtensionParam {
+                     Namespace = "util:xsltextension",
+                     Object = xsltExt
+                };
+                string xsl = Properties.Resources.showview;
+                string xmloutput = XsltUtility.GetXmlString(
+                    xsl,
+                    xmlSource,
+                    new List<XsltExtensionParam> { xsltExtParam },
+                    true,
+                    true);
+                DataSet dataSet = new DataSet();
+                dataSet.ReadXml(new System.IO.StringReader(xmloutput));
+                return dataSet.Tables[0];
+            } catch (Exception e){
+                MessageBox.Show(e.Message,e.Source);
+                return null;
+            }
+        }
+
+        #region Threaded Loading Of View Tabs
+        delegate void AddTagGroupDelegate(XtraTabPage group);
+        List<ViewCofigData> m_oListViewConfig = null;
+
+        private void LoadViews(int[] subcampaign_ids) {
+            
+            WaitDialog.Show(ParentForm, "Loading components...");
+            List<XtraTabPage> listGroup = new List<XtraTabPage>();
+            ViewTab group = null;
+            m_oListViewConfig = GetViewConfigInfo(subcampaign_ids);
+            var objSource = ccbeSubcampaign.Properties.DataSource as List<SubcampaignData>;
+            int viewConfigCount = m_oListViewConfig.Count, subcampaign_id = 0;            
+            string subcampaign_title = string.Empty;
+            SubcampaignData sData = null;
+            for (int x = 0; x < viewConfigCount; ++x) {
+                subcampaign_id = m_oListViewConfig[x].subcampaign_id;
+                if (subcampaign_ids.Length > 1) {
+                    sData = objSource.FirstOrDefault(f => f.id == subcampaign_id);
+                    if (sData != null)
+                        subcampaign_title = sData.title + ">";
+                }
+                group = new ViewTab(subcampaign_title + m_oListViewConfig[x].name);
+                group.ConfigData = m_oListViewConfig[x];                
+                group.BindControls();
+                listGroup.Add(group);
+            }
+            tcgView.BeginUpdate();
+            tcgView.TabPages.AddRange(listGroup.ToArray());
+            tcgView.EndUpdate();
+            WaitDialog.Close();
+        }
+        private void AddTagGroupFromPoolThread(XtraTabPage group) {
+            if (group.InvokeRequired) {                
+                group.BeginInvoke(new AddTagGroupDelegate(AddTagGroupControlThread), new object[] { group });
+            } else {
+                AddTagGroupControlThread(group);
+            }
+        }
+        private void AddTagGroupControlThread(XtraTabPage group) {          
+            var tab = group.Tag as ViewTab;
+            if (tab != null) {
+                Action action = delegate() {
+                    this.Invoke(new MethodInvoker(delegate { 
+                        tab.SetButtonState(false);
+                        tab.InitRecordCount();
+                    }));
+                    var config = GetViewConfiguration(tab.ConfigData.id);
+                    if (string.IsNullOrEmpty(config.xml_config) || config.xml_config.Equals("<view />")) {
+                        this.Invoke(new MethodInvoker(delegate { tab.HideLoadingInfo(); }));
+                        return;
+                    }
+
+                    IDataReader configData = null;
+                    
+                    /**
+                     * [jeff 05.14.2012]: https://brightvision.jira.com/browse/PLATFORM-1381
+                     * add second parameter to determine the selected display mode of the export view.
+                     * if no 2nd parameter defined, default will be loaded.
+                     */
+                    if (cboDisplayMode.Text.Equals("Accounts & contacts having dialog data"))
+                        configData = DatabaseUtility.GetViews(tab.ConfigData.id);
+
+                    else if (cboDisplayMode.Text.Equals("Accounts & contacts that have made call attempts"))
+                        configData = DatabaseUtility.GetViews(tab.ConfigData.id, ExportView.eExportViewDisplayMode.AccountsAndContactsHavingSubCampaignCallAttemps);
+
+                    string configWithData = string.Empty;
+                    var datasource = GetTableFromXML(config.xml_config,  configData, ref configWithData);
+                    System.Threading.Thread.Sleep(1500);
+
+                    if (tab != null) {
+                        tab.DataSource = datasource;
+                        tab.XML_Config = config.xml_config;
+                        tab.XML_ConfigWithData = configWithData;
+                    }
+                    if (datasource != null && datasource.Rows.Count > 0)  {
+                        bbiExportCSV.Enabled = true;
+                        bbiExportXLS.Enabled = true;
+                        bbiExportXLSX.Enabled = true;
+                        
+                        tab.ViewConfigName = config.name;
+                        tab.ViewConfigId = config.id;
+                        tab.SubCampaignId = config.subcampaign_id;
+                        tab.CampaignInfo = lookUpEditCustomerCampaign.Text + ccbeSubcampaign.Text;
+                        tab.ParentForm = this.ParentForm;
+
+                        /**
+                         * [@jeff 06.13.2012]: https://brightvision.jira.com/browse/PLATFORM-1464
+                         * added to determine the type of view being loaded to the grid.
+                         * so on the reporting, we will be able to call the correct procedures.
+                         */
+                        if (cboDisplayMode.Text.Equals("Accounts & contacts having dialog data"))
+                            tab.ViewType = ViewTab.eViewType.AccountsContactsWithDialogData;
+                        else if (cboDisplayMode.Text.Equals("Accounts & contacts that have made call attempts"))
+                            tab.ViewType = ViewTab.eViewType.AccountsContactsWithCallAttempts;
+
+                        /**
+                         * [@jeff 06.07.2012]
+                         * get customer id via sub_campaign_id.
+                         */
+                        BrightPlatformEntities _context = new BrightPlatformEntities(UserSession.EntityConnection);
+                        int _campaignId = (int)_context.subcampaigns.FirstOrDefault(i => i.id == config.subcampaign_id).campaign_id;
+                        int _customerId = (int)_context.campaigns.FirstOrDefault(i => i.id == _campaignId).customers.id;
+                        tab.CustomerId = _customerId;
+
+                        this.Invoke(new MethodInvoker(delegate { 
+                            tab.SetButtonState(true);
+                            tab.SetRecordCount(datasource.Rows.Count);
+                        }));
+                    }                  
+                };
+
+                BackgroundWorker bw = new BackgroundWorker();                 
+                bw.DoWork += (sender, e) => { action(); };
+                bw.RunWorkerCompleted += (sender, e) => { tab.ImageIndex = -1; };
+                bw.RunWorkerAsync(); 
+            }
+        }
+        private void PopulateOtherTabDatasources() {            
+            int tabcount = tcgView.TabPages.Count;
+            XtraTabPage page = null;
+            AddTagGroupDelegate dlg = new AddTagGroupDelegate(AddTagGroupFromPoolThread);
+            for (int x = 0; x < tabcount; ++x) {
+                page = tcgView.TabPages[x];
+                dlg.BeginInvoke(page, null, null);
+                System.Threading.Thread.Sleep(750);
+            }
+        }
+        private void ClearAllTabs() {
+            tcgView.TabPages.Clear();
+            bbiExportXLSX.Enabled = false;
+            bbiExportXLS.Enabled = false;
+            bbiExportCSV.Enabled = false;
+        }
+        #endregion
+        #endregion
+
+        #region Controller
+        private void worker_DoWork(object sender, DoWorkEventArgs e) {
+            BackgroundWorker bwAsync = sender as BackgroundWorker;
+            if (bwAsync.CancellationPending)
+                e.Cancel = true;
+            PopulateOtherTabDatasources();
+        }
+        private void lookUpEditCustomerCampaign_EditValueChanged(object sender, EventArgs e) {
+            BindSubcampaignLookup();
+        }
+        private void ccbeSubcampaign_EditValueChanged(object sender, EventArgs e) {
+            ClearAllTabs();
+            string val = (string)ccbeSubcampaign.EditValue;
+            if (!string.IsNullOrEmpty(val)) {
+                btnLoad.Enabled = true;
+                cboDisplayMode.Enabled = true;
+            } else {
+                btnLoad.Enabled = false;
+                cboDisplayMode.Enabled = false;
+            }
+        }
+        private void btnLoad_Click(object sender, EventArgs e) 
+        {
+            if (worker.IsBusy) {
+                worker.CancelAsync();
+                return;
+            }
+            string val = (string)ccbeSubcampaign.EditValue;
+            if (!string.IsNullOrEmpty(val)) {
+                List<int> subcampaign_ids = new List<int>();
+                var strVals = val.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+                strVals.ForEach(delegate(string x) {
+                    subcampaign_ids.Add(int.Parse(x));
+                });
+                ClearAllTabs();
+                LoadViews(subcampaign_ids.ToArray());
+                worker.RunWorkerAsync();
+            }
+        }
+        private void checkEditActive_CheckedChanged(object sender, EventArgs e) {
+            BindSubcampaignLookup();
+        }
+        private void checkEditArchived_CheckedChanged(object sender, EventArgs e) {
+            BindSubcampaignLookup();
+        }
+        private void checkEditOnHold_CheckedChanged(object sender, EventArgs e) {
+            BindSubcampaignLookup();
+        }
+        private void bbiExportCSV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
+            if (tcgView.SelectedTabPage != null) {
+                var oView = tcgView.SelectedTabPage.Tag as ViewTab;
+                if (oView != null) {
+                    oView.Export(ViewExportType.CSV);
+                }
+            }
+
+        }
+        private void bbiExportXLS_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
+            if (tcgView.SelectedTabPage != null) {
+                var oView = tcgView.SelectedTabPage.Tag as ViewTab;
+                if (oView != null) {
+                    oView.Export(ViewExportType.Excel2003);
+                }
+            }
+        }
+        private void bbiExportXLSX_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
+            if (tcgView.SelectedTabPage != null) {
+                var oView = tcgView.SelectedTabPage.Tag as ViewTab;
+                if (oView != null) {
+                    oView.Export(ViewExportType.Excel2007);
+                }
+            }
+        }
+        #endregion
+
+        #region Private Classes
+        private class ViewCofigData 
+        {
+            public int id { get; set; }
+            public int subcampaign_id { get; set; }
+            public string name { get; set; }
+        }
+        private class SubcampaignData 
+        {
+            public int id { get; set; }
+            public string title { get; set; }
+        }
+        #endregion
+
+/**
+ * ================================================================
+ * This is where we define the implementation of the view tab class
+ * ================================================================
+ */
+        #region View Tab Class Implementation
+        private class ViewTab : DevExpress.XtraTab.XtraTabPage
+        {
+            #region Member Variables
+            private LayoutControl layoutControl;
+            private LayoutControlGroup layoutControlGroup1;            
+            private LayoutControlItem layoutControlItem1;
+            private LayoutControlItem layoutControlItem2;
+            private LayoutControlItem layoutControlItem3;
+            private LayoutControlItem layoutControlItem4;
+            private LayoutControlItem layoutControlItem5;
+            private LayoutControlItem layoutControlItem6;
+            private EmptySpaceItem emptySpaceItem1;
+            private EmptySpaceItem emptySpaceItemLoding;
+            private SimpleButton simpleButton1;
+            private SimpleButton simpleButton2;
+            private SimpleButton simpleButton3;
+            private SimpleButton simpleButton4;
+            private LabelControl labelControl1;
+            private GridControl gridControl1;
+            private GridView gridView1;
+            private DataTable dtSource = null;
+            private string m_viewConfigName;
+            private int m_viewConfigId;
+            private int m_subCampaignId;
+            private int m_customerId;
+            private Form m_parentForm;
+            private eViewType m_viewType;
+            private string m_CampaignInfo;
+            #endregion
+
+            #region Constructor
+            public ViewTab(string groupName) : base() 
+            {                    
+                InitializeComponent();
+                this.Text = groupName;
+                this.ImageIndex = 0;
+            }
+            #endregion
+
+            #region Public Properties
+            public ViewCofigData ConfigData { get; set; }
+            public string XML_Config { get; set; }
+            public string XML_ConfigWithData { get; set; }
+            public DataTable DataSource { 
+                get { 
+                    return dtSource; 
+                } 
+                set {
+                    dtSource = value;
+                    this.FillDisplayView();
+                }
+            }
+            public string ViewConfigName 
+            { 
+                set { m_viewConfigName = value; } 
+            }
+            public int ViewConfigId
+            {
+                set { m_viewConfigId = value; }
+            }
+            public int SubCampaignId
+            {
+                set { m_subCampaignId = value; }
+            }
+            public int CustomerId
+            {
+                set { m_customerId = value; }
+            }
+            public Form ParentForm
+            {
+                set { m_parentForm = value; }
+            }
+            public eViewType ViewType
+            {
+                set { m_viewType = value; }
+            }
+            public enum eViewType
+            {
+                AccountsContactsWithDialogData,
+                AccountsContactsWithCallAttempts
+            }
+            public string CampaignInfo
+            {
+                set { m_CampaignInfo = value; }
+            }
+            #endregion
+
+            #region Private Properties
+            private class DialogComponentColumn
+            {
+                public int position_index { get; set; }
+                public bool account_level { get; set; }
+                public string component_type { get; set; }
+                public string label_name { get; set; }
+                public bool merged_column { get; set; } 
+            }
+            #endregion
+
+            #region Object Events
+            private void gridView1_ColumnFilterChanged(object sender, EventArgs e)
+            {
+                if (gridView1.RowCount < 1)
+                    return;
+
+                labelControl1.Text = "Records: " + gridView1.RowCount.ToString();
+            }
+            private void gridView1_PopupMenuShowing(object sender, DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventArgs e) 
+            {
+                GridView view = sender as GridView;
+                GridUtility.CreateGridContextMenu(view, e);
+            }
+            private void simpleButtonShowCreateReportDesigner_Click(object sender, EventArgs e) 
+            {
+                WaitDialog.Show(m_parentForm, "Loading report...");
+
+                if (this.gridView1.DataRowCount == 0)
+                {
+                    WaitDialog.Close();
+                    return;
+                }
+
+                ReportUserDesigner _oReport = new ReportUserDesigner(this.GetReportDataSet(m_viewConfigId));
+                _oReport.SubCampaignId = m_subCampaignId;
+                _oReport.ViewConfigId = m_viewConfigId;
+
+                WaitDialog.Close();
+                _oReport.ShowReportDesigner();
+            }
+            private void simpleButtonShowEditReportDesigner_Click(object sender, EventArgs e)
+            {
+                bool _hasLayOut = true;
+                BrightPlatformEntities _efDbModel = new BrightPlatformEntities(UserSession.EntityConnection) { CommandTimeout = 0 };
+                export_view_report_templates _item = _efDbModel.export_view_report_templates.FirstOrDefault(i => i.view_config_id == m_viewConfigId);
+                if (_item == null)
+                {
+                    MessageBox.Show("No layout available for this view. Will load using the default template.", "Bright Manager", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    _hasLayOut = false;
+                }
+
+                WaitDialog.Show("Loading report...");
+                ReportUserDesigner _oReport = null;
+                if (this.gridView1.DataRowCount == 0)
+                {
+                    WaitDialog.Close();
+                    return;
+                }
+                if (_hasLayOut)
+                    _oReport = new ReportUserDesigner(this.GetReportDataSet(m_viewConfigId), _item.layout_config.ToString());
+                else
+                    _oReport = new ReportUserDesigner(this.GetReportDataSet(m_viewConfigId));
+                _oReport.SubCampaignId = m_subCampaignId;
+                _oReport.ViewConfigId = m_viewConfigId;
+                _oReport.ShowReportDesigner();
+                WaitDialog.Close();
+            }
+            private void simpleButtonShowPrintPreview_Click(object sender, EventArgs e)
+            {
+                bool _hasLayOut = true;
+                BrightPlatformEntities _efDbModel = new BrightPlatformEntities(UserSession.EntityConnection) { CommandTimeout = 0 };
+                export_view_report_templates _item = _efDbModel.export_view_report_templates.FirstOrDefault(i => i.view_config_id == m_viewConfigId);
+                if (_item == null)
+                {
+                    MessageBox.Show("No layout available for this view. Will load using the default template.", "Bright Manager", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    _hasLayOut = false;
+                }
+
+                WaitDialog.Show("Loading report...");
+                if (this.gridView1.DataRowCount == 0)
+                {
+                    WaitDialog.Close();
+                    return;
+                }
+
+                ReportDataSet getReportDataSet = this.GetReportDataSet(m_viewConfigId);
+                XtraReportDefaultTemplate _report = new XtraReportDefaultTemplate();
+
+                additional_data_report_templates _efeReportTemplate = null;
+                if (!_hasLayOut || !_item.additional_data_report_template_id.HasValue){
+                    _efeReportTemplate = _efDbModel.additional_data_report_templates.FirstOrDefault(i => i.is_default);
+                }
+                else if (_item.additional_data_report_template_id.HasValue){
+                    _efeReportTemplate = _efDbModel.additional_data_report_templates.FirstOrDefault(i => i.id == _item.additional_data_report_template_id.Value);
+                }
+
+                var templateData = SerializeUtility.DeserializeFromXml<TemplateProperty>(_efeReportTemplate.data_config);
+                templateData.StatisticsDataSource = GetFilteredData();
+                string template = _efeReportTemplate.layout_config;
+                if (template == null){
+                    template = BrightVision.Reporting.Business.FacadeReportTemplate.GetDefaultReportLayout(); //ToString(new XtraReportDefaultTemplate());
+                }
+                _report = new XtraReportDefaultTemplate(template, templateData);
+                _report.DataSource = getReportDataSet;
+                _report.ShowPreview();
+                WaitDialog.Close();
+            }
+            private void simpleButtonShowEditor_Click(object sender, EventArgs e)
+            {
+                WaitDialog.Show("Loading data.");
+                EditorDisplayViewReportTemplate _frm = new EditorDisplayViewReportTemplate();
+                PopupDialog _dlg = new PopupDialog();
+                _frm.SubCampaignId = m_subCampaignId;
+                _frm.ViewConfigId = m_viewConfigId;
+                _frm.ViewInfo = m_viewConfigName;
+                _frm.CampaignInfo = m_CampaignInfo;
+                _frm.StaticDatasource = GetFilteredData();
+                _frm.ReportDatasetTemp = GetReportDataSet(m_viewConfigId);
+                _dlg.FormBorderStyle = FormBorderStyle.FixedSingle;
+                _dlg.MinimizeBox = false;
+                _dlg.MaximizeBox = false;
+                _dlg.StartPosition = FormStartPosition.CenterScreen;
+                _dlg.Text = "Visual Report Editor";
+                _dlg.Controls.Add(_frm);
+                _dlg.ClientSize = new Size(_frm.Width + 2, _frm.Height + 2);
+                WaitDialog.Close();
+                _dlg.ShowDialog(m_parentForm);
+            }
+            #endregion
+
+            #region Public Methods
+            public void InitRecordCount()
+            {
+                this.labelControl1.Text = "Records: 0";
+            }
+            public void SetRecordCount(int pRecordCount)
+            {
+                this.labelControl1.Text = "Records: " + pRecordCount.ToString();
+            }
+            public void InitializeComponent()
+            {
+                layoutControl = new LayoutControl();
+                layoutControl.Name = "layoutControl" + Guid.NewGuid().ToString();
+                layoutControl.Dock = DockStyle.Fill;
+                this.Controls.Add(layoutControl);
+
+                this.layoutControlGroup1 = new LayoutControlGroup();
+                this.layoutControlGroup1.Name = "layoutControlGroup" + Guid.NewGuid().ToString();
+                this.layoutControlGroup1.Text = this.Text;
+                this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(10, 10, 10, 10);
+                this.layoutControlGroup1.ShowInCustomizationForm = false;
+
+                //Loading datasource
+                this.emptySpaceItemLoding = new EmptySpaceItem();
+                this.emptySpaceItemLoding.Text = "Loading view display. Please wait...";
+                this.emptySpaceItemLoding.AppearanceItemCaption.Font = new Font("Arial", 10f, FontStyle.Bold);
+                this.emptySpaceItemLoding.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+                this.emptySpaceItemLoding.TextVisible = true;
+                this.emptySpaceItemLoding.Size = new Size(100, 20);
+                this.emptySpaceItemLoding.MaxSize = new Size(100, 20);
+                this.emptySpaceItemLoding.MinSize = new Size(100, 20);
+                this.emptySpaceItemLoding.SizeConstraintsType = SizeConstraintsType.Custom;
+                this.layoutControlGroup1.AddItem(emptySpaceItemLoding);
+
+                this.gridView1 = new GridView();
+                this.gridView1.Name = "gridView" + Guid.NewGuid().ToString();
+                this.gridView1.GridControl = this.gridControl1;
+                this.gridView1.OptionsFind.AlwaysVisible = false;
+                this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
+                this.gridView1.OptionsBehavior.AutoPopulateColumns = true;
+                this.gridView1.OptionsSelection.MultiSelect = false;
+                this.gridView1.OptionsView.ShowGroupPanel = false;
+                this.gridView1.OptionsView.ColumnAutoWidth = false;
+                this.gridView1.OptionsBehavior.Editable = false;
+                this.gridView1.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(gridView1_PopupMenuShowing);
+                this.gridView1.ColumnFilterChanged += new EventHandler(gridView1_ColumnFilterChanged);
+
+                this.gridControl1 = new GridControl();
+                this.gridControl1.Name = "gridControl" + Guid.NewGuid().ToString();
+                this.gridControl1.MainView = this.gridView1;
+                this.gridControl1.ViewCollection.AddRange(new BaseView[] { this.gridView1 });
+
+                //this.simpleGenerateReport = new SimpleButton() ;
+                //this.gridControl1.Name = "simpleGenerateReport" + Guid.NewGuid().ToString();
+                //this.Text = "Generate Report";
+                //this.Width = 100;
+
+                //this.simpleButton2 = new SimpleButton();
+                //this.simpleButton2.Name = "simpleButton" + Guid.NewGuid().ToString();
+                //this.simpleButton2.Text = "Export to Excel";
+                //this.simpleButton2.Size = new System.Drawing.Size(150, 22);
+                //this.simpleButton2.Enabled = false;
+                //this.simpleButton2.Click += new EventHandler(simpleButton2_Click);
+
+                //this.simpleButton3 = new SimpleButton();
+                //this.simpleButton3.Name = "simpleButton" + Guid.NewGuid().ToString();
+                //this.simpleButton3.Text = "Export to PDF";
+                //this.simpleButton3.Size = new System.Drawing.Size(150, 22);
+                //this.simpleButton3.Click += new EventHandler(simpleButton1_Click);
+
+                //this.simpleButton4 = new SimpleButton();
+                //this.simpleButton4.Name = "simpleButton" + Guid.NewGuid().ToString();
+                //this.simpleButton4.Text = "Show in Dialog";
+                //this.simpleButton4.Size = new System.Drawing.Size(150, 22);
+                //this.simpleButton4.Click += new EventHandler(simpleButton1_Click);
+
+            }
+            public void HideLoadingInfo()
+            {
+                this.layoutControlGroup1.Remove(emptySpaceItemLoding);
+            }
+            public void Export(ViewExportType exportType)
+            {
+                SaveFileDialog dialog1 = new SaveFileDialog();
+                if (exportType == ViewExportType.Excel2003)
+                {
+                    dialog1.Filter = "Excel Workbook (*.xls)|*.xls";
+                }
+                else if (exportType == ViewExportType.Excel2007)
+                {
+                    dialog1.Filter = "Excel Workbook (*.xslx)|*.xlsx";
+                }
+                else if (exportType == ViewExportType.CSV)
+                {
+                    dialog1.Filter = "CSV (Comma Delimited) (*.csv)|*.csv";
+                }
+
+                dialog1.Title = "Save As";
+                dialog1.CheckPathExists = true;
+                dialog1.CheckFileExists = false;
+                if (dialog1.ShowDialog() == DialogResult.OK)
+                {
+                    if (dialog1.FileName != "")
+                    {
+                        if (dialog1.FilterIndex == 1)
+                        {
+                            gridView1.OptionsPrint.AutoWidth = false;
+                            gridView1.BestFitColumns();
+
+                            FileStream fs = (FileStream)dialog1.OpenFile();
+                            if (exportType == ViewExportType.CSV)
+                            {
+                                DevExpress.XtraPrinting.CsvExportOptions opts = new DevExpress.XtraPrinting.CsvExportOptions();
+                                gridView1.Export(DevExpress.XtraPrinting.ExportTarget.Csv, fs, opts);
+                            }
+                            else if (exportType == ViewExportType.Excel2007)
+                            {
+                                DevExpress.XtraPrinting.XlsxExportOptions opts = new DevExpress.XtraPrinting.XlsxExportOptions();
+                                opts.ExportMode = DevExpress.XtraPrinting.XlsxExportMode.SingleFile;
+                                opts.SheetName = "Sheet1";
+                                gridControl1.ExportToXlsx(fs, opts);
+                            }
+                            else if (exportType == ViewExportType.Excel2003)
+                            {
+                                DevExpress.XtraPrinting.XlsExportOptions opts = new DevExpress.XtraPrinting.XlsExportOptions();
+                                opts.ExportMode = DevExpress.XtraPrinting.XlsExportMode.SingleFile;
+                                opts.SheetName = "Sheet1";
+                                gridControl1.ExportToXls(fs, opts);
+                            }
+                            fs.Close();
+                        }
+
+                    }
+                }
+            }
+            public void BindControls()
+            {              
+                this.layoutControl.BeginUpdate();   
+                this.layoutControlItem1 = new LayoutControlItem();
+                this.layoutControlItem1.Name = "layoutControlItem" + Guid.NewGuid().ToString();
+                this.layoutControlItem1.Control = gridControl1;
+                this.layoutControlItem1.TextVisible = false;                
+                this.layoutControlGroup1.AddItem(this.layoutControlItem1);
+
+                this.emptySpaceItem1 = new EmptySpaceItem();
+                //this.emptySpaceItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 3, 3, 5);
+                this.layoutControlGroup1.AddItem(emptySpaceItem1);
+
+                /**
+                 * [@jeff 06.18.2012]: https://brightvision.jira.com/browse/PLATFORM-1462
+                 * added label to display the current grid record count.
+                 */
+                this.labelControl1 = new LabelControl();
+                this.labelControl1.Name = "labelControl" + Guid.NewGuid().ToString();
+                this.labelControl1.Text = "Records: 0";
+                this.labelControl1.Size = new System.Drawing.Size(120, 22);
+
+                this.layoutControlItem5 = new LayoutControlItem();
+                this.layoutControlItem5.Name = "layoutControlItem" + Guid.NewGuid().ToString();
+                this.layoutControlItem5.Control = labelControl1;
+                this.layoutControlItem5.SizeConstraintsType = SizeConstraintsType.Custom;
+                this.layoutControlItem5.MaxSize = new Size(130, 30);
+                this.layoutControlItem5.MinSize = new Size(80, 24);
+                this.layoutControlItem5.Size = new Size(this.labelControl1.Width + 8, this.labelControl1.Height + 8);
+                this.layoutControlItem5.TextVisible = false;
+                this.layoutControlItem5.ShowInCustomizationForm = false;
+                this.layoutControlItem5.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 3, 3, 5);
+                this.layoutControlGroup1.AddItem(layoutControlItem5, emptySpaceItem1, DevExpress.XtraLayout.Utils.InsertType.Left);
+
+                /**
+                 * load display view report template.
+                 */
+                this.simpleButton4 = new SimpleButton();
+                this.simpleButton4.Name = "simpleButton" + Guid.NewGuid().ToString();
+                this.simpleButton4.Text = "Visual Report Editor";
+                this.simpleButton4.Size = new System.Drawing.Size(130, 22);
+                this.simpleButton4.Click += new EventHandler(simpleButtonShowEditor_Click);
+
+                this.layoutControlItem6 = new LayoutControlItem();
+                this.layoutControlItem6.Name = "layoutControlItem" + Guid.NewGuid().ToString();
+                this.layoutControlItem6.Control = simpleButton4;
+                this.layoutControlItem6.SizeConstraintsType = SizeConstraintsType.Custom;
+                this.layoutControlItem6.MaxSize = new Size(140, 30);
+                this.layoutControlItem6.MinSize = new Size(80, 24);
+                this.layoutControlItem6.Size = new Size(this.simpleButton4.Width + 8, this.simpleButton4.Height + 8);
+                this.layoutControlItem6.TextVisible = false;
+                this.layoutControlItem6.ShowInCustomizationForm = false;
+                this.layoutControlItem6.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 3, 3, 5);
+                this.layoutControlGroup1.AddItem(layoutControlItem6, emptySpaceItem1, DevExpress.XtraLayout.Utils.InsertType.Left);
+
+                /**
+                 * create new template.
+                 */
+                this.simpleButton1 = new SimpleButton();
+                this.simpleButton1.Name = "simpleButton" + Guid.NewGuid().ToString();
+                this.simpleButton1.Text = "Create Template";
+                this.simpleButton1.Size = new System.Drawing.Size(100, 22);
+                this.simpleButton1.Click += new EventHandler(simpleButtonShowCreateReportDesigner_Click);
+              
+                this.layoutControlItem2 = new LayoutControlItem();
+                this.layoutControlItem2.Name = "layoutControlItem" + Guid.NewGuid().ToString();
+                this.layoutControlItem2.Control = simpleButton1;
+                this.layoutControlItem2.SizeConstraintsType = SizeConstraintsType.Custom;
+                this.layoutControlItem2.MaxSize = new Size(110, 30);
+                this.layoutControlItem2.MinSize = new Size(80, 24);
+                this.layoutControlItem2.Size = new Size(this.simpleButton1.Width + 8, this.simpleButton1.Height + 8);
+                this.layoutControlItem2.TextVisible = false;
+                this.layoutControlItem2.ShowInCustomizationForm = false;
+                this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 3, 3, 5);
+                this.layoutControlGroup1.AddItem(layoutControlItem2, emptySpaceItem1, DevExpress.XtraLayout.Utils.InsertType.Left);
+
+                /**
+                 * edit template.
+                 */
+                this.simpleButton2 = new SimpleButton();
+                this.simpleButton2.Name = "simpleButton" + Guid.NewGuid().ToString();
+                this.simpleButton2.Text = "Edit Template";
+                this.simpleButton2.Size = new System.Drawing.Size(90, 22);
+                this.simpleButton2.Click += new EventHandler(simpleButtonShowEditReportDesigner_Click);
+
+                this.layoutControlItem3 = new LayoutControlItem();
+                this.layoutControlItem3.Name = "layoutControlItem" + Guid.NewGuid().ToString();
+                this.layoutControlItem3.Control = simpleButton2;
+                this.layoutControlItem3.SizeConstraintsType = SizeConstraintsType.Custom;
+                this.layoutControlItem3.MaxSize = new Size(100, 30);
+                this.layoutControlItem3.MinSize = new Size(80, 24);
+                this.layoutControlItem3.Size = new Size(this.simpleButton2.Width + 8, this.simpleButton2.Height + 8);
+                this.layoutControlItem3.TextVisible = false;
+                this.layoutControlItem3.ShowInCustomizationForm = false;
+                this.layoutControlItem3.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 3, 3, 5);
+                this.layoutControlGroup1.AddItem(layoutControlItem3, emptySpaceItem1, DevExpress.XtraLayout.Utils.InsertType.Left);
+
+                /**
+                 * show report.
+                 */
+                this.simpleButton3 = new SimpleButton();
+                this.simpleButton3.Name = "simpleButton" + Guid.NewGuid().ToString();
+                this.simpleButton3.Text = "Show Report";
+                this.simpleButton3.Size = new System.Drawing.Size(90, 22);
+                this.simpleButton3.Click += new EventHandler(simpleButtonShowPrintPreview_Click);
+
+                this.layoutControlItem4 = new LayoutControlItem();
+                this.layoutControlItem4.Name = "layoutControlItem" + Guid.NewGuid().ToString();
+                this.layoutControlItem4.Control = simpleButton3;
+                this.layoutControlItem4.SizeConstraintsType = SizeConstraintsType.Custom;
+                this.layoutControlItem4.MaxSize = new Size(100, 30);
+                this.layoutControlItem4.MinSize = new Size(80, 24);
+                this.layoutControlItem4.Size = new Size(this.simpleButton3.Width + 8, this.simpleButton3.Height + 8);
+                this.layoutControlItem4.TextVisible = false;
+                this.layoutControlItem4.ShowInCustomizationForm = false;
+                this.layoutControlItem4.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 3, 3, 5);
+                this.layoutControlGroup1.AddItem(layoutControlItem4, emptySpaceItem1, DevExpress.XtraLayout.Utils.InsertType.Left);
+                
+                //this.layoutControlItem2 = new LayoutControlItem();
+                //this.layoutControlItem2.Name = "layoutControlItem" + Guid.NewGuid().ToString();
+                //this.layoutControlItem2.Control = simpleButton2;
+                //this.layoutControlItem2.SizeConstraintsType = SizeConstraintsType.Custom;
+                //this.layoutControlItem2.MaxSize = new Size(100, 24);
+                //this.layoutControlItem2.MinSize = new Size(80, 24);
+                //this.layoutControlItem2.Size = new Size(80, 24);
+                //this.layoutControlItem2.TextVisible = false;
+                //this.layoutControlItem2.ShowInCustomizationForm = false;                
+                //this.layoutControlGroup1.AddItem(layoutControlItem2, emptySpaceItem1, DevExpress.XtraLayout.Utils.InsertType.Right);
+
+                layoutControl.Root = layoutControlGroup1;
+                layoutControl.Root.GroupBordersVisible = false;
+                layoutControl.EndUpdate();
+                this.Tag = this;
+            }
+            public void SetButtonState(bool state)
+            {
+                this.simpleButton1.Enabled = state;
+                this.simpleButton2.Enabled = state;
+                this.simpleButton3.Enabled = state;
+                this.simpleButton4.Enabled = state;
+            }
+            #endregion
+
+            #region Private Methods
+            private DataTable GetFilteredData()
+            {
+                DataTable table = new DataTable();
+                foreach (GridColumn item in this.gridView1.Columns) { 
+                    if(item.Visible || (item.FieldName =="accountid" || item.FieldName=="contactid")){
+                        table.Columns.Add(item.FieldName);
+                    }
+                }
+
+                int rowCount = this.gridView1.DataRowCount;
+                for (int cnt = 0; cnt < rowCount; cnt++) {
+                    DataRow newrow = table.NewRow();
+                    var datarow = (this.gridView1.GetRow(cnt) as DataRowView).Row;
+                    foreach (GridColumn item in this.gridView1.Columns)
+                    {
+                        if (item.Visible || (item.FieldName == "accountid" || item.FieldName == "contactid"))
+                        {
+                            newrow[item.FieldName] = datarow[item.FieldName];
+                        }
+                    }
+                    table.Rows.Add(newrow);
+                }
+                return table;
+            }
+            private ReportDataSet GetReportDataSet(int viewid)
+            {
+                ReportDataSet reportDataset = new ReportDataSet();
+                DataTable filterdDataSource = GetFilteredData();
+                // This process will set the account and contact table
+                if (m_viewType == eViewType.AccountsContactsWithDialogData)
+                    reportDataset = ReportDataSet.GetReportDataset(viewid, m_customerId, ReportDataSet.eViewType.AccountsContactsWithDialogData);
+                else if (m_viewType == eViewType.AccountsContactsWithCallAttempts)
+                    reportDataset = ReportDataSet.GetReportDataset(viewid, m_customerId, ReportDataSet.eViewType.AccountsContactsWithCallAttempts);
+                
+                //this will remove the account or contact which is not present in the display view grid
+                reportDataset = FilterByGridData(reportDataset);
+
+                PopulateClientInfo(ref reportDataset); 
+                PopulateAccountDynamic(ref reportDataset, filterdDataSource);
+                PopulateContactDynamic(ref reportDataset, filterdDataSource);
+                PopulateAccountStatic(ref reportDataset, filterdDataSource);
+                PopulateContactStatic(ref reportDataset, filterdDataSource);
+
+                return reportDataset;
+
+            }
+            private void PopulateClientInfo(ref ReportDataSet reportDataset)
+            {
+                string customerName = string.Empty;
+                string campaignName = string.Empty;
+                string efeSubCampaignName = string.Empty;
+                string _efeSubCampaignListname = string.Empty;
+                XElement xmlConfigWithData = XElement.Parse(XML_ConfigWithData);
+
+                /**
+                 * [@jeff 06.26.2012]: https://brightvision.jira.com/browse/PLATFORM-1527
+                 * added validation for null objects.
+                 */
+
+                if (xmlConfigWithData.XPathSelectElement("relation/customer") != null &&
+                    xmlConfigWithData.XPathSelectElement("relation/customer").Attribute("name").Value != null)
+                    customerName = xmlConfigWithData.XPathSelectElement("relation/customer").Attribute("name").Value;
+
+                if (xmlConfigWithData.XPathSelectElement("relation/campaign") != null &&
+                    xmlConfigWithData.XPathSelectElement("relation/campaign").Attribute("name").Value != null)
+                    campaignName = xmlConfigWithData.XPathSelectElement("relation/campaign").Attribute("name").Value;
+
+                if (xmlConfigWithData.XPathSelectElement("relation/subcampaign") != null &&
+                    xmlConfigWithData.XPathSelectElement("relation/subcampaign").Attribute("name").Value != null)
+                    efeSubCampaignName = xmlConfigWithData.XPathSelectElement("relation/subcampaign").Attribute("name").Value;
+
+                if (xmlConfigWithData.XPathSelectElement("relation/dialog") != null &&
+                    xmlConfigWithData.XPathSelectElement("relation/dialog").Attribute("list_source_name").Value != null)
+                    _efeSubCampaignListname = xmlConfigWithData.XPathSelectElement("relation/dialog").Attribute("list_source_name").Value;
+
+                reportDataset.clientinfo.Rows.Add(
+                    customerName,
+                    campaignName,
+                    efeSubCampaignName,
+                    UserSession.CurrentUser.UserFullName,
+                    DateTime.Now.ToShortDateString(),
+                    m_viewConfigName,
+                    _efeSubCampaignListname
+                );
+            }
+            private void PopulateContactStatic(ref ReportDataSet dataset, DataTable datasource){
+                var config = XElement.Parse(XML_Config);
+                for (int rowCount = 0; rowCount < datasource.Rows.Count; rowCount++) {
+                    for (int colCount = 0; colCount < datasource.Columns.Count; colCount++) {
+                        string colName = datasource.Columns[colCount].ColumnName;
+                        if (colName == "accountid" || colName == "contactid")
+                            continue;
+                        // get the source base on the column name
+                        // the columnname is the display name in the xml_config
+                        var filter = string.Format("item[display_name='{0}']", colName);
+                        var item = config.XPathSelectElement(filter);
+                        var xsource = item.XPathSelectElements("source").FirstOrDefault();
+                        var xfieldName = item.XPathSelectElements("field_name").FirstOrDefault();
+                        string source = string.Empty;
+                        string fieldName = string.Empty;
+                        if (xsource != null && xfieldName !=null){
+                            source = xsource.Value;
+                            fieldName = xfieldName.Value;
+                        }
+                        else{
+                            continue;
+                        }
+
+                        //AccountMerge and Dialog Account Level source is added to accountdynamic table
+                        if (source == "General" && (fieldName == "DialogCreatedBy" || 
+                            fieldName == "DialogCreatedDate" || fieldName == "DialogStatus" ||
+                            fieldName == "ContactLastChanged" || fieldName == "ContactStatusLastChanged"))
+                        {
+                            var newContactStatic = dataset.contactstatic.NewcontactstaticRow();
+                            newContactStatic.contactid = int.Parse(datasource.Rows[rowCount]["contactid"].ToString());
+                            newContactStatic.name = colName;
+                            newContactStatic.value = datasource.Rows[rowCount][colCount].ToString();
+                            dataset.contactstatic.AddcontactstaticRow(newContactStatic);
+                        }
+
+                    }
+                }               
+            }
+            private void PopulateAccountStatic(ref ReportDataSet dataset, DataTable datasource) {
+                var config = XElement.Parse(XML_Config);
+                for (int rowCount = 0; rowCount < datasource.Rows.Count; rowCount++) {
+                    for (int colCount = 0; colCount < datasource.Columns.Count; colCount++) {
+                        string colName = datasource.Columns[colCount].ColumnName;
+                        if (colName == "accountid" || colName == "contactid")
+                            continue;
+                        // get the source base on the column name
+                        // the columnname is the display name in the xml_config
+                        var filter = string.Format("item[display_name='{0}']", colName);
+                        var item = config.XPathSelectElement(filter);
+                        var xsource = item.XPathSelectElements("source").FirstOrDefault();
+                        var xfieldName = item.XPathSelectElements("field_name").FirstOrDefault();
+                        string source = string.Empty;
+                        string fieldName = string.Empty;
+                        if (xsource != null && xfieldName !=null){
+                            source = xsource.Value;
+                            fieldName = xfieldName.Value;
+                        }
+                        else{
+                            continue;
+                        }
+
+                        //AccountMerge and Dialog Account Level source is added to accountdynamic table
+                        if (source == "General" && (fieldName=="CompanyLeadStatus" || 
+                            fieldName=="CompanyStatus" || fieldName == "CompanyLastChanged" ||
+                            fieldName == "CompanyStatusLastChanged" || fieldName == "AccountSubCampaignCallAttempts"))
+                        {
+                            var newAccountStatic = dataset.accountstatic.NewaccountstaticRow();
+                            newAccountStatic.accountid = int.Parse(datasource.Rows[rowCount]["accountid"].ToString());
+                            newAccountStatic.name = colName;
+                            newAccountStatic.value = datasource.Rows[rowCount][colCount].ToString();
+                            dataset.accountstatic.AddaccountstaticRow(newAccountStatic);
+                        }
+
+                    }
+                }               
+            }
+            private void PopulateContactDynamic(ref ReportDataSet dataset, DataTable datasource) {
+                var config = XElement.Parse(XML_Config);
+                for (int rowCount = 0; rowCount < datasource.Rows.Count; rowCount++) {
+                    for (int colCount = 0; colCount < datasource.Columns.Count; colCount++) {
+                        string colName = datasource.Columns[colCount].ColumnName;
+                        if (colName == "accountid" || colName == "contactid")
+                            continue;
+                        // get the source base on the column name
+                        // the columnname is the display name in the xml_config
+                        var filter = string.Format("item[display_name='{0}']", colName);
+                        var item = config.XPathSelectElement(filter);
+                        var xsource = item.XPathSelectElements("source").FirstOrDefault();
+                        string source = string.Empty;
+                        if (xsource != null){
+                            source = xsource.Value;
+                        }
+                        else
+                        {
+                            var lbl = item.XPathSelectElement("label_name");
+                            if (lbl.Value == "EMPTY") continue;
+                            var mergeitem = item.XPathSelectElements("merge_data").First();
+                            var mergeContactItem = mergeitem.XPathSelectElements("//item[source='Contact' or source='Dialog Contact Level']");
+                            if (mergeContactItem.Count() > 0)
+                                source = "ContactMerge";
+                        }
+
+                        //AccountMerge and Dialog Account Level source is added to accountdynamic table
+                        if (source == "ContactMerge" || source == "Dialog Contact Level")
+                        {
+                            var newContactDynamic = dataset.contactdynamic.NewcontactdynamicRow();
+                            newContactDynamic.contactid = int.Parse(datasource.Rows[rowCount]["contactid"].ToString());
+                            newContactDynamic.name = colName;
+                            newContactDynamic.value = datasource.Rows[rowCount][colCount].ToString();
+                            dataset.contactdynamic.AddcontactdynamicRow(newContactDynamic);
+                        }
+
+                    }
+                }
+            }
+            private void PopulateAccountDynamic(ref ReportDataSet dataset, DataTable datasource) {
+                var config = XElement.Parse(XML_Config);
+                for (int rowCount = 0; rowCount < datasource.Rows.Count; rowCount++) {
+                    for (int colCount = 0; colCount < datasource.Columns.Count; colCount++) {
+                        string colName = datasource.Columns[colCount].ColumnName;
+                        if(colName=="accountid" || colName=="contactid")
+                            continue;
+                        // get the source base on the column name
+                        // the columnname is the display name in the xml_config
+                        var filter = string.Format("item[display_name='{0}']", colName);
+                        var item = config.XPathSelectElement(filter);
+                        var xsource = item.XPathSelectElements("source").FirstOrDefault();
+                        string source = string.Empty;
+                        if (xsource != null){
+                            source = xsource.Value;
+                        }
+                        else
+                        {
+                            var lbl = item.XPathSelectElement("label_name");
+                            if (lbl.Value == "EMPTY") continue;
+                            var mergeitem = item.XPathSelectElements("merge_data").First();
+                            var mergeContactItem = mergeitem.XPathSelectElements("//item[source='Contact' or source='Dialog Contact Level']");
+                            if (mergeContactItem.Count() == 0)
+                                source = "AccountMerge";
+                        }
+                        int accountid =  int.Parse(datasource.Rows[rowCount]["accountid"].ToString());;
+                        var datarowDynamic = dataset.Tables["accountdynamic"].Select(string.Format("accountid={0} and name='{1}'", accountid, colName));
+                        //AccountMerge and Dialog Account Level source is added to accountdynamic table
+                        if (datarowDynamic.Count()==0 && (source == "AccountMerge" || source == "Dialog Account Level"))
+                        {
+                            var newAccountDynamic = dataset.accountdynamic.NewaccountdynamicRow();
+                            newAccountDynamic.accountid = accountid;
+                            newAccountDynamic.name = colName;
+                            newAccountDynamic.value = datasource.Rows[rowCount][colCount].ToString();
+                            dataset.accountdynamic.AddaccountdynamicRow(newAccountDynamic);
+                        }
+
+                    }
+                }
+            }
+            private ReportDataSet FilterByGridData(ReportDataSet reportDataset)
+            {
+                int rowCount = this.gridView1.DataRowCount;
+                string accountFilter = string.Empty;
+                string contactFilter = string.Empty;
+                List<int> listAccount = new List<int>();
+                List<int> listContact = new List<int>();
+
+                #region get the filter of account and contact
+                for (int cnt = 0; cnt < rowCount; cnt++) {
+                    var rowview = this.gridView1.GetRow(cnt) as DataRowView;
+                    int accountId = int.Parse(rowview.Row["accountid"].ToString());
+                    int contactid = int.Parse(rowview.Row["contactid"].ToString());
+                    if (listAccount.Where(param => param == accountId).Count() == 0) {
+                        listAccount.Add(accountId);
+                    }
+                    if (listContact.Where(param => param == contactid).Count() == 0) {
+                        listContact.Add(contactid);
+                    }
+                }
+                foreach (var ac in listAccount)
+                {
+                    accountFilter += ac + ",";
+                }
+                foreach (var c in listContact)
+                {
+                   contactFilter += c+",";
+                }
+
+
+                #endregion
+
+                if (accountFilter != string.Empty)
+                {
+                    accountFilter = accountFilter.Substring(0, accountFilter.Length - 1);
+                    var toDeleteAccount = reportDataset.account.Select(String.Format("account_id NOT IN ({0})", accountFilter));
+                    foreach (var tmp in toDeleteAccount)
+                    {
+                        tmp.Delete();
+                    }
+                }
+                if (contactFilter != string.Empty)
+                {
+                    contactFilter = contactFilter.Substring(0, contactFilter.Length - 1);
+                    var toDeleteContact = reportDataset.contact.Select(String.Format("contact_id NOT IN ({0})", contactFilter));
+                    foreach (var tmp in toDeleteContact)
+                    {
+                        tmp.Delete();
+                    }
+                }
+
+                
+                return reportDataset;
+            }
+            private void FillDisplayView()
+            {
+                Action _action = delegate {
+                    gridControl1.DataSource = null;
+                    gridControl1.DataSource = dtSource.Clone();
+
+                    GridColumn _column = null;
+                    emptySpaceItemLoding.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+                    RepositoryItemMemoEdit _tbxColumn = new RepositoryItemMemoEdit() { 
+                        WordWrap = true 
+                    };
+
+                    gridView1.GridControl.RepositoryItems.Add(_tbxColumn);
+
+                    if (gridView1.Columns.Count > 0) {
+                        gridView1.OptionsView.RowAutoHeight = true;
+                        gridView1.OptionsView.ColumnAutoWidth = false;
+                        gridView1.OptionsSelection.MultiSelect = true;
+                        gridView1.OptionsSelection.MultiSelectMode = GridMultiSelectMode.RowSelect;
+
+                        for (int i = 0; i < gridView1.Columns.Count; i++) {
+                            _column = gridView1.Columns[i];
+                            _column.ColumnEdit = _tbxColumn;
+                            _column.Width = 300;
+                            _column.MaxWidth = 500;
+                            _column.MinWidth = 100;
+                            _column.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top;
+                            _column.OptionsColumn.AllowEdit = false;
+                            _column.OptionsColumn.AllowFocus = false;
+                            _column.OptionsColumn.FixedWidth = false;
+                            if (_column.FieldName == "accountid" || _column.FieldName == "contactid")
+                                _column.Visible = false;
+                            //gc.BestFit();        
+                        }
+
+                        //gridView1.BestFitColumns();
+                        //gridView1.LeftCoord = 0;
+                    }
+
+                    gridControl1.DataSource = dtSource;
+                    gridView1.LeftCoord = 0;
+                };
+
+                if (gridControl1.InvokeRequired)
+                    gridControl1.BeginInvoke(_action);
+                else
+                    _action();
+            }
+            #endregion
+        }
+        #endregion
+    }
+}

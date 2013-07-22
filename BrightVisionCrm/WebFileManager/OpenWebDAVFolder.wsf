@@ -1,0 +1,27 @@
+<job id="main">
+	<script language="JScript">
+	    // This script opens WebDAV folder in Windows Explorer on Windows 7, Vista and Server 2008.
+	    // To run it use the following command: 'WScript.exe thisfile.wsf "\\server@8080\DavWWWRoot\path\"'
+
+	    var webDavServerFolder = WScript.arguments(0); // must be in the format: \\server@SSL@8080\DavWWWRoot\path\
+
+	    // Disconnect previous connection. Otherwise if login/password or authentication schema has changed and the previous connection 
+	    // is still open, the following error is displyed: "The network folder specified is currently mapped using a different user name and password".
+	    try {
+	        WScript.CreateObject('WScript.Network').RemoveNetworkDrive(webDavServerFolder, true, true);
+	    }
+	    catch (e) { }
+
+	    // Show login dialog. Simply running the following command: 'explorer.exe "\\server@8080\DavWWWRoot\path\'" does not show login dialog 
+	    // if server requires authentication.
+	    // Note that if you checked 'Save password' checkbox and than changed login/password or authentication schema you will get 'Access is denied.' 
+	    // Network Error. In this case you must clear network login using command: 'rundll32.exe keymgr.dll, KRShowKeyMgr'
+	    WScript.CreateObject('Shell.Application').ShellExecute(webDavServerFolder, null, null, null, 0);
+
+	    // Run explorer and wait untill it exits 
+	    var process = WScript.CreateObject("WScript.Shell").Exec('explorer.exe "' + webDavServerFolder + '"');
+	    while (process.Status == 0) {
+	        WScript.Sleep(100);
+	    }
+	</script>
+</job>

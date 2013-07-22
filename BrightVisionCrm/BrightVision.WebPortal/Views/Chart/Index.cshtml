@@ -1,0 +1,65 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    
+		<script type="text/javascript">
+		    //var sampleFormat = jQuery.parseJSON('[["Open", 321], ["In Progress", 370], ["Not Qualified", 225], ["Follow-Up", 35], ["relreased", 19], ["Approved", 8]]');
+
+		    var data = jQuery.parseJSON(@Html.Raw(Json.Encode(@ViewBag.Data)));
+
+		    $(function () {
+
+		        $('#container').highcharts({
+		            chart: {
+		                type: 'funnel',
+		                marginRight: 100
+		            },
+		            title: {
+		                text: '@ViewBag.Title',
+		                x: -50
+		            },
+		            plotOptions: {
+		                series: {
+		                    dataLabels: {
+		                        enabled: true,
+		                        format: '<b>{point.name}</b> ({point.y:,.0f})',
+		                        color: 'black',
+		                        softConnector: true
+		                    },
+		                    neckWidth: '30%',
+		                    neckHeight: '25%'
+
+		                    //-- Other available options
+		                    // height: pixels or percent
+		                    // width: pixels or percent
+		                }
+		            },
+		            legend: {
+		                enabled: false
+		            },
+		            series: [{
+		                name: 'Company Status',
+		                data: data
+		            }]
+		        });
+		    });
+		</script>
+</head>
+<body>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/funnel.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="width: 800px; height: 400px; margin: 0 auto"></div>
+    
+</body>
+</html>

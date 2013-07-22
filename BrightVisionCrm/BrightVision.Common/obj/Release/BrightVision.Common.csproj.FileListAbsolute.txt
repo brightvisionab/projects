@@ -1,0 +1,152 @@
+D:\BrightVision\Project\BrightVision.Common\bin\Release\BrightVision.Common.dll.config
+D:\BrightVision\Project\BrightVision.Common\bin\Release\BrightVision.Common.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\BrightVision.Common.pdb
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ActiveUp.Net.Common.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ActiveUp.Net.Dns.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ActiveUp.Net.Smtp.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\BrightVision.Model.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\DevExpress.Data.v12.2.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\DevExpress.Utils.v12.2.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\DevExpress.XtraEditors.v12.2.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\DevExpress.XtraGrid.v12.2.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\DevExpress.XtraLayout.v12.2.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\DevExpress.XtraVerticalGrid.v12.2.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\GMap.NET.Core.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\GMap.NET.WindowsForms.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ITHit.WebDAV.Client.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\LinqToExcel.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\Mvp.Xml.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\Newtonsoft.Json.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\Remotion.Data.Linq.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\System.Data.SQLite.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\System.Reactive.Core.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\System.Reactive.Interfaces.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\System.Reactive.Linq.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\System.Reactive.PlatformServices.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\System.Reactive.Providers.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\VoIPSDK.DLL
+D:\BrightVision\Project\BrightVision.Common\bin\Release\BrightVision.Model.pdb
+D:\BrightVision\Project\BrightVision.Common\bin\Release\DevExpress.Data.v12.2.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\DevExpress.Utils.v12.2.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\DevExpress.XtraEditors.v12.2.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\DevExpress.XtraGrid.v12.2.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\DevExpress.XtraLayout.v12.2.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\DevExpress.XtraVerticalGrid.v12.2.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\GMap.NET.Core.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\GMap.NET.WindowsForms.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\System.Reactive.Core.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\System.Reactive.Interfaces.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\System.Reactive.Linq.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\System.Reactive.PlatformServices.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\System.Reactive.Providers.xml
+D:\BrightVision\Project\BrightVision.Common\bin\Release\de\DevExpress.Data.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\es\DevExpress.Data.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ja\DevExpress.Data.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ru\DevExpress.Data.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\de\DevExpress.Utils.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\es\DevExpress.Utils.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ja\DevExpress.Utils.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ru\DevExpress.Utils.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\de\DevExpress.XtraEditors.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\es\DevExpress.XtraEditors.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ja\DevExpress.XtraEditors.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ru\DevExpress.XtraEditors.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\de\DevExpress.XtraGrid.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\es\DevExpress.XtraGrid.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ja\DevExpress.XtraGrid.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ru\DevExpress.XtraGrid.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\de\DevExpress.XtraLayout.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\es\DevExpress.XtraLayout.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ja\DevExpress.XtraLayout.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ru\DevExpress.XtraLayout.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\de\DevExpress.XtraVerticalGrid.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\es\DevExpress.XtraVerticalGrid.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ja\DevExpress.XtraVerticalGrid.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\bin\Release\ru\DevExpress.XtraVerticalGrid.v12.2.resources.dll
+D:\BrightVision\Project\BrightVision.Common\obj\Release\BrightVision.Common.csprojResolveAssemblyReference.cache
+D:\BrightVision\Project\BrightVision.Common\obj\Release\BrightVision.Common.Modules.GeoLocationViewer.resources
+D:\BrightVision\Project\BrightVision.Common\obj\Release\BrightVision.Common.Resources.resources
+D:\BrightVision\Project\BrightVision.Common\obj\Release\BrightVision.Common.UI.CallLogPlayer.resources
+D:\BrightVision\Project\BrightVision.Common\obj\Release\BrightVision.Common.Business.WaitForm1.resources
+D:\BrightVision\Project\BrightVision.Common\obj\Release\BrightVision.Common.csproj.GenerateResource.Cache
+D:\BrightVision\Project\BrightVision.Common\obj\Release\BrightVision.Common.dll
+D:\BrightVision\Project\BrightVision.Common\obj\Release\BrightVision.Common.pdb
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\BrightVision.Common.dll.config
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\BrightVision.Common.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\BrightVision.Common.pdb
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ActiveUp.Net.Common.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ActiveUp.Net.Dns.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ActiveUp.Net.Smtp.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\BrightVision.Model.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\BrightVision.Windows.Azure.Storage.Blob.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\DevExpress.Data.v12.2.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\DevExpress.Utils.v12.2.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\DevExpress.XtraEditors.v12.2.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\DevExpress.XtraGrid.v12.2.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\DevExpress.XtraLayout.v12.2.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\DevExpress.XtraVerticalGrid.v12.2.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\GMap.NET.Core.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\GMap.NET.WindowsForms.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ITHit.WebDAV.Client.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\LinqToExcel.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\Mvp.Xml.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\Newtonsoft.Json.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\Remotion.Data.Linq.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\System.Data.SQLite.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\System.Reactive.Core.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\System.Reactive.Interfaces.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\System.Reactive.Linq.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\System.Reactive.PlatformServices.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\System.Reactive.Providers.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\VoIPSDK.DLL
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\Microsoft.WindowsAzure.Storage.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\BrightVision.Model.pdb
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\BrightVision.Windows.Azure.Storage.Blob.pdb
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\DevExpress.Data.v12.2.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\DevExpress.Utils.v12.2.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\DevExpress.XtraEditors.v12.2.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\DevExpress.XtraGrid.v12.2.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\DevExpress.XtraLayout.v12.2.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\DevExpress.XtraVerticalGrid.v12.2.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\GMap.NET.Core.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\GMap.NET.WindowsForms.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\System.Reactive.Core.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\System.Reactive.Interfaces.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\System.Reactive.Linq.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\System.Reactive.PlatformServices.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\System.Reactive.Providers.xml
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\de\DevExpress.Data.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\es\DevExpress.Data.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ja\DevExpress.Data.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ru\DevExpress.Data.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\de\DevExpress.Utils.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\es\DevExpress.Utils.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ja\DevExpress.Utils.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ru\DevExpress.Utils.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\de\DevExpress.XtraEditors.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\es\DevExpress.XtraEditors.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ja\DevExpress.XtraEditors.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ru\DevExpress.XtraEditors.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\de\DevExpress.XtraGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\es\DevExpress.XtraGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ja\DevExpress.XtraGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ru\DevExpress.XtraGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\de\DevExpress.XtraLayout.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\es\DevExpress.XtraLayout.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ja\DevExpress.XtraLayout.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ru\DevExpress.XtraLayout.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\de\DevExpress.XtraVerticalGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\es\DevExpress.XtraVerticalGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ja\DevExpress.XtraVerticalGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\ru\DevExpress.XtraVerticalGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\obj\Release\BrightVision.Common.csprojResolveAssemblyReference.cache
+D:\Brightvision Projects\CRM\BrightVision.Common\obj\Release\BrightVision.Common.Modules.GeoLocationViewer.resources
+D:\Brightvision Projects\CRM\BrightVision.Common\obj\Release\BrightVision.Common.Resources.resources
+D:\Brightvision Projects\CRM\BrightVision.Common\obj\Release\BrightVision.Common.UI.CallLogPlayer.resources
+D:\Brightvision Projects\CRM\BrightVision.Common\obj\Release\BrightVision.Common.Business.WaitForm1.resources
+D:\Brightvision Projects\CRM\BrightVision.Common\obj\Release\BrightVision.Common.csproj.GenerateResource.Cache
+D:\Brightvision Projects\CRM\BrightVision.Common\obj\Release\BrightVision.Common.dll.licenses
+D:\Brightvision Projects\CRM\BrightVision.Common\obj\Release\BrightVision.Common.dll
+D:\Brightvision Projects\CRM\BrightVision.Common\obj\Release\BrightVision.Common.pdb
+D:\Brightvision Projects\CRM\BrightVision.Common\obj\Release\BrightVision.Common.UI.AudioDiagnostic.resources
+D:\Brightvision Projects\CRM\BrightVision.Common\bin\Release\Mindscape.Raygun4Net.dll

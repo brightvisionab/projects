@@ -1,0 +1,337 @@
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\bin\Release\ManagerApplication.exe.config
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Forms.FrmManagerApplication.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddAnswerForm.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddCampaign.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddCompany.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddCustomer.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddLanguageSetting.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddQuestion.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddSubCampaign.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddSubCampaignCustomerUser.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddSubCampaignInternalUser.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddTag.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddTitleSetting.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddUser.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.CompanyContact.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditorDialogAnswerOptions.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditorDialogMeetingPlaceDetails.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditorDialogMultipleChoiceValues.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditorDialogOtherChoices.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ExportDesign.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.GeoMatchCompany.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.GeoMatchContact.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageCallList.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageLanguageSetting.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageCustomerCampaign.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageDialogs.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageFinalCallList.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageImportList.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageListCreation.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageQuestions.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageSubCampaign.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageTitleSetting.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageUser.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.NewDialog.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.NewImport.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.NewQuestions.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.PopupDialog.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.PreviewCallList.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.PreviewCallListContact.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.PromptDialog.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.TemplateDialog.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.UserLogin.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.Properties.Resources.resources
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Michael\BrightVision\BrightVisionProject\ManagerApplication\obj\x86\Release\ManagerApplication.exe.licenses
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ManagerApplication.exe.config
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ManagerApplication.exe
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ManagerApplication.pdb
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ActiveUp.Net.Common.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ActiveUp.Net.Dns.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ActiveUp.Net.Smtp.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Common.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.DQControl.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.EventLog.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.FileManagement.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Mandrill.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Model.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.RemotableObject.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Reporting.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Storage.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Threading.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.BonusSkins.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Charts.v12.2.Core.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.CodeParser.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Data.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Office.v12.2.Core.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.PivotGrid.v12.2.Core.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Printing.v12.2.Core.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.RichEdit.v12.2.Core.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Utils.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Utils.v12.2.UI.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Xpf.Core.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraBars.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraCharts.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraCharts.v12.2.Extensions.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraCharts.v12.2.Wizard.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraEditors.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraGrid.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraLayout.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraNavBar.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraPivotGrid.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraPrinting.v12.2.Design.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraPrinting.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraReports.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraReports.v12.2.Extensions.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraRichEdit.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraScheduler.v12.2.Core.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraScheduler.v12.2.Design.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraScheduler.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraScheduler.v12.2.Extensions.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraScheduler.v12.2.Reporting.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraScheduler.v12.2.Reporting.Extensions.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraTreeList.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraVerticalGrid.v12.2.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\LinqToExcel.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\Microsoft.WindowsAzure.StorageClient.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\Mvp.Xml.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\Newtonsoft.Json.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\Remotion.Data.Linq.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\System.Reactive.Core.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\System.Reactive.Interfaces.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\System.Reactive.Linq.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\System.Reactive.Windows.Forms.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\VoIPSDK.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\GMap.NET.WindowsForms.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\GMap.NET.Core.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ITHit.WebDAV.Client.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Logging.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\System.Data.SQLite.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Common.pdb
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.DQControl.pdb
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.EventLog.pdb
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Mandrill.pdb
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Model.pdb
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.RemotableObject.pdb
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Storage.pdb
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Threading.pdb
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Reporting.pdb
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Data.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.PivotGrid.v12.2.Core.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Printing.v12.2.Core.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Office.v12.2.Core.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.RichEdit.v12.2.Core.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Utils.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Xpf.Core.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraBars.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraCharts.v12.2.Wizard.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraCharts.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraEditors.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraGrid.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraLayout.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraNavBar.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraPivotGrid.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraPrinting.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.Utils.v12.2.UI.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraReports.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraReports.v12.2.Extensions.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraRichEdit.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraScheduler.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraScheduler.v12.2.Core.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraScheduler.v12.2.Extensions.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraScheduler.v12.2.Reporting.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraScheduler.v12.2.Reporting.Extensions.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraTreeList.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\DevExpress.XtraVerticalGrid.v12.2.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\System.Reactive.Core.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\System.Reactive.Interfaces.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\System.Reactive.Linq.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\System.Reactive.Windows.Forms.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\GMap.NET.WindowsForms.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\GMap.NET.Core.xml
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Logging.pdb
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.Data.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.Data.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.Data.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.Data.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.PivotGrid.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.PivotGrid.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.PivotGrid.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.PivotGrid.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.Printing.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.Printing.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.Printing.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.Printing.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.RichEdit.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.RichEdit.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.RichEdit.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.RichEdit.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.Utils.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.Utils.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.Utils.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.Utils.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.Xpf.Core.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.Xpf.Core.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.Xpf.Core.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.Xpf.Core.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraBars.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraBars.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraBars.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraBars.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraCharts.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraCharts.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraCharts.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraCharts.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraEditors.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraEditors.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraEditors.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraEditors.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraLayout.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraLayout.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraLayout.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraLayout.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraNavBar.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraNavBar.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraNavBar.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraNavBar.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraPivotGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraPivotGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraPivotGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraPivotGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraPrinting.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraPrinting.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraPrinting.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraPrinting.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.Utils.v12.2.UI.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.Utils.v12.2.UI.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.Utils.v12.2.UI.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.Utils.v12.2.UI.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraReports.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraReports.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraReports.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraReports.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraReports.v12.2.Extensions.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraReports.v12.2.Extensions.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraReports.v12.2.Extensions.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraReports.v12.2.Extensions.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraRichEdit.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraRichEdit.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraRichEdit.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraRichEdit.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraScheduler.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraScheduler.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraScheduler.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraScheduler.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraScheduler.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraScheduler.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraScheduler.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraScheduler.v12.2.Core.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraScheduler.v12.2.Extensions.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraScheduler.v12.2.Extensions.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraScheduler.v12.2.Extensions.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraScheduler.v12.2.Extensions.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraScheduler.v12.2.Reporting.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraScheduler.v12.2.Reporting.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraScheduler.v12.2.Reporting.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraScheduler.v12.2.Reporting.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraTreeList.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraTreeList.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraTreeList.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraTreeList.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\de\DevExpress.XtraVerticalGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\es\DevExpress.XtraVerticalGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ja\DevExpress.XtraVerticalGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\ru\DevExpress.XtraVerticalGrid.v12.2.resources.dll
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.csprojResolveAssemblyReference.cache
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Forms.AddContact.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Forms.DemoWindow.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Forms.FrmAppointment.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Forms.FrmAppUpdater.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Forms.FrmFuzzyMatching.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Forms.FrmManagerApplication.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Forms.FrmSchedulingPopup.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddAnswerForm.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddCampaign.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddCompany.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddCustomer.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddCustomerUser.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddEmailVerifyContact.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddInternalUser.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddLanguageSetting.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddQuestion.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddReportTemplate.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddSIPAccount.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddSubCampaign.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddSubCampaignAccount.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddSubCampaignConfigTemplate.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddTag.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddTitleSetting.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AddUser.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.AutoTitleCorrection.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ChartCreator.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageMessageLog.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.CreateBlankView.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditorDisplayViewReportTemplate.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditorNurtureSetting.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditorStringCollection.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ImportCollectedData.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditorSubCampaignConfig.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageReportTemplate.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageSIPAccount.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.MasterDataImport.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageEmailVerification.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageEventLog.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageFileMakerMigrated.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageFollowUp.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ReAssignFollowUp.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ReportTemplatePropertyGrid.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.SendEmailTemplate.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ViewCallLogs.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ViewDisplay.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditImportFile.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ViewConfiguration.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditorDialogAnswerOptions.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditorDialogMultipleChoiceValues.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditorDialogOtherChoices.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageCallList.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageCompanyContact.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageCompanyGeoData.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageContactGeoData.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageCustomerUser.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageLanguageSetting.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageCustomerCampaign.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageDialogs.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageFinalCallList.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageImportList.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageListCreation.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageQuestions.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageSubCampaign.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageTitleSetting.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ManageInternalUser.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.NewDialog.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.NewImport.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.NewQuestions.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.PopupDialog.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.PromptDialog.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.TemplateDialog.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.UserLogin.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.ViewTemplate.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.EditorReportTemplate.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\XmlEditor.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Properties.Resources.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.SplashScreen1.resources
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.csproj.GenerateResource.Cache
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.exe.licenses
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.exe
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.pdb
+D:\Brightvision Projects\CRM\ManagerApplication\obj\x86\Release\ManagerApplication.Modules.SubCampaignConfigurationHelp.resources
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Windows.Azure.Storage.Blob.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\Microsoft.WindowsAzure.Storage.dll
+D:\Brightvision Projects\CRM\ManagerApplication\bin\Release\BrightVision.Windows.Azure.Storage.Blob.pdb

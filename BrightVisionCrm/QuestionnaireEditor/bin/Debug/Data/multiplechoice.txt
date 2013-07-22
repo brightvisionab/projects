@@ -1,0 +1,60 @@
+﻿{
+  "GlobalValue" : null,
+  "Type" : "Multiplechoice",
+  "Form" : {
+    "Settings" : {
+      "Label" : "5c",
+      "QuestionText" : "Brand of coffee machines?",
+	  "QuestionHelp" : "This question is about bla bla dropbox",
+      "Priority" : "Prio2",
+      "PlotDoneStatus" : "Done",
+      "DataBindings" : {
+        "account_id" : "",
+		"answer_id" : "",
+		"contact_id" : "",
+		"dialog_id" : "",
+		"campaign_id" : "",
+        "question_id" : ""
+      },
+	  "CustomerOwnership" : true,
+      "BVOwnership" : true,
+      "BackgroundColor" : "White",
+      "AnswerOptions" : [
+		{
+		  "MultipleChoiceItemsPerColumn" : 3,
+		  "MultipleChoiceColumns" : 3,
+		  "MultipleChoiceValues" : [
+			{ "TextPrefix" : "not selected", "Checked" : false },
+			{ "TextPrefix" : "selected", "Checked" : true },
+			{ "TextPrefix" : "row one", "Checked" : true }, 
+			{ "TextPrefix" : "not selected", "Checked" : false },
+			{ "TextPrefix" : "selected", "Checked" : true },
+			{ "TextPrefix" : "row two", "Checked" : true },
+			{ "TextPrefix" : "not selected", "Checked" : false },
+			{ "TextPrefix" : "selected", "Checked" : true },
+			{ "TextPrefix" : "row three", "Checked" : true }
+		  ],		
+		  "OtherChoices" : [
+		    {
+			  "TextPrefix" : "Other Choice",
+			  "DefaultInputValue" : "other field, free text 2 comma separated",
+			  "InputValue": "",
+			  "TextboxMaxWidth" : 100,
+			  "TextboxMaxHeight" : 50,
+			  "Enabled" : true
+			},
+			{
+			  "TextPrefix" : "Comment",
+			  "DefaultInputValue" : "Some text A second line of text",
+			  "InputValue": "",
+			  "TextboxMaxWidth" : 100,
+			  "TextboxMaxHeight" : 50,
+			  "Enabled" : true
+			}			
+		  ]
+		}
+	  ]
+    }
+  }  
+}
+

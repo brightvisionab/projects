@@ -1,0 +1,9 @@
+D:\Brightvision Projects\CRM\SalesConsultant\bin\Debug\BrightSales_Audio_Uploader.exe.config
+D:\Brightvision Projects\CRM\SalesConsultant\bin\Debug\BrightSales_Audio_Uploader.exe
+D:\Brightvision Projects\CRM\SalesConsultant\bin\Debug\BrightSales_Audio_Uploader.pdb
+D:\Brightvision Projects\CRM\WindowsAzureStorageBlob\obj\Debug\BrightVision.AudioUploader.csprojResolveAssemblyReference.cache
+D:\Brightvision Projects\CRM\WindowsAzureStorageBlob\obj\Debug\WindowsAzureStorageBlob.frmWindowsAzureStorageBlob.resources
+D:\Brightvision Projects\CRM\WindowsAzureStorageBlob\obj\Debug\BrightSales_Audio_Uploader.Properties.Resources.resources
+D:\Brightvision Projects\CRM\WindowsAzureStorageBlob\obj\Debug\BrightVision.AudioUploader.csproj.GenerateResource.Cache
+D:\Brightvision Projects\CRM\WindowsAzureStorageBlob\obj\Debug\BrightSales_Audio_Uploader.exe
+D:\Brightvision Projects\CRM\WindowsAzureStorageBlob\obj\Debug\BrightSales_Audio_Uploader.pdb

@@ -1,0 +1,39 @@
+E:\BrightVision\Project\BrightVisionProject\BrightVision.Model\bin\Debug\BrightVision.Model.dll
+E:\BrightVision\Project\BrightVisionProject\BrightVision.Model\bin\Debug\BrightVision.Model.pdb
+E:\BrightVision\Project\BrightVisionProject\BrightVision.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\BrightVision\Project\BrightVisionProject\BrightVision.Model\obj\Debug\BrightVision.Model.dll
+E:\BrightVision\Project\BrightVisionProject\BrightVision.Model\obj\Debug\BrightVision.Model.pdb
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\BrightVision.Model\bin\Debug\BrightVision.Model.dll
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\BrightVision.Model\bin\Debug\BrightVision.Model.pdb
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\BrightVision.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\BrightVision.Model\obj\Debug\BrightVision.Model.dll
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\BrightVision.Model\obj\Debug\BrightVision.Model.pdb
+E:\BrightVision\Project\BrightVisionProject\BrightVision.Model\bin\Debug\BrightVision.Model.dll.config
+D:\BRIGHT VISION PROJECTS\Projects\BrightVision.Model\bin\Debug\BrightVision.Model.dll.config
+D:\BRIGHT VISION PROJECTS\Projects\BrightVision.Model\bin\Debug\BrightVision.Model.dll
+D:\BRIGHT VISION PROJECTS\Projects\BrightVision.Model\bin\Debug\BrightVision.Model.pdb
+D:\BRIGHT VISION PROJECTS\Projects\BrightVision.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\BRIGHT VISION PROJECTS\Projects\BrightVision.Model\obj\Debug\BrightVision.Model.dll
+D:\BRIGHT VISION PROJECTS\Projects\BrightVision.Model\obj\Debug\BrightVision.Model.pdb
+D:\Brightvision Projects\REVISED\BrightVision.Model\bin\Debug\BrightVision.Model.dll.config
+D:\Brightvision Projects\REVISED\BrightVision.Model\bin\Debug\BrightVision.Model.dll
+D:\Brightvision Projects\REVISED\BrightVision.Model\bin\Debug\BrightVision.Model.pdb
+D:\Brightvision Projects\REVISED\BrightVision.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\Brightvision Projects\REVISED\BrightVision.Model\obj\Debug\BrightVision.Model.dll
+D:\Brightvision Projects\REVISED\BrightVision.Model\obj\Debug\BrightVision.Model.pdb
+D:\CRM\BrightVision.Model\bin\Debug\BrightVision.Model.dll.config
+D:\CRM\BrightVision.Model\bin\Debug\BrightVision.Model.dll
+D:\CRM\BrightVision.Model\bin\Debug\BrightVision.Model.pdb
+D:\CRM\BrightVision.Model\obj\Debug\BrightVision.Model.dll
+D:\CRM\BrightVision.Model\obj\Debug\BrightVision.Model.pdb
+D:\BrightVision\Project\BrightVision.Model\bin\Debug\BrightVision.Model.dll.config
+D:\BrightVision\Project\BrightVision.Model\bin\Debug\BrightVision.Model.dll
+D:\BrightVision\Project\BrightVision.Model\bin\Debug\BrightVision.Model.pdb
+D:\BrightVision\Project\BrightVision.Model\obj\Debug\BrightVision.Model.dll
+D:\BrightVision\Project\BrightVision.Model\obj\Debug\BrightVision.Model.pdb
+D:\Brightvision Projects\CRM\BrightVision.Model\bin\Debug\BrightVision.Model.dll.config
+D:\Brightvision Projects\CRM\BrightVision.Model\bin\Debug\BrightVision.Model.dll
+D:\Brightvision Projects\CRM\BrightVision.Model\bin\Debug\BrightVision.Model.pdb
+D:\Brightvision Projects\CRM\BrightVision.Model\obj\Debug\BrightVision.Model.dll
+D:\Brightvision Projects\CRM\BrightVision.Model\obj\Debug\BrightVision.Model.pdb
+D:\Brightvision Projects\CRM\BrightVision.Model\obj\Debug\BrightVision.Model.csprojResolveAssemblyReference.cache

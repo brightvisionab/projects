@@ -1,0 +1,6 @@
+D:\Brightvision Projects\CRM\BrightVision.ServerSide.SMS\bin\Release\BrightVision.ServerSide.SMS.dll
+D:\Brightvision Projects\CRM\BrightVision.ServerSide.SMS\bin\Release\BrightVision.ServerSide.SMS.pdb
+D:\Brightvision Projects\CRM\BrightVision.ServerSide.SMS\bin\Release\RestSharp.dll
+D:\Brightvision Projects\CRM\BrightVision.ServerSide.SMS\obj\Release\BrightVision.ServerSide.SMS.csprojResolveAssemblyReference.cache
+D:\Brightvision Projects\CRM\BrightVision.ServerSide.SMS\obj\Release\BrightVision.ServerSide.SMS.dll
+D:\Brightvision Projects\CRM\BrightVision.ServerSide.SMS\obj\Release\BrightVision.ServerSide.SMS.pdb

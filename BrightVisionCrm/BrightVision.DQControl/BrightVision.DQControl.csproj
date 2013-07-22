@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A7170D7-1C74-41E5-AB93-9007F9308200}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BrightVision.DQControl</RootNamespace>
+    <AssemblyName>BrightVision.DQControl</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\AnswerOption.cs" />
+    <Compile Include="Business\BusinessAnswer.cs" />
+    <Compile Include="Business\CampaignQuestionnaire.cs" />
+    <Compile Include="Business\Constants.cs" />
+    <Compile Include="Business\CustomDataContext.cs" />
+    <Compile Include="Business\CustomObjects.cs" />
+    <Compile Include="Business\ISchedule.cs" />
+    <Compile Include="Business\DataBindings.cs" />
+    <Compile Include="Business\IDropbox.cs" />
+    <Compile Include="Business\IMultipleChoice.cs" />
+    <Compile Include="Business\IQuestionnaire.cs" />
+    <Compile Include="Business\ISmartText.cs" />
+    <Compile Include="Business\ITextbox.cs" />
+    <Compile Include="Business\Business.cs" />
+    <Compile Include="Business\QuestionForm.cs" />
+    <Compile Include="Business\Settings.cs" />
+    <Compile Include="Business\TypesConverter.cs" />
+    <Compile Include="Utilities\DQXsltFunction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddAttendies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddAttendies.Designer.cs">
+      <DependentUpon>AddAttendies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Footer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Footer.Designer.cs">
+      <DependentUpon>Footer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Schedule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Dropbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Multiplechoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ScheduleDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ScheduleDetails.Designer.cs">
+      <DependentUpon>ScheduleDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\testinglayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\testinglayout.Designer.cs">
+      <DependentUpon>testinglayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Textbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddAttendies.resx">
+      <DependentUpon>AddAttendies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Footer.resx">
+      <DependentUpon>Footer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ScheduleDetails.resx">
+      <DependentUpon>ScheduleDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\testinglayout.resx">
+      <DependentUpon>testinglayout.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BrightVision.Common\BrightVision.Common.csproj">
+      <Project>{A2036924-B2B6-4F45-B212-E3CBE2EEDF15}</Project>
+      <Name>BrightVision.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrightVision.Model\BrightVision.Model.csproj">
+      <Project>{A3F29C9B-DB6F-4DBA-8E5F-94ACB27A5972}</Project>
+      <Name>BrightVision.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\16x16\account.png" />
+    <Content Include="Resources\16x16\cancel-16x16.png" />
+    <Content Include="Resources\16x16\completed.png" />
+    <Content Include="Resources\16x16\contact.png" />
+    <Content Include="Resources\16x16\help.png" />
+    <Content Include="Resources\16x16\info.png" />
+    <Content Include="Resources\16x16\ownership.png" />
+    <Content Include="Resources\16x16\required.png" />
+    <Content Include="Resources\16x16\save-16x16.png" />
+    <Content Include="Resources\bg_cyan.gif" />
+    <Content Include="Resources\bg_pink.gif" />
+    <Content Include="Resources\bg_selector.gif" />
+    <Content Include="Resources\bg_yellow.gif" />
+    <Content Include="Resources\flags\BE.png" />
+    <Content Include="Resources\flags\DE.png" />
+    <Content Include="Resources\flags\DK.png" />
+    <Content Include="Resources\flags\FI.png" />
+    <Content Include="Resources\flags\FR.png" />
+    <Content Include="Resources\flags\IT.png" />
+    <Content Include="Resources\flags\NL.png" />
+    <Content Include="Resources\flags\NO.png" />
+    <Content Include="Resources\flags\PH.png" />
+    <Content Include="Resources\flags\SE.png" />
+    <Content Include="Resources\flags\UK.png" />
+    <Content Include="Resources\seminar.txt" />
+    <Content Include="Resources\smarttext.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropbox.txt" />
+    <None Include="Resources\multiplechoice.txt" />
+    <None Include="Resources\schedule.txt" />
+    <None Include="Resources\textbox.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

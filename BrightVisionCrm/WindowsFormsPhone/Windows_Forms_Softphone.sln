@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windows_Forms_Softphone", "Windows_Forms_Softphone\Windows_Forms_Softphone.csproj", "{7CD6419B-7AF9-4323-922C-F72C8905FC8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CD6419B-7AF9-4323-922C-F72C8905FC8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD6419B-7AF9-4323-922C-F72C8905FC8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD6419B-7AF9-4323-922C-F72C8905FC8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD6419B-7AF9-4323-922C-F72C8905FC8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

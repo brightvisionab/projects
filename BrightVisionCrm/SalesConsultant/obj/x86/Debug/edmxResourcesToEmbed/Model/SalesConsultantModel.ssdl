@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BrightplatformDB_110306Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="BrightplatformDB_110306ModelStoreContainer">
+    <EntitySet Name="Accounts" EntityType="BrightplatformDB_110306Model.Store.Accounts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CampaignContactList" EntityType="BrightplatformDB_110306Model.Store.CampaignContactList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CampaignList" EntityType="BrightplatformDB_110306Model.Store.CampaignList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Campaigns" EntityType="BrightplatformDB_110306Model.Store.Campaigns" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Contacts" EntityType="BrightplatformDB_110306Model.Store.Contacts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Customer" EntityType="BrightplatformDB_110306Model.Store.Customer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Questionnaire" EntityType="BrightplatformDB_110306Model.Store.Questionnaire" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="QuestionnaireList" EntityType="BrightplatformDB_110306Model.Store.QuestionnaireList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Questions" EntityType="BrightplatformDB_110306Model.Store.Questions" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_CampaignContactList_CampaignList" Association="BrightplatformDB_110306Model.Store.FK_CampaignContactList_CampaignList">
+      <End Role="CampaignList" EntitySet="CampaignList" />
+      <End Role="CampaignContactList" EntitySet="CampaignContactList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CampaignContactList_Contacts" Association="BrightplatformDB_110306Model.Store.FK_CampaignContactList_Contacts">
+      <End Role="Contacts" EntitySet="Contacts" />
+      <End Role="CampaignContactList" EntitySet="CampaignContactList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CampaignList_Accounts" Association="BrightplatformDB_110306Model.Store.FK_CampaignList_Accounts">
+      <End Role="Accounts" EntitySet="Accounts" />
+      <End Role="CampaignList" EntitySet="CampaignList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CampaignList_Campaigns" Association="BrightplatformDB_110306Model.Store.FK_CampaignList_Campaigns">
+      <End Role="Campaigns" EntitySet="Campaigns" />
+      <End Role="CampaignList" EntitySet="CampaignList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Campaigns_Customer" Association="BrightplatformDB_110306Model.Store.FK_Campaigns_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Campaigns" EntitySet="Campaigns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_Accounts" Association="BrightplatformDB_110306Model.Store.FK_Contacts_Accounts">
+      <End Role="Accounts" EntitySet="Accounts" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Questionnaire_Campaigns" Association="BrightplatformDB_110306Model.Store.FK_Questionnaire_Campaigns">
+      <End Role="Campaigns" EntitySet="Campaigns" />
+      <End Role="Questionnaire" EntitySet="Questionnaire" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuestionnaireList_CampaignContactList" Association="BrightplatformDB_110306Model.Store.FK_QuestionnaireList_CampaignContactList">
+      <End Role="CampaignContactList" EntitySet="CampaignContactList" />
+      <End Role="QuestionnaireList" EntitySet="QuestionnaireList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuestionnaireList_Questionnaire" Association="BrightplatformDB_110306Model.Store.FK_QuestionnaireList_Questionnaire">
+      <End Role="Questionnaire" EntitySet="Questionnaire" />
+      <End Role="QuestionnaireList" EntitySet="QuestionnaireList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Questions_QuestionnaireList" Association="BrightplatformDB_110306Model.Store.FK_Questions_QuestionnaireList">
+      <End Role="QuestionnaireList" EntitySet="QuestionnaireList" />
+      <End Role="Questions" EntitySet="Questions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="company_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="org_no" Type="nvarchar" MaxLength="255" />
+    <Property Name="box_address" Type="nvarchar" MaxLength="255" />
+    <Property Name="street_adress" Type="nvarchar" MaxLength="255" />
+    <Property Name="zipcode" Type="nvarchar" MaxLength="255" />
+    <Property Name="city" Type="nvarchar" MaxLength="255" />
+    <Property Name="country" Type="nvarchar" MaxLength="255" />
+    <Property Name="telephone" Type="nvarchar" MaxLength="255" />
+    <Property Name="telefax" Type="nvarchar" MaxLength="255" />
+    <Property Name="www" Type="nvarchar" MaxLength="255" />
+    <Property Name="year_established" Type="nvarchar" MaxLength="255" />
+    <Property Name="parent_company" Type="nvarchar" MaxLength="255" />
+    <Property Name="activity_code" Type="nvarchar" MaxLength="255" />
+    <Property Name="activity_code_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="activity_code_description" Type="nvarchar(max)" />
+    <Property Name="activity_code2_description" Type="nvarchar(max)" />
+    <Property Name="currency" Type="nvarchar" MaxLength="255" />
+    <Property Name="fiscal" Type="nvarchar" MaxLength="255" />
+    <Property Name="consolidated_figures" Type="int" />
+    <Property Name="revenues" Type="int" />
+    <Property Name="exports" Type="int" />
+    <Property Name="result" Type="int" />
+    <Property Name="sales_abroad" Type="int" />
+    <Property Name="employees_abroad" Type="int" />
+    <Property Name="employees_total" Type="int" />
+    <Property Name="net_interest_incom" Type="int" />
+    <Property Name="gross_premiums" Type="int" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+    <Property Name="created_by" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CampaignContactList">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="campaignlist_id" Type="int" />
+    <Property Name="contact_id" Type="int" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CampaignList">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+    <Property Name="Campaign_id" Type="int" />
+    <Property Name="Account_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Campaigns">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="campaign_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+    <Property Name="Customer_id" Type="int" />
+    <Property Name="created_by" Type="nvarchar" MaxLength="50" />
+    <Property Name="assigned_user_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="account_id" Type="int" />
+    <Property Name="first_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="middle_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="last_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="direct_phone" Type="nvarchar" MaxLength="255" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="255" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="255" />
+    <Property Name="company_name" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="customer_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Questionnaire">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="campaigns_id" Type="int" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QuestionnaireList">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="questionnaire_id" Type="int" />
+    <Property Name="question_number" Type="int" />
+    <Property Name="question_label" Type="nvarchar" MaxLength="255" />
+    <Property Name="brightvision_owner" Type="nvarchar" MaxLength="255" />
+    <Property Name="campaign_owner" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+    <Property Name="campaigncontactlist_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Questions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="questionnaire__ist_id" Type="int" />
+    <Property Name="question" Type="nvarchar" MaxLength="255" />
+    <Property Name="answer_format" Type="nvarchar" MaxLength="255" />
+    <Property Name="question_type" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_CampaignContactList_CampaignList">
+    <End Role="CampaignList" Type="BrightplatformDB_110306Model.Store.CampaignList" Multiplicity="0..1" />
+    <End Role="CampaignContactList" Type="BrightplatformDB_110306Model.Store.CampaignContactList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CampaignList">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CampaignContactList">
+        <PropertyRef Name="campaignlist_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CampaignContactList_Contacts">
+    <End Role="Contacts" Type="BrightplatformDB_110306Model.Store.Contacts" Multiplicity="0..1" />
+    <End Role="CampaignContactList" Type="BrightplatformDB_110306Model.Store.CampaignContactList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CampaignContactList">
+        <PropertyRef Name="contact_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CampaignList_Accounts">
+    <End Role="Accounts" Type="BrightplatformDB_110306Model.Store.Accounts" Multiplicity="0..1" />
+    <End Role="CampaignList" Type="BrightplatformDB_110306Model.Store.CampaignList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CampaignList">
+        <PropertyRef Name="Account_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CampaignList_Campaigns">
+    <End Role="Campaigns" Type="BrightplatformDB_110306Model.Store.Campaigns" Multiplicity="0..1" />
+    <End Role="CampaignList" Type="BrightplatformDB_110306Model.Store.CampaignList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Campaigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CampaignList">
+        <PropertyRef Name="Campaign_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Campaigns_Customer">
+    <End Role="Customer" Type="BrightplatformDB_110306Model.Store.Customer" Multiplicity="0..1" />
+    <End Role="Campaigns" Type="BrightplatformDB_110306Model.Store.Campaigns" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Campaigns">
+        <PropertyRef Name="Customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_Accounts">
+    <End Role="Accounts" Type="BrightplatformDB_110306Model.Store.Accounts" Multiplicity="0..1" />
+    <End Role="Contacts" Type="BrightplatformDB_110306Model.Store.Contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="account_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Questionnaire_Campaigns">
+    <End Role="Campaigns" Type="BrightplatformDB_110306Model.Store.Campaigns" Multiplicity="0..1" />
+    <End Role="Questionnaire" Type="BrightplatformDB_110306Model.Store.Questionnaire" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Campaigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Questionnaire">
+        <PropertyRef Name="campaigns_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuestionnaireList_CampaignContactList">
+    <End Role="CampaignContactList" Type="BrightplatformDB_110306Model.Store.CampaignContactList" Multiplicity="0..1" />
+    <End Role="QuestionnaireList" Type="BrightplatformDB_110306Model.Store.QuestionnaireList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CampaignContactList">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="QuestionnaireList">
+        <PropertyRef Name="campaigncontactlist_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuestionnaireList_Questionnaire">
+    <End Role="Questionnaire" Type="BrightplatformDB_110306Model.Store.Questionnaire" Multiplicity="0..1" />
+    <End Role="QuestionnaireList" Type="BrightplatformDB_110306Model.Store.QuestionnaireList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Questionnaire">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="QuestionnaireList">
+        <PropertyRef Name="questionnaire_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Questions_QuestionnaireList">
+    <End Role="QuestionnaireList" Type="BrightplatformDB_110306Model.Store.QuestionnaireList" Multiplicity="0..1" />
+    <End Role="Questions" Type="BrightplatformDB_110306Model.Store.Questions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="QuestionnaireList">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Questions">
+        <PropertyRef Name="questionnaire__ist_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,518 @@
+﻿namespace SalesConsultant.Modules
+{
+    partial class AddUser
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lcControls = new DevExpress.XtraLayout.LayoutControl();
+            this.cboCustomer = new DevExpress.XtraEditors.LookUpEdit();
+            this.cboManager = new DevExpress.XtraEditors.LookUpEdit();
+            this.cmdCancel = new DevExpress.XtraEditors.SimpleButton();
+            this.cmdSave = new DevExpress.XtraEditors.SimpleButton();
+            this.txtPassword = new DevExpress.XtraEditors.TextEdit();
+            this.txtUsername = new DevExpress.XtraEditors.TextEdit();
+            this.txtEmail = new DevExpress.XtraEditors.TextEdit();
+            this.txtMobile = new DevExpress.XtraEditors.TextEdit();
+            this.txtPhone = new DevExpress.XtraEditors.TextEdit();
+            this.txtSite = new DevExpress.XtraEditors.TextEdit();
+            this.txtTitle = new DevExpress.XtraEditors.TextEdit();
+            this.txtFullname = new DevExpress.XtraEditors.TextEdit();
+            this.chkActive = new DevExpress.XtraEditors.CheckEdit();
+            this.cboSIP = new DevExpress.XtraEditors.LookUpEdit();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItemSIP = new DevExpress.XtraLayout.LayoutControlItem();
+            ((System.ComponentModel.ISupportInitialize)(this.lcControls)).BeginInit();
+            this.lcControls.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cboCustomer.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboManager.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUsername.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMobile.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSite.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTitle.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFullname.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkActive.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboSIP.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemSIP)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lcControls
+            // 
+            this.lcControls.AllowCustomizationMenu = false;
+            this.lcControls.Controls.Add(this.cboCustomer);
+            this.lcControls.Controls.Add(this.cboManager);
+            this.lcControls.Controls.Add(this.cmdCancel);
+            this.lcControls.Controls.Add(this.cmdSave);
+            this.lcControls.Controls.Add(this.txtPassword);
+            this.lcControls.Controls.Add(this.txtUsername);
+            this.lcControls.Controls.Add(this.txtEmail);
+            this.lcControls.Controls.Add(this.txtMobile);
+            this.lcControls.Controls.Add(this.txtPhone);
+            this.lcControls.Controls.Add(this.txtSite);
+            this.lcControls.Controls.Add(this.txtTitle);
+            this.lcControls.Controls.Add(this.txtFullname);
+            this.lcControls.Controls.Add(this.chkActive);
+            this.lcControls.Controls.Add(this.cboSIP);
+            this.lcControls.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lcControls.Location = new System.Drawing.Point(0, 0);
+            this.lcControls.Name = "lcControls";
+            this.lcControls.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(758, 198, 250, 350);
+            this.lcControls.Root = this.layoutControlGroup1;
+            this.lcControls.Size = new System.Drawing.Size(276, 328);
+            this.lcControls.TabIndex = 0;
+            this.lcControls.Text = "layoutControl1";
+            // 
+            // cboCustomer
+            // 
+            this.cboCustomer.Enabled = false;
+            this.cboCustomer.Location = new System.Drawing.Point(68, 12);
+            this.cboCustomer.Name = "cboCustomer";
+            this.cboCustomer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboCustomer.Properties.NullText = "";
+            this.cboCustomer.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.OnlyInPopup;
+            this.cboCustomer.Properties.ShowFooter = false;
+            this.cboCustomer.Properties.ShowHeader = false;
+            this.cboCustomer.Properties.ShowLines = false;
+            this.cboCustomer.Properties.ShowPopupShadow = false;
+            this.cboCustomer.Size = new System.Drawing.Size(196, 20);
+            this.cboCustomer.StyleController = this.lcControls;
+            this.cboCustomer.TabIndex = 25;
+            // 
+            // cboManager
+            // 
+            this.cboManager.Location = new System.Drawing.Point(68, 84);
+            this.cboManager.Name = "cboManager";
+            this.cboManager.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboManager.Properties.NullText = "";
+            this.cboManager.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.OnlyInPopup;
+            this.cboManager.Properties.ShowFooter = false;
+            this.cboManager.Properties.ShowHeader = false;
+            this.cboManager.Properties.ShowLines = false;
+            this.cboManager.Properties.ShowPopupShadow = false;
+            this.cboManager.Size = new System.Drawing.Size(196, 20);
+            this.cboManager.StyleController = this.lcControls;
+            this.cboManager.TabIndex = 24;
+            // 
+            // cmdCancel
+            // 
+            this.cmdCancel.Location = new System.Drawing.Point(141, 294);
+            this.cmdCancel.Name = "cmdCancel";
+            this.cmdCancel.Size = new System.Drawing.Size(123, 22);
+            this.cmdCancel.StyleController = this.lcControls;
+            this.cmdCancel.TabIndex = 22;
+            this.cmdCancel.Text = "Cancel";
+            this.cmdCancel.Click += new System.EventHandler(this.cmdCancel_Click);
+            // 
+            // cmdSave
+            // 
+            this.cmdSave.Location = new System.Drawing.Point(12, 294);
+            this.cmdSave.Name = "cmdSave";
+            this.cmdSave.Size = new System.Drawing.Size(125, 22);
+            this.cmdSave.StyleController = this.lcControls;
+            this.cmdSave.TabIndex = 21;
+            this.cmdSave.Text = "Save";
+            this.cmdSave.Click += new System.EventHandler(this.cmdSave_Click);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(68, 228);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Properties.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(108, 20);
+            this.txtPassword.StyleController = this.lcControls;
+            this.txtPassword.TabIndex = 13;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(68, 204);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(196, 20);
+            this.txtUsername.StyleController = this.lcControls;
+            this.txtUsername.TabIndex = 12;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(68, 180);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(196, 20);
+            this.txtEmail.StyleController = this.lcControls;
+            this.txtEmail.TabIndex = 11;
+            // 
+            // txtMobile
+            // 
+            this.txtMobile.Location = new System.Drawing.Point(68, 156);
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.Size = new System.Drawing.Size(196, 20);
+            this.txtMobile.StyleController = this.lcControls;
+            this.txtMobile.TabIndex = 10;
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(68, 132);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(196, 20);
+            this.txtPhone.StyleController = this.lcControls;
+            this.txtPhone.TabIndex = 9;
+            // 
+            // txtSite
+            // 
+            this.txtSite.Location = new System.Drawing.Point(68, 108);
+            this.txtSite.Name = "txtSite";
+            this.txtSite.Size = new System.Drawing.Size(196, 20);
+            this.txtSite.StyleController = this.lcControls;
+            this.txtSite.TabIndex = 8;
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Location = new System.Drawing.Point(68, 60);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(196, 20);
+            this.txtTitle.StyleController = this.lcControls;
+            this.txtTitle.TabIndex = 6;
+            // 
+            // txtFullname
+            // 
+            this.txtFullname.Location = new System.Drawing.Point(68, 36);
+            this.txtFullname.Name = "txtFullname";
+            this.txtFullname.Size = new System.Drawing.Size(196, 20);
+            this.txtFullname.StyleController = this.lcControls;
+            this.txtFullname.TabIndex = 4;
+            // 
+            // chkActive
+            // 
+            this.chkActive.EditValue = true;
+            this.chkActive.Location = new System.Drawing.Point(180, 228);
+            this.chkActive.Name = "chkActive";
+            this.chkActive.Properties.Caption = "Active";
+            this.chkActive.Size = new System.Drawing.Size(84, 19);
+            this.chkActive.StyleController = this.lcControls;
+            this.chkActive.TabIndex = 18;
+            // 
+            // cboSIP
+            // 
+            this.cboSIP.Location = new System.Drawing.Point(68, 252);
+            this.cboSIP.Name = "cboSIP";
+            this.cboSIP.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboSIP.Properties.NullText = "";
+            this.cboSIP.Size = new System.Drawing.Size(196, 20);
+            this.cboSIP.StyleController = this.lcControls;
+            this.cboSIP.TabIndex = 26;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.CustomizationFormText = "Root";
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1,
+            this.layoutControlItem3,
+            this.layoutControlItem5,
+            this.layoutControlItem6,
+            this.layoutControlItem7,
+            this.layoutControlItem8,
+            this.layoutControlItem9,
+            this.layoutControlItem10,
+            this.layoutControlItem15,
+            this.layoutControlItem16,
+            this.layoutControlItem11,
+            this.emptySpaceItem1,
+            this.layoutControlItem2,
+            this.layoutControlItem4,
+            this.layoutControlItemSIP});
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(276, 328);
+            this.layoutControlGroup1.Text = "Root";
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.txtFullname;
+            this.layoutControlItem1.CustomizationFormText = "Firstname:";
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 24);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(256, 24);
+            this.layoutControlItem1.Text = "Fullname:";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(52, 13);
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.txtTitle;
+            this.layoutControlItem3.CustomizationFormText = "Title:";
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(256, 24);
+            this.layoutControlItem3.Text = "Title:";
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(52, 13);
+            // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.Control = this.txtSite;
+            this.layoutControlItem5.CustomizationFormText = "Site:";
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(256, 24);
+            this.layoutControlItem5.Text = "Site:";
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(52, 13);
+            // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.Control = this.txtPhone;
+            this.layoutControlItem6.CustomizationFormText = "Phone:";
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 120);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Size = new System.Drawing.Size(256, 24);
+            this.layoutControlItem6.Text = "Phone:";
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(52, 13);
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.Control = this.txtMobile;
+            this.layoutControlItem7.CustomizationFormText = "Mobile:";
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 144);
+            this.layoutControlItem7.Name = "layoutControlItem7";
+            this.layoutControlItem7.Size = new System.Drawing.Size(256, 24);
+            this.layoutControlItem7.Text = "Mobile:";
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(52, 13);
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.txtEmail;
+            this.layoutControlItem8.CustomizationFormText = "Email:";
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 168);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(256, 24);
+            this.layoutControlItem8.Text = "Email:";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(52, 13);
+            // 
+            // layoutControlItem9
+            // 
+            this.layoutControlItem9.Control = this.txtUsername;
+            this.layoutControlItem9.CustomizationFormText = "Username:";
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 192);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.Size = new System.Drawing.Size(256, 24);
+            this.layoutControlItem9.Text = "Username:";
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(52, 13);
+            // 
+            // layoutControlItem10
+            // 
+            this.layoutControlItem10.Control = this.txtPassword;
+            this.layoutControlItem10.CustomizationFormText = "Password:";
+            this.layoutControlItem10.Location = new System.Drawing.Point(0, 216);
+            this.layoutControlItem10.Name = "layoutControlItem10";
+            this.layoutControlItem10.Size = new System.Drawing.Size(168, 24);
+            this.layoutControlItem10.Text = "Password:";
+            this.layoutControlItem10.TextSize = new System.Drawing.Size(52, 13);
+            // 
+            // layoutControlItem15
+            // 
+            this.layoutControlItem15.Control = this.cmdSave;
+            this.layoutControlItem15.CustomizationFormText = "layoutControlItem15";
+            this.layoutControlItem15.Location = new System.Drawing.Point(0, 282);
+            this.layoutControlItem15.Name = "layoutControlItem15";
+            this.layoutControlItem15.Size = new System.Drawing.Size(129, 26);
+            this.layoutControlItem15.Text = "layoutControlItem15";
+            this.layoutControlItem15.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem15.TextToControlDistance = 0;
+            this.layoutControlItem15.TextVisible = false;
+            // 
+            // layoutControlItem16
+            // 
+            this.layoutControlItem16.Control = this.cmdCancel;
+            this.layoutControlItem16.CustomizationFormText = "layoutControlItem16";
+            this.layoutControlItem16.Location = new System.Drawing.Point(129, 282);
+            this.layoutControlItem16.Name = "layoutControlItem16";
+            this.layoutControlItem16.Size = new System.Drawing.Size(127, 26);
+            this.layoutControlItem16.Text = "layoutControlItem16";
+            this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem16.TextToControlDistance = 0;
+            this.layoutControlItem16.TextVisible = false;
+            // 
+            // layoutControlItem11
+            // 
+            this.layoutControlItem11.Control = this.chkActive;
+            this.layoutControlItem11.CustomizationFormText = "layoutControlItem11";
+            this.layoutControlItem11.Location = new System.Drawing.Point(168, 216);
+            this.layoutControlItem11.Name = "layoutControlItem11";
+            this.layoutControlItem11.Size = new System.Drawing.Size(88, 24);
+            this.layoutControlItem11.Text = "layoutControlItem11";
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem11.TextToControlDistance = 0;
+            this.layoutControlItem11.TextVisible = false;
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.CustomizationFormText = "emptySpaceItem1";
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 264);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(256, 18);
+            this.emptySpaceItem1.Text = "emptySpaceItem1";
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.cboManager;
+            this.layoutControlItem2.CustomizationFormText = "Manager:";
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 72);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(256, 24);
+            this.layoutControlItem2.Text = "Manager:";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(52, 13);
+            // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.Control = this.cboCustomer;
+            this.layoutControlItem4.CustomizationFormText = "Customer:";
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(256, 24);
+            this.layoutControlItem4.Text = "Customer:";
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(52, 13);
+            // 
+            // layoutControlItemSIP
+            // 
+            this.layoutControlItemSIP.Control = this.cboSIP;
+            this.layoutControlItemSIP.CustomizationFormText = "SIP";
+            this.layoutControlItemSIP.Location = new System.Drawing.Point(0, 240);
+            this.layoutControlItemSIP.Name = "layoutControlItemSIP";
+            this.layoutControlItemSIP.Size = new System.Drawing.Size(256, 24);
+            this.layoutControlItemSIP.Text = "SIP";
+            this.layoutControlItemSIP.TextSize = new System.Drawing.Size(52, 13);
+            // 
+            // AddUser
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lcControls);
+            this.Name = "AddUser";
+            this.Size = new System.Drawing.Size(276, 328);
+            ((System.ComponentModel.ISupportInitialize)(this.lcControls)).EndInit();
+            this.lcControls.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cboCustomer.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboManager.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUsername.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMobile.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSite.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTitle.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFullname.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkActive.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboSIP.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemSIP)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private DevExpress.XtraLayout.LayoutControl lcControls;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
+        private DevExpress.XtraEditors.TextEdit txtFullname;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraEditors.TextEdit txtTitle;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraEditors.TextEdit txtSite;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraEditors.TextEdit txtPhone;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
+        private DevExpress.XtraEditors.TextEdit txtMobile;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private DevExpress.XtraEditors.TextEdit txtPassword;
+        private DevExpress.XtraEditors.TextEdit txtUsername;
+        private DevExpress.XtraEditors.TextEdit txtEmail;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private DevExpress.XtraEditors.CheckEdit chkActive;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
+        private DevExpress.XtraEditors.SimpleButton cmdSave;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
+        private DevExpress.XtraEditors.SimpleButton cmdCancel;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
+        private DevExpress.XtraEditors.LookUpEdit cboCustomer;
+        private DevExpress.XtraEditors.LookUpEdit cboManager;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        private DevExpress.XtraEditors.LookUpEdit cboSIP;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItemSIP;
+    }
+}

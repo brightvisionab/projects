@@ -1,0 +1,64 @@
+{
+	"GlobalValue" : null,
+	"Type" : "Schedule",
+	"Form" : {
+		"Settings" : {
+			"Label" : "[Sample label]",
+			"QuestionText" : "[Sample question text]",
+			"QuestionHelp" : "[Sample question help]",
+			"Priority" : "Required",
+			"PlotDoneStatus" : "Done",
+			"CustomerOwnership" : true,
+			"BVOwnership" : false,
+			"DataBindings" : {
+				"account_level" : false,
+				"language_code": "",
+				"account_id" : "",
+				"answer_id" : "",
+				"contact_id" : "",
+				"dialog_id" : "",
+				"campaign_id" : "",
+				"question_id" : "",
+				"questions_text_language_id" : "",
+				"questionlayout_id" : "",
+				"questionlayout_language_id" : "",
+				"schedule_id" : ""
+			},
+			"BackgroundColor" : "",
+			"AnswerOptions" : [{
+					"ViewDetailSummaryButtonLabel" : "Preview Details",
+					"CreateMeetingButtonLabel" : "Create/Edit Meeting",
+					"ScheduleType" : {
+						"TextPrefix" : "Schedule Type:",						
+						"ScheduleTypeSelectedValue" : "Meeting",
+						"ScheduleTypeValues" : ["Seminar", "Webinar", "Meeting"]
+					},
+					"ScheduleSalesPerson" : {
+						"TextPrefix" : "Sales Person:",
+						"SalesPersonSelectedValue" : {}
+					},
+					"ScheduleValue" : {},					
+					"ListOfBookingsAvailableLabel" : "List of Bookings Available:",					
+					"ListOfBookingsAvailableRequired" : false,
+					"AttendiesRequired" : false,
+					"AttendiesLabel" : "Attendies:",
+					"Attendies" : [],
+					"AddCallerButtonLabel" : "Add Caller",
+					"AddAdditionalAttendieButtonLabel" : "Add Additional",
+					"DeleteAttendieButtonLabel" : "Delete",
+					"OtherChoices" : [{
+							"TextPrefix" : "Meeting Comment:",
+							"Required" : false,
+							"DefaultInputValue" : "",
+							"InputValue" : "",
+							"TextboxMaxWidth" : 100,
+							"TextboxMaxHeight" : 50,
+							"Enabled" : true
+						}
+					]
+				}
+			]
+		}
+	}
+}
+ 

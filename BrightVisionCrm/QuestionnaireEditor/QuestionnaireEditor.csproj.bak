@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5664E6F7-6D07-44D7-B39C-5CC8EBCEC3C7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuestionnaireEditor</RootNamespace>
+    <AssemblyName>QuestionnaireEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.BonusSkins.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.OfficeSkins.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.OfficeSkins.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v10.2.Core, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.RichEdit.v10.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraBars.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGrid.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraLayout.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraNavBar.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraRichEdit.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\CustomObjects.cs" />
+    <Compile Include="Business\Enums.cs" />
+    <Compile Include="Business\CustomValidationRule.cs" />
+    <Compile Include="Business\EventDelegate.cs" />
+    <Compile Include="Forms\FrmEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmEditor.Designer.cs">
+      <DependentUpon>FrmEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddAnswerForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddAnswerForm.Designer.cs">
+      <DependentUpon>AddAnswerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddQuestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddQuestion.Designer.cs">
+      <DependentUpon>AddQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddTag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddTag.Designer.cs">
+      <DependentUpon>AddTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageDialogs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageDialogs.Designer.cs">
+      <DependentUpon>ManageDialogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageQuestions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageQuestions.Designer.cs">
+      <DependentUpon>ManageQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditorDialogMeetingPlaceDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\EditorDialogMeetingPlaceDetails.Designer.cs">
+      <DependentUpon>EditorDialogMeetingPlaceDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ExportDesign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ExportDesign.Designer.cs">
+      <DependentUpon>ExportDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NewDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\NewDialog.Designer.cs">
+      <DependentUpon>NewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditorDialogAnswerOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\EditorDialogAnswerOptions.Designer.cs">
+      <DependentUpon>EditorDialogAnswerOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditorDialogMultipleChoiceValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\EditorDialogMultipleChoiceValues.Designer.cs">
+      <DependentUpon>EditorDialogMultipleChoiceValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditorDialogOtherChoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\EditorDialogOtherChoices.Designer.cs">
+      <DependentUpon>EditorDialogOtherChoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PopupDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\PopupDialog.Designer.cs">
+      <DependentUpon>PopupDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Modules\NewQuestions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\NewQuestions.Designer.cs">
+      <DependentUpon>NewQuestions.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\FrmEditor.resx">
+      <DependentUpon>FrmEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddAnswerForm.resx">
+      <DependentUpon>AddAnswerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddQuestion.resx">
+      <DependentUpon>AddQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddTag.resx">
+      <DependentUpon>AddTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageDialogs.resx">
+      <DependentUpon>ManageDialogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageQuestions.resx">
+      <DependentUpon>ManageQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditorDialogMeetingPlaceDetails.resx">
+      <DependentUpon>EditorDialogMeetingPlaceDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ExportDesign.resx">
+      <DependentUpon>ExportDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\NewDialog.resx">
+      <DependentUpon>NewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditorDialogAnswerOptions.resx">
+      <DependentUpon>EditorDialogAnswerOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditorDialogMultipleChoiceValues.resx">
+      <DependentUpon>EditorDialogMultipleChoiceValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditorDialogOtherChoices.resx">
+      <DependentUpon>EditorDialogOtherChoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PopupDialog.resx">
+      <DependentUpon>PopupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Modules\NewQuestions.resx">
+      <DependentUpon>NewQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.Config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BrightVision.Common\BrightVision.Common.csproj">
+      <Project>{A2036924-B2B6-4F45-B212-E3CBE2EEDF15}</Project>
+      <Name>BrightVision.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrightVision.DQControl\BrightVision.DQControl.csproj">
+      <Project>{2A7170D7-1C74-41E5-AB93-9007F9308200}</Project>
+      <Name>BrightVision.DQControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrightVision.Model\BrightVision.Model.csproj">
+      <Project>{A3F29C9B-DB6F-4DBA-8E5F-94ACB27A5972}</Project>
+      <Name>BrightVision.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desert.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

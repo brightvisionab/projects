@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BrightPlatformModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="BrightPlatformModelStoreContainer">
+    <EntitySet Name="accounts" EntityType="BrightPlatformModel.Store.accounts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="answers" EntityType="BrightPlatformModel.Store.answers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="campaigns" EntityType="BrightPlatformModel.Store.campaigns" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Contacts" EntityType="BrightPlatformModel.Store.Contacts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="customers" EntityType="BrightPlatformModel.Store.customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="customers_users" EntityType="BrightPlatformModel.Store.customers_users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="dialog" EntityType="BrightPlatformModel.Store.dialog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="language" EntityType="BrightPlatformModel.Store.language" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="process" EntityType="BrightPlatformModel.Store.process" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questionlayout" EntityType="BrightPlatformModel.Store.questionlayout" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questionlayout_language" EntityType="BrightPlatformModel.Store.questionlayout_language" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questions" EntityType="BrightPlatformModel.Store.questions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questions_questiontags" EntityType="BrightPlatformModel.Store.questions_questiontags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questions_text_language" EntityType="BrightPlatformModel.Store.questions_text_language" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questiontags" EntityType="BrightPlatformModel.Store.questiontags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="roles" EntityType="BrightPlatformModel.Store.roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="roles_users" EntityType="BrightPlatformModel.Store.roles_users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sub_answers" EntityType="BrightPlatformModel.Store.sub_answers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="subcampaigns" EntityType="BrightPlatformModel.Store.subcampaigns" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="subprocess" EntityType="BrightPlatformModel.Store.subprocess" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="BrightPlatformModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="users" EntityType="BrightPlatformModel.Store.users" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_answers_accounts" Association="BrightPlatformModel.Store.FK_answers_accounts">
+      <End Role="accounts" EntitySet="accounts" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_campaigns1" Association="BrightPlatformModel.Store.FK_answers_campaigns1">
+      <End Role="campaigns" EntitySet="campaigns" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_Contacts" Association="BrightPlatformModel.Store.FK_answers_Contacts">
+      <End Role="Contacts" EntitySet="Contacts" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_dialog" Association="BrightPlatformModel.Store.FK_answers_dialog">
+      <End Role="dialog" EntitySet="dialog" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_answers_questions" Association="BrightPlatformModel.Store.FK_answers_questions">
+      <End Role="questions" EntitySet="questions" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_campaigns_accounts1" Association="BrightPlatformModel.Store.FK_campaigns_accounts1">
+      <End Role="accounts" EntitySet="accounts" />
+      <End Role="campaigns" EntitySet="campaigns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Campaigns_Customer" Association="BrightPlatformModel.Store.FK_Campaigns_Customer">
+      <End Role="customers" EntitySet="customers" />
+      <End Role="campaigns" EntitySet="campaigns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_Accounts" Association="BrightPlatformModel.Store.FK_Contacts_Accounts">
+      <End Role="accounts" EntitySet="accounts" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customers_users_customers" Association="BrightPlatformModel.Store.FK_customers_users_customers">
+      <End Role="customers" EntitySet="customers" />
+      <End Role="customers_users" EntitySet="customers_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customers_users_users" Association="BrightPlatformModel.Store.FK_customers_users_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="customers_users" EntitySet="customers_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dialog_campaigns" Association="BrightPlatformModel.Store.FK_dialog_campaigns">
+      <End Role="campaigns" EntitySet="campaigns" />
+      <End Role="dialog" EntitySet="dialog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dialog_customers" Association="BrightPlatformModel.Store.FK_dialog_customers">
+      <End Role="customers" EntitySet="customers" />
+      <End Role="dialog" EntitySet="dialog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questionlayout_language_language" Association="BrightPlatformModel.Store.FK_questionlayout_language_language">
+      <End Role="language" EntitySet="language" />
+      <End Role="questionlayout_language" EntitySet="questionlayout_language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questionlayout_language_questionlayout" Association="BrightPlatformModel.Store.FK_questionlayout_language_questionlayout">
+      <End Role="questionlayout" EntitySet="questionlayout" />
+      <End Role="questionlayout_language" EntitySet="questionlayout_language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questionlayout_questions" Association="BrightPlatformModel.Store.FK_questionlayout_questions">
+      <End Role="questions" EntitySet="questions" />
+      <End Role="questionlayout" EntitySet="questionlayout" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questions_questiontags_questions" Association="BrightPlatformModel.Store.FK_questions_questiontags_questions">
+      <End Role="questions" EntitySet="questions" />
+      <End Role="questions_questiontags" EntitySet="questions_questiontags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questions_questiontags_questiontags" Association="BrightPlatformModel.Store.FK_questions_questiontags_questiontags">
+      <End Role="questiontags" EntitySet="questiontags" />
+      <End Role="questions_questiontags" EntitySet="questions_questiontags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questions_text_language_language" Association="BrightPlatformModel.Store.FK_questions_text_language_language">
+      <End Role="language" EntitySet="language" />
+      <End Role="questions_text_language" EntitySet="questions_text_language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_questions_text_language_questions" Association="BrightPlatformModel.Store.FK_questions_text_language_questions">
+      <End Role="questions" EntitySet="questions" />
+      <End Role="questions_text_language" EntitySet="questions_text_language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_roles_users_roles" Association="BrightPlatformModel.Store.FK_roles_users_roles">
+      <End Role="roles" EntitySet="roles" />
+      <End Role="roles_users" EntitySet="roles_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_roles_users_users" Association="BrightPlatformModel.Store.FK_roles_users_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="roles_users" EntitySet="roles_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sub_answers_answers" Association="BrightPlatformModel.Store.FK_sub_answers_answers">
+      <End Role="answers" EntitySet="answers" />
+      <End Role="sub_answers" EntitySet="sub_answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_subcampaigns_subprocess" Association="BrightPlatformModel.Store.FK_subcampaigns_subprocess">
+      <End Role="subprocess" EntitySet="subprocess" />
+      <End Role="subcampaigns" EntitySet="subcampaigns" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="accounts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="company_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="org_no" Type="nvarchar" MaxLength="255" />
+    <Property Name="box_address" Type="nvarchar" MaxLength="255" />
+    <Property Name="street_adress" Type="nvarchar" MaxLength="255" />
+    <Property Name="zipcode" Type="nvarchar" MaxLength="255" />
+    <Property Name="city" Type="nvarchar" MaxLength="255" />
+    <Property Name="country" Type="nvarchar" MaxLength="255" />
+    <Property Name="telephone" Type="nvarchar" MaxLength="255" />
+    <Property Name="telefax" Type="nvarchar" MaxLength="255" />
+    <Property Name="www" Type="nvarchar" MaxLength="255" />
+    <Property Name="year_established" Type="nvarchar" MaxLength="255" />
+    <Property Name="parent_company" Type="nvarchar" MaxLength="255" />
+    <Property Name="activity_code" Type="nvarchar" MaxLength="255" />
+    <Property Name="activity_code_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="activity_code_description" Type="nvarchar(max)" />
+    <Property Name="activity_code2_description" Type="nvarchar(max)" />
+    <Property Name="currency" Type="nvarchar" MaxLength="255" />
+    <Property Name="fiscal" Type="nvarchar" MaxLength="255" />
+    <Property Name="consolidated_figures" Type="int" />
+    <Property Name="revenues" Type="int" />
+    <Property Name="exports" Type="int" />
+    <Property Name="result" Type="int" />
+    <Property Name="sales_abroad" Type="int" />
+    <Property Name="employees_abroad" Type="int" />
+    <Property Name="employees_total" Type="int" />
+    <Property Name="net_interest_incom" Type="int" />
+    <Property Name="gross_premiums" Type="int" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+    <Property Name="created_by" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="answers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="questions_id" Type="int" Nullable="false" />
+    <Property Name="campaigns_id" Type="int" Nullable="false" />
+    <Property Name="accounts_id" Type="int" Nullable="false" />
+    <Property Name="contact_id" Type="int" Nullable="false" />
+    <Property Name="dialog_id" Type="int" Nullable="false" />
+    <Property Name="created_by" Type="int" Nullable="false" />
+    <Property Name="created_timestamp" Type="smalldatetime" Nullable="false" />
+    <Property Name="OwnershipBrightvision" Type="bit" Nullable="false" />
+    <Property Name="OwnershipAccount" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="campaigns">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="accounts_id" Type="int" />
+    <Property Name="campaign_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+    <Property Name="customers_id" Type="int" />
+    <Property Name="created_by" Type="nvarchar" MaxLength="50" />
+    <Property Name="assigned_user_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="account_id" Type="int" Nullable="false" />
+    <Property Name="first_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="middle_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="last_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="direct_phone" Type="nvarchar" MaxLength="255" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="255" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="255" />
+    <Property Name="company_name" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="customers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="customer_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="customers_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="customers_id" Type="int" Nullable="false" />
+    <Property Name="users_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dialog">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="campaigns_id" Type="int" Nullable="false" />
+    <Property Name="customers_id" Type="int" />
+    <Property Name="name" Type="nchar" MaxLength="50" />
+    <Property Name="dialog_text_json" Type="nvarchar(max)" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="created_date" Type="date" />
+  </EntityType>
+  <EntityType Name="language">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="process">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="questionlayout">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="questions_id" Type="int" />
+    <Property Name="modified_by" Type="int" Nullable="false" />
+    <Property Name="created_by" Type="int" Nullable="false" />
+    <Property Name="modified_date" Type="date" Nullable="false" />
+    <Property Name="title" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="default_setting" Type="bit" Nullable="false" />
+    <Property Name="content_json" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="questionlayout_language">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="questionlayout_id" Type="int" Nullable="false" />
+    <Property Name="language_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="questions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="created_by_user_id" Type="int" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="modified_date" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="questions_questiontags">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="questions_id" Type="int" Nullable="false" />
+    <Property Name="questiontags_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="questions_text_language">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="questions_id" Type="int" />
+    <Property Name="language_id" Type="int" />
+    <Property Name="question_text" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="questiontags">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="roles">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="role_name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="roles_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="role_id" Type="int" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sub_answers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="answers_id" Type="int" Nullable="false" />
+    <Property Name="sub_answer_index" Type="smallint" Nullable="false" />
+    <Property Name="answer_text" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="subcampaigns">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="subprocess_id" Type="int" />
+    <Property Name="dialog_id" Type="int" />
+    <Property Name="list_id" Type="int" />
+    <Property Name="start_date" Type="date" />
+    <Property Name="end_date" Type="date" />
+    <Property Name="campaign_manager_user_id" Type="int" />
+  </EntityType>
+  <EntityType Name="subprocess">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="modified_user_id" Type="int" />
+    <Property Name="created_date" Type="date" />
+    <Property Name="reports_to_id" Type="int" />
+    <Property Name="active" Type="tinyint" Nullable="false" />
+    <Property Name="first_name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="last_name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" />
+    <Property Name="direct_phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="title" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_answers_accounts">
+    <End Role="accounts" Type="BrightPlatformModel.Store.accounts" Multiplicity="1" />
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="accounts_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_campaigns1">
+    <End Role="campaigns" Type="BrightPlatformModel.Store.campaigns" Multiplicity="1" />
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="campaigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="campaigns_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_Contacts">
+    <End Role="Contacts" Type="BrightPlatformModel.Store.Contacts" Multiplicity="1" />
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="contact_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_dialog">
+    <End Role="dialog" Type="BrightPlatformModel.Store.dialog" Multiplicity="1" />
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dialog">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="dialog_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_answers_questions">
+    <End Role="questions" Type="BrightPlatformModel.Store.questions" Multiplicity="1" />
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questions">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="questions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_campaigns_accounts1">
+    <End Role="accounts" Type="BrightPlatformModel.Store.accounts" Multiplicity="0..1" />
+    <End Role="campaigns" Type="BrightPlatformModel.Store.campaigns" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="campaigns">
+        <PropertyRef Name="accounts_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Campaigns_Customer">
+    <End Role="customers" Type="BrightPlatformModel.Store.customers" Multiplicity="0..1" />
+    <End Role="campaigns" Type="BrightPlatformModel.Store.campaigns" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="campaigns">
+        <PropertyRef Name="customers_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_Accounts">
+    <End Role="accounts" Type="BrightPlatformModel.Store.accounts" Multiplicity="1" />
+    <End Role="Contacts" Type="BrightPlatformModel.Store.Contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="account_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customers_users_customers">
+    <End Role="customers" Type="BrightPlatformModel.Store.customers" Multiplicity="1" />
+    <End Role="customers_users" Type="BrightPlatformModel.Store.customers_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="customers_users">
+        <PropertyRef Name="customers_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customers_users_users">
+    <End Role="users" Type="BrightPlatformModel.Store.users" Multiplicity="1" />
+    <End Role="customers_users" Type="BrightPlatformModel.Store.customers_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="customers_users">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dialog_campaigns">
+    <End Role="campaigns" Type="BrightPlatformModel.Store.campaigns" Multiplicity="1" />
+    <End Role="dialog" Type="BrightPlatformModel.Store.dialog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="campaigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="dialog">
+        <PropertyRef Name="campaigns_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dialog_customers">
+    <End Role="customers" Type="BrightPlatformModel.Store.customers" Multiplicity="0..1" />
+    <End Role="dialog" Type="BrightPlatformModel.Store.dialog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="dialog">
+        <PropertyRef Name="customers_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questionlayout_language_language">
+    <End Role="language" Type="BrightPlatformModel.Store.language" Multiplicity="1" />
+    <End Role="questionlayout_language" Type="BrightPlatformModel.Store.questionlayout_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="language">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questionlayout_language">
+        <PropertyRef Name="language_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questionlayout_language_questionlayout">
+    <End Role="questionlayout" Type="BrightPlatformModel.Store.questionlayout" Multiplicity="1" />
+    <End Role="questionlayout_language" Type="BrightPlatformModel.Store.questionlayout_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questionlayout">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questionlayout_language">
+        <PropertyRef Name="questionlayout_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questionlayout_questions">
+    <End Role="questions" Type="BrightPlatformModel.Store.questions" Multiplicity="0..1" />
+    <End Role="questionlayout" Type="BrightPlatformModel.Store.questionlayout" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questions">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questionlayout">
+        <PropertyRef Name="questions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questions_questiontags_questions">
+    <End Role="questions" Type="BrightPlatformModel.Store.questions" Multiplicity="1" />
+    <End Role="questions_questiontags" Type="BrightPlatformModel.Store.questions_questiontags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questions">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questions_questiontags">
+        <PropertyRef Name="questions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questions_questiontags_questiontags">
+    <End Role="questiontags" Type="BrightPlatformModel.Store.questiontags" Multiplicity="1" />
+    <End Role="questions_questiontags" Type="BrightPlatformModel.Store.questions_questiontags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questiontags">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questions_questiontags">
+        <PropertyRef Name="questiontags_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questions_text_language_language">
+    <End Role="language" Type="BrightPlatformModel.Store.language" Multiplicity="0..1" />
+    <End Role="questions_text_language" Type="BrightPlatformModel.Store.questions_text_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="language">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questions_text_language">
+        <PropertyRef Name="language_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_questions_text_language_questions">
+    <End Role="questions" Type="BrightPlatformModel.Store.questions" Multiplicity="0..1" />
+    <End Role="questions_text_language" Type="BrightPlatformModel.Store.questions_text_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questions">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="questions_text_language">
+        <PropertyRef Name="questions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_roles_users_roles">
+    <End Role="roles" Type="BrightPlatformModel.Store.roles" Multiplicity="1" />
+    <End Role="roles_users" Type="BrightPlatformModel.Store.roles_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="roles_users">
+        <PropertyRef Name="role_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_roles_users_users">
+    <End Role="users" Type="BrightPlatformModel.Store.users" Multiplicity="1" />
+    <End Role="roles_users" Type="BrightPlatformModel.Store.roles_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="roles_users">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sub_answers_answers">
+    <End Role="answers" Type="BrightPlatformModel.Store.answers" Multiplicity="1" />
+    <End Role="sub_answers" Type="BrightPlatformModel.Store.sub_answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="answers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sub_answers">
+        <PropertyRef Name="answers_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_subcampaigns_subprocess">
+    <End Role="subprocess" Type="BrightPlatformModel.Store.subprocess" Multiplicity="0..1" />
+    <End Role="subcampaigns" Type="BrightPlatformModel.Store.subcampaigns" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subprocess">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="subcampaigns">
+        <PropertyRef Name="subprocess_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

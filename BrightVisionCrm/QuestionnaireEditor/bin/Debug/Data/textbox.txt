@@ -1,0 +1,34 @@
+﻿{
+  "GlobalValue" : null,
+  "Type" : "Textbox",
+  "Form" : {
+    "Settings" : {
+      "Label" : "1",
+      "QuestionText" : "How many coffee machines?",
+	  "QuestionHelp" : "This question is about bla bla dropbox",
+      "Priority" : "Required",
+      "PlotDoneStatus" : "Done",
+	  "CustomerOwnership" : true,
+      "BVOwnership" : true,
+      "DataBindings" : {
+        "account_id" : "",
+		"answer_id" : "",
+		"contact_id" : "",
+		"dialog_id" : "",
+		"campaign_id" : "",
+        "question_id" : ""
+      },      
+      "BackgroundColor" : "Yellow",
+	  "AnswerOptions" : [
+		{
+		  "TextPrefix" : "",
+		  "DefaultInputValue": "",
+		  "InputValue" : "",
+		  "TextboxMaxWidth" : "120",
+		  "TextboxMaxHeight" : "50"
+		}
+	  ]
+    }
+  }  
+}
+

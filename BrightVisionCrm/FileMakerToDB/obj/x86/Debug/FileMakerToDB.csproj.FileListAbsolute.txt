@@ -1,0 +1,20 @@
+E:\BrightVision\Project\BrightVisionProject\FileMakerToDB\bin\Debug\FileMakerToDB.exe
+E:\BrightVision\Project\BrightVisionProject\FileMakerToDB\bin\Debug\FileMakerToDB.pdb
+E:\BrightVision\Project\BrightVisionProject\FileMakerToDB\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\BrightVision\Project\BrightVisionProject\FileMakerToDB\obj\x86\Debug\FileMakerToDB.Forms.FrmMain.resources
+E:\BrightVision\Project\BrightVisionProject\FileMakerToDB\obj\x86\Debug\FileMakerToDB.Properties.Resources.resources
+E:\BrightVision\Project\BrightVisionProject\FileMakerToDB\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\BrightVision\Project\BrightVisionProject\FileMakerToDB\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\BrightVision\Project\BrightVisionProject\FileMakerToDB\obj\x86\Debug\FileMakerToDB.exe
+E:\BrightVision\Project\BrightVisionProject\FileMakerToDB\obj\x86\Debug\FileMakerToDB.pdb
+E:\BrightVision\Project\BrightVisionProject\FileMakerToDB\bin\Debug\FileMakerToDB.exe.config
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\FileMakerToDB\bin\Debug\FileMakerToDB.exe.config
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\FileMakerToDB\bin\Debug\FileMakerToDB.exe
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\FileMakerToDB\bin\Debug\FileMakerToDB.pdb
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\FileMakerToDB\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\FileMakerToDB\obj\x86\Debug\FileMakerToDB.Forms.FrmMain.resources
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\FileMakerToDB\obj\x86\Debug\FileMakerToDB.Properties.Resources.resources
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\FileMakerToDB\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\FileMakerToDB\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\FileMakerToDB\obj\x86\Debug\FileMakerToDB.exe
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\FileMakerToDB\obj\x86\Debug\FileMakerToDB.pdb

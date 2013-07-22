@@ -1,0 +1,54 @@
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\bin\Debug\QuestionnaireEditor.exe
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\bin\Debug\QuestionnaireEditor.pdb
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Forms.FrmMain.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Properties.Resources.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.exe.licenses
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.exe
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.pdb
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Forms.TestForm.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\bin\Debug\QuestionnaireEditor.exe.config
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\bin\Debug\BrightVision.DQControl.dll
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\bin\Debug\BrightVision.Model.dll
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\bin\Debug\BrightVision.DQControl.pdb
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\bin\Debug\BrightVision.Model.pdb
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\bin\Debug\QuestionnaireEditor.exe.config
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.exe
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.pdb
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\bin\Debug\QuestionnaireEditor.exe
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\bin\Debug\QuestionnaireEditor.pdb
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\bin\Debug\BrightVision.DQControl.dll
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\bin\Debug\BrightVision.Model.dll
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\bin\Debug\BrightVision.DQControl.pdb
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\bin\Debug\BrightVision.Model.pdb
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Forms.FrmMain.resources
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Forms.TestForm.resources
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Properties.Resources.resources
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\BrightVision\Project Backup\04-01-11 Final\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.exe.licenses
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Forms.FrmEditor.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.AddQuestion.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.NewQuestions.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.AddTag.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.EditorDialogAnswerOptions.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.EditorDialogMultipleChoiceValues.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.EditorDialogOtherChoices.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.NewDialog.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.AddAnswerForm.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.PopupDialog.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.ExportDesign.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.EditorDialogMeetingPlaceDetails.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.ManageQuestions.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.Modules.ManageDialogs.resources
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\bin\Debug\BrightVision.Common.dll
+E:\BrightVision\Project\BrightVisionProject\QuestionnaireEditor\bin\Debug\BrightVision.Common.pdb
+D:\Brightvision Projects\REVISED\QuestionnaireEditor\bin\Debug\QuestionnaireEditor.exe.config
+D:\Brightvision Projects\REVISED\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.exe
+D:\Brightvision Projects\REVISED\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.pdb
+D:\Brightvision Projects\CRM\QuestionnaireEditor\bin\Debug\QuestionnaireEditor.exe.config
+D:\Brightvision Projects\CRM\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.exe
+D:\Brightvision Projects\CRM\QuestionnaireEditor\obj\x86\Debug\QuestionnaireEditor.pdb

@@ -1,0 +1,37 @@
+E:\BrightVision\Project\BrightVisionProject\BrightVision.SSIS.Agent\bin\Debug\BrightVision.SSIS.Agent.exe
+E:\BrightVision\Project\BrightVisionProject\BrightVision.SSIS.Agent\bin\Debug\BrightVision.SSIS.Agent.pdb
+E:\BrightVision\Project\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\BrightVision\Project\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Debug\BrightVision.SSIS.Agent.exe
+E:\BrightVision\Project\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Debug\BrightVision.SSIS.Agent.pdb
+E:\BrightVision\Project\BrightVisionProject\BrightVision.SSIS.Agent\bin\Debug\BrightVision.SSIS.Agent.exe.config
+E:\BrightVision\Project\BrightVisionProject\BrightVision.SSIS.Agent\bin\Debug\BrightVision.RemotableObject.dll
+E:\BrightVision\Project\BrightVisionProject\BrightVision.SSIS.Agent\bin\Debug\BrightVision.RemotableObject.pdb
+E:\BrightVision\Project\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\BrightVision\Project\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\BrightVision\Project\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Debug\BrightVision.SSIS.Agent.ProjectInstaller.resources
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Debug\BrightVision.SSIS.Agent.exe.config
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Debug\BrightVision.SSIS.Agent.exe
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Debug\BrightVision.SSIS.Agent.pdb
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Debug\BrightVision.RemotableObject.dll
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Debug\BrightVision.RemotableObject.pdb
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Debug\BrightVision.SSIS.Agent.ProjectInstaller.resources
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Debug\BrightVision.SSIS.Agent.exe
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\obj\x86\Debug\BrightVision.SSIS.Agent.pdb
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Debug\BrightVision.Storage.dll
+D:\Michael\BrightVision\BrightVisionProject\BrightVision.SSIS.Agent\bin\Debug\BrightVision.Storage.pdb
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\obj\x86\Debug\BrightVision.SSIS.Agent.ProjectInstaller.resources
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\bin\Debug\BrightVision.SSIS.Agent.exe.config
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\bin\Debug\BrightVision.SSIS.Agent.exe
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\bin\Debug\BrightVision.SSIS.Agent.pdb
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\bin\Debug\BrightVision.Storage.dll
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\bin\Debug\BrightVision.Storage.pdb
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\obj\x86\Debug\BrightVision.SSIS.Agent.exe
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\obj\x86\Debug\BrightVision.SSIS.Agent.pdb
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\bin\Debug\Microsoft.SqlServer.DTSRuntimeWrap.dll
+D:\Brightvision Projects\REVISED\BrightVision.SSIS.Agent\bin\Debug\msshrtmi.dll

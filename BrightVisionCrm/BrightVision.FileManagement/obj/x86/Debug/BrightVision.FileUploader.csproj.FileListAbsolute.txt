@@ -1,0 +1,17 @@
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\BrightVision.FileUploader.dll
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\BrightVision.FileUploader.pdb
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\BrightVision.Common.dll
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\BrightVision.Model.dll
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\ActiveUp.Net.Common.dll
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\GMap.NET.WindowsForms.dll
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\GMap.NET.Core.dll
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\Newtonsoft.Json.dll
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\ActiveUp.Net.Smtp.dll
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\LinqToExcel.dll
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\ActiveUp.Net.Dns.dll
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\Remotion.Data.Linq.dll
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\BrightVision.Common.pdb
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\bin\Debug\BrightVision.Model.pdb
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\obj\x86\Debug\BrightVision.FileUploader.dll
+D:\Brightvision Projects\REVISED\BrightVision.FileUploader\obj\x86\Debug\BrightVision.FileUploader.pdb

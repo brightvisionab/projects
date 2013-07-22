@@ -1,0 +1,13 @@
+D:\Brightvision Projects\REVISED\BrightVision.Threading\bin\Debug\BrightVision.Threading.dll
+D:\Brightvision Projects\REVISED\BrightVision.Threading\bin\Debug\BrightVision.Threading.pdb
+D:\Brightvision Projects\REVISED\BrightVision.Threading\obj\Debug\ResolveAssemblyReference.cache
+D:\Brightvision Projects\REVISED\BrightVision.Threading\obj\Debug\BrightVision.Threading.dll
+D:\Brightvision Projects\REVISED\BrightVision.Threading\obj\Debug\BrightVision.Threading.pdb
+D:\Brightvision Projects\CRM\BrightVision.Threading\bin\Debug\BrightVision.Threading.dll
+D:\Brightvision Projects\CRM\BrightVision.Threading\bin\Debug\BrightVision.Threading.pdb
+D:\Brightvision Projects\CRM\BrightVision.Threading\obj\Debug\BrightVision.Threading.dll
+D:\Brightvision Projects\CRM\BrightVision.Threading\obj\Debug\BrightVision.Threading.pdb
+D:\CRM\BrightVision.Threading\bin\Debug\BrightVision.Threading.dll
+D:\CRM\BrightVision.Threading\bin\Debug\BrightVision.Threading.pdb
+D:\CRM\BrightVision.Threading\obj\Debug\BrightVision.Threading.dll
+D:\CRM\BrightVision.Threading\obj\Debug\BrightVision.Threading.pdb

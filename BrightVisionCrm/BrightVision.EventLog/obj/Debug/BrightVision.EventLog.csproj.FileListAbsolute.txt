@@ -1,0 +1,108 @@
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\BrightVision.EventLog.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\BrightVision.EventLog.pdb
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\BrightVision.Common.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\BrightVision.Model.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\BrightVision.Threading.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\ActiveUp.Net.Common.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\GMap.NET.WindowsForms.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\GMap.NET.Core.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\Newtonsoft.Json.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\ActiveUp.Net.Smtp.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\LinqToExcel.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\ActiveUp.Net.Dns.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\Remotion.Data.Linq.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\BrightVision.Common.pdb
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\BrightVision.Model.pdb
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\bin\Debug\BrightVision.Threading.pdb
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\obj\Debug\ResolveAssemblyReference.cache
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\obj\Debug\BrightVision.EventLog.dll
+D:\Brightvision Projects\REVISED\BrightVision.EventLog\obj\Debug\BrightVision.EventLog.pdb
+D:\CRM\BrightVision.EventLog\bin\Debug\BrightVision.EventLog.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\BrightVision.EventLog.pdb
+D:\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Common.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Model.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Threading.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\VoIPSDK.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\ActiveUp.Net.Common.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\GMap.NET.WindowsForms.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\GMap.NET.Core.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\Newtonsoft.Json.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\LinqToExcel.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\System.Reactive.Linq.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\System.Reactive.Interfaces.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\ActiveUp.Net.Smtp.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\Mvp.Xml.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\ActiveUp.Net.Dns.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\Remotion.Data.Linq.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\System.Reactive.Core.dll
+D:\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Common.pdb
+D:\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Model.pdb
+D:\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Threading.pdb
+D:\CRM\BrightVision.EventLog\bin\Debug\System.Reactive.Linq.xml
+D:\CRM\BrightVision.EventLog\bin\Debug\System.Reactive.Interfaces.xml
+D:\CRM\BrightVision.EventLog\bin\Debug\System.Reactive.Core.xml
+D:\CRM\BrightVision.EventLog\obj\Debug\BrightVision.EventLog.csprojResolveAssemblyReference.cache
+D:\CRM\BrightVision.EventLog\obj\Debug\BrightVision.EventLog.dll
+D:\CRM\BrightVision.EventLog\obj\Debug\BrightVision.EventLog.pdb
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\BrightVision.EventLog.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\BrightVision.EventLog.pdb
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\BrightVision.Common.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\BrightVision.Model.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\BrightVision.Threading.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\VoIPSDK.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\ActiveUp.Net.Common.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\GMap.NET.WindowsForms.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\GMap.NET.Core.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\Newtonsoft.Json.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\LinqToExcel.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\System.Reactive.Linq.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\System.Reactive.Interfaces.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\ActiveUp.Net.Smtp.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\Mvp.Xml.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\ActiveUp.Net.Dns.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\Remotion.Data.Linq.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\System.Reactive.Core.dll
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\BrightVision.Common.pdb
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\BrightVision.Model.pdb
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\BrightVision.Threading.pdb
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\GMap.NET.WindowsForms.xml
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\GMap.NET.Core.xml
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\System.Reactive.Linq.xml
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\System.Reactive.Interfaces.xml
+D:\BrightVision\Project\BrightVision.EventLog\bin\Debug\System.Reactive.Core.xml
+D:\BrightVision\Project\BrightVision.EventLog\obj\Debug\BrightVision.EventLog.csprojResolveAssemblyReference.cache
+D:\BrightVision\Project\BrightVision.EventLog\obj\Debug\BrightVision.EventLog.dll
+D:\BrightVision\Project\BrightVision.EventLog\obj\Debug\BrightVision.EventLog.pdb
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\BrightVision.EventLog.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\BrightVision.EventLog.pdb
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Common.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Model.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Threading.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\VoIPSDK.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\ActiveUp.Net.Common.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\GMap.NET.WindowsForms.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\GMap.NET.Core.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\Newtonsoft.Json.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\LinqToExcel.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\System.Reactive.Linq.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\System.Reactive.Interfaces.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Windows.Azure.Storage.Blob.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\ActiveUp.Net.Smtp.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\Mvp.Xml.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\ActiveUp.Net.Dns.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\Remotion.Data.Linq.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\System.Reactive.Core.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Common.pdb
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Model.pdb
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Threading.pdb
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\GMap.NET.WindowsForms.xml
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\GMap.NET.Core.xml
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\System.Reactive.Linq.xml
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\System.Reactive.Interfaces.xml
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\BrightVision.Windows.Azure.Storage.Blob.pdb
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\System.Reactive.Core.xml
+D:\Brightvision Projects\CRM\BrightVision.EventLog\obj\Debug\BrightVision.EventLog.csprojResolveAssemblyReference.cache
+D:\Brightvision Projects\CRM\BrightVision.EventLog\obj\Debug\BrightVision.EventLog.dll
+D:\Brightvision Projects\CRM\BrightVision.EventLog\obj\Debug\BrightVision.EventLog.pdb
+D:\Brightvision Projects\CRM\BrightVision.EventLog\bin\Debug\Mindscape.Raygun4Net.dll

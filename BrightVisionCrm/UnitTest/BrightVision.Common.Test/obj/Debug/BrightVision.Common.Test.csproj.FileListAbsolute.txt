@@ -1,0 +1,1 @@
+D:\Brightvision Projects\CRM\UnitTest\BrightVision.Common.Test\obj\Debug\BrightVision.Common.Test.csprojResolveAssemblyReference.cache

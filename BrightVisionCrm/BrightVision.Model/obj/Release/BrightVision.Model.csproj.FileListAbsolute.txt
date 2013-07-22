@@ -1,0 +1,10 @@
+D:\BrightVision\Project\BrightVision.Model\bin\Release\BrightVision.Model.dll.config
+D:\BrightVision\Project\BrightVision.Model\bin\Release\BrightVision.Model.dll
+D:\BrightVision\Project\BrightVision.Model\bin\Release\BrightVision.Model.pdb
+D:\BrightVision\Project\BrightVision.Model\obj\Release\BrightVision.Model.dll
+D:\BrightVision\Project\BrightVision.Model\obj\Release\BrightVision.Model.pdb
+D:\Brightvision Projects\CRM\BrightVision.Model\bin\Release\BrightVision.Model.dll.config
+D:\Brightvision Projects\CRM\BrightVision.Model\bin\Release\BrightVision.Model.dll
+D:\Brightvision Projects\CRM\BrightVision.Model\bin\Release\BrightVision.Model.pdb
+D:\Brightvision Projects\CRM\BrightVision.Model\obj\Release\BrightVision.Model.dll
+D:\Brightvision Projects\CRM\BrightVision.Model\obj\Release\BrightVision.Model.pdb

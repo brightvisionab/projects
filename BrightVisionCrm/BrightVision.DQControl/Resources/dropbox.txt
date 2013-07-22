@@ -1,0 +1,122 @@
+﻿{
+	"GlobalValue" : null,
+	"Type" : "Dropbox",
+	"Form" : {
+		"Settings" : {
+			"Label" : "[Sample label]",
+			"QuestionText" : "[Sample question text]",
+			"QuestionHelp" : "[Sample question help]",
+			"Priority" : "Prio1",
+			"PlotDoneStatus" : "Done",
+			"DataBindings" : {
+				"account_level": false,
+				"language_code": "",
+				"account_id" : "",
+				"answer_id" : "",
+				"contact_id" : "",
+				"dialog_id" : "",
+				"campaign_id" : "",
+				"question_id" : "",
+				"questions_text_language_id" : "",
+				"questionlayout_id" : "",
+				"questionlayout_language_id" : ""
+			},
+			"CustomerOwnership" : true,
+			"BVOwnership" : false,
+			"BackgroundColor" : "",
+			"AnswerOptions" : [{
+					"DropBoxValues" : [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"Other"
+					],
+					"TextPrefix" : "Bant A",
+					"DefaultSelectionValue" : "3",
+					"SelectionValue" : "3",
+					"SelectionValueRequired" : false,
+					"DefaultSelectionValueIfOther" : "",
+					"SelectionValueIfOther" : "",
+					"SelectionValueIfOtherRequired" : false,
+					"DropboxMaxWidth" : "",
+					"SelectionValueIfOtherVisible" : false
+				}, {
+					"DropBoxValues" : [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"Other"
+					],
+					"TextPrefix" : "Bant B",
+					"DefaultSelectionValue" : "3",
+					"SelectionValue" : "",
+					"SelectionValueRequired" : false,
+					"DefaultSelectionValueIfOther" : "",
+					"SelectionValueIfOther" : "",
+					"SelectionValueIfOtherRequired" : false,
+					"DropboxMaxWidth" : "",
+					"SelectionValueIfOtherVisible" : false
+				}, {
+					"DropBoxValues" : [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"Other"
+					],
+					"TextPrefix" : "Bant C",
+					"DefaultSelectionValue" : "3",
+					"SelectionValue" : "",
+					"SelectionValueRequired" : false,
+					"DefaultSelectionValueIfOther" : "",
+					"SelectionValueIfOther" : "",
+					"SelectionValueIfOtherRequired" : false,
+					"DropboxMaxWidth" : "",
+					"SelectionValueIfOtherVisible" : false
+				}, {
+					"DropBoxValues" : [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"Other"
+					],
+					"TextPrefix" : "Bant D",
+					"DefaultSelectionValue" : "3",
+					"SelectionValue" : "",
+					"SelectionValueRequired" : false,
+					"DefaultSelectionValueIfOther" : "",
+					"SelectionValueIfOther" : "",
+					"SelectionValueIfOtherRequired" : false,
+					"DropboxMaxWidth" : "",
+					"SelectionValueIfOtherVisible" : false
+				}, {
+					"DropBoxValues" : [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"Other"
+					],
+					"TextPrefix" : "Bant E",
+					"DefaultSelectionValue" : "3",
+					"SelectionValue" : "",
+					"SelectionValueRequired" : false,
+					"DefaultSelectionValueIfOther" : "",
+					"SelectionValueIfOther" : "",
+					"SelectionValueIfOtherRequired" : false,
+					"DropboxMaxWidth" : "",
+					"SelectionValueIfOtherVisible" : false
+				}
+			]
+		}
+	}
+}
+ 

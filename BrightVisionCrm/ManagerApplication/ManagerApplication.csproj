@@ -1,0 +1,1110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A93AA116-2D77-4EAB-A733-601C89DE9590}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManagerApplication</RootNamespace>
+    <AssemblyName>ManagerApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveUp.Net.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6cceae6a4844c51b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\ActiveUp.Net.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Dns, Version=5.0.3454.364, Culture=neutral, PublicKeyToken=6fc67824e0089991, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\ActiveUp.Net.Dns.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Smtp, Version=5.0.3454.364, Culture=neutral, PublicKeyToken=366752d00f09ae34, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\ActiveUp.Net.Smtp.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v12.2.Core, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Design.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress\DXperience 12.2\Bin\Framework\Design\DevExpress.Design.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v12.2.Core, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.2.Core, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v12.2.Core, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.2.Core, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.2.Wizard, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.2.Extensions, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v12.2.Design, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.2.UI , Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.2.Extensions, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.2.Core, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.2.Design, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.2.Extensions, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.2.Reporting, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.2.Reporting.Extensions, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LinqToExcel, Version=1.6.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\LinqToExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SQLServer.ManagedDTS, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.SQLServer.ManagedDTS.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.WindowsAzure.ServiceRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Mvp.Xml, Version=2.3.0.0, Culture=neutral, PublicKeyToken=6ead800d778c9b9f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\Mvp.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq, Version=1.13.52.2, Culture=neutral, PublicKeyToken=0669cf0452175907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\ThirdParty\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\ThirdParty\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\ThirdParty\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Windows.Forms">
+      <HintPath>..\ThirdParty\System.Reactive.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\BusinessLanguage.cs" />
+    <Compile Include="Business\BusinessTitle.cs" />
+    <Compile Include="Business\CatalogDialog.cs" />
+    <Compile Include="Business\CatalogListCreation.cs" />
+    <Compile Include="Business\CatalogProfiledData.cs" />
+    <Compile Include="Business\CustomObjects.cs" />
+    <Compile Include="Business\CustomValidationRule.cs" />
+    <Compile Include="Business\Enums.cs" />
+    <Compile Include="Business\EventDelegate.cs" />
+    <Compile Include="Business\ManagerApplicationFacade.cs" />
+    <Compile Include="Business\ReportLayoutSettingsUtility.cs" />
+    <Compile Include="Business\ScheduleList.cs" />
+    <Compile Include="Events\LoginEvents.cs" />
+    <Compile Include="Facade\BrightManagerFacade.cs" />
+    <Compile Include="Forms\AddContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddContact.Designer.cs">
+      <DependentUpon>AddContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DemoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DemoWindow.Designer.cs">
+      <DependentUpon>DemoWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAppointment.Designer.cs">
+      <DependentUpon>FrmAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAppUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAppUpdater.Designer.cs">
+      <DependentUpon>FrmAppUpdater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmFuzzyMatching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmFuzzyMatching.Designer.cs">
+      <DependentUpon>FrmFuzzyMatching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmManagerApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmManagerApplication.Designer.cs">
+      <DependentUpon>FrmManagerApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSchedulingPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSchedulingPopup.Designer.cs">
+      <DependentUpon>FrmSchedulingPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddAnswerForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddAnswerForm.Designer.cs">
+      <DependentUpon>AddAnswerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddCampaign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddCampaign.Designer.cs">
+      <DependentUpon>AddCampaign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddCompany.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddCompany.Designer.cs">
+      <DependentUpon>AddCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddCustomerUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddCustomerUser.Designer.cs">
+      <DependentUpon>AddCustomerUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddEmailVerifyContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddEmailVerifyContact.Designer.cs">
+      <DependentUpon>AddEmailVerifyContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddInternalUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddInternalUser.Designer.cs">
+      <DependentUpon>AddInternalUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddLanguageSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddLanguageSetting.Designer.cs">
+      <DependentUpon>AddLanguageSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddQuestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddQuestion.Designer.cs">
+      <DependentUpon>AddQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddSIPAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddSIPAccount.Designer.cs">
+      <DependentUpon>AddSIPAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddSubCampaign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddSubCampaign.Designer.cs">
+      <DependentUpon>AddSubCampaign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddSubCampaignAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddSubCampaignAccount.Designer.cs">
+      <DependentUpon>AddSubCampaignAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddSubCampaignConfigTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddSubCampaignConfigTemplate.Designer.cs">
+      <DependentUpon>AddSubCampaignConfigTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddTag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddTag.Designer.cs">
+      <DependentUpon>AddTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddTitleSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddTitleSetting.Designer.cs">
+      <DependentUpon>AddTitleSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AutoTitleCorrection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AutoTitleCorrection.Designer.cs">
+      <DependentUpon>AutoTitleCorrection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartCreator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartCreator.Designer.cs">
+      <DependentUpon>ChartCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageMessageLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageMessageLog.Designer.cs">
+      <DependentUpon>ManageMessageLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CreateBlankView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CreateBlankView.Designer.cs">
+      <DependentUpon>CreateBlankView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditorDisplayViewReportTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\EditorDisplayViewReportTemplate.Designer.cs">
+      <DependentUpon>EditorDisplayViewReportTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditorNurtureSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\EditorNurtureSetting.Designer.cs">
+      <DependentUpon>EditorNurtureSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditorStringCollection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\EditorStringCollection.Designer.cs">
+      <DependentUpon>EditorStringCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ImportCollectedData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ImportCollectedData.Designer.cs">
+      <DependentUpon>ImportCollectedData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditorSubCampaignConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\EditorSubCampaignConfig.Designer.cs">
+      <DependentUpon>EditorSubCampaignConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageReportTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageReportTemplate.Designer.cs">
+      <DependentUpon>ManageReportTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageSIPAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageSIPAccount.Designer.cs">
+      <DependentUpon>ManageSIPAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MasterDataImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MasterDataImport.Designer.cs">
+      <DependentUpon>MasterDataImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageEmailVerification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageEmailVerification.Designer.cs">
+      <DependentUpon>ManageEmailVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageEventLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageEventLog.Designer.cs">
+      <DependentUpon>ManageEventLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageFileMakerMigrated.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageFileMakerMigrated.Designer.cs">
+      <DependentUpon>ManageFileMakerMigrated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageFollowUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageFollowUp.Designer.cs">
+      <DependentUpon>ManageFollowUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ReAssignFollowUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ReAssignFollowUp.Designer.cs">
+      <DependentUpon>ReAssignFollowUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ReportTemplatePropertyGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ReportTemplatePropertyGrid.Designer.cs">
+      <DependentUpon>ReportTemplatePropertyGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SendEmailTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SendEmailTemplate.Designer.cs">
+      <DependentUpon>SendEmailTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SubCampaignConfigurationHelp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SubCampaignConfigurationHelp.Designer.cs">
+      <DependentUpon>SubCampaignConfigurationHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ViewCallLogs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ViewCallLogs.Designer.cs">
+      <DependentUpon>ViewCallLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ViewDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ViewDisplay.Designer.cs">
+      <DependentUpon>ViewDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditImportFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\EditImportFile.Designer.cs">
+      <DependentUpon>EditImportFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ViewConfiguration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ViewConfiguration.Designer.cs">
+      <DependentUpon>ViewConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditorDialogAnswerOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\EditorDialogAnswerOptions.Designer.cs">
+      <DependentUpon>EditorDialogAnswerOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditorDialogMultipleChoiceValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\EditorDialogMultipleChoiceValues.Designer.cs">
+      <DependentUpon>EditorDialogMultipleChoiceValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditorDialogOtherChoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\EditorDialogOtherChoices.Designer.cs">
+      <DependentUpon>EditorDialogOtherChoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageCallList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageCallList.Designer.cs">
+      <DependentUpon>ManageCallList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageCompanyContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageCompanyContact.Designer.cs">
+      <DependentUpon>ManageCompanyContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageCompanyGeoData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageCompanyGeoData.Designer.cs">
+      <DependentUpon>ManageCompanyGeoData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageContactGeoData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageContactGeoData.Designer.cs">
+      <DependentUpon>ManageContactGeoData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageCustomerUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageCustomerUser.Designer.cs">
+      <DependentUpon>ManageCustomerUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageLanguageSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageLanguageSetting.Designer.cs">
+      <DependentUpon>ManageLanguageSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageCustomerCampaign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageCustomerCampaign.Designer.cs">
+      <DependentUpon>ManageCustomerCampaign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageDialogs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageDialogs.Designer.cs">
+      <DependentUpon>ManageDialogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageFinalCallList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageFinalCallList.Designer.cs">
+      <DependentUpon>ManageFinalCallList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageImportList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageImportList.Designer.cs">
+      <DependentUpon>ManageImportList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageListCreation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageListCreation.Designer.cs">
+      <DependentUpon>ManageListCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageQuestions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageQuestions.Designer.cs">
+      <DependentUpon>ManageQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageSubCampaign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageSubCampaign.Designer.cs">
+      <DependentUpon>ManageSubCampaign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageTitleSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageTitleSetting.Designer.cs">
+      <DependentUpon>ManageTitleSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ManageInternalUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ManageInternalUser.Designer.cs">
+      <DependentUpon>ManageInternalUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NewDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\NewDialog.Designer.cs">
+      <DependentUpon>NewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NewImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\NewImport.Designer.cs">
+      <DependentUpon>NewImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NewQuestions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\NewQuestions.Designer.cs">
+      <DependentUpon>NewQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PopupDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\PopupDialog.Designer.cs">
+      <DependentUpon>PopupDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PromptDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PromptDialog.Designer.cs">
+      <DependentUpon>PromptDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TemplateDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TemplateDialog.Designer.cs">
+      <DependentUpon>TemplateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UserLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ViewTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ViewTemplate.Designer.cs">
+      <DependentUpon>ViewTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\XmlEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\XmlEditor.designer.cs">
+      <DependentUpon>XmlEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\XmlToken.cs" />
+    <Compile Include="Business\XmlTokenizer.cs" />
+    <Compile Include="Modules\EditorReportTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\EditorReportTemplate.Designer.cs">
+      <DependentUpon>EditorReportTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddReportTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddReportTemplate.Designer.cs">
+      <DependentUpon>AddReportTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AddContact.resx">
+      <DependentUpon>AddContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DemoWindow.resx">
+      <DependentUpon>DemoWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAppointment.resx">
+      <DependentUpon>FrmAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAppUpdater.resx">
+      <DependentUpon>FrmAppUpdater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmFuzzyMatching.resx">
+      <DependentUpon>FrmFuzzyMatching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmManagerApplication.resx">
+      <DependentUpon>FrmManagerApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSchedulingPopup.resx">
+      <DependentUpon>FrmSchedulingPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddAnswerForm.resx">
+      <DependentUpon>AddAnswerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddCampaign.resx">
+      <DependentUpon>AddCampaign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddCompany.resx">
+      <DependentUpon>AddCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddCustomerUser.resx">
+      <DependentUpon>AddCustomerUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddEmailVerifyContact.resx">
+      <DependentUpon>AddEmailVerifyContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddInternalUser.resx">
+      <DependentUpon>AddInternalUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddLanguageSetting.resx">
+      <DependentUpon>AddLanguageSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddQuestion.resx">
+      <DependentUpon>AddQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddReportTemplate.resx">
+      <DependentUpon>AddReportTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddSIPAccount.resx">
+      <DependentUpon>AddSIPAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddSubCampaign.resx">
+      <DependentUpon>AddSubCampaign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddSubCampaignAccount.resx">
+      <DependentUpon>AddSubCampaignAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddSubCampaignConfigTemplate.resx">
+      <DependentUpon>AddSubCampaignConfigTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddTag.resx">
+      <DependentUpon>AddTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddTitleSetting.resx">
+      <DependentUpon>AddTitleSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AutoTitleCorrection.resx">
+      <DependentUpon>AutoTitleCorrection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartCreator.resx">
+      <DependentUpon>ChartCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageMessageLog.resx">
+      <DependentUpon>ManageMessageLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CreateBlankView.resx">
+      <DependentUpon>CreateBlankView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditorDisplayViewReportTemplate.resx">
+      <DependentUpon>EditorDisplayViewReportTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditorNurtureSetting.resx">
+      <DependentUpon>EditorNurtureSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditorStringCollection.resx">
+      <DependentUpon>EditorStringCollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ImportCollectedData.resx">
+      <DependentUpon>ImportCollectedData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditorSubCampaignConfig.resx">
+      <DependentUpon>EditorSubCampaignConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageReportTemplate.resx">
+      <DependentUpon>ManageReportTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageSIPAccount.resx">
+      <DependentUpon>ManageSIPAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MasterDataImport.resx">
+      <DependentUpon>MasterDataImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageEmailVerification.resx">
+      <DependentUpon>ManageEmailVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageEventLog.resx">
+      <DependentUpon>ManageEventLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageFileMakerMigrated.resx">
+      <DependentUpon>ManageFileMakerMigrated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageFollowUp.resx">
+      <DependentUpon>ManageFollowUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ReAssignFollowUp.resx">
+      <DependentUpon>ReAssignFollowUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ReportTemplatePropertyGrid.resx">
+      <DependentUpon>ReportTemplatePropertyGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SendEmailTemplate.resx">
+      <DependentUpon>SendEmailTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SubCampaignConfigurationHelp.resx">
+      <DependentUpon>SubCampaignConfigurationHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ViewCallLogs.resx">
+      <DependentUpon>ViewCallLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ViewDisplay.resx">
+      <DependentUpon>ViewDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditImportFile.resx">
+      <DependentUpon>EditImportFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ViewConfiguration.resx">
+      <DependentUpon>ViewConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditorDialogAnswerOptions.resx">
+      <DependentUpon>EditorDialogAnswerOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditorDialogMultipleChoiceValues.resx">
+      <DependentUpon>EditorDialogMultipleChoiceValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditorDialogOtherChoices.resx">
+      <DependentUpon>EditorDialogOtherChoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageCallList.resx">
+      <DependentUpon>ManageCallList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageCompanyContact.resx">
+      <DependentUpon>ManageCompanyContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageCompanyGeoData.resx">
+      <DependentUpon>ManageCompanyGeoData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageContactGeoData.resx">
+      <DependentUpon>ManageContactGeoData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageCustomerUser.resx">
+      <DependentUpon>ManageCustomerUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageLanguageSetting.resx">
+      <DependentUpon>ManageLanguageSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageCustomerCampaign.resx">
+      <DependentUpon>ManageCustomerCampaign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageDialogs.resx">
+      <DependentUpon>ManageDialogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageFinalCallList.resx">
+      <DependentUpon>ManageFinalCallList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageImportList.resx">
+      <DependentUpon>ManageImportList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageListCreation.resx">
+      <DependentUpon>ManageListCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageQuestions.resx">
+      <DependentUpon>ManageQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageSubCampaign.resx">
+      <DependentUpon>ManageSubCampaign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageTitleSetting.resx">
+      <DependentUpon>ManageTitleSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ManageInternalUser.resx">
+      <DependentUpon>ManageInternalUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\NewDialog.resx">
+      <DependentUpon>NewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\NewImport.resx">
+      <DependentUpon>NewImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\NewQuestions.resx">
+      <DependentUpon>NewQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PopupDialog.resx">
+      <DependentUpon>PopupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PromptDialog.resx">
+      <DependentUpon>PromptDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TemplateDialog.resx">
+      <DependentUpon>TemplateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ViewTemplate.resx">
+      <DependentUpon>ViewTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EditorReportTemplate.resx">
+      <DependentUpon>EditorReportTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\XmlEditor.resx">
+      <DependentUpon>XmlEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BrightVision.Common\BrightVision.Common.csproj">
+      <Project>{A2036924-B2B6-4F45-B212-E3CBE2EEDF15}</Project>
+      <Name>BrightVision.Common</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\BrightVision.DQControl\BrightVision.DQControl.csproj">
+      <Project>{2A7170D7-1C74-41E5-AB93-9007F9308200}</Project>
+      <Name>BrightVision.DQControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrightVision.EventLog\BrightVision.EventLog.csproj">
+      <Project>{39475C34-110D-4E36-BCB7-035FC238B475}</Project>
+      <Name>BrightVision.EventLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrightVision.FileManagement\BrightVision.FileManagement.csproj">
+      <Project>{10DD55E7-4133-42AD-9FAC-2B65CF5BC71D}</Project>
+      <Name>BrightVision.FileManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrightVision.Mandrill\BrightVision.Mandrill.csproj">
+      <Project>{131f9bf0-05b9-49f9-9c48-228b3e819891}</Project>
+      <Name>BrightVision.Mandrill</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrightVision.Model\BrightVision.Model.csproj">
+      <Project>{A3F29C9B-DB6F-4DBA-8E5F-94ACB27A5972}</Project>
+      <Name>BrightVision.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrightVision.RemotableObject\BrightVision.RemotableObject.csproj">
+      <Project>{dacd3ac6-bbf1-48a5-902c-bc9b33edef48}</Project>
+      <Name>BrightVision.RemotableObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrightVision.Reporting\BrightVision.Reporting.csproj">
+      <Project>{0FF7726B-08FC-4F53-96EF-C9AF8E95FFAC}</Project>
+      <Name>BrightVision.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrightVision.Storage\BrightVision.Storage.csproj">
+      <Project>{e8161a8d-43bf-4d58-956e-ee82306be205}</Project>
+      <Name>BrightVision.Storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrightVision.Threading\BrightVision.Threading.csproj">
+      <Project>{568B4901-164F-4299-9DFC-B22553B4392F}</Project>
+      <Name>BrightVision.Threading</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\booking.png" />
+    <Content Include="Resources\booking_disabled.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\cancel_delete.png" />
+    <None Include="Resources\download.png" />
+    <Content Include="Resources\export_csv.png" />
+    <Content Include="Resources\export_csv_disabled.png" />
+    <Content Include="Resources\export_excel.png" />
+    <Content Include="Resources\export_excel_disabled.png" />
+    <Content Include="Resources\export_xls.png" />
+    <Content Include="Resources\export_xls_disabled.png" />
+    <None Include="Resources\header_green_bg.jpg" />
+    <None Include="Resources\help.png" />
+    <Content Include="Resources\icons\app_option.ico" />
+    <Content Include="Resources\icons\bv_logo.ico" />
+    <Content Include="Resources\info.png" />
+    <Content Include="Resources\loader.gif" />
+    <Content Include="Resources\logo.png" />
+    <None Include="Resources\logout-icon.png" />
+    <None Include="Resources\Play-icon.png" />
+    <Content Include="Resources\printer.png" />
+    <None Include="Resources\save_ok.png" />
+    <None Include="Resources\saveX.png" />
+    <Content Include="Resources\seminar.png" />
+    <Content Include="Resources\seminar_disabled.png" />
+    <None Include="Resources\warning-icon.png" />
+    <None Include="Resources\view_config_completed.png" />
+    <None Include="Resources\view_config_incomplete.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\sub_campaign_config_settings_help.txt" />
+    <Content Include="Resources\webinar.png" />
+    <Content Include="Resources\webinar_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\icons\16x16\" />
+    <Folder Include="Resources\xslt\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
