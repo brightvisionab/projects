@@ -70,3 +70,41 @@ D:\Brightvision Projects\CRM\BrightVision.Mandrill\obj\Debug\BrightVision.Mandri
 D:\Brightvision Projects\CRM\BrightVision.Mandrill\obj\Debug\BrightVision.Mandrill.dll
 D:\Brightvision Projects\CRM\BrightVision.Mandrill\obj\Debug\BrightVision.Mandrill.pdb
 D:\Brightvision Projects\CRM\BrightVision.Mandrill\bin\Debug\Mindscape.Raygun4Net.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\BrightVision.Mandrill.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\BrightVision.Mandrill.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\BrightVision.Common.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\BrightVision.EventLog.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\BrightVision.Model.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\Newtonsoft.Json.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\VoIPSDK.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\ActiveUp.Net.Common.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\GMap.NET.WindowsForms.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\GMap.NET.Core.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\LinqToExcel.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\System.Reactive.Linq.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\System.Reactive.Interfaces.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\BrightVision.Windows.Azure.Storage.Blob.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\Mindscape.Raygun4Net.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\ActiveUp.Net.Smtp.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\Mvp.Xml.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\BrightVision.Threading.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\ActiveUp.Net.Dns.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\Remotion.Data.Linq.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\System.Reactive.Core.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\BrightVision.Common.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\BrightVision.EventLog.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\BrightVision.Model.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\GMap.NET.WindowsForms.xml
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\GMap.NET.Core.xml
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\System.Reactive.Linq.xml
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\System.Reactive.Interfaces.xml
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\BrightVision.Windows.Azure.Storage.Blob.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\BrightVision.Threading.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\bin\Debug\System.Reactive.Core.xml
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\obj\Debug\BrightVision.Mandrill.csprojResolveAssemblyReference.cache
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\obj\Debug\BrightVision.Mandrill.ForgotPassword.resources
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\obj\Debug\BrightVision.Mandrill.Properties.Resources.resources
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\obj\Debug\BrightVision.Mandrill.csproj.GenerateResource.Cache
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\obj\Debug\BrightVision.Mandrill.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Mandrill\obj\Debug\BrightVision.Mandrill.pdb

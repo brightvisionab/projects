@@ -89,3 +89,37 @@ D:\Brightvision Projects\CRM\BrightVision.FileManagement\obj\Debug\BrightVision.
 D:\Brightvision Projects\CRM\BrightVision.FileManagement\obj\Debug\BrightVision.FileManagement.dll
 D:\Brightvision Projects\CRM\BrightVision.FileManagement\obj\Debug\BrightVision.FileManagement.pdb
 D:\Brightvision Projects\CRM\BrightVision.FileManagement\bin\Debug\Mindscape.Raygun4Net.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\BrightVision.FileManagement.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\BrightVision.FileManagement.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\BrightVision.Common.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\BrightVision.Logging.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\BrightVision.Model.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\ITHit.WebDAV.Client.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\VoIPSDK.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\ActiveUp.Net.Common.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\GMap.NET.WindowsForms.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\GMap.NET.Core.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\Newtonsoft.Json.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\LinqToExcel.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\System.Reactive.Linq.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\System.Reactive.Interfaces.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\BrightVision.Windows.Azure.Storage.Blob.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\Mindscape.Raygun4Net.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\ActiveUp.Net.Smtp.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\Mvp.Xml.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\ActiveUp.Net.Dns.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\Remotion.Data.Linq.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\System.Reactive.Core.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\BrightVision.Common.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\BrightVision.Logging.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\BrightVision.Model.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\GMap.NET.WindowsForms.xml
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\GMap.NET.Core.xml
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\System.Reactive.Linq.xml
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\System.Reactive.Interfaces.xml
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\BrightVision.Windows.Azure.Storage.Blob.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\bin\Debug\System.Reactive.Core.xml
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\obj\Debug\BrightVision.FileManagement.csprojResolveAssemblyReference.cache
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\obj\Debug\BrightVision.FileManagement.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.FileManagement\obj\Debug\BrightVision.FileManagement.pdb

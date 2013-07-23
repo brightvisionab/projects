@@ -751,6 +751,17 @@ namespace SalesConsultant.Modules
         private void ricbDialogStatus_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
             /**
+             * https://brightvision.jira.com/browse/PLATFORM-3223
+             * if currently on work mode by other user, do not allow
+             * updating of contact status.
+             */
+            if (m_BrightSalesProperty.CommonProperty.CurrentWorkedAccountLockedByOtherUser()) {
+                NotificationDialog.Warning("Bright Sales", "Currently worked by another user.");
+                e.Cancel = true;
+                return;
+            }
+
+            /**
              * contact fields value checking as per defined
              * in the xml configuration per status item.
              */
