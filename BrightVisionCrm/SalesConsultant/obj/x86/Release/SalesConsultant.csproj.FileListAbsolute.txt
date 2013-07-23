@@ -587,3 +587,9 @@ D:\Brightvision Projects\CRM\SalesConsultant\obj\x86\Release\SalesConsultant.For
 D:\Brightvision Projects\CRM\SalesConsultant\obj\x86\Release\SalesConsultant.Modules.DashboardHighChart.resources
 D:\Brightvision Projects\CRM\SalesConsultant\bin\Release\ICSharpCode.SharpZipLib.dll
 D:\Brightvision Projects\CRM\SalesConsultant\bin\Release\BrightSales_Audio_Uploader.pdb
+D:\LiveProjects\BrightVisionCrm\SalesConsultant\bin\Release\SalesConsultant.exe.config
+D:\LiveProjects\BrightVisionCrm\SalesConsultant\obj\x86\Release\Interop.WMPLib.dll
+D:\LiveProjects\BrightVisionCrm\SalesConsultant\obj\x86\Release\AxInterop.WMPLib.dll
+D:\LiveProjects\BrightVisionCrm\SalesConsultant\obj\x86\Release\SalesConsultant.csproj.ResolveComReference.cache
+D:\LiveProjects\BrightVisionCrm\SalesConsultant\obj\x86\Release\SalesConsultant.exe
+D:\LiveProjects\BrightVisionCrm\SalesConsultant\obj\x86\Release\SalesConsultant.pdb

@@ -68,10 +68,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrightVision.LoadAppUpdater.Memory", "BrightVision.LoadAppUpdater.Memory\BrightVision.LoadAppUpdater.Memory.csproj", "{166D2F18-9A45-4E5D-81C9-2F4CE10CBCAA}"
 EndProject
 Global
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
+	
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = BrightVisionProject.vsmdi
 	EndGlobalSection
