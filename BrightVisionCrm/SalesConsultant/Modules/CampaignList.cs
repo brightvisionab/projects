@@ -2903,7 +2903,7 @@ namespace SalesConsultant.Modules
                     if (_user != null)
                         _efDbContext.Detach(_user);
 
-                    NotificationDialog.Information("Bright Sales", string.Format("This company is currently worked by {0}.", _user.fullname));
+                    NotificationDialog.Error("Bright Sales", string.Format("This company is currently worked by {0}.", _user.fullname));
                     return;
                 }
             }
@@ -3066,7 +3066,7 @@ namespace SalesConsultant.Modules
             }
             else if (_item.locked && _item.locked_by != UserSession.CurrentUser.UserId) {
                 user _user = _efDbContext.users.FirstOrDefault(i => i.id == _item.locked_by);
-                NotificationDialog.Information("Bright Sales", string.Format("This company is currently worked by {0}.", _user.fullname));
+                NotificationDialog.Error("Bright Sales", string.Format("This company is currently worked by {0}.", _user.fullname));
                 return;
             }
 
