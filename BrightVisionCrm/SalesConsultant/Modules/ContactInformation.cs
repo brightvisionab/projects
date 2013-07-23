@@ -214,7 +214,7 @@ namespace SalesConsultant.Modules
             }
 
             if (!_editable) {
-                NotificationDialog.Information("Bright Sales", "Currently worked by another user.");
+                NotificationDialog.Error("Bright Sales", "Currently worked by another user.");
                 vgridContact.OptionsBehavior.Editable = false;
                 vgridContactStat.OptionsBehavior.Editable = false;
                 btnSave.Enabled = false;
@@ -532,7 +532,7 @@ namespace SalesConsultant.Modules
             }
 
             if (!_editable) {
-                NotificationDialog.Information("Bright Sales", "Currently worked by another user.");
+                NotificationDialog.Error("Bright Sales", "Currently worked by another user.");
                 return;
             }
 
@@ -620,7 +620,7 @@ namespace SalesConsultant.Modules
             }
 
             if (!_editable) {
-                NotificationDialog.Information("Bright Sales", "Currently worked by another user.");
+                NotificationDialog.Error("Bright Sales", "Currently worked by another user.");
                 return;
             }
 
@@ -691,7 +691,7 @@ namespace SalesConsultant.Modules
             }
 
             if (!_editable) {
-                NotificationDialog.Information("Bright Sales", "Currently worked by another user.");
+                NotificationDialog.Error("Bright Sales", "Currently worked by another user.");
                 return;
             }
 
