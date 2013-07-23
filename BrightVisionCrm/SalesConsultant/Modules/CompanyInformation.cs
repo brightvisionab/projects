@@ -343,7 +343,7 @@ namespace SalesConsultant.Modules
 
             sub_campaign_account_lists oAccount = _efDbModel.sub_campaign_account_lists.FirstOrDefault(p => p.account_id == m_AccountId && p.final_list_id == m_FinalListId);
             if (oAccount.locked && oAccount.locked_by != UserSession.CurrentUser.UserId) {
-                NotificationDialog.Information("Bright Sales", "Company is currently on work mode by another user.");
+                NotificationDialog.Error("Bright Sales", "Company is currently on work mode by another user.");
                 return;
             }
 
