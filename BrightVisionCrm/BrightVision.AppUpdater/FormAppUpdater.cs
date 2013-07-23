@@ -57,14 +57,14 @@ namespace BrightVision.AppUpdater
                 {
                     lblDescription.Text = "Updating " + Path.GetFileName(file);
                     Application.DoEvents();
-                    try
-                    {
+                    //try
+                    //{
                         File.Copy(file, Path.Combine(Directory.GetCurrentDirectory(), Path.GetFileName(file)), true);
-                    }
-                    catch (Exception ex)
-                    {
+                    //}
+                    //catch (Exception ex)
+                    //{
 
-                    }
+                    //}
                 }
                 lblDescription.Text = "Done updating";
 
