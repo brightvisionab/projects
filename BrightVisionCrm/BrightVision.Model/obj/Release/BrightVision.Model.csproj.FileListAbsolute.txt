@@ -8,3 +8,9 @@ D:\Brightvision Projects\CRM\BrightVision.Model\bin\Release\BrightVision.Model.d
 D:\Brightvision Projects\CRM\BrightVision.Model\bin\Release\BrightVision.Model.pdb
 D:\Brightvision Projects\CRM\BrightVision.Model\obj\Release\BrightVision.Model.dll
 D:\Brightvision Projects\CRM\BrightVision.Model\obj\Release\BrightVision.Model.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.Model\bin\Release\BrightVision.Model.dll.config
+D:\LiveProjects\BrightVisionCrm\BrightVision.Model\bin\Release\BrightVision.Model.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Model\bin\Release\BrightVision.Model.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.Model\obj\Release\BrightVision.Model.dll
+D:\LiveProjects\BrightVisionCrm\BrightVision.Model\obj\Release\BrightVision.Model.pdb
+D:\LiveProjects\BrightVisionCrm\BrightVision.Model\obj\Release\BrightVision.Model.csprojResolveAssemblyReference.cache
