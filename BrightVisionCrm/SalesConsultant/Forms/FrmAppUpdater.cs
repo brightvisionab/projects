@@ -78,8 +78,8 @@ namespace SalesConsultant.Forms {
         {
             try
             {
-                lblDownloadDetails.Text = "Connecting to server to get updates...";
-                listDetails.Items.Add("Connecting to server to get updates...");
+                SetTextDownloadDetails("Connecting to server to get updates...");
+                SetTextListDetails("Connecting to server to get updates...");
                 Application.DoEvents();
 
                 string tempPath = System.IO.Path.GetTempPath() + @"\Brightvision";
@@ -93,8 +93,8 @@ namespace SalesConsultant.Forms {
                 string file = @"BrightVision_" + newVersion.ToString();
                 Stream data = webClient.OpenRead(string.Format("http://lii.blob.core.windows.net/updates/{0}.zip", file));
 
-                lblDownloadDetails.Text = "Connected to server...";
-                listDetails.Items.Add("Connected to server...");
+                SetTextDownloadDetails("Connected to server...");
+                SetTextListDetails("Connected to server...");
                 Application.DoEvents();
 
                 UnzipFromStream(data, tempPath, null, false);
