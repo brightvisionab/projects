@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::SalesConsultant.SplashScreen1), true, true);
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSalesConsultant));
             this.tcSalesConsultant = new DevExpress.XtraTab.XtraTabControl();
@@ -249,12 +250,15 @@
             // 
             // tcSalesConsultant
             // 
-            serializableAppearanceObject1.BorderColor = System.Drawing.Color.Black;
             serializableAppearanceObject1.ForeColor = System.Drawing.Color.Black;
-            serializableAppearanceObject1.Options.UseBorderColor = true;
             serializableAppearanceObject1.Options.UseForeColor = true;
+            serializableAppearanceObject2.BorderColor = System.Drawing.Color.Black;
+            serializableAppearanceObject2.ForeColor = System.Drawing.Color.Black;
+            serializableAppearanceObject2.Options.UseBorderColor = true;
+            serializableAppearanceObject2.Options.UseForeColor = true;
             this.tcSalesConsultant.CustomHeaderButtons.AddRange(new DevExpress.XtraTab.Buttons.CustomHeaderButton[] {
-            new DevExpress.XtraTab.Buttons.CustomHeaderButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "Unhide All", -1, true, true, DevExpress.XtraEditors.ImageLocation.Default, null, serializableAppearanceObject1, "", null, superToolTip1, true)});
+            new DevExpress.XtraTab.Buttons.CustomHeaderButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "CallingDetails", -1, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, serializableAppearanceObject1, "", null, null, true),
+            new DevExpress.XtraTab.Buttons.CustomHeaderButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "Unhide All", -1, true, true, DevExpress.XtraEditors.ImageLocation.Default, null, serializableAppearanceObject2, "", null, superToolTip1, true)});
             this.tcSalesConsultant.Location = new System.Drawing.Point(4, 30);
             this.tcSalesConsultant.Name = "tcSalesConsultant";
             this.tcSalesConsultant.SelectedTabPage = this.tabCampaignList;

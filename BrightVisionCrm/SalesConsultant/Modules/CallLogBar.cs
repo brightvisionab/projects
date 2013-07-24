@@ -225,7 +225,12 @@ namespace SalesConsultant.Modules
                 
             //}
 
-            lblCallingFlag.Text = string.Format("Calling {0}", CallLogBarParams.ContactNo.ToSwedishPhoneNumber());
+            /*
+             * https://brightvision.jira.com/browse/PLATFORM-3194
+             */
+            //lblCallingFlag.Text = string.Format("Calling {0}", CallLogBarParams.ContactNo.ToSwedishPhoneNumber());
+            lblCallingFlag.Text = "";
+
             lciCallingFlag.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
             lciTimer.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             tbxContactFirstname.Properties.ReadOnly = true;

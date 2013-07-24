@@ -725,6 +725,8 @@ namespace SalesConsultant.Forms
 
             if (m_CampaignListModule != null)
                 m_CampaignListModule.ReloadCallLogTab();
+
+            tcSalesConsultant.CustomHeaderButtons[0].Visible = false;
         }
         private void PhoneCallEnd(PhoneCallEndEventNotifier e)
         {
@@ -752,6 +754,7 @@ namespace SalesConsultant.Forms
 
             //if (m_CampaignBookingModule != null)
             //    m_CampaignBookingModule.m_oCallLogBar_btnHangUp_OnClick(e.ContactId);
+            tcSalesConsultant.CustomHeaderButtons[0].Visible = false;
         }
         private void PhoneCallStart(CallViewBarEvents.PhoneCallStart.FrmSalesConsultant e)
         {
@@ -791,6 +794,41 @@ namespace SalesConsultant.Forms
                 log.SetLogField(LoggingField.call_engine, "external");
             }
 
+            user u = m_efDbContext.users.FirstOrDefault(i => i.id == UserSession.CurrentUser.UserId);
+            sip_accounts sip = m_efDbContext.sip_accounts.FirstOrDefault(i => i.id == u.sip_id);
+
+
+            int iTotalWidthTab = this.Width;
+            string CallingDetails = string.Format("{0}({1}) -> {2}       Activity: Calling {0}.      Account: {3} ", e.PhoneCallArgs.ContactNo, e.PhoneCallArgs.CallMethod.GetEnumDescription(), e.PhoneCallArgs.ContactNo.ToSwedishPhoneNumber(), sip.username);
+
+            if (iTotalWidthTab < 1500)
+            {
+                
+            }
+            else
+            {
+                int iTotalWidth = 0;
+                Size tabSize;
+                for (int i = 0; i < tcSalesConsultant.TabPages.Count; i++)
+                {
+                    if (tcSalesConsultant.TabPages[i].PageVisible)
+                    {
+                        tabSize = TextRenderer.MeasureText(tcSalesConsultant.TabPages[i].Text, tcSalesConsultant.Font);
+                        iTotalWidth += tabSize.Width + 20;
+                    }
+                }
+
+
+                int iDiff = (iTotalWidthTab - iTotalWidth);
+                
+                Size s = TextRenderer.MeasureText(CallingDetails, tcSalesConsultant.Font);
+                int iSpaceWidth = 10;
+                CallingDetails += new string(' ', int.Parse((Math.Ceiling(double.Parse((iDiff / iSpaceWidth).ToString()))).ToString()) + 50);
+            }
+
+            
+            tcSalesConsultant.CustomHeaderButtons[0].Caption = CallingDetails;
+            tcSalesConsultant.CustomHeaderButtons[0].Visible = true;
             log.SendInfo("call_start", "call details");
             #endregion
         }
