@@ -466,11 +466,11 @@ namespace BrightVision.Telephony.Business
                         #endregion
 
                         recorder.StartStreaming();
-                        recorder.IsStreaming = true;
+                        //recorder.IsStreaming = true;
                         recorderReceiver.StartStreaming();
-                        recorderReceiver.IsStreaming = true;
+                        //recorderReceiver.IsStreaming = true;
                         recorderMic.StartStreaming();
-                        recorderMic.IsStreaming = true;
+                        //recorderMic.IsStreaming = true;
                     }
                     catch(Ozeki.Common.Exceptions.MediaException me) {
                         if (CallState_Changed != null)
@@ -509,17 +509,17 @@ namespace BrightVision.Telephony.Business
                         if (recorder != null)
                         {
                             recorder.StopStreaming();
-                            recorder.IsStreaming = false;
+                            //recorder.IsStreaming = false;
                         }
                         if (recorderMic != null)
                         {
                             recorderMic.StopStreaming();
-                            recorderMic.IsStreaming = false;
+                            //recorderMic.IsStreaming = false;
                         }
                         if (recorderReceiver != null)
                         {
                             recorderReceiver.StopStreaming();
-                            recorderReceiver.IsStreaming = false;
+                            //recorderReceiver.IsStreaming = false;
                         }
 
                         connector.Disconnect(m_UserMicrophone, mixer);
@@ -630,7 +630,7 @@ namespace BrightVision.Telephony.Business
                         m_StartTimeOutCounter = false;
                         m_MediaUtility.Stop();
                         recorder.StartStreaming();
-                        recorder.IsStreaming = true;
+                        //recorder.IsStreaming = true;
                     }
                     catch (Ozeki.Common.Exceptions.MediaException me)
                     {
@@ -662,7 +662,7 @@ namespace BrightVision.Telephony.Business
                     try
                     {
                         recorder.StopStreaming();
-                        recorder.IsStreaming = false;
+                        //recorder.IsStreaming = false;
 
                         EndCall();
                         
@@ -777,7 +777,7 @@ namespace BrightVision.Telephony.Business
                     connector.Connect(mediaReceiver, mixer);
                     connector.Connect(mixer, recorder);
                     recorder.StartStreaming();
-                    recorder.IsStreaming = true;
+                    //recorder.IsStreaming = true;
                 }));
             }
 

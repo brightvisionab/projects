@@ -56,7 +56,7 @@ namespace BrightVision.Common.Business
             set
             {
 
-                base.IsStreaming = false;
+                //base.IsStreaming = false;
                 base.Stream.Position = value;
             }
         }
@@ -73,25 +73,25 @@ namespace BrightVision.Common.Business
         public void StopStreaming()
         {
 
-            base.IsStreaming = false;
+            //base.IsStreaming = false;
             base.PauseStreaming();
             base.Stream.Position = 0;
         }
 
         public void StartStreaming()
         {
-            base.IsStreaming = true;
+            //base.IsStreaming = true;
             base.StartStreaming();
             EventPositionMonitor();
         }
         public void PauseStreaming()
         {
-            base.IsStreaming = false;
+            //base.IsStreaming = false;
             base.PauseStreaming();
         }
         public void Resume()
         {
-            base.IsStreaming = true;
+            //base.IsStreaming = true;
             base.StartStreaming();
         }
         public void Dispose()
