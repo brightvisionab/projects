@@ -262,6 +262,7 @@
     <Compile Include="Events\ContactInformationEvents.cs" />
     <Compile Include="Events\ContactViewEvents.cs" />
     <Compile Include="Events\FrmContactStatusCheckEvents.cs" />
+    <Compile Include="Events\FrmManualMatchAccountEvents.cs" />
     <Compile Include="Events\LinkedInEvents.cs" />
     <Compile Include="Events\DialogEditorEvents.cs" />
     <Compile Include="Events\EventFollowUpLogEvents.cs" />
@@ -282,6 +283,12 @@
     </Compile>
     <Compile Include="Forms\FrmContactStatusChecks.Designer.cs">
       <DependentUpon>FrmContactStatusChecks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmManualMatchAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmManualMatchAccount.Designer.cs">
+      <DependentUpon>FrmManualMatchAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmSendEmailContacts.cs">
       <SubType>Form</SubType>
@@ -619,6 +626,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="PublicProperties\CampaignBookingProperty.cs" />
+    <Compile Include="PublicProperties\ClassesProperty.cs" />
     <Compile Include="PublicProperties\CommonProperty.cs" />
     <Compile Include="PublicProperties\CurrentAccountContactProperty.cs" />
     <Compile Include="Facade\BrightSalesFacade.cs">
@@ -936,6 +944,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmHelp.resx">
       <DependentUpon>FrmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmManualMatchAccount.resx">
+      <DependentUpon>FrmManualMatchAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmSalesConsultant.resx">
       <DependentUpon>FrmSalesConsultant.cs</DependentUpon>
@@ -1314,6 +1325,7 @@
     <None Include="Resources\icons\16x16\edit_report.png" />
     <None Include="Resources\icons\16x16\final_call_list.png" />
     <None Include="Resources\download_2.png" />
+    <None Include="Resources\eraser.png" />
     <Content Include="Resources\forward.png" />
     <Content Include="Resources\forward_disable.png" />
     <None Include="Resources\Hands-Thumbs-down-icon.png" />

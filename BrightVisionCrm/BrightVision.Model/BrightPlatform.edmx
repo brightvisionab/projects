@@ -5761,6 +5761,9 @@
           <Property Type="Boolean" Name="select" Nullable="true" />
           <Property Type="String" Name="country" Nullable="true" MaxLength="255" />
           <Property Type="String" Name="org_no" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="zip_code" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="telephone" Nullable="true" MaxLength="255" />
+          <Property Type="Boolean" Name="validated" Nullable="false" />
         </ComplexType>
         <ComplexType Name="CTContactDetails">
           <Property Type="String" Name="first_name" Nullable="true" MaxLength="255" />
@@ -8985,6 +8988,9 @@
                 <ScalarProperty Name="select" ColumnName="select" />
                 <ScalarProperty Name="country" ColumnName="country" />
                 <ScalarProperty Name="org_no" ColumnName="org_no" />
+                <ScalarProperty Name="zip_code" ColumnName="zip_code" />
+                <ScalarProperty Name="telephone" ColumnName="telephone" />
+                <ScalarProperty Name="validated" ColumnName="validated" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

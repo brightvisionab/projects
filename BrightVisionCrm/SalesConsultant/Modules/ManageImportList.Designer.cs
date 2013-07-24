@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tcManageImport = new DevExpress.XtraTab.XtraTabControl();
             this.tpImportAndViewList = new DevExpress.XtraTab.XtraTabPage();
             this.lcContents = new DevExpress.XtraLayout.LayoutControl();
@@ -323,7 +324,7 @@
             this.layoutControlItem66 = new DevExpress.XtraLayout.LayoutControlItem();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.alertControlSSISPackage = new DevExpress.XtraBars.Alerter.AlertControl();
+            this.alertControlSSISPackage = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
             this.tbxMaxRow = new DevExpress.XtraEditors.TextEdit();
             this.btnCancelItemFuzzyMatch = new DevExpress.XtraEditors.SimpleButton();
@@ -1616,9 +1617,9 @@
             // 
             // cmdSelectMatchedCompany
             // 
-            this.cmdSelectMatchedCompany.Location = new System.Drawing.Point(77, 87);
+            this.cmdSelectMatchedCompany.Location = new System.Drawing.Point(70, 87);
             this.cmdSelectMatchedCompany.Name = "cmdSelectMatchedCompany";
-            this.cmdSelectMatchedCompany.Size = new System.Drawing.Size(95, 22);
+            this.cmdSelectMatchedCompany.Size = new System.Drawing.Size(84, 22);
             this.cmdSelectMatchedCompany.StyleController = this.layoutControl1;
             this.cmdSelectMatchedCompany.TabIndex = 62;
             this.cmdSelectMatchedCompany.Text = "Select Matched";
@@ -1742,7 +1743,7 @@
             // 
             this.cmdSelectAllCompany.Location = new System.Drawing.Point(12, 87);
             this.cmdSelectAllCompany.Name = "cmdSelectAllCompany";
-            this.cmdSelectAllCompany.Size = new System.Drawing.Size(61, 22);
+            this.cmdSelectAllCompany.Size = new System.Drawing.Size(54, 22);
             this.cmdSelectAllCompany.StyleController = this.layoutControl1;
             this.cmdSelectAllCompany.TabIndex = 48;
             this.cmdSelectAllCompany.Text = "Select All";
@@ -1750,9 +1751,9 @@
             // 
             // cmdSelectNonMatchedCompany
             // 
-            this.cmdSelectNonMatchedCompany.Location = new System.Drawing.Point(176, 87);
+            this.cmdSelectNonMatchedCompany.Location = new System.Drawing.Point(158, 87);
             this.cmdSelectNonMatchedCompany.Name = "cmdSelectNonMatchedCompany";
-            this.cmdSelectNonMatchedCompany.Size = new System.Drawing.Size(124, 22);
+            this.cmdSelectNonMatchedCompany.Size = new System.Drawing.Size(110, 22);
             this.cmdSelectNonMatchedCompany.StyleController = this.layoutControl1;
             this.cmdSelectNonMatchedCompany.TabIndex = 47;
             this.cmdSelectNonMatchedCompany.Text = "Select  Non-Matched";
@@ -1760,9 +1761,9 @@
             // 
             // cmdMarkAsMatchedCompany
             // 
-            this.cmdMarkAsMatchedCompany.Location = new System.Drawing.Point(567, 87);
+            this.cmdMarkAsMatchedCompany.Location = new System.Drawing.Point(505, 87);
             this.cmdMarkAsMatchedCompany.Name = "cmdMarkAsMatchedCompany";
-            this.cmdMarkAsMatchedCompany.Size = new System.Drawing.Size(118, 22);
+            this.cmdMarkAsMatchedCompany.Size = new System.Drawing.Size(104, 22);
             this.cmdMarkAsMatchedCompany.StyleController = this.layoutControl1;
             this.cmdMarkAsMatchedCompany.TabIndex = 46;
             this.cmdMarkAsMatchedCompany.Text = "Marked as Matched";
@@ -1770,9 +1771,9 @@
             // 
             // cmdRemoveMatchCompany
             // 
-            this.cmdRemoveMatchCompany.Location = new System.Drawing.Point(401, 87);
+            this.cmdRemoveMatchCompany.Location = new System.Drawing.Point(358, 87);
             this.cmdRemoveMatchCompany.Name = "cmdRemoveMatchCompany";
-            this.cmdRemoveMatchCompany.Size = new System.Drawing.Size(162, 22);
+            this.cmdRemoveMatchCompany.Size = new System.Drawing.Size(143, 22);
             this.cmdRemoveMatchCompany.StyleController = this.layoutControl1;
             this.cmdRemoveMatchCompany.TabIndex = 45;
             this.cmdRemoveMatchCompany.Text = "Remove Match for Selected";
@@ -1780,9 +1781,9 @@
             // 
             // cmdClearSelectionCompany
             // 
-            this.cmdClearSelectionCompany.Location = new System.Drawing.Point(304, 87);
+            this.cmdClearSelectionCompany.Location = new System.Drawing.Point(272, 87);
             this.cmdClearSelectionCompany.Name = "cmdClearSelectionCompany";
-            this.cmdClearSelectionCompany.Size = new System.Drawing.Size(93, 22);
+            this.cmdClearSelectionCompany.Size = new System.Drawing.Size(82, 22);
             this.cmdClearSelectionCompany.StyleController = this.layoutControl1;
             this.cmdClearSelectionCompany.TabIndex = 44;
             this.cmdClearSelectionCompany.Text = "Clear Selection";
@@ -1829,13 +1830,13 @@
             // 
             // cmdManualMatchCompany
             // 
-            this.cmdManualMatchCompany.Enabled = false;
             this.cmdManualMatchCompany.Location = new System.Drawing.Point(698, 12);
             this.cmdManualMatchCompany.Name = "cmdManualMatchCompany";
             this.cmdManualMatchCompany.Size = new System.Drawing.Size(77, 22);
             this.cmdManualMatchCompany.StyleController = this.layoutControl1;
             this.cmdManualMatchCompany.TabIndex = 49;
             this.cmdManualMatchCompany.Text = "Manual Match";
+            this.cmdManualMatchCompany.Click += new System.EventHandler(this.cmdManualMatchCompany_Click);
             // 
             // labelControl1
             // 
@@ -2354,11 +2355,11 @@
             // 
             this.layoutControlItem14.Control = this.cmdClearSelectionCompany;
             this.layoutControlItem14.CustomizationFormText = "layoutControlItem14";
-            this.layoutControlItem14.Location = new System.Drawing.Point(292, 75);
-            this.layoutControlItem14.MaxSize = new System.Drawing.Size(97, 26);
-            this.layoutControlItem14.MinSize = new System.Drawing.Size(97, 26);
+            this.layoutControlItem14.Location = new System.Drawing.Point(260, 75);
+            this.layoutControlItem14.MaxSize = new System.Drawing.Size(86, 26);
+            this.layoutControlItem14.MinSize = new System.Drawing.Size(86, 26);
             this.layoutControlItem14.Name = "layoutControlItem14";
-            this.layoutControlItem14.Size = new System.Drawing.Size(97, 26);
+            this.layoutControlItem14.Size = new System.Drawing.Size(86, 26);
             this.layoutControlItem14.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem14.Text = "layoutControlItem14";
             this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
@@ -2369,11 +2370,11 @@
             // 
             this.layoutControlItem24.Control = this.cmdRemoveMatchCompany;
             this.layoutControlItem24.CustomizationFormText = "layoutControlItem24";
-            this.layoutControlItem24.Location = new System.Drawing.Point(389, 75);
-            this.layoutControlItem24.MaxSize = new System.Drawing.Size(166, 26);
-            this.layoutControlItem24.MinSize = new System.Drawing.Size(166, 26);
+            this.layoutControlItem24.Location = new System.Drawing.Point(346, 75);
+            this.layoutControlItem24.MaxSize = new System.Drawing.Size(147, 26);
+            this.layoutControlItem24.MinSize = new System.Drawing.Size(147, 26);
             this.layoutControlItem24.Name = "layoutControlItem24";
-            this.layoutControlItem24.Size = new System.Drawing.Size(166, 26);
+            this.layoutControlItem24.Size = new System.Drawing.Size(147, 26);
             this.layoutControlItem24.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem24.Text = "layoutControlItem24";
             this.layoutControlItem24.TextSize = new System.Drawing.Size(0, 0);
@@ -2384,11 +2385,11 @@
             // 
             this.layoutControlItem43.Control = this.cmdMarkAsMatchedCompany;
             this.layoutControlItem43.CustomizationFormText = "layoutControlItem43";
-            this.layoutControlItem43.Location = new System.Drawing.Point(555, 75);
-            this.layoutControlItem43.MaxSize = new System.Drawing.Size(122, 26);
-            this.layoutControlItem43.MinSize = new System.Drawing.Size(122, 26);
+            this.layoutControlItem43.Location = new System.Drawing.Point(493, 75);
+            this.layoutControlItem43.MaxSize = new System.Drawing.Size(108, 26);
+            this.layoutControlItem43.MinSize = new System.Drawing.Size(108, 26);
             this.layoutControlItem43.Name = "layoutControlItem43";
-            this.layoutControlItem43.Size = new System.Drawing.Size(122, 26);
+            this.layoutControlItem43.Size = new System.Drawing.Size(108, 26);
             this.layoutControlItem43.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem43.Text = "layoutControlItem43";
             this.layoutControlItem43.TextSize = new System.Drawing.Size(0, 0);
@@ -2399,11 +2400,11 @@
             // 
             this.layoutControlItem44.Control = this.cmdSelectNonMatchedCompany;
             this.layoutControlItem44.CustomizationFormText = "layoutControlItem44";
-            this.layoutControlItem44.Location = new System.Drawing.Point(164, 75);
-            this.layoutControlItem44.MaxSize = new System.Drawing.Size(128, 26);
-            this.layoutControlItem44.MinSize = new System.Drawing.Size(128, 26);
+            this.layoutControlItem44.Location = new System.Drawing.Point(146, 75);
+            this.layoutControlItem44.MaxSize = new System.Drawing.Size(114, 26);
+            this.layoutControlItem44.MinSize = new System.Drawing.Size(114, 26);
             this.layoutControlItem44.Name = "layoutControlItem44";
-            this.layoutControlItem44.Size = new System.Drawing.Size(128, 26);
+            this.layoutControlItem44.Size = new System.Drawing.Size(114, 26);
             this.layoutControlItem44.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem44.Text = "layoutControlItem44";
             this.layoutControlItem44.TextSize = new System.Drawing.Size(0, 0);
@@ -2415,11 +2416,8 @@
             this.layoutControlItem45.Control = this.cmdSelectAllCompany;
             this.layoutControlItem45.CustomizationFormText = "layoutControlItem45";
             this.layoutControlItem45.Location = new System.Drawing.Point(0, 75);
-            this.layoutControlItem45.MaxSize = new System.Drawing.Size(65, 26);
-            this.layoutControlItem45.MinSize = new System.Drawing.Size(65, 26);
             this.layoutControlItem45.Name = "layoutControlItem45";
-            this.layoutControlItem45.Size = new System.Drawing.Size(65, 26);
-            this.layoutControlItem45.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem45.Size = new System.Drawing.Size(58, 26);
             this.layoutControlItem45.Text = "layoutControlItem45";
             this.layoutControlItem45.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem45.TextToControlDistance = 0;
@@ -2429,9 +2427,9 @@
             // 
             this.emptySpaceItem8.AllowHotTrack = false;
             this.emptySpaceItem8.CustomizationFormText = "emptySpaceItem8";
-            this.emptySpaceItem8.Location = new System.Drawing.Point(677, 75);
+            this.emptySpaceItem8.Location = new System.Drawing.Point(601, 75);
             this.emptySpaceItem8.Name = "emptySpaceItem8";
-            this.emptySpaceItem8.Size = new System.Drawing.Size(133, 26);
+            this.emptySpaceItem8.Size = new System.Drawing.Size(209, 26);
             this.emptySpaceItem8.Text = "emptySpaceItem8";
             this.emptySpaceItem8.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -2776,11 +2774,11 @@
             // 
             this.layoutControlItem64.Control = this.cmdSelectMatchedCompany;
             this.layoutControlItem64.CustomizationFormText = "layoutControlItem64";
-            this.layoutControlItem64.Location = new System.Drawing.Point(65, 75);
-            this.layoutControlItem64.MaxSize = new System.Drawing.Size(99, 26);
-            this.layoutControlItem64.MinSize = new System.Drawing.Size(99, 26);
+            this.layoutControlItem64.Location = new System.Drawing.Point(58, 75);
+            this.layoutControlItem64.MaxSize = new System.Drawing.Size(88, 26);
+            this.layoutControlItem64.MinSize = new System.Drawing.Size(88, 26);
             this.layoutControlItem64.Name = "layoutControlItem64";
-            this.layoutControlItem64.Size = new System.Drawing.Size(99, 26);
+            this.layoutControlItem64.Size = new System.Drawing.Size(88, 26);
             this.layoutControlItem64.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem64.Text = "layoutControlItem64";
             this.layoutControlItem64.TextSize = new System.Drawing.Size(0, 0);

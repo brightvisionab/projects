@@ -63,22 +63,19 @@ namespace SalesConsultant.Modules
         }
         private void cmdShowResult_Click(object sender, EventArgs e)
         {
-            if (txtSearchKeyword.Text.Length < 1)
-            {
+            if (txtSearchKeyword.Text.Length < 1) {
                 NotificationDialog.Information("Bright Sales", "Please enter a search keyword.");
                 txtSearchKeyword.Focus();
                 return;
             }
-            else if (Convert.ToInt32(txtRecordToShow.Text) < 1)
-            {
+            else if (Convert.ToInt32(txtRecordToShow.Text) < 1) {
                 NotificationDialog.Information("Bright Sales", "Please enter the max no. of records to show.");
                 txtRecordToShow.Focus();
                 return;
             }
 
-            try
-            {
-                WaitDialog.Show("Loading results...");
+            try {
+                WaitDialog.Show("Loading results ...");
                 lblRecordStat.Text = "Records: 0";
                 gcAccount.DataSource = null;
                 gcAccount.DataSource = ObjectCompany.GetCompanyListing(txtSearchKeyword.Text, Convert.ToInt32(txtRecordToShow.Text));
@@ -88,7 +85,8 @@ namespace SalesConsultant.Modules
                 this.cbxSelectAll_CheckedChanged(null, null);
                 WaitDialog.Close();
             }
-            catch { }
+            catch { 
+            }
         }
         private void cbxSelectAll_CheckedChanged(object sender, EventArgs e)
         {

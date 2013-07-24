@@ -649,6 +649,16 @@ namespace SalesConsultant.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eraser {
+            get {
+                object obj = ResourceManager.GetObject("eraser", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;xsl:stylesheet version=&quot;1.0&quot; 
         ///    xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
         ///    xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot; 

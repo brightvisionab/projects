@@ -45398,10 +45398,12 @@ namespace BrightVision.Model
         /// Create a new CTCompany object.
         /// </summary>
         /// <param name="id">Initial value of the id property.</param>
-        public static CTCompany CreateCTCompany(global::System.Int32 id)
+        /// <param name="validated">Initial value of the validated property.</param>
+        public static CTCompany CreateCTCompany(global::System.Int32 id, global::System.Boolean validated)
         {
             CTCompany cTCompany = new CTCompany();
             cTCompany.id = id;
+            cTCompany.validated = validated;
             return cTCompany;
         }
 
@@ -45624,6 +45626,78 @@ namespace BrightVision.Model
         private global::System.String _org_no;
         partial void Onorg_noChanging(global::System.String value);
         partial void Onorg_noChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String zip_code
+        {
+            get
+            {
+                return _zip_code;
+            }
+            set
+            {
+                Onzip_codeChanging(value);
+                ReportPropertyChanging("zip_code");
+                _zip_code = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("zip_code");
+                Onzip_codeChanged();
+            }
+        }
+        private global::System.String _zip_code;
+        partial void Onzip_codeChanging(global::System.String value);
+        partial void Onzip_codeChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String telephone
+        {
+            get
+            {
+                return _telephone;
+            }
+            set
+            {
+                OntelephoneChanging(value);
+                ReportPropertyChanging("telephone");
+                _telephone = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("telephone");
+                OntelephoneChanged();
+            }
+        }
+        private global::System.String _telephone;
+        partial void OntelephoneChanging(global::System.String value);
+        partial void OntelephoneChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Boolean validated
+        {
+            get
+            {
+                return _validated;
+            }
+            set
+            {
+                OnvalidatedChanging(value);
+                ReportPropertyChanging("validated");
+                _validated = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("validated");
+                OnvalidatedChanged();
+            }
+        }
+        private global::System.Boolean _validated;
+        partial void OnvalidatedChanging(global::System.Boolean value);
+        partial void OnvalidatedChanged();
 
         #endregion
 

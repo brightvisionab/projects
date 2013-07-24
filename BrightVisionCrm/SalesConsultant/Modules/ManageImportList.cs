@@ -1,5 +1,4 @@
 ﻿
-#region Namespaces
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -36,7 +35,10 @@ using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.StorageClient;
 using Microsoft.WindowsAzure.ServiceRuntime;
 using Microsoft.SqlServer.Dts.Runtime;
-#endregion
+using BrightVision.Common.Events.Core;
+using SalesConsultant.Facade;
+using SalesConsultant.PublicProperties;
+using SalesConsultant.Events;
 
 namespace SalesConsultant.Modules
 {
@@ -58,6 +60,9 @@ namespace SalesConsultant.Modules
         #endregion
 
         #region Private Members
+        private IEventAggregator m_EventBus = BrightSalesFacade.EventBus;
+        private BrightSalesProperty m_BrightSalesProperty = BrightSalesFacade.Property;
+
         private NewImport m_objFrmNewImport = null;
         private PopupDialog m_objPopupDialog = null;
         private GridView m_objGridView = null;
@@ -110,6 +115,7 @@ namespace SalesConsultant.Modules
 
             m_oPackageQueue = new SSISPackageQueue();
             m_oRepository = new UserTextNotificationRepository();
+            this.RegisterEvents();
         }
         #endregion
 
@@ -433,6 +439,15 @@ namespace SalesConsultant.Modules
         #endregion
 
         #region Private Functions
+        private void RegisterEvents()
+        {
+            m_EventBus.GetEvent<FrmManualMatchAccountEvents.OnClose>().Subscribe(FrmManualMatchingAccount_OnClose);
+        }
+        private void FrmManualMatchingAccount_OnClose(FrmManualMatchAccountEvents.OnClose e)
+        {
+
+        }
+
         /// <summary>
         /// Create fuzzy data records
         /// </summary>
@@ -2378,6 +2393,53 @@ namespace SalesConsultant.Modules
             m_objPopupDialog.ShowDialog(this.ParentForm);
             //WaitDialog.Close();
         }
+        private void cmdManualMatchCompany_Click(object sender, EventArgs e)
+        {
+            if (gvMatchingCompany.RowCount < 1)
+                return;
+
+            WaitDialog.Show("Loading manual matching ...");
+            List<ClassesProperty.ManualMatchAccount> _lstMatchAccounts = new List<ClassesProperty.ManualMatchAccount>();
+            List<CTFuzzyLookupAccount> _lstAccounts = m_FuzzyLookupAccountList.Where(i => i.selected == true).ToList();
+            if (_lstAccounts.Count < 1) {
+                NotificationDialog.Information("Bright Sales", "No items selected.");
+                WaitDialog.Close();
+                return;
+            }
+
+            foreach (CTFuzzyLookupAccount _item in _lstAccounts)
+                _lstMatchAccounts.Add(new ClassesProperty.ManualMatchAccount() {
+                    // match properties goes here ...
+                    fuzzy_lookup_account_id = _item.id,
+                    match_account_id = (string.IsNullOrEmpty(_item.account_id.ToString()) || _item.account_id < 1) ? 0 : _item.account_id,
+                    import_data_company_name = _item.import_company_name,
+                    master_data_company_name = _item.company_name,
+                    is_match = (string.IsNullOrEmpty(_item.account_id.ToString()) || _item.account_id < 1)? false: true,
+
+                    // column field values goes here ...
+                    org_no = _item.import_org_no,
+                    address = string.Format("{0} {1}, {2}, {3} {4}", 
+                        _item.import_box_address,
+                        _item.import_street_address,
+                        _item.import_city,
+                        _item.import_country,
+                        _item.import_zipcode
+                    ),
+                    city = _item.import_city,
+                    zip_code = _item.import_zipcode,
+                    country = _item.import_country,
+                    telephone = _item.import_telephone,
+                    validated = (string.IsNullOrEmpty(_item.validated.ToString()) || _item.validated < 1)? false: true
+                });
+            
+            FrmManualMatchAccount _form = new FrmManualMatchAccount() {
+                StartPosition = FormStartPosition.CenterParent,
+                lstMatchAccounts = _lstMatchAccounts
+            };
+            _form.RenderMatchAccounts();
+            WaitDialog.Close();
+            _form.ShowDialog(this.ParentForm);
+        }
         #endregion
 
         #region Private Methods
@@ -2765,8 +2827,7 @@ namespace SalesConsultant.Modules
 
             WaitDialog.Show(ParentForm, "Loading...");
             m_FuzzyLookupAccountList = DataImportUtility.GetFuzzyLookupAccountList(m_objImportList.id);
-            if (m_FuzzyLookupAccountList.Count > 0)
-            {
+            if (m_FuzzyLookupAccountList.Count > 0) {
                 gcMatchingCompany.DataSource = m_FuzzyLookupAccountList;
                 this.SetFuzzyLookupAccountMatchStatistics(DataImportUtility.GetFuzzyLookupAccountMatchStatistics(m_objImportList.id));
                 this.SetFuzzyLookupAccountMatchingViewControls(true);
@@ -2847,7 +2908,8 @@ namespace SalesConsultant.Modules
             cboMatchCriteriaCompany.Enabled = ControlStatus;
             cboMatchTypeCompany.Enabled = ControlStatus;
             cmdExecuteMatchCompany.Enabled = ControlStatus;
-            cmdManualMatchCompany.Enabled = false; //ControlStatus;
+            cmdManualMatchCompany.Enabled = ControlStatus;
+            cbxValidatedCompany.Enabled = ControlStatus;
             cbxShowOnlyValidatedCompany.Enabled = ControlStatus;
             cbxShowOnlyNonMatchedCompany.Enabled = ControlStatus;
             cmdSelectAllCompany.Enabled = ControlStatus;

@@ -283,7 +283,7 @@ namespace ManagerApplication.Modules
             }           
 
             GridView view = sender as GridView;
-            GridUtility.CreateGridContextMenuCallLog(view, e, _eftCallLog.audio_id);
+            GridUtility.CreateGridContextMenuCallLog(view, e, _eftCallLog.audio_id, null);
         }
         private void ViewCallLogs_ParentChanged(object sender, EventArgs e)
         {
