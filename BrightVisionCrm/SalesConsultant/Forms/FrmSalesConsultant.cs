@@ -801,7 +801,7 @@ namespace SalesConsultant.Forms
             int iTotalWidthTab = this.Width;
             string CallingDetails = string.Format("{0}({1}) -> {2}       Activity: Calling {0}.      Account: {3} ", e.PhoneCallArgs.ContactNo, e.PhoneCallArgs.CallMethod.GetEnumDescription(), e.PhoneCallArgs.ContactNo.ToSwedishPhoneNumber(), sip.username);
 
-            if (iTotalWidthTab < 1500)
+            if (iTotalWidthTab < 1600)
             {
                 
             }
