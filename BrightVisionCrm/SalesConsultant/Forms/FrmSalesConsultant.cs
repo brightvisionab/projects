@@ -726,6 +726,7 @@ namespace SalesConsultant.Forms
             if (m_CampaignListModule != null)
                 m_CampaignListModule.ReloadCallLogTab();
 
+            tcSalesConsultant.CustomHeaderButtons[0].Caption = "";
             tcSalesConsultant.CustomHeaderButtons[0].Visible = false;
         }
         private void PhoneCallEnd(PhoneCallEndEventNotifier e)
@@ -754,6 +755,7 @@ namespace SalesConsultant.Forms
 
             //if (m_CampaignBookingModule != null)
             //    m_CampaignBookingModule.m_oCallLogBar_btnHangUp_OnClick(e.ContactId);
+            tcSalesConsultant.CustomHeaderButtons[0].Caption = "";
             tcSalesConsultant.CustomHeaderButtons[0].Visible = false;
         }
         private void PhoneCallStart(CallViewBarEvents.PhoneCallStart.FrmSalesConsultant e)
