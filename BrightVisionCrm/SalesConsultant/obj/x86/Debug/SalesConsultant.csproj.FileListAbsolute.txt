@@ -1156,7 +1156,6 @@ D:\LiveProjects\BrightVisionCrm\SalesConsultant\bin\Debug\BrightVision.Storage.p
 D:\LiveProjects\BrightVisionCrm\SalesConsultant\bin\Debug\BrightVision.Telephony.pdb
 D:\LiveProjects\BrightVisionCrm\SalesConsultant\bin\Debug\BrightVision.Threading.pdb
 D:\LiveProjects\BrightVisionCrm\SalesConsultant\bin\Debug\BrightVision.Windows.Azure.Storage.Blob.pdb
-D:\LiveProjects\BrightVisionCrm\SalesConsultant\bin\Debug\BrightSales_Audio_Uploader.pdb
 D:\LiveProjects\BrightVisionCrm\SalesConsultant\bin\Debug\BrightVision.Reporting.pdb
 D:\LiveProjects\BrightVisionCrm\SalesConsultant\bin\Debug\DevExpress.Data.v12.2.xml
 D:\LiveProjects\BrightVisionCrm\SalesConsultant\bin\Debug\DevExpress.Printing.v12.2.Core.xml
@@ -1400,3 +1399,4 @@ D:\LiveProjects\BrightVisionCrm\SalesConsultant\obj\x86\Debug\SalesConsultant.cs
 D:\LiveProjects\BrightVisionCrm\SalesConsultant\obj\x86\Debug\SalesConsultant.exe.licenses
 D:\LiveProjects\BrightVisionCrm\SalesConsultant\obj\x86\Debug\SalesConsultant.exe
 D:\LiveProjects\BrightVisionCrm\SalesConsultant\obj\x86\Debug\SalesConsultant.pdb
+D:\LiveProjects\BrightVisionCrm\SalesConsultant\bin\Debug\BrightSales_Audio_Uploader.pdb

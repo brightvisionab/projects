@@ -584,8 +584,6 @@ D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\DevExpress.Xtra
 D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\DevExpress.XtraReports.v12.2.dll
 D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\DevExpress.XtraReports.v12.2.Extensions.dll
 D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\DevExpress.XtraTreeList.v12.2.dll
-D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\Microsoft.ReportViewer.Common.dll
-D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\Mvp.Xml.dll
 D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\VoIPSDK.dll
 D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\ActiveUp.Net.Common.dll
@@ -623,7 +621,6 @@ D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\DevExpress.Util
 D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\DevExpress.XtraReports.v12.2.xml
 D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\DevExpress.XtraReports.v12.2.Extensions.xml
 D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\DevExpress.XtraTreeList.v12.2.xml
-D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\Microsoft.ReportViewer.WinForms.xml
 D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\GMap.NET.WindowsForms.xml
 D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\GMap.NET.Core.xml
 D:\LiveProjects\BrightVisionCrm\BrightVision.Reporting\bin\Debug\System.Reactive.Linq.xml
