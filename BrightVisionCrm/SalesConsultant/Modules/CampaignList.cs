@@ -299,6 +299,15 @@ namespace SalesConsultant.Modules
             public int ContactId { get; set; }
         }
 
+        private class SubCampaignDefaultStatus
+        {
+            public int LeadStatus { get; set; }
+            public int AccountStatus { get; set; }
+            public int ContactStatus { get; set; }
+        }
+
+        private SubCampaignDefaultStatus m_Status = null;
+
         private enum ObjectEventSender
         {
             btnWorkOnCompany_Click,
@@ -973,16 +982,20 @@ namespace SalesConsultant.Modules
                 //int _NotQualifiedIndex = -1;
                 //int _SendEmailIndex = -1;
 
+                m_Status = new SubCampaignDefaultStatus();
                 m_lstAccountLeadStatuses = XmlUtility.GetXmlNodeDataAsList(_XmlData, "/sub_campaign_config/account/account_lead_status_dropdown");
+                m_Status.LeadStatus = GetSubCampaignDefaultStatus(m_lstAccountLeadStatuses);
                 //m_lstAccountLeadStatuses = XmlUtility.GetXmlNodeDataAsList(_XmlData, "/sub_campaign_config/account/account_lead_status_dropdown", ref _ItemSelectedIndex, ref _NotQualifiedIndex, ref _SendEmailIndex);
                 //m_AccountLeadStatusSelectedIndex = _ItemSelectedIndex;
                 //m_AccountLeadStatusNotQualifiedIndex = _NotQualifiedIndex;
                 m_lstAccountStatuses = XmlUtility.GetXmlNodeDataAsList(_XmlData, "/sub_campaign_config/account/account_status_dropdown");
+                m_Status.AccountStatus = GetSubCampaignDefaultStatus(m_lstAccountStatuses);
                 //m_lstAccountStatuses = XmlUtility.GetXmlNodeDataAsList(_XmlData, "/sub_campaign_config/account/account_status_dropdown", ref _ItemSelectedIndex, ref _NotQualifiedIndex, ref _SendEmailIndex);
                 //m_AccountStatusSelectedIndex = _ItemSelectedIndex;
                 //m_AccountStatusNotQualifiedIndex = _NotQualifiedIndex;
                 //m_AccountStatusSendEmailIndex = _SendEmailIndex;
                 m_lstContactStatuses = XmlUtility.GetXmlNodeDataAsList(_XmlData, "/sub_campaign_config/contact/contact_status_dropdown");
+                m_Status.ContactStatus = GetSubCampaignDefaultStatus(m_lstContactStatuses);
                 //m_lstContactStatuses = XmlUtility.GetXmlNodeDataAsList(_XmlData, "/sub_campaign_config/contact/contact_status_dropdown", ref _ItemSelectedIndex, ref _NotQualifiedIndex, ref _SendEmailIndex);
                 //m_ContactStatusSelectedIndex = _ItemSelectedIndex;
                 //m_ContactStatusNotQualifiedIndex = _NotQualifiedIndex;
@@ -992,6 +1005,20 @@ namespace SalesConsultant.Modules
             m_DoneLoadingCampaignList = true;
             gvCampaignList.Focus();
             WaitDialog.Close();
+        }
+        private int GetSubCampaignDefaultStatus(List<XmlUtility.SubCampaignConfig> config)
+        {
+            int status = 0;
+            for (int i = 0; i < config.Count; i++)
+            {
+                if (config[i].selected)
+                {
+                    status = i;
+                    break;
+                }
+            }
+
+            return status;
         }
         public void WorkCompanyOnCampaignListLoad()
         {
@@ -1336,10 +1363,12 @@ namespace SalesConsultant.Modules
                     //m_AccountStatusSelectedIndex = 0;
                     //m_AccountLeadStatusSelectedIndex = 0;
 
-                    if (_eftAccountAppt != null) {
+                    if (_eftAccountAppt != null)
+                    {
                         _efDbContext.Detach(_eftAccountAppt);
                         int _idx = m_lstAccountStatuses.FindIndex(i => i.status.Equals(_eftAccountAppt.status));
-                        if (_idx != null && _idx > 0) {
+                        if (_idx != null && _idx > 0)
+                        {
                             for (int i = 0; i < m_lstAccountStatuses.Count; i++)
                                 m_lstAccountStatuses[i].selected = false;
                             m_lstAccountStatuses[_idx].selected = true;
@@ -1347,13 +1376,25 @@ namespace SalesConsultant.Modules
                         }
 
                         _idx = m_lstAccountLeadStatuses.FindIndex(i => i.status.Equals(_eftAccountAppt.lead_status));
-                        if (_idx != null && _idx > 0) {
+                        if (_idx != null && _idx > 0)
+                        {
                             for (int i = 0; i < m_lstAccountLeadStatuses.Count; i++)
                                 m_lstAccountLeadStatuses[i].selected = false;
                             m_lstAccountLeadStatuses[_idx].selected = true;
                             //m_AccountLeadStatusSelectedIndex = _idx;
                         }
                     }
+                    else
+                    {
+                        for (int i = 0; i < m_lstAccountStatuses.Count; i++)
+                            m_lstAccountStatuses[i].selected = false;
+                        m_lstAccountStatuses[m_Status.AccountStatus].selected = true;
+
+                        for (int i = 0; i < m_lstAccountLeadStatuses.Count; i++)
+                            m_lstAccountLeadStatuses[i].selected = false;
+                        m_lstAccountLeadStatuses[m_Status.LeadStatus].selected = true;
+                    }
+
 
                     /**
                      * get contact/dialog status index for dropdown.
@@ -1365,15 +1406,23 @@ namespace SalesConsultant.Modules
                             i.final_list_id == m_BrightSalesProperty.CommonProperty.FinalListId
                         );
 
-                        if (_eftContactAppt != null) {
+                        if (_eftContactAppt != null)
+                        {
                             _efDbContext.Detach(_eftContactAppt);
                             int _idx = m_lstContactStatuses.FindIndex(i => i.status.Equals(_eftContactAppt.status));
-                            if (_idx != null && _idx > 0) {
+                            if (_idx != null && _idx > 0)
+                            {
                                 for (int i = 0; i < m_lstContactStatuses.Count; i++)
                                     m_lstContactStatuses[i].selected = false;
                                 m_lstContactStatuses[_idx].selected = true;
                                 //m_ContactStatusSelectedIndex = _idx;
                             }
+                        }
+                        else
+                        {
+                            for (int i = 0; i < m_lstContactStatuses.Count; i++)
+                                m_lstContactStatuses[i].selected = false;
+                            m_lstContactStatuses[m_Status.ContactStatus].selected = true;
                         }
                     }
                 }
