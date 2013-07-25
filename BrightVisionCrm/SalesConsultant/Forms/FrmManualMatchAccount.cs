@@ -23,7 +23,7 @@ namespace SalesConsultant.Forms
         public FrmManualMatchAccount()
         {
             InitializeComponent();
-            tbxShowCount.Text = "50";
+            tbxShowCount.Text = "10";
         }
         #endregion
 
@@ -75,14 +75,12 @@ namespace SalesConsultant.Forms
                 tbxShowCount.Focus();
                 return;
             }
-
-            WaitDialog.Show("Searching ...");
+            
             gcPossibleMatches.BeginUpdate();
             gcPossibleMatches.DataSource = null;
             gcPossibleMatches.DataSource = ObjectCompany.GetCompanyListing(tbxKeyWord.Text, Convert.ToInt32(tbxShowCount.Text));
             gvPossibleMatches.BestFitColumns();
             gcPossibleMatches.EndUpdate();
-            WaitDialog.Close();
         }
         #endregion
 
@@ -139,18 +137,23 @@ namespace SalesConsultant.Forms
             if (e.KeyCode != Keys.Enter)
                 return;
 
+            WaitDialog.Show("Searching ...");
             this.GetMatchResults();
+            WaitDialog.Close();
         }
         private void tbxShowCount_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode != Keys.Enter)
                 return;
 
+            WaitDialog.Show("Searching ...");
             this.GetMatchResults();
+            WaitDialog.Close();
         }
         private void btnClearMatch_Click(object sender, EventArgs e)
         {
             gvAccountsList.BeginUpdate();
+            gvAccountsList.SetRowCellValue(gvAccountsList.FocusedRowHandle, "master_data_company_name", string.Empty);
             gvAccountsList.SetRowCellValue(gvAccountsList.FocusedRowHandle, "match_account_id", 0);
             gvAccountsList.SetRowCellValue(gvAccountsList.FocusedRowHandle, "is_match", false);
             gvAccountsList.EndUpdate();
@@ -159,17 +162,27 @@ namespace SalesConsultant.Forms
         {
             CTCompany _MasterData = gvPossibleMatches.GetFocusedRow() as CTCompany;
             gvAccountsList.BeginUpdate();
+            gvAccountsList.SetRowCellValue(gvAccountsList.FocusedRowHandle, "master_data_company_name", _MasterData.company_name);
             gvAccountsList.SetRowCellValue(gvAccountsList.FocusedRowHandle, "match_account_id", _MasterData.id);
             gvAccountsList.SetRowCellValue(gvAccountsList.FocusedRowHandle, "is_match", true);
             gvAccountsList.EndUpdate();
         }
         private void btnClose_Click(object sender, EventArgs e)
         {
+            WaitDialog.Show("Updating match lists.");
             m_EventBus.Notify(new FrmManualMatchAccountEvents.OnClose() {
                 lstMatchAccounts = gvAccountsList.DataSource as List<ClassesProperty.ManualMatchAccount>
             });
-
+            WaitDialog.Close();
             this.Close();
+        }
+        private void gvAccountsList_DoubleClick(object sender, EventArgs e)
+        {
+            WaitDialog.Show("Searching ...");
+            ClassesProperty.ManualMatchAccount _Account = gvAccountsList.GetFocusedRow() as ClassesProperty.ManualMatchAccount;
+            tbxKeyWord.Text = _Account.import_data_company_name;
+            this.GetMatchResults();
+            WaitDialog.Close();
         }
         #endregion
     }

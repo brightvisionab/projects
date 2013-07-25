@@ -60,35 +60,37 @@ namespace BrightVision.Common.Utilities
         #region Business Methods
         public static DataTable CreateDataImportAccountTable()
         {
-            SqlCommand objSqlCommand = new SqlCommand("bvGetDataImportAccountBulkInsertStructure_sp");
-            return DatabaseUtility.ExecuteSqlQuery(objSqlCommand);
+            using (SqlCommand objSqlCommand = new SqlCommand("bvGetDataImportAccountBulkInsertStructure_sp")) {
+                return DatabaseUtility.ExecuteSqlQuery(objSqlCommand);
+            }
         }
         public static DataTable CreateAccountTable()
         {
-            SqlCommand objSqlCommand = new SqlCommand("bvGetAccountBulkInsertStructure_sp");
-            return DatabaseUtility.ExecuteSqlQuery(objSqlCommand);
+            using (SqlCommand objSqlCommand = new SqlCommand("bvGetAccountBulkInsertStructure_sp")) {
+                return DatabaseUtility.ExecuteSqlQuery(objSqlCommand);
+            }
         }
-
         public static DataTable CreateContactTable()
         {
-            SqlCommand objSqlCommand = new SqlCommand("bvGetContactBulkInsertStructure_sp");
-            return DatabaseUtility.ExecuteSqlQuery(objSqlCommand);
+            using (SqlCommand objSqlCommand = new SqlCommand("bvGetContactBulkInsertStructure_sp")) {
+                return DatabaseUtility.ExecuteSqlQuery(objSqlCommand);
+            }
         }
-
         public static DataTable GetLargeCompanyImportMatchedContacts(eMatchBy pMatchBy, DataTable ImportFileMatchColumn, int CountryId, List<string> ColumnNames)
         {
-            SqlCommand objCommand = new SqlCommand("bvGetImportFileMatchedContacts_sp");
-            objCommand.Parameters.Add("p_country_id", SqlDbType.Int).Value = CountryId;
-            objCommand.Parameters.Add("p_select_columns", SqlDbType.NVarChar).Value = string.Join(",", ColumnNames.ToArray());
-            objCommand.Parameters.Add("p_match_column", SqlDbType.Structured).Value = ImportFileMatchColumn;
+            using (SqlCommand objCommand = new SqlCommand("bvGetImportFileMatchedContacts_sp")) {
+                objCommand.Parameters.Add("p_country_id", SqlDbType.Int).Value = CountryId;
+                objCommand.Parameters.Add("p_select_columns", SqlDbType.NVarChar).Value = string.Join(",", ColumnNames.ToArray());
+                objCommand.Parameters.Add("p_match_column", SqlDbType.Structured).Value = ImportFileMatchColumn;
 
-            if (pMatchBy == eMatchBy.Email)
-                objCommand.Parameters.Add("p_match_by", SqlDbType.NVarChar).Value = "email";
-            else if (pMatchBy == eMatchBy.ContactId)
-                objCommand.Parameters.Add("p_match_by", SqlDbType.NVarChar).Value = "contact_id";
+                if (pMatchBy == eMatchBy.Email)
+                    objCommand.Parameters.Add("p_match_by", SqlDbType.NVarChar).Value = "email";
+                else if (pMatchBy == eMatchBy.ContactId)
+                    objCommand.Parameters.Add("p_match_by", SqlDbType.NVarChar).Value = "contact_id";
 
-            objCommand.CommandTimeout = 0;
-            return DatabaseUtility.ExecuteSqlQuery(objCommand);
+                objCommand.CommandTimeout = 0;
+                return DatabaseUtility.ExecuteSqlQuery(objCommand);
+            }
         }
 
         /// <summary>
@@ -99,18 +101,19 @@ namespace BrightVision.Common.Utilities
         /// <returns></returns>
         public static DataTable GetLargeCompanyImportMatchedAccounts(eMatchBy pMatchBy, DataTable ImportFileMatchColumn, int CountryId, List<string> ColumnNames)
         {
-            SqlCommand objCommand = new SqlCommand("bvGetImportFileMatchedAccounts_sp");
-            objCommand.Parameters.Add("p_country_id", SqlDbType.Int).Value = CountryId;
-            objCommand.Parameters.Add("p_select_columns", SqlDbType.NVarChar).Value = string.Join(",", ColumnNames.ToArray());
-            objCommand.Parameters.Add("p_match_column", SqlDbType.Structured).Value = ImportFileMatchColumn;
+            using (SqlCommand objCommand = new SqlCommand("bvGetImportFileMatchedAccounts_sp")) {
+                objCommand.Parameters.Add("p_country_id", SqlDbType.Int).Value = CountryId;
+                objCommand.Parameters.Add("p_select_columns", SqlDbType.NVarChar).Value = string.Join(",", ColumnNames.ToArray());
+                objCommand.Parameters.Add("p_match_column", SqlDbType.Structured).Value = ImportFileMatchColumn;
 
-            if (pMatchBy == eMatchBy.OrgNo)
-                objCommand.Parameters.Add("p_match_by", SqlDbType.NVarChar).Value = "org_no";
-            else if (pMatchBy == eMatchBy.AccountId)
-                objCommand.Parameters.Add("p_match_by", SqlDbType.NVarChar).Value = "account_id";
-            
-            objCommand.CommandTimeout = 0;
-            return DatabaseUtility.ExecuteSqlQuery(objCommand);
+                if (pMatchBy == eMatchBy.OrgNo)
+                    objCommand.Parameters.Add("p_match_by", SqlDbType.NVarChar).Value = "org_no";
+                else if (pMatchBy == eMatchBy.AccountId)
+                    objCommand.Parameters.Add("p_match_by", SqlDbType.NVarChar).Value = "account_id";
+
+                objCommand.CommandTimeout = 0;
+                return DatabaseUtility.ExecuteSqlQuery(objCommand);
+            }
         }
 
         /// <summary>
@@ -214,9 +217,10 @@ namespace BrightVision.Common.Utilities
         /// <returns></returns>
         public static DataTable GetProfiledData(int ImportFileId)
         {
-            SqlCommand objCommand = new SqlCommand("bvGetProfiledData_sp");
-            objCommand.Parameters.Add("@p_import_file_id", SqlDbType.Int).Value = ImportFileId;
-            return DatabaseUtility.ExecuteSqlQuery(objCommand);
+            using (SqlCommand objCommand = new SqlCommand("bvGetProfiledData_sp")) {
+                objCommand.Parameters.Add("@p_import_file_id", SqlDbType.Int).Value = ImportFileId;
+                return DatabaseUtility.ExecuteSqlQuery(objCommand);
+            }
         }
 
         /// <summary>
@@ -224,9 +228,8 @@ namespace BrightVision.Common.Utilities
         /// </summary>
         public static ObjectQuery GetProfiledDataColumnMaps(int ImportFileId, BrightPlatformEntities objBrightPlatformEntity)
         {
-            var item = objBrightPlatformEntity.profiled_data_column_maps.FirstOrDefault(i => i.import_file_id == ImportFileId);
-            if (item == null)
-            {
+            profiled_data_column_maps item = objBrightPlatformEntity.profiled_data_column_maps.FirstOrDefault(i => i.import_file_id == ImportFileId);
+            if (item == null) {
                 profiled_data_column_maps pdcm = new profiled_data_column_maps() { import_file_id = ImportFileId };
                 objBrightPlatformEntity.profiled_data_column_maps.AddObject(pdcm);
                 objBrightPlatformEntity.SaveChanges();
@@ -246,16 +249,17 @@ namespace BrightVision.Common.Utilities
         /// <param name="FuzzyLookupAccountIds"></param>
         public static void SaveFuzzyLookupAccountToMasterTable(int CustomerId, string ListName, int ImportFileId, List<string> FuzzyLookupAccountIds, string pLastModifiedSource)
         {
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            objDbModel.FISaveFuzzyLookupAccountsToMasterTable(
-                CustomerId, 
-                ListName, 
-                UserSession.CurrentUser.UserId, 
-                ImportFileId, 
-                string.Join(",", FuzzyLookupAccountIds.ToArray()),
-                UserSession.CurrentUser.ComputerName,
-                pLastModifiedSource);
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                objDbModel.FISaveFuzzyLookupAccountsToMasterTable(
+                    CustomerId,
+                    ListName,
+                    UserSession.CurrentUser.UserId,
+                    ImportFileId,
+                    string.Join(",", FuzzyLookupAccountIds.ToArray()),
+                    UserSession.CurrentUser.ComputerName,
+                    pLastModifiedSource);
                 //BrightVision.EventLog.Business.FacadeEventLog.Source_Bright_Manager_Import_List);
+            }
         }
 
         /// <summary>
@@ -264,8 +268,9 @@ namespace BrightVision.Common.Utilities
         /// <param name="ImportFileId"></param>
         public static CTFuzzyLookupAccountMatchStatistics GetFuzzyLookupAccountMatchStatistics(int ImportFileId)
         {
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection) { CommandTimeout = 0 };
-            return objDbModel.FIGetFuzzyLookupAccountMatchStatistics(ImportFileId).ToList()[0];
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection) { CommandTimeout = 0 }) {
+                return objDbModel.FIGetFuzzyLookupAccountMatchStatistics(ImportFileId).ToList()[0];
+            }
         }
 
         /// <summary>
@@ -275,8 +280,9 @@ namespace BrightVision.Common.Utilities
         /// <param name="FuzzyLookupAccountIds"></param>
         public static void UpdateFuzzyLookupAccountsByFuzzyCompanyMatches(int ImportFileId, List<string> FuzzyLookupAccountIds)
         {
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            objDbModel.FIUpdateFuzzyLookupAccountMatchesByFuzzyCompanyName(ImportFileId, string.Join(",", FuzzyLookupAccountIds.ToArray()), UserSession.CurrentUser.UserId);
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                objDbModel.FIUpdateFuzzyLookupAccountMatchesByFuzzyCompanyName(ImportFileId, string.Join(",", FuzzyLookupAccountIds.ToArray()), UserSession.CurrentUser.UserId);
+            }
         }
 
         /// <summary>
@@ -286,12 +292,13 @@ namespace BrightVision.Common.Utilities
         /// <returns></returns>
         public static string GetCountryCode(int CountryId)
         {
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            var item = objDbModel.countries.FirstOrDefault(i => i.id == CountryId);
-            if (item != null)
-                return item.code;
-            else
-                return "";
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection))  {
+                var item = objDbModel.countries.FirstOrDefault(i => i.id == CountryId);
+                if (item != null)
+                    return item.code;
+                else
+                    return string.Empty;
+            }
         }
 
         /// <summary>
@@ -307,9 +314,10 @@ namespace BrightVision.Common.Utilities
              *  1 = match by validated accounts only
              *  2 = match by unvalidated accounts only
              */
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            objDbModel.CommandTimeout = 0;
-            objDbModel.FIUpdateFuzzyLookupAccountMatchesByExactOrganizationNo(ImportFileId, string.Join(",", FuzzyLookupAccountIds.ToArray()), UserSession.CurrentUser.UserId, pMatchByAccountType);
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                objDbModel.CommandTimeout = 0;
+                objDbModel.FIUpdateFuzzyLookupAccountMatchesByExactOrganizationNo(ImportFileId, string.Join(",", FuzzyLookupAccountIds.ToArray()), UserSession.CurrentUser.UserId, pMatchByAccountType);
+            }
         }
 
         /// <summary>
@@ -325,8 +333,9 @@ namespace BrightVision.Common.Utilities
              *  1 = match by validated accounts only
              *  2 = match by unvalidated accounts only
              */
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            objDbModel.FIUpdateFuzzyLookupAccountMatchesByExactCompanyNameAndCity(ImportFileId, string.Join(",", FuzzyLookupAccountIds.ToArray()), UserSession.CurrentUser.UserId, pMatchByAccountType);
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                objDbModel.FIUpdateFuzzyLookupAccountMatchesByExactCompanyNameAndCity(ImportFileId, string.Join(",", FuzzyLookupAccountIds.ToArray()), UserSession.CurrentUser.UserId, pMatchByAccountType);
+            }
         }
 
         /// <summary>
@@ -342,8 +351,9 @@ namespace BrightVision.Common.Utilities
              *  1 = match by validated accounts only
              *  2 = match by unvalidated accounts only
              */
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            objDbModel.FIUpdateFuzzyLookupAccountMatchesByExactCompanyName(ImportFileId, string.Join(",", FuzzyLookupAccountIds.ToArray()), UserSession.CurrentUser.UserId, pMatchByAccountType);
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                objDbModel.FIUpdateFuzzyLookupAccountMatchesByExactCompanyName(ImportFileId, string.Join(",", FuzzyLookupAccountIds.ToArray()), UserSession.CurrentUser.UserId, pMatchByAccountType);
+            }
         }
 
         /// <summary>
@@ -365,8 +375,9 @@ namespace BrightVision.Common.Utilities
         /// <returns></returns>
         public static List<CTFuzzyLookupAccount> GetFuzzyLookupAccountList(int ImportFileId)
         {
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection) { CommandTimeout = 0 };
-            return objDbModel.FIGetFuzzyLookupAccounts(ImportFileId).ToList();
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection) { CommandTimeout = 0 }) {
+                return objDbModel.FIGetFuzzyLookupAccounts(ImportFileId).ToList();
+            }
         }
 
         /// <summary>
@@ -375,8 +386,9 @@ namespace BrightVision.Common.Utilities
         /// <param name="ImportFileId"></param>
         public static void CreateFuzzyData(int ImportFileId)
         {
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            objDbModel.FICreateFuzzyData(ImportFileId, UserSession.CurrentUser.UserId);
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                objDbModel.FICreateFuzzyData(ImportFileId, UserSession.CurrentUser.UserId);
+            }
         }
 
         /// <summary>
@@ -385,13 +397,14 @@ namespace BrightVision.Common.Utilities
         /// <param name="FuzzyLookupContactIds"></param>
         public static void SaveFuzzyLookupContactToMasterTable(List<string> FuzzyLookupContactIds, string pLastModifiedSource)
         {
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            objDbModel.FISaveFuzzyLookupContactsToMasterTable(
-                string.Join(",", FuzzyLookupContactIds.ToArray()), 
-                UserSession.CurrentUser.UserId,
-                UserSession.CurrentUser.ComputerName,
-                pLastModifiedSource);
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                objDbModel.FISaveFuzzyLookupContactsToMasterTable(
+                    string.Join(",", FuzzyLookupContactIds.ToArray()),
+                    UserSession.CurrentUser.UserId,
+                    UserSession.CurrentUser.ComputerName,
+                    pLastModifiedSource);
                 //BrightVision.EventLog.Business.FacadeEventLog.Source_Bright_Manager_Import_List);
+            }
         }
 
         /// <summary>
@@ -412,8 +425,9 @@ namespace BrightVision.Common.Utilities
         /// <param name="FuzzyLookupContactIds"></param>
         public static void ClearFuzzyLookupContactMatches(int ImportFileId, List<string> FuzzyLookupContactIds)
         {
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            objDbModel.FIClearFuzzyLookupContactMatches(ImportFileId, string.Join(",", FuzzyLookupContactIds.ToArray()));
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                objDbModel.FIClearFuzzyLookupContactMatches(ImportFileId, string.Join(",", FuzzyLookupContactIds.ToArray()));
+            }
         }
 
         /// <summary>
@@ -753,7 +767,6 @@ namespace BrightVision.Common.Utilities
         public static List<ImportFileRowInstance> GetImportFileRows(int ImportFileId)
         {
             using (BrightPlatformEntities m_objBrightPlatformEntity = new BrightPlatformEntities(UserSession.EntityConnection) { CommandTimeout = 0 }) {
-
                 var objImportFileRows = from objImportFileRow in m_objBrightPlatformEntity.FIGetImportFileRowItems(ImportFileId)
                     select new ImportFileRowInstance {
                         row_order = objImportFileRow.row_order,
@@ -769,48 +782,41 @@ namespace BrightVision.Common.Utilities
         /// </summary>
         public static ObjectQuery GetImportFileColumns(int ImportFileId, bool ForProfiling)
         {
-            BrightPlatformEntities m_objBrightPlatformEntity = new BrightPlatformEntities(UserSession.EntityConnection);
+            using (BrightPlatformEntities m_objBrightPlatformEntity = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                if (ForProfiling) {
+                    var objImportFileHeaders = (
+                            from objImportFileHeader in m_objBrightPlatformEntity.imported_file_headers
+                            where objImportFileHeader.imported_file_id == ImportFileId
+                            orderby objImportFileHeader.column_order
+                            select new ImportFileHeaderIdInstance {
+                                id = 0,
+                                column_name = string.Empty
+                            }
+                        )
+                        .Skip(0).Take(1).Union(
+                            from objImportFileHeader in m_objBrightPlatformEntity.imported_file_headers
+                            where objImportFileHeader.imported_file_id == ImportFileId
+                            orderby objImportFileHeader.column_order
+                            select new ImportFileHeaderIdInstance {
+                                id = objImportFileHeader.id,
+                                column_name = objImportFileHeader.column_name
+                            }
+                        );
 
-            if (ForProfiling)
-            {
-                var objImportFileHeaders =
-                    (
-                        from objImportFileHeader in m_objBrightPlatformEntity.imported_file_headers
-                        where objImportFileHeader.imported_file_id == ImportFileId
-                        orderby objImportFileHeader.column_order
-                        select new ImportFileHeaderIdInstance
-                        {
-                            id = 0,
-                            column_name = ""
-                        }
-                    )
-                    .Skip(0).Take(1).Union
-                    (
-                        from objImportFileHeader in m_objBrightPlatformEntity.imported_file_headers
-                        where objImportFileHeader.imported_file_id == ImportFileId
-                        orderby objImportFileHeader.column_order
-                        select new ImportFileHeaderIdInstance
-                        {
-                            id = objImportFileHeader.id,
-                            column_name = objImportFileHeader.column_name
-                        }
-                    );
+                    return (ObjectQuery)objImportFileHeaders;
+                }
+                else {
+                    var objImportFileHeaders =
+                       from objImportFileHeader in m_objBrightPlatformEntity.imported_file_headers
+                       where objImportFileHeader.imported_file_id == ImportFileId
+                       orderby objImportFileHeader.column_order
+                       select new ImportFileHeaderIdInstance {
+                           id = objImportFileHeader.id,
+                           column_name = objImportFileHeader.column_name
+                       };
 
-                return (ObjectQuery)objImportFileHeaders;
-            }
-            else
-            {
-                var objImportFileHeaders =
-                   from objImportFileHeader in m_objBrightPlatformEntity.imported_file_headers
-                   where objImportFileHeader.imported_file_id == ImportFileId
-                   orderby objImportFileHeader.column_order
-                   select new ImportFileHeaderIdInstance
-                   {
-                       id = objImportFileHeader.id,
-                       column_name = objImportFileHeader.column_name
-                   };
-
-                return (ObjectQuery)objImportFileHeaders;
+                    return (ObjectQuery)objImportFileHeaders;
+                }
             }
         }
 
@@ -871,29 +877,28 @@ namespace BrightVision.Common.Utilities
             List<ImportFileHeaderIdInstance> objList = new List<ImportFileHeaderIdInstance>();
             ImportFileHeaderIdInstance objFileHeader = null;
 
-            foreach (DataRow Item in objTable.Rows)
-            {
-                objCommand = null;
-                objCommand = new SqlCommand("bvSaveImportFileHeaders_sp", objConnection, objTransaction);
-                objCommand.CommandType = CommandType.StoredProcedure;
-                objCommand.Parameters.Add("@p_import_file_id", SqlDbType.Int).Value = Item["imported_file_id"];
-                objCommand.Parameters.Add("@p_column_order", SqlDbType.Int).Value = Item["column_order"];
-                objCommand.Parameters.Add("@p_column_name", SqlDbType.NVarChar).Value = Item["column_name"];
+            foreach (DataRow Item in objTable.Rows) {
+                using (objCommand = new SqlCommand("bvSaveImportFileHeaders_sp", objConnection, objTransaction)) {
+                    objCommand.CommandType = CommandType.StoredProcedure;
+                    objCommand.Parameters.Add("@p_import_file_id", SqlDbType.Int).Value = Item["imported_file_id"];
+                    objCommand.Parameters.Add("@p_column_order", SqlDbType.Int).Value = Item["column_order"];
+                    objCommand.Parameters.Add("@p_column_name", SqlDbType.NVarChar).Value = Item["column_name"];
 
-                objReader = null;
-                objResult = null;
+                    objReader = null;
+                    objResult = null;
 
-                objResult = objCommand.BeginExecuteReader(CommandBehavior.SingleRow);
-                objReader = objCommand.EndExecuteReader(objResult);
-                objReader.Read();
+                    objResult = objCommand.BeginExecuteReader(CommandBehavior.SingleRow);
+                    objReader = objCommand.EndExecuteReader(objResult);
+                    objReader.Read();
 
-                objFileHeader = null;
-                objFileHeader = new ImportFileHeaderIdInstance();
-                objFileHeader.id = (int) objReader[0];
-                objFileHeader.column_name = Item["column_name"].ToString();
+                    objFileHeader = null;
+                    objFileHeader = new ImportFileHeaderIdInstance();
+                    objFileHeader.id = (int)objReader[0];
+                    objFileHeader.column_name = Item["column_name"].ToString();
 
-                objReader.Close();
-                objList.Add(objFileHeader);
+                    objReader.Close();
+                    objList.Add(objFileHeader);
+                }
             }
 
             return objList;
@@ -916,24 +921,23 @@ namespace BrightVision.Common.Utilities
         /// </summary>
         public static int SaveImportFile(string SourceFileName,string ListName, int CustomerId, int CampaignId, int CountryId, SqlConnection objConnection, SqlTransaction objTransaction)
         {
-            
+            using (SqlCommand objCommand = new SqlCommand("bvSaveImportFile_sp", objConnection, objTransaction)) {
+                objCommand.CommandType = CommandType.StoredProcedure;
+                objCommand.Parameters.Add("@p_source_file_name", SqlDbType.NVarChar).Value = Path.GetFileName(SourceFileName);
+                objCommand.Parameters.Add("@p_list_name", SqlDbType.NVarChar).Value = ListName;
+                objCommand.Parameters.Add("@p_customer_id", SqlDbType.Int).Value = CustomerId;
+                objCommand.Parameters.Add("@p_campaign_id", SqlDbType.Int).Value = CampaignId;
+                objCommand.Parameters.Add("@p_country_id", SqlDbType.Int).Value = CountryId;
+                objCommand.Parameters.Add("@p_created_by_id", SqlDbType.Int).Value = UserSession.CurrentUser.UserId;
 
-            SqlCommand objCommand = new SqlCommand("bvSaveImportFile_sp", objConnection, objTransaction);
-            objCommand.CommandType = CommandType.StoredProcedure;
-            objCommand.Parameters.Add("@p_source_file_name", SqlDbType.NVarChar).Value = Path.GetFileName(SourceFileName);
-            objCommand.Parameters.Add("@p_list_name", SqlDbType.NVarChar).Value = ListName;
-            objCommand.Parameters.Add("@p_customer_id", SqlDbType.Int).Value = CustomerId;
-            objCommand.Parameters.Add("@p_campaign_id", SqlDbType.Int).Value = CampaignId;
-            objCommand.Parameters.Add("@p_country_id", SqlDbType.Int).Value = CountryId;
-            objCommand.Parameters.Add("@p_created_by_id", SqlDbType.Int).Value = UserSession.CurrentUser.UserId;
-            
-            IAsyncResult objResult = objCommand.BeginExecuteReader(CommandBehavior.SingleRow);
-            SqlDataReader objReader = objCommand.EndExecuteReader(objResult);
-            objReader.Read();
-            int ImportFileId = Convert.ToInt32(objReader[0]);
-            objReader.Close();
+                IAsyncResult objResult = objCommand.BeginExecuteReader(CommandBehavior.SingleRow);
+                SqlDataReader objReader = objCommand.EndExecuteReader(objResult);
+                objReader.Read();
+                int ImportFileId = Convert.ToInt32(objReader[0]);
+                objReader.Close();
 
-            return ImportFileId;
+                return ImportFileId;
+            }
         }
 
         /// <summary>
@@ -941,8 +945,9 @@ namespace BrightVision.Common.Utilities
         /// </summary>
         public static void DeleteProfiledData(int ImportFileId)
         {
-            BrightPlatformEntities m_objBrightPlatformEntity = new BrightPlatformEntities(UserSession.EntityConnection);
-            m_objBrightPlatformEntity.FIDeleteProfiledData(ImportFileId);
+            using (BrightPlatformEntities m_objBrightPlatformEntity = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                m_objBrightPlatformEntity.FIDeleteProfiledData(ImportFileId);
+            }
         }
 
         /// <summary>
@@ -950,10 +955,11 @@ namespace BrightVision.Common.Utilities
         /// </summary>
         public static void SetImportFileProfiledStatus(int ImportFileId)
         {
-            BrightPlatformEntities m_objBrightPlatformEntity = new BrightPlatformEntities(UserSession.EntityConnection);
-            var objEntityImportFile = m_objBrightPlatformEntity.imported_files.Where(objEntity => objEntity.id == ImportFileId).SingleOrDefault();
-            objEntityImportFile.profiled = true;
-            m_objBrightPlatformEntity.SaveChanges();
+            using (BrightPlatformEntities m_objBrightPlatformEntity = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                var objEntityImportFile = m_objBrightPlatformEntity.imported_files.Where(objEntity => objEntity.id == ImportFileId).SingleOrDefault();
+                objEntityImportFile.profiled = true;
+                m_objBrightPlatformEntity.SaveChanges();
+            }
         }
 
         /// <summary>
@@ -961,10 +967,11 @@ namespace BrightVision.Common.Utilities
         /// </summary>
         public static void SetImportFileStatus(int ImportFileId, bool IsEnabled)
         {
-            BrightPlatformEntities m_objBrightPlatformEntity = new BrightPlatformEntities(UserSession.EntityConnection);
-            var objEntityImportFile = m_objBrightPlatformEntity.imported_files.Where(objEntity => objEntity.id == ImportFileId).SingleOrDefault();
-            objEntityImportFile.active = IsEnabled;
-            m_objBrightPlatformEntity.SaveChanges();
+            using (BrightPlatformEntities m_objBrightPlatformEntity = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                var objEntityImportFile = m_objBrightPlatformEntity.imported_files.Where(objEntity => objEntity.id == ImportFileId).SingleOrDefault();
+                objEntityImportFile.active = IsEnabled;
+                m_objBrightPlatformEntity.SaveChanges();
+            }
         }
 
         /// <summary>
@@ -972,8 +979,9 @@ namespace BrightVision.Common.Utilities
         /// </summary>
         public static void DeleteImportFile(int ImportFileId)
         {
-            BrightPlatformEntities m_objBrightPlatformEntity = new BrightPlatformEntities(UserSession.EntityConnection);
-            m_objBrightPlatformEntity.FIDeleteImportFile(ImportFileId);
+            using (BrightPlatformEntities m_objBrightPlatformEntity = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                m_objBrightPlatformEntity.FIDeleteImportFile(ImportFileId);
+            }
         }
 
         /// <summary>
@@ -982,10 +990,11 @@ namespace BrightVision.Common.Utilities
         /// <param name="ImportedFileId"></param>
         public static void MatchedByAccount(int ImportedFileId)
         {
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            var Item = objDbModel.imported_files.FirstOrDefault(i => i.id == ImportedFileId);
-            Item.matched_by_account = true;
-            objDbModel.SaveChanges();
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                var Item = objDbModel.imported_files.FirstOrDefault(i => i.id == ImportedFileId);
+                Item.matched_by_account = true;
+                objDbModel.SaveChanges();
+            }
         }
 
         /// <summary>
@@ -994,10 +1003,11 @@ namespace BrightVision.Common.Utilities
         /// <param name="ImportedFileId"></param>
         public static void MatchedByContact(int ImportedFileId)
         {
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            var Item = objDbModel.imported_files.FirstOrDefault(i => i.id == ImportedFileId);
-            Item.matched_by_contact = true;
-            objDbModel.SaveChanges();
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                var Item = objDbModel.imported_files.FirstOrDefault(i => i.id == ImportedFileId);
+                Item.matched_by_contact = true;
+                objDbModel.SaveChanges();
+            }
         }
 
         /// <summary>
@@ -1006,10 +1016,11 @@ namespace BrightVision.Common.Utilities
         /// <param name="ImportedFileId"></param>
         public static void ImprovedMasterData(int ImportedFileId)
         {
-            BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            var Item = objDbModel.imported_files.FirstOrDefault(i => i.id == ImportedFileId);
-            Item.improved_master_data = true;
-            objDbModel.SaveChanges();
+            using (BrightPlatformEntities objDbModel = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                var Item = objDbModel.imported_files.FirstOrDefault(i => i.id == ImportedFileId);
+                Item.improved_master_data = true;
+                objDbModel.SaveChanges();
+            }
         }
         #endregion
     }

@@ -42,7 +42,7 @@ using SalesConsultant.Events;
 
 namespace SalesConsultant.Modules
 {
-    public partial class ManageImportList : DevExpress.XtraEditors.XtraUserControl
+    public partial class ManageImportList : XtraUserControl
     {
         #region Enums
         //private enum eViewSource
@@ -445,7 +445,72 @@ namespace SalesConsultant.Modules
         }
         private void FrmManualMatchingAccount_OnClose(FrmManualMatchAccountEvents.OnClose e)
         {
+            using (BrightPlatformEntities _efDbContext = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                for (int i = 0; i < gvMatchingCompany.RowCount; i++) {
 
+                    /**
+                     * process only selected items.
+                     */
+                    if (!Convert.ToBoolean(gvMatchingCompany.GetRowCellValue(i, "selected")))
+                        continue;
+
+                    /**
+                     * if no match found from the matching list,
+                     * just continue to next one.
+                     */
+                    CTFuzzyLookupAccount _cxFuzzyAccount = gvMatchingCompany.GetRow(i) as CTFuzzyLookupAccount;
+                    ClassesProperty.ManualMatchAccount _ManualMatchAccount = e.lstMatchAccounts.FirstOrDefault(p => p.fuzzy_lookup_account_id == _cxFuzzyAccount.id);
+                    if (_ManualMatchAccount == null)
+                        continue;
+
+                    /**
+                     * if selected item already had a match with the same company,
+                     * then just continue to next record and let it as is.
+                     */
+                    fuzzy_lookup_accounts _eftFuzzyAccount = _efDbContext.fuzzy_lookup_accounts.FirstOrDefault(p => p.id == _ManualMatchAccount.fuzzy_lookup_account_id);
+                    if (_ManualMatchAccount.is_match && _eftFuzzyAccount.account_id == _ManualMatchAccount.match_account_id)
+                        continue;
+
+                    /**
+                     * we update fuzzy_lookup_accounts record and
+                     * set default values for the grid columns.
+                     */
+                    _eftFuzzyAccount.account_id = _ManualMatchAccount.is_match? _ManualMatchAccount.match_account_id: 0;
+                    _eftFuzzyAccount.matched = _ManualMatchAccount.is_match? true: false;
+                    _eftFuzzyAccount.match_method = _ManualMatchAccount.is_match? "Manual Match": string.Empty;
+                    _efDbContext.SaveChanges();
+                    _efDbContext.Detach(_eftFuzzyAccount);
+
+                    gvMatchingCompany.SetRowCellValue(i, "account_id", 0);
+                    gvMatchingCompany.SetRowCellValue(i, "company_name", string.Empty);
+                    gvMatchingCompany.SetRowCellValue(i, "org_no", string.Empty);
+                    gvMatchingCompany.SetRowCellValue(i, "validated", false);
+                    gvMatchingCompany.SetRowCellValue(i, "matched", false);
+                    gvMatchingCompany.SetRowCellValue(i, "match_method", string.Empty);
+                    
+                    /**
+                     * theres no point continuing below if its not a match.
+                     */
+                    if (!_ManualMatchAccount.is_match)
+                        continue;
+
+                    /**
+                     * we update grid columns with the manually matched company
+                     * data and values.
+                     */
+                    account _eftAccount = _efDbContext.accounts.FirstOrDefault(p => p.id == _ManualMatchAccount.match_account_id);
+                    gvMatchingCompany.SetRowCellValue(i, "account_id", _eftAccount.id);
+                    gvMatchingCompany.SetRowCellValue(i, "company_name", _eftAccount.company_name);
+                    gvMatchingCompany.SetRowCellValue(i, "org_no", _eftAccount.org_no);
+                    gvMatchingCompany.SetRowCellValue(i, "validated", _eftAccount.validated);
+                    gvMatchingCompany.SetRowCellValue(i, "matched", true);
+                    gvMatchingCompany.SetRowCellValue(i, "match_method", "Manual Match");
+                    //gvMatchingCompany.SetRowCellValue(i, "date_created", _eftAccount.created_date);
+                    //gvMatchingCompany.SetRowCellValue(i, "date_modified", _eftAccount.modified_date);
+                    //gvMatchingCompany.SetRowCellValue(i, "created_by", _eftAccount.crea);
+                    _efDbContext.Detach(_eftAccount);
+                }
+            }
         }
 
         /// <summary>
@@ -2828,7 +2893,9 @@ namespace SalesConsultant.Modules
             WaitDialog.Show(ParentForm, "Loading...");
             m_FuzzyLookupAccountList = DataImportUtility.GetFuzzyLookupAccountList(m_objImportList.id);
             if (m_FuzzyLookupAccountList.Count > 0) {
+                gcMatchingCompany.BeginUpdate();
                 gcMatchingCompany.DataSource = m_FuzzyLookupAccountList;
+                gcMatchingCompany.EndUpdate();
                 this.SetFuzzyLookupAccountMatchStatistics(DataImportUtility.GetFuzzyLookupAccountMatchStatistics(m_objImportList.id));
                 this.SetFuzzyLookupAccountMatchingViewControls(true);
             }

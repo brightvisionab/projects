@@ -67,8 +67,9 @@ namespace BrightVision.Common.Business
         /// <returns></returns>
         public static List<CTCompany> GetCompanyListing(string KeyWord, int LimitNo)
         {
-            BrightPlatformEntities _efDbModel = new BrightPlatformEntities(UserSession.EntityConnection);
-            return _efDbModel.FIGetCompanies(KeyWord, LimitNo).ToList();
+            using (BrightPlatformEntities _efDbModel = new BrightPlatformEntities(UserSession.EntityConnection)) {
+                return _efDbModel.FIGetCompanies(KeyWord, LimitNo).ToList();
+            }
         }
 
         /// <summary>

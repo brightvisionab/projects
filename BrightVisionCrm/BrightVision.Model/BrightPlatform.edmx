@@ -26,6 +26,7 @@
           <EntitySet Name="event_log" EntityType="BrightPlatformModel.Store.event_log" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="export_view_report_templates" EntityType="BrightPlatformModel.Store.export_view_report_templates" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="final_lists" EntityType="BrightPlatformModel.Store.final_lists" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="fuzzy_lookup_accounts" EntityType="BrightPlatformModel.Store.fuzzy_lookup_accounts" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="imported_file_details" EntityType="BrightPlatformModel.Store.imported_file_details" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="imported_file_headers" EntityType="BrightPlatformModel.Store.imported_file_headers" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="imported_files" EntityType="BrightPlatformModel.Store.imported_files" store:Type="Tables" Schema="dbo" />
@@ -723,6 +724,47 @@
           <Property Name="created_on" Type="datetime" Nullable="false" />
           <Property Name="modified_by" Type="int" />
           <Property Name="modified_on" Type="datetime" />
+        </EntityType>
+        <EntityType Name="fuzzy_lookup_accounts">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="import_file_id" Type="int" Nullable="false" />
+          <Property Name="account_id" Type="int" Nullable="false" />
+          <Property Name="matched" Type="bit" Nullable="false" />
+          <Property Name="match_method" Type="nvarchar" MaxLength="20" />
+          <Property Name="source" Type="nvarchar" MaxLength="255" />
+          <Property Name="company_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="org_no" Type="nvarchar" MaxLength="255" />
+          <Property Name="box_address" Type="nvarchar(max)" />
+          <Property Name="street_address" Type="nvarchar(max)" />
+          <Property Name="zipcode" Type="nvarchar" MaxLength="255" />
+          <Property Name="city" Type="nvarchar" MaxLength="255" />
+          <Property Name="country" Type="nvarchar" MaxLength="255" />
+          <Property Name="telephone" Type="nvarchar" MaxLength="255" />
+          <Property Name="telefax" Type="nvarchar" MaxLength="255" />
+          <Property Name="www" Type="nvarchar" MaxLength="255" />
+          <Property Name="year_established" Type="nvarchar" MaxLength="255" />
+          <Property Name="parent_company" Type="nvarchar" MaxLength="255" />
+          <Property Name="activity_code" Type="nvarchar" MaxLength="255" />
+          <Property Name="activity_code_2" Type="nvarchar" MaxLength="255" />
+          <Property Name="currency" Type="nvarchar" MaxLength="255" />
+          <Property Name="turnover" Type="money" Nullable="false" />
+          <Property Name="result" Type="money" Nullable="false" />
+          <Property Name="employees_abroad" Type="int" Nullable="false" />
+          <Property Name="employees_total" Type="int" Nullable="false" />
+          <Property Name="fuzzy_match_field" Type="nvarchar" MaxLength="255" />
+          <Property Name="similarity" Type="real" Nullable="false" />
+          <Property Name="confidence" Type="real" Nullable="false" />
+          <Property Name="created_by" Type="int" Nullable="false" />
+          <Property Name="created_on" Type="datetime" />
+          <Property Name="modified_by" Type="int" Nullable="false" />
+          <Property Name="modified_on" Type="datetime" />
+          <Property Name="selected" Type="bit" Nullable="false" />
+          <Property Name="processed" Type="bit" Nullable="false" />
+          <Property Name="priority" Type="nvarchar" MaxLength="255" />
+          <Property Name="assigned_to" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="imported_file_details">
           <Key>
@@ -3555,6 +3597,7 @@
             <Parameter Name="p_final_list_id" Mode="In" Type="Int32" />
             <Parameter Name="p_user_id" Mode="In" Type="Int32" />
           </FunctionImport>
+          <EntitySet Name="fuzzy_lookup_accounts" EntityType="BrightPlatformModel.fuzzy_lookup_accounts" />
           <!--<AssociationSet Name="FK_view_configuration_additional_data_report_templates" Association="BrightPlatformModel.FK_view_configuration_additional_data_report_templates">
             <End Role="additional_data_report_templates" EntitySet="additional_data_report_templates" />
             <End Role="view_configuration" EntitySet="view_configuration" />
@@ -7116,6 +7159,47 @@
           <Property Type="String" Name="Company_Status" Nullable="true" MaxLength="255" />
           <Property Type="Int32" Name="total" Nullable="true" />
         </ComplexType>
+        <EntityType Name="fuzzy_lookup_accounts">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int64" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="import_file_id" Nullable="false" />
+          <Property Type="Int32" Name="account_id" Nullable="false" />
+          <Property Type="Boolean" Name="matched" Nullable="false" />
+          <Property Type="String" Name="match_method" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="source" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="company_name" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="org_no" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="box_address" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="street_address" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="zipcode" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="city" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="country" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="telephone" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="telefax" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="www" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="year_established" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="parent_company" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="activity_code" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="activity_code_2" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="currency" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="turnover" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="result" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="Int32" Name="employees_abroad" Nullable="false" />
+          <Property Type="Int32" Name="employees_total" Nullable="false" />
+          <Property Type="String" Name="fuzzy_match_field" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Single" Name="similarity" Nullable="false" />
+          <Property Type="Single" Name="confidence" Nullable="false" />
+          <Property Type="Int32" Name="created_by" Nullable="false" />
+          <Property Type="DateTime" Name="created_on" Precision="3" />
+          <Property Type="Int32" Name="modified_by" Nullable="false" />
+          <Property Type="DateTime" Name="modified_on" Precision="3" />
+          <Property Type="Boolean" Name="selected" Nullable="false" />
+          <Property Type="Boolean" Name="processed" Nullable="false" />
+          <Property Type="String" Name="priority" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="assigned_to" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
         <!--<Association Name="FK_view_configuration_additional_data_report_templates">
           <End Type="BrightPlatformModel.additional_data_report_templates" Role="additional_data_report_templates" Multiplicity="0..1" />
           <End Type="BrightPlatformModel.view_configuration" Role="view_configuration" Multiplicity="*" />
@@ -10216,6 +10300,48 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <EntitySetMapping Name="fuzzy_lookup_accounts">
+            <EntityTypeMapping TypeName="BrightPlatformModel.fuzzy_lookup_accounts">
+              <MappingFragment StoreEntitySet="fuzzy_lookup_accounts">
+                <ScalarProperty Name="assigned_to" ColumnName="assigned_to" />
+                <ScalarProperty Name="priority" ColumnName="priority" />
+                <ScalarProperty Name="processed" ColumnName="processed" />
+                <ScalarProperty Name="selected" ColumnName="selected" />
+                <ScalarProperty Name="modified_on" ColumnName="modified_on" />
+                <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+                <ScalarProperty Name="created_on" ColumnName="created_on" />
+                <ScalarProperty Name="created_by" ColumnName="created_by" />
+                <ScalarProperty Name="confidence" ColumnName="confidence" />
+                <ScalarProperty Name="similarity" ColumnName="similarity" />
+                <ScalarProperty Name="fuzzy_match_field" ColumnName="fuzzy_match_field" />
+                <ScalarProperty Name="employees_total" ColumnName="employees_total" />
+                <ScalarProperty Name="employees_abroad" ColumnName="employees_abroad" />
+                <ScalarProperty Name="result" ColumnName="result" />
+                <ScalarProperty Name="turnover" ColumnName="turnover" />
+                <ScalarProperty Name="currency" ColumnName="currency" />
+                <ScalarProperty Name="activity_code_2" ColumnName="activity_code_2" />
+                <ScalarProperty Name="activity_code" ColumnName="activity_code" />
+                <ScalarProperty Name="parent_company" ColumnName="parent_company" />
+                <ScalarProperty Name="year_established" ColumnName="year_established" />
+                <ScalarProperty Name="www" ColumnName="www" />
+                <ScalarProperty Name="telefax" ColumnName="telefax" />
+                <ScalarProperty Name="telephone" ColumnName="telephone" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="zipcode" ColumnName="zipcode" />
+                <ScalarProperty Name="street_address" ColumnName="street_address" />
+                <ScalarProperty Name="box_address" ColumnName="box_address" />
+                <ScalarProperty Name="org_no" ColumnName="org_no" />
+                <ScalarProperty Name="company_name" ColumnName="company_name" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="match_method" ColumnName="match_method" />
+                <ScalarProperty Name="matched" ColumnName="matched" />
+                <ScalarProperty Name="account_id" ColumnName="account_id" />
+                <ScalarProperty Name="import_file_id" ColumnName="import_file_id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
@@ -11197,6 +11323,7 @@
         <AssociationConnector Association="BrightPlatformModel.FK_message_log_sub_campaign_id" />
         <AssociationConnector Association="BrightPlatformModel.FK_message_log_user_id" />
         <EntityTypeShape EntityType="BrightPlatformModel.serverside_service_requests" Width="1.5" PointX="5.0172931128262039" PointY="25.857998070240953" />
+        <EntityTypeShape EntityType="BrightPlatformModel.fuzzy_lookup_accounts" Width="1.5" PointX="4.0347241778088385" PointY="7.8613727576385122" />
         </Diagram>
     </Diagrams>
   </Designer>

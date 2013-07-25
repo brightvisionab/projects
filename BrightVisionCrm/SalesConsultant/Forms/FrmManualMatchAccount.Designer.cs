@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmManualMatchAccount));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.btnClose = new DevExpress.XtraEditors.SimpleButton();
             this.tbxKeyWord = new DevExpress.XtraEditors.TextEdit();
             this.tbxShowCount = new DevExpress.XtraEditors.TextEdit();
             this.btnMarkAsMatch = new DevExpress.XtraEditors.SimpleButton();
@@ -72,7 +73,6 @@
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
             this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
-            this.btnClose = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -120,6 +120,17 @@
             this.layoutControl1.Size = new System.Drawing.Size(1727, 807);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // btnClose
+            // 
+            this.btnClose.Image = global::SalesConsultant.Properties.Resources.close_campaign_booking;
+            this.btnClose.Location = new System.Drawing.Point(7, 778);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(56, 22);
+            this.btnClose.StyleController = this.layoutControl1;
+            this.btnClose.TabIndex = 12;
+            this.btnClose.Text = "Close";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // tbxKeyWord
             // 
@@ -197,6 +208,7 @@
             this.gvAccountsList.Name = "gvAccountsList";
             this.gvAccountsList.OptionsView.ColumnAutoWidth = false;
             this.gvAccountsList.OptionsView.ShowGroupPanel = false;
+            this.gvAccountsList.DoubleClick += new System.EventHandler(this.gvAccountsList_DoubleClick);
             // 
             // gridColumn1
             // 
@@ -615,17 +627,6 @@
             this.splitterItem2.Location = new System.Drawing.Point(598, 0);
             this.splitterItem2.Name = "splitterItem2";
             this.splitterItem2.Size = new System.Drawing.Size(5, 797);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Image = global::SalesConsultant.Properties.Resources.close_campaign_booking;
-            this.btnClose.Location = new System.Drawing.Point(7, 778);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(56, 22);
-            this.btnClose.StyleController = this.layoutControl1;
-            this.btnClose.TabIndex = 12;
-            this.btnClose.Text = "Close";
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // layoutControlItem4
             // 
