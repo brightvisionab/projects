@@ -42,6 +42,11 @@ namespace SalesConsultant.Events
             public OnSaveCompletedArgs OnSaveCompletedArgs { get; set; }
             public eTransactionSource TransactionSource = eTransactionSource.None;
         }
+        public class OnChangeDialogStatus
+        {
+            public OnSaveCompletedArgs OnSaveCompletedArgs { get; set; }
+            public eTransactionSource TransactionSource = eTransactionSource.None;
+        }
         public enum eTransactionSource {
             OnContactStatusChange,
             OnSaveButtonClick,
