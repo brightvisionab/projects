@@ -1143,6 +1143,7 @@ namespace SalesConsultant.Modules
             m_EventBus.GetEvent<CampaignListEvents.GetLatestProperties>().Subscribe(GetProperties);
             m_EventBus.GetEvent<FrmSalesConsultantEvents.OnEnterCampaignListCombo>().Subscribe(SalesConsultantCampaignListComboOnPressEnter);
             m_EventBus.GetEvent<FrmSalesConsultantEvents.TryFocusRowChange>().Subscribe(TryFocusRowChange);
+            m_EventBus.GetEvent<DialogEditorEvents.OnChangeDialogStatus>().Subscribe(DialogEditorOnSaveCompleted);
         }
         private void MoveNext(ManageCampaignBookingEvents.OnLoadNextCompany.CampaignList e)
         {
@@ -1539,7 +1540,18 @@ namespace SalesConsultant.Modules
             //gvCampaignList.SetRowCellValue(gvCampaignList.FocusedRowHandle, "Company_Last_Contact", DateTime.Today.ToShortDateString());
             //gvCampaignList.SetRowCellValue(gvCampaignList.FocusedRowHandle, "Company_Last_User", UserSession.CurrentUser.UserFullName);
         }
-        
+        private void DialogEditorOnSaveCompleted(DialogEditorEvents.OnChangeDialogStatus e)
+        {
+            int contactid = 0;
+            for (int i = 0; i < gvCampaignList.RowCount; i++)
+            {
+                contactid = ValidationUtility.TryParseInt(gvCampaignList.GetRowCellValue(i, "contact_id"));
+                if (contactid == e.OnSaveCompletedArgs.ContactId)
+                {
+                    gvCampaignList.SetRowCellValue(i, "contact_status", e.OnSaveCompletedArgs.Status);
+                }
+            }
+        }
         private void SalesConsultantCampaignListComboOnPressEnter(FrmSalesConsultantEvents.OnEnterCampaignListCombo e)
         {
             m_SalesConsultantCampaignListComboKeyPressEnter = true;
