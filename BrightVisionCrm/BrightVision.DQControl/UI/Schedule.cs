@@ -2068,6 +2068,8 @@ namespace BrightVision.DQControl.UI {
                         this.lblScheduleDetails.Text = _AnswerData.ScheduleValue.Description;
                         if (_AnswerData.ScheduleSalesPerson.SalesPersonSelectedValue.Name != null && _AnswerData.ScheduleSalesPerson.SalesPersonSelectedValue.Name != "")
                             this.lblScheduleDetails.Text += " | " + _AnswerData.ScheduleSalesPerson.SalesPersonSelectedValue.Name;
+
+                        this.PreviewBooking.Enabled = true;
                     }
                     if (string.IsNullOrEmpty(_AnswerData.ScheduleValue.ScheduleId) && this.lblScheduleDetails != null)
                     {
@@ -2234,15 +2236,27 @@ namespace BrightVision.DQControl.UI {
                                     TempControl.Text.Equals("Add Additional") ||
                                     TempControl.Text.Equals("Delete"))
                                 {
+
                                     if (this.lblScheduleDetails != null && this.lblScheduleDetails.Text != "" && isEditable)
                                         TempControl.Enabled = true;
                                     else
                                         TempControl.Enabled = false;
+
+                                    /*
+                                     * https://brightvision.jira.com/browse/PLATFORM-3227
+                                     * DAN: Force to enable PreviewBooking button even if isEditable is false.
+                                    */
+                                    if (this.lblScheduleDetails != null && this.lblScheduleDetails.Text != "" && TempControl.Name.Equals("PreviewBooking"))
+                                        TempControl.Enabled = true;
+
                                     continue;
                                 }
 
                                 if (TempControl.Enabled != isEditable)
                                     TempControl.Enabled = isEditable;
+
+                                
+
 
                                 //if (TempControl.Name.IndexOf("PreviewDetails_simpleButton") != -1 ||
                                 //    TempControl.Name.IndexOf("CreateMeeting_simpleButton") != -1 ||

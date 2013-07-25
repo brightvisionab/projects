@@ -820,6 +820,13 @@ namespace SalesConsultant.Modules
                 OnSaveCompletedArgs = _args,
                 TransactionSource = DialogEditorEvents.eTransactionSource.OnContactStatusChange
             });
+
+            //DAN: Raise event for campaign list to update contact status as the above code only updates the managecampaignbooking module.
+            m_EventBus.Notify(new DialogEditorEvents.OnChangeDialogStatus()
+            {
+                OnSaveCompletedArgs = _args,
+                TransactionSource = DialogEditorEvents.eTransactionSource.OnContactStatusChange
+            });
             WaitDialog.Close();
             
             //if (!m_AnswerBindingOnProgress)
